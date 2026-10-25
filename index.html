@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>មគ្គុទ្ទេសក៍សមាធិប្រចាំថ្ងៃ (Samādhi Daily Guide) - តាមគន្លងវិសុទ្ធិមគ្គ</title>
+  
+  <!-- Google Fonts: Battambang & Noto Sans Khmer -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Noto+Sans+Khmer:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☸</text></svg>">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header">
+    <a href="#" class="brand" data-view-target="dashboard">
+      <div class="brand-icon">☸</div>
+      <div>
+        <div class="brand-title">មគ្គុទ្ទេសក៍សមាធិ</div>
+        <div class="brand-sub">Visuddhimagga Guide</div>
+      </div>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><button class="nav-btn active" data-view-target="dashboard"><span>🏠</span> ទំព័រដើម</button></li>
+        <li><button class="nav-btn" data-view-target="practice"><span>🧘</span> ភាវនា & រាប់ដង្ហើម</button></li>
+        <li><button class="nav-btn" data-view-target="carita"><span>🔍</span> វិនិច្ឆ័យចរិត ៦</button></li>
+        <li><button class="nav-btn" data-view-target="curriculum"><span>🗺</span> ផែនទី ៤ ដំណាក់កាល</button></li>
+        <li><button class="nav-btn" data-view-target="kammatthana"><span>📚</span> កម្មដ្ឋាន ៤០</button></li>
+        <li><button class="nav-btn" data-view-target="nivarana"><span>🛡</span> កម្ចាត់នីវរណៈ ៥</button></li>
+        <li><button class="nav-btn" data-view-target="citations"><span>📖</span> បិដកយោង</button></li>
+      </ul>
+    </nav>
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <button class="theme-toggle-btn" id="theme-toggle-btn" title="ប្តូរពន្លឺ/ងងឹត">
+        <span>☾</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+
+    <!-- 1. DASHBOARD VIEW -->
+    <section id="view-dashboard" class="view-section active">
+      <div class="hero-card">
+        <span class="hero-tag">យោងតាមគម្ពីរវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស (វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ដល់ ភាគ ៤)</span>
+        <h1 class="hero-title">ការបដិបត្តិសមាធិប្រចាំថ្ងៃ តាមគន្លងព្រះពុទ្ធឃោសាចារ្យ</h1>
+        <p class="hero-desc">
+          «កុសលចិត្តេកគ្គតា សមាធិ» — សមាធិគឺការមានអារម្មណ៍តែមួយនៃកុសលចិត្ត។ កម្មវិធីនេះរៀបចំឡើងជាពិសេសសម្រាប់អ្នកត្រូវការបដិបត្តិសមាធិជាប្រចាំថ្ងៃ ចាប់តាំងពីអ្នកទើបផ្តើមដំបូង (អាទិកម្មិកៈ) រហូតដល់ស្ទាត់ជំនាញក្នុងឈាន (វសីប្បត្ត)។
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" data-view-target="practice">
+            <span>🧘</span> ចាប់ផ្តើមភាវនាថ្ងៃនេះ
+          </button>
+          <button class="btn-secondary" data-view-target="carita">
+            <span>🔍</span> ធ្វើតេស្តវិនិច្ឆ័យចរិត ៦
+          </button>
+        </div>
+      </div>
+
+      <!-- Stats Strip -->
+      <div class="stat-strip">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-streak">1 ថ្ងៃ</div>
+          <div class="stat-label">ការបដិបត្តិតាមកាល</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-total-mins">0 នាទី</div>
+          <div class="stat-label">ពេលវេលាសមាធិសរុប</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-level">កម្រិត ១</div>
+          <div class="stat-label">ដំណាក់កាលបច្ចុប្បន្ន</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-carita" style="font-size: 1.3rem;">មិនទាន់កំណត់</div>
+          <div class="stat-label">ចរិតលេចធ្លោ</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- Daily Palibodha Checklist -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon-wrap">✂</div>
+            <div>
+              <div class="card-title">១. កាត់បលិពោធ ១០ ប្រការ</div>
+              <div class="card-sub">បុព្វកិច្ចជម្រះកង្វល់មុនពេលអង្គុយភាវនា</div>
+            </div>
+          </div>
+          <div class="card-body">
+            ក្នុងវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៣៩ បញ្ជាក់ថា បើមិនទាន់កាត់បលិពោធ (គ្រឿងកង្វល់) ចេញទេ ចិត្តមិនអាចស្ងប់ចុះក្នុងសមាធិបានឡើយ។ ចូរគូសចំណាំការកាត់កង្វល់ខាងក្រោម៖
+          </div>
+          <div id="palibodha-list-container" style="max-height: 380px; overflow-y: auto; padding-right: 4px;">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Caturārakkha Daily Protection -->
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon-wrap">🛡</div>
+            <div>
+              <div class="card-title">២. ចតុរារក្ខ (សព្វត្ថកកម្មដ្ឋាន)</div>
+              <div class="card-sub">កម្មដ្ឋានការពារចិត្ត ៥ នាទីមុនចូលកម្មដ្ឋានចម្បង</div>
+            </div>
+          </div>
+          <div class="card-body">
+            កម្មដ្ឋាន ៤ យ៉ាងនេះ ជាកម្មដ្ឋានដែលអ្នកបដិបត្តិគ្រប់រូបគប្បីចម្រើនជាប្រចាំថ្ងៃ ដើម្បីបង្កើតបីតិ កម្ចាត់កំហឹង និងសេចក្តីភ័យខ្លាច៖
+          </div>
+          <div id="caturarakkha-container">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PRACTICE VIEW (TIMER & GAṆANĀ ORB) -->
+    <section id="view-practice" class="view-section">
+      <div class="hero-card" style="padding: 24px;">
+        <span class="hero-tag">អានាបានស្សតិភាវនា តាមគន្លងវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣</span>
+        <h2 style="font-size: 1.5rem; margin-bottom: 6px;">ឧបករណ៍ជំនួយគណនាវិធី និងកំណត់សតិត្រង់កន្លែងប៉ះ</h2>
+        <p style="font-size: 0.95rem; color: var(--text-secondary);">
+          រាប់ដង្ហើមចេញចូលចន្លោះពី ៥ ដល់ ១០ ដោយមិនរាប់ក្រោម ៥ (នាំឲ្យចង្អៀតចិត្ត) និងមិនលើសពី ១០ (នាំឲ្យជាប់នឹងលេខ)។ តម្កល់សតិឲ្យនឹងត្រង់ចុងច្រមុះ ឬបបូរមាត់លើ។
+        </p>
+      </div>
+
+      <div class="meditation-box">
+        <!-- Touch-Point Anchoring Mode -->
+        <div>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-bottom: 8px;">
+            ស្ថានទីដែលខ្យល់ប៉ះខ្ទប់ (ផុសនស្ថាន)
+          </div>
+          <div class="touch-selector">
+            <button class="touch-option active" data-touch-point="nose">👃 ចុងច្រមុះ (នាសិកគ្គ)</button>
+            <button class="touch-option" data-touch-point="lip">👄 បបូរមាត់លើ (ឧត្តរោដ្ឋ)</button>
+          </div>
+          <div id="touch-point-desc" style="font-size: 0.84rem; color: var(--accent-sage); font-weight: 600;">
+            តម្កល់សតិដឹងត្រង់ចុងច្រមុះ (នាសិកគ្គ) - សម្រាប់មនុស្សច្រមុះវែង
+          </div>
+        </div>
+
+        <!-- Breathing Orb -->
+        <div class="orb-container">
+          <div class="orb-ripple"></div>
+          <div class="breathing-orb" id="breathing-orb">
+            <div class="orb-count" id="orb-count">1</div>
+            <div class="orb-phase" id="orb-phase-label">ត្រៀមខ្លួន</div>
+          </div>
+        </div>
+
+        <!-- Timer Display -->
+        <div class="timer-display" id="timer-display">15:00</div>
+
+        <!-- Presets -->
+        <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
+          <button class="filter-btn" data-timer-preset="10">១០ នាទី</button>
+          <button class="filter-btn active" data-timer-preset="15">១៥ នាទី</button>
+          <button class="filter-btn" data-timer-preset="20">២០ នាទី</button>
+          <button class="filter-btn" data-timer-preset="30">៣០ នាទី</button>
+          <button class="filter-btn" data-timer-preset="45">៤៥ នាទី</button>
+          <button class="filter-btn" data-timer-preset="60">៦០ នាទី</button>
+        </div>
+
+        <!-- Controls -->
+        <div class="timer-controls">
+          <button class="btn-primary" id="btn-timer-start" style="font-size: 1.1rem; padding: 14px 32px;">
+            <span>▶</span> ចាប់ផ្តើមភាវនា
+          </button>
+          <button class="btn-secondary" id="btn-timer-reset">
+            <span>↺</span> កំណត់ឡើងវិញ
+          </button>
+          <button class="btn-secondary" id="btn-test-bell" title="សាកល្បងសំឡេងជួងកណ្តឹង">
+            <span>🔔</span> ជួងសមាធិ
+          </button>
+        </div>
+
+        <!-- Method switcher -->
+        <div style="margin-top: 28px; border-top: 1px solid var(--border-color); padding-top: 18px;">
+          <button class="btn-secondary" id="btn-toggle-count-mode" style="font-size: 0.88rem;">
+            វិធីរាប់យឺត (ដូចវាល់អង្ករ)
+          </button>
+          <p id="count-mode-hint" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">
+            ដកដង្ហើមចូល-ចេញរួចទើបរាប់ ១, ដកដង្ហើមចូល-ចេញរួចរាប់ ២... (រាប់ចន្លោះ ៥ ដល់ ១០)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CARITA DIAGNOSTIC VIEW -->
+    <section id="view-carita" class="view-section">
+      <div class="hero-card">
+        <span class="hero-tag">វិនិច្ឆ័យចរិត ៦ តាមគម្ពីរវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៧៥–១១៥</span>
+        <h2 class="hero-title">ការស្វែងរកកម្មដ្ឋានដែលសមស្របនឹងនិស្ស័យចរិតរបស់អ្នក</h2>
+        <p class="hero-desc">
+          ព្រះពុទ្ធឃោសាចារ្យបានបែងចែកចរិតមនុស្សជា ៦ យ៉ាង៖ រាគចរិត, ទោសចរិត, មោហចរិត, សទ្ធាចរិត, ពុទ្ធិចរិត, និងវិតក្កចរិត។ ការជ្រើសរើសកម្មដ្ឋានដែលត្រូវនឹងចរិតប្រៀបដូចជាការប្រើថ្នាំត្រូវនឹងរោគ ជួយឲ្យសម្រេចសមាធិបានឆាប់រហ័ស។
+        </p>
+      </div>
+
+      <div id="quiz-dynamic-box">
+        <div class="card" style="text-align: center; padding: 36px 20px;">
+          <div style="font-size: 52px; margin-bottom: 12px;">☸</div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 12px;">តេស្តវិភាគចរិតទាំង ៦ តាមរយៈឥរិយាបថ និងទម្លាប់ប្រចាំថ្ងៃ</h3>
+          <p style="color: var(--text-secondary); max-width: 580px; margin: 0 auto 24px;">
+            សំណួរទាំង ៦ នេះត្រូវបានដកស្រង់ដោយផ្ទាល់ពីសញ្ញាសម្គាល់ក្នុងវិសុទ្ធិមគ្គ រួមមាន ឥរិយាបថដើរ ការធ្វើការងារ ការបរិភោគអាហារ បរិយាកាសបន្ទប់ ការគេង និងប្រតិកម្មចំពោះអារម្មណ៍។
+          </p>
+          <button class="btn-primary" id="btn-start-quiz" style="font-size: 1.05rem; padding: 14px 32px;">
+            <span>✍</span> ចាប់ផ្តើមធ្វើតេស្តឥឡូវនេះ
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROGRESSIVE CURRICULUM VIEW -->
+    <section id="view-curriculum" class="view-section">
+      <div class="hero-card">
+        <span class="hero-tag">ផែនទីការប្រតិបត្តិ ៤ ដំណាក់កាល</span>
+        <h2 class="hero-title">គន្លងផ្លូវនៃការចម្រើនសមាធិ ពីដំបូងដល់ស្ទាត់ជំនាញ</h2>
+        <p class="hero-desc">
+          ជំហានជាក់ស្តែងស្របតាមលំដាប់លំដោយក្នុងវិសុទ្ធិមគ្គ ចាប់ពីការកាត់បលិពោធ និងរាប់ដង្ហើម រហូតដល់ការកម្ចាត់នីវរណៈ ការស្គាល់បដិភាគនិមិត្ត ការសម្រេចបឋមជ្ឈាន ការហ្វឹកហាត់វសី ៥ និងការប្រើសមាធិជាគ្រឹះនៃវិបស្សនា។
+        </p>
+      </div>
+
+      <div id="curriculum-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 5. 40 KAMMATTHANA VIEW -->
+    <section id="view-kammatthana" class="view-section">
+      <div class="hero-card">
+        <span class="hero-tag">សព្វវចនានុក្រមកម្មដ្ឋាន ៤០</span>
+        <h2 class="hero-title">តារាងកម្មដ្ឋានទាំង ៤០ ក្នុងវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១</h2>
+        <p class="hero-desc">
+          ពិនិត្យមើលកម្មដ្ឋាននីមួយៗ កម្រិតឈានខ្ពស់បំផុតដែលអាចសម្រេចបាន និងភាពសមស្របចំពោះចរិតបុគ្គល។
+        </p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-k-filter="all">ទាំងអស់ (៤០)</button>
+        <button class="filter-btn" data-k-filter="kasiṇa">កសិណ (១០)</button>
+        <button class="filter-btn" data-k-filter="asubha">អសុភ (១០)</button>
+        <button class="filter-btn" data-k-filter="anussati">អនុស្សតិ (១០)</button>
+        <button class="filter-btn" data-k-filter="brahmavihara">ព្រហ្មវិហារ (៤)</button>
+        <button class="filter-btn" data-k-filter="arupa">អរូបជ្ឈាន (៤)</button>
+        <button class="filter-btn" data-k-filter="sanna">អាហារេបដិកូលសញ្ញា (១)</button>
+        <button class="filter-btn" data-k-filter="vavatthana">ចតុធាតុវវដ្ឋាន (១)</button>
+      </div>
+
+      <div class="kammatthana-grid" id="kammatthana-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 6. NIVARANA & ANTIDOTES VIEW -->
+    <section id="view-nivarana" class="view-section">
+      <div class="hero-card">
+        <span class="hero-tag">ការកម្ចាត់នីវរណៈ ៥</span>
+        <h2 class="hero-title">ឱសថធម៌ព្យាបាលឧបសគ្គចិត្ត និងការបង្កើតអង្គឈាន</h2>
+        <p class="hero-desc">
+          នីវរណៈទាំង ៥ ជាគ្រឿងរារាំងមិនឲ្យសម្រេចសមាធិ។ វិសុទ្ធិមគ្គបានពន្យល់ពីរបៀបដែលអង្គឈាននីមួយៗកើតឡើងដើម្បីកម្ចាត់ និងជំនួសនីវរណៈនីមួយៗ។
+        </p>
+      </div>
+
+      <div id="nivarana-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- 7. CANONICAL CITATIONS VIEW -->
+    <section id="view-citations" class="view-section">
+      <div class="hero-card">
+        <span class="hero-tag">ឯកសារយោងផ្ទាល់ពីគម្រោងបិដក និងអដ្ឋកថា (Tripitaka-and-Athakatha)</span>
+        <h2 class="hero-title">បណ្តុំគម្ពីរវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស (វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ដល់ ភាគ ៤)</h2>
+        <p class="hero-desc">
+          ទិន្នន័យ និងទ្រឹស្តីទាំងអស់ក្នុងគេហទំព័រនេះ ត្រូវបានដកស្រង់ និងយោងដោយផ្ទាល់ពីឯកសារឌីជីថលនៃគម្ពីរវិសុទ្ធិមគ្គទាំង ៤ ភាគ៖
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon-wrap">📘</div>
+            <div>
+              <div class="card-title">វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១</div><div style="margin-top: 4px;"><a href="https://www.tripitaka82.com/read.html?book=v2" target="_blank" rel="noopener" style="color: var(--gold-primary); text-decoration: none; font-weight: bold;">អានលើ tripitaka82.com ↗</a></div>
+              <div class="card-sub">៦១ ផ្នែក · ៤៣០ ទំព័រ · ៤៨២,៧០៩ តួអក្សរ</div>
+            </div>
+          </div>
+          <div class="card-body">
+            មាតិកាសំខាន់ៗ៖ សមាធិដោយសរុប (p. 3), បលិពោធ ១០ (p. 39), កម្មដ្ឋាន ២ យ៉ាង (p. 62), ចរិយា និងចរិត ៦ (p. 75), កម្មដ្ឋាន ៤០ (p. 115), បឋវីកសិណ (p. 153), ឧគ្គហនិមិត្ត & បដិភាគនិមិត្ត (p. 191), អប្បនាកោសល្យ ១០ (p. 202), បឋមជ្ឈាន (p. 254), វសី ៥ (p. 328), ទុតិយជ្ឈាន ដល់ ចតុត្ថជ្ឈាន (p. 335–395)។
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon-wrap">📗</div>
+            <div>
+              <div class="card-title">វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២</div><div style="margin-top: 4px;"><a href="https://www.tripitaka82.com/read.html?book=v3" target="_blank" rel="noopener" style="color: var(--gold-primary); text-decoration: none; font-weight: bold;">អានលើ tripitaka82.com ↗</a></div>
+              <div class="card-sub">៦៦ ផ្នែក · ៤៣៧ ទំព័រ · ៤៩៩,៧៥៩ តួអក្សរ</div>
+            </div>
+          </div>
+          <div class="card-body">
+            មាតិកាសំខាន់ៗ៖ អសុភកម្មដ្ឋាន ១០ (p. 1–74), ឆអនុស្សតិ (ពុទ្ធានុស្សតិ ធម្មានុស្សតិ សង្ឃានុស្សតិ សីលានុស្សតិ ចាគានុស្សតិ ទេវតានុស្សតិ, p. 75–316), មរណស្សតិ (p. 317–360), កាយគតាសតិ ៣២ កោដ្ឋាស (p. 360–437)។
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon-wrap">📙</div>
+            <div>
+              <div class="card-title">វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣</div><div style="margin-top: 4px;"><a href="https://www.tripitaka82.com/read.html?book=v4" target="_blank" rel="noopener" style="color: var(--gold-primary); text-decoration: none; font-weight: bold;">អានលើ tripitaka82.com ↗</a></div>
+              <div class="card-sub">៥៨ ផ្នែក · ៤០៧ ទំព័រ · ៤៦៨,៦៩៦ តួអក្សរ</div>
+            </div>
+          </div>
+          <div class="card-body">
+            មាតិកាសំខាន់ៗ៖ អានាបានស្សតិ ១៦ ដំណាក់ ៨ វិធី (គណនា, អនុពន្ធនា, ផុសនា, ឋបនា... p. 1–141), ឧបសមានុស្សតិ (p. 142), ព្រហ្មវិហារ ៤ (មេត្តា ករុណា មុទិតា ឧបេក្ខា, p. 152–324), អរូបជ្ឈាន ៤ (p. 325–407)។
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-icon-wrap">📕</div>
+            <div>
+              <div class="card-title">វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤</div><div style="margin-top: 4px;"><a href="https://www.tripitaka82.com/read.html?book=v5" target="_blank" rel="noopener" style="color: var(--gold-primary); text-decoration: none; font-weight: bold;">អានលើ tripitaka82.com ↗</a></div>
+              <div class="card-sub">៦១ ផ្នែក · ៤៨៤ ទំព័រ · ៥៦០,៦២៧ តួអក្សរ</div>
+            </div>
+          </div>
+          <div class="card-body">
+            មាតិកាសំខាន់ៗ៖ អាហារេបដិកូលសញ្ញា (p. 7–46), ចតុធាតុវវដ្ឋាន (p. 47–100), សរុបសមាធិនិទ្ទេស និងអានិសង្ស (p. 100–184), លោកិយអភិញ្ញា ៥ (ឥទ្ធិវិធ ទិព្វសោត ចេតោបរិយៈ បុព្វេនិវាសានុស្សតិ ទិព្វចក្ខុ, p. 185–484)។
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-nav">
+    <button class="mobile-nav-btn active" data-view-target="dashboard">
+      <span class="icon">🏠</span>
+      <span>ទំព័រដើម</span>
+    </button>
+    <button class="mobile-nav-btn" data-view-target="practice">
+      <span class="icon">🧘</span>
+      <span>ភាវនា</span>
+    </button>
+    <button class="mobile-nav-btn" data-view-target="carita">
+      <span class="icon">🔍</span>
+      <span>ចរិត ៦</span>
+    </button>
+    <button class="mobile-nav-btn" data-view-target="curriculum">
+      <span class="icon">🗺</span>
+      <span>ផែនទី</span>
+    </button>
+    <button class="mobile-nav-btn" data-view-target="kammatthana">
+      <span class="icon">📚</span>
+      <span>កម្មដ្ឋាន</span>
+    </button>
+  </nav>
+
+  <!-- Application Logic -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
