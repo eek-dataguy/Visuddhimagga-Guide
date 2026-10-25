@@ -28,8 +28,10 @@ function getTripitakaUrl(refText) {
   else if (refText.includes("ភាគ ៣")) v = "v4";
   else if (refText.includes("ភាគ ៤")) v = "v5";
   else if (refText.includes("សីលនិទ្ទេស")) v = "v1";
+  else if (refText.includes("បញ្ញានិទ្ទេស")) v = "v6";
 
-  const match = refText.match(/ទំព័រ\s*(\d+)/) || refText.match(/p\.\s*(\d+)/);
+  const normalized = refText.replace(/[០-៩]/g, d => '០១២៣៤៥៦៧៨៩'.indexOf(d));
+  const match = normalized.match(/ទំព័រ\s*(\d+)/) || normalized.match(/pp?\.\s*(\d+)/);
   const page = match ? match[1] : null;
   return page 
     ? `https://www.tripitaka82.com/read.html?book=${v}&page=${page}`
@@ -55,6 +57,7 @@ class SamadhiApp {
     this.inhaleSeconds = 4;
     this.holdSeconds = 1;
     this.exhaleSeconds = 4;
+    this.breathTimeouts = [];
 
     // Routine filter
     this.activeRoutinePhase = 'all'; // 'all', 'morning', 'daytime', 'evening'
@@ -158,6 +161,8 @@ class SamadhiApp {
     if (modeBtn) {
       modeBtn.addEventListener('click', () => {
         this.countMode = this.countMode === 'slow' ? 'fast' : 'slow';
+        this.inhaleSeconds = this.countMode === 'slow' ? 4 : 2;
+        this.exhaleSeconds = this.countMode === 'slow' ? 4 : 2;
         modeBtn.textContent = this.countMode === 'slow' 
           ? "វិធីរាប់យឺត (ដូចវាល់អង្ករ)" 
           : "វិធីរាប់លឿន (ដូចគោបាល)";
@@ -166,6 +171,9 @@ class SamadhiApp {
           hint.textContent = this.countMode === 'slow'
             ? "ដកដង្ហើមចូល-ចេញរួចទើបរាប់ ១, ដកដង្ហើមចូល-ចេញរួចរាប់ ២... (រាប់ចន្លោះ ៥ ដល់ ១០)"
             : "ដកចូល ១ ដកចេញ ១, ដកចូល ២ ដកចេញ ២... (រាប់ញាប់តាមចង្វាក់ខ្យល់ប៉ះ)";
+        }
+        if (this.isTimerRunning) {
+          this.startBreathCycle();
         }
       });
     }
@@ -320,6 +328,13 @@ class SamadhiApp {
     display.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
   }
 
+  clearBreathTimeouts() {
+    if (this.breathTimeouts) {
+      this.breathTimeouts.forEach(t => clearTimeout(t));
+      this.breathTimeouts = [];
+    }
+  }
+
   startBreathCycle() {
     this.stopBreathCycle();
     const orb = document.getElementById('breathing-orb');
@@ -334,13 +349,13 @@ class SamadhiApp {
       if (phaseLabel) phaseLabel.textContent = "ដង្ហើមចូល (Inhale)";
       audioEngine.playBreathCue(true);
 
-      setTimeout(() => {
+      const t1 = setTimeout(() => {
         if (!this.isTimerRunning) return;
         // Hold / Pause phase
         this.breathPhase = 'hold';
         if (phaseLabel) phaseLabel.textContent = "តម្កល់សតិ (Awareness)";
 
-        setTimeout(() => {
+        const t2 = setTimeout(() => {
           if (!this.isTimerRunning) return;
           // Exhale phase
           this.breathPhase = 'exhale';
@@ -351,18 +366,21 @@ class SamadhiApp {
           audioEngine.playBreathCue(false);
 
           // Increment count at exhale
-          setTimeout(() => {
+          const t3 = setTimeout(() => {
             if (!this.isTimerRunning) return;
             this.breathCount++;
             if (this.breathCount > this.maxCount) {
               this.breathCount = 1;
             }
             this.updateOrbDisplay();
-          }, (this.exhaleSeconds * 1000) - 200);
+          }, Math.max(100, (this.exhaleSeconds * 1000) - 200));
+          this.breathTimeouts.push(t3);
 
         }, this.holdSeconds * 1000);
+        this.breathTimeouts.push(t2);
 
       }, this.inhaleSeconds * 1000);
+      this.breathTimeouts.push(t1);
     };
 
     cycle();
@@ -372,6 +390,7 @@ class SamadhiApp {
 
   stopBreathCycle() {
     clearInterval(this.breathCycleInterval);
+    this.clearBreathTimeouts();
     const orb = document.getElementById('breathing-orb');
     if (orb) orb.className = 'breathing-orb';
     const phaseLabel = document.getElementById('orb-phase-label');
@@ -894,6 +913,10 @@ class SamadhiApp {
 }
 
 // Initialize on DOM Ready
-document.addEventListener('DOMContentLoaded', () => {
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    window.samadhiApp = new SamadhiApp();
+  });
+} else {
   window.samadhiApp = new SamadhiApp();
-});
+}
