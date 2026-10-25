@@ -1,69 +1,75 @@
 {
   "overview": {
     "titleKh": "បញ្ញានិទ្ទេស៖ នាម និង រូប (ការយល់ដឹងស៊ីជម្រៅ)",
-    "titlePali": "Paññā Niddesa: Nāma & Rūpa",
+    "titlePali": "បញ្ញានិទ្ទេស៖ នាម និង រូប",
     "canonicalPurpose": "ការកម្ចាត់បង់នូវសក្កាយទិដ្ឋិ និងអវិជ្ជា ដោយញែកឱ្យឃើញច្បាស់នូវរូបធម៌ (សភាពមិនដឹងអារម្មណ៍) និងនាមធម៌ (សភាពដឹងអារម្មណ៍) តាមសភាវៈពិត (ទិដ្ឋិវិសុទ្ធិ) ដើម្បីចាក់ធ្លុះត្រៃលក្ខណ៍ និងសម្រេចអរិយមគ្គ។",
     "paliMotto": "សីលេ បតិដ្ឋាយ នរោ សបញ្ញោ ចិត្តំ បញ្ញញ្ច ភាវយំ... នាមរូបវវដ្ឋានំ ទិដ្ឋិវិសុទ្ធិ។",
     "lakkhanaCatukka": {
       "lakkhana": {
-        "pali": "Dhammasabhāvapaṭivedha-lakkhaṇā",
+        "pali": "ធម្មសភាវបដិវេធលក្ខណា",
         "khmer": "មានការចាក់ធ្លុះនូវសភាវធម៌ពិត (អនិច្ចំ ទុក្ខំ អនត្តា) ជាលក្ខណៈ"
       },
       "rasa": {
-        "pali": "Visayobhāsana-rasā / Moha-andhakāraviddhaṃsana-rasā",
+        "pali": "វិសយោភាសនរសា / មោហន្ធការវិទ្ធំសនរសា",
         "khmer": "មានការបំភ្លឺអារម្មណ៍ឱ្យច្បាស់ ឬបំផ្លាញនូវងងឹតគឺមោហៈ (អវិជ្ជា) ជាកិច្ច"
       },
       "paccupatthana": {
-        "pali": "Asammoha-paccupaṭṭhānā",
+        "pali": "អសម្មោហបច្ចុបដ្ឋានា",
         "khmer": "មានការមិនវង្វេងភាន់ច្រឡំក្នុងសភាវធម៌ ជាផលលេចឡើងក្នុងចិត្ត"
       },
       "padatthana": {
-        "pali": "Samādhi-padaṭṭhānā",
+        "pali": "សមាធិបទដ្ឋានា",
         "khmer": "មានសមាធិ (ចិត្តស្ងប់នឹងនរជាឯកគ្គតា) ជាហេតុជិតស្និទ្ធបំផុតឱ្យកើតឡើង"
       }
     },
     "coinSimile": {
-      "title": "ឧបមាកាក់ប្រាក់ ៣ កម្រិត (The Coin Simile)",
-      "sanna": "សញ្ញា (Perception) ដូចក្មេងមិនដឹងក្តី ស្គាល់ត្រឹមពណ៌ខៀវក្រហម មូលជ្រុង តែមិនដឹងថាកាក់ចាយបានឬអត់",
-      "vinnana": "វិញ្ញាណ (Consciousness) ដូចអ្នកស្រុកធម្មតា ដឹងថាកាក់ចាយទិញទំនិញបាន តែមិនដឹងលោហធាតុពិតឬក្លែងក្លាយ",
-      "panna": "បញ្ញា (Wisdom) ដូចអ្នកជំនាញកាត់ប្រាក់ (Hiraññaka) ពិនិត្យដឹងទាំងតម្លៃ លោហធាតុ ទីកន្លែងស្ល និងចាក់ធ្លុះដល់សច្ចធម៌"
+      "title": "ឧបមាកាក់ប្រាក់ ៣ កម្រិត",
+      "sanna": "សញ្ញា ដូចក្មេងមិនដឹងក្តី ស្គាល់ត្រឹមពណ៌ខៀវក្រហម មូលជ្រុង តែមិនដឹងថាកាក់ចាយបានឬអត់",
+      "vinnana": "វិញ្ញាណ ដូចអ្នកស្រុកធម្មតា ដឹងថាកាក់ចាយទិញទំនិញបាន តែមិនដឹងលោហធាតុពិតឬក្លែងក្លាយ",
+      "panna": "បញ្ញា ដូចអ្នកជំនាញកាត់ប្រាក់ (ហិរញ្ញកៈ) ពិនិត្យដឹងទាំងតម្លៃ លោហធាតុ ទីកន្លែងស្ល និងចាក់ធ្លុះដល់សច្ចធម៌"
     },
     "bhumi6": [
       {
         "number": 1,
-        "namePali": "Pañcakkhandhā",
+        "namePali": "បញ្ចក្ខន្ធ",
         "nameKh": "ខន្ធ ៥",
-        "desc": "រូបក្ខន្ធ, វេទនាក្ខន្ធ, សញ្ញាក្ខន្ធ, សង្ខារក្ខន្ធ, វិញ្ញាណក្ខន្ធ"
+        "desc": "រូបក្ខន្ធ, វេទនាក្ខន្ធ, សញ្ញាក្ខន្ធ, សង្ខារក្ខន្ធ, វិញ្ញាណក្ខន្ធ",
+        "namePaliKhmer": "បញ្ចក្ខន្ធ"
       },
       {
         "number": 2,
-        "namePali": "Dvādasāyatanāni",
+        "namePali": "ទ្វាទសាយតនៈ",
         "nameKh": "អាយតនៈ ១២",
-        "desc": "អាយតនៈខាងក្នុង ៦ (ភ្នែក ត្រចៀក ច្រមុះ អណ្តាត កាយ ចិត្ត) + អាយតនៈខាងក្រៅ ៦ (រូប សំឡេង ក្លិន រស ពាល់ត្រូវ ធម្មារម្មណ៍)"
+        "desc": "អាយតនៈខាងក្នុង ៦ (ភ្នែក ត្រចៀក ច្រមុះ អណ្តាត កាយ ចិត្ត) + អាយតនៈខាងក្រៅ ៦ (រូប សំឡេង ក្លិន រស ពាល់ត្រូវ ធម្មារម្មណ៍)",
+        "namePaliKhmer": "ទ្វាទសាយតនៈ"
       },
       {
         "number": 3,
-        "namePali": "Aṭṭhārasa Dhātuyo",
+        "namePali": "អដ្ឋារសធាតុ",
         "nameKh": "ធាតុ ១៨",
-        "desc": "ទ្វារ ៦, អារម្មណ៍ ៦, និងវិញ្ញាណ ៦ ដែលជាដំណើរដឹងអារម្មណ៍នៃលោកធាតុ"
+        "desc": "ទ្វារ ៦, អារម្មណ៍ ៦, និងវិញ្ញាណ ៦ ដែលជាដំណើរដឹងអារម្មណ៍នៃលោកធាតុ",
+        "namePaliKhmer": "អដ្ឋារសធាតុ"
       },
       {
         "number": 4,
-        "namePali": "Bāvīsatindriyāni",
+        "namePali": "ពាវីសតិន្ទ្រិយៈ",
         "nameKh": "ឥន្ទ្រិយ ២២",
-        "desc": "ធម្មជាតិជាធំក្នុងការគ្រប់គ្រង (ទ្វារ ៦, ភេទ ២, ជីវិត ១, វេទនា ៥, សទ្ធា-វិរិយ-សតិ-សមាធិ-បញ្ញា ៥, លោកុត្តរិន្ទ្រិយ ៣)"
+        "desc": "ធម្មជាតិជាធំក្នុងការគ្រប់គ្រង (ទ្វារ ៦, ភេទ ២, ជីវិត ១, វេទនា ៥, សទ្ធា-វិរិយ-សតិ-សមាធិ-បញ្ញា ៥, លោកុត្តរិន្ទ្រិយ ៣)",
+        "namePaliKhmer": "ពាវីសតិន្ទ្រិយៈ"
       },
       {
         "number": 5,
-        "namePali": "Cattāri Ariyasaccāni",
+        "namePali": "ចត្តារិ អរិយសច្ចានិ",
         "nameKh": "អរិយសច្ច ៤",
-        "desc": "ទុក្ខសច្ច (ខន្ធ ៥), សមុទយសច្ច (តណ្ហា), និរោធសច្ច (និព្វាន), មគ្គសច្ច (អដ្ឋង្គិកមគ្គ)"
+        "desc": "ទុក្ខសច្ច (ខន្ធ ៥), សមុទយសច្ច (តណ្ហា), និរោធសច្ច (និព្វាន), មគ្គសច្ច (អដ្ឋង្គិកមគ្គ)",
+        "namePaliKhmer": "ចត្តារិ អរិយសច្ចានិ"
       },
       {
         "number": 6,
-        "namePali": "Dvādasa Paṭiccasamuppādāṅgāni",
+        "namePali": "ទ្វាទស បដិច្ចសមុប្បាទង្គ",
         "nameKh": "បដិច្ចសមុប្បាទ ១២",
-        "desc": "ខ្សែច្រវាក់នៃហេតុផល ១២ តាំងពីអវិជ្ជា រហូតដល់ជរាមរណៈ និងបច្ច័យ ២៤"
+        "desc": "ខ្សែច្រវាក់នៃហេតុផល ១២ តាំងពីអវិជ្ជា រហូតដល់ជរាមរណៈ និងបច្ច័យ ២៤",
+        "namePaliKhmer": "ទ្វាទស បដិច្ចសមុប្បាទង្គ"
       }
     ]
   },
@@ -80,8 +86,8 @@
         "dailyAnchor": "ពេលជើងជាន់ដី ពេលអង្គុយប៉ះកម្រាល ដឹងថាសភាពរឹងទន់នេះជាបឋវីធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 16,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១៦–១៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=16"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%94%E1%9E%8B%E1%9E%9C%E1%9E%B8%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       },
       {
         "namePaliKhmer": "អាបោធាតុ",
@@ -93,8 +99,8 @@
         "dailyAnchor": "ពេលបែកញើស ទឹកមាត់ ឈាមរត់ ដឹងថាសភាពស្អិតរាវនេះជាអាបោធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 18,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១៨–២០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=18"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%A2%E1%9E%B6%E1%9E%94%E1%9F%84%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       },
       {
         "namePaliKhmer": "តេជោធាតុ",
@@ -106,8 +112,8 @@
         "dailyAnchor": "ពេលប៉ះកម្តៅថ្ងៃ ពេលត្រជាក់រងារ ដឹងថាកម្តៅត្រជាក់នេះជាតេជោធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 20,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ២០–២២",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=20"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%8F%E1%9F%81%E1%9E%87%E1%9F%84%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       },
       {
         "namePaliKhmer": "វាយោធាតុ",
@@ -119,8 +125,8 @@
         "dailyAnchor": "ពេលដកដង្ហើមចេញចូល ពេលឈានជើងដើរ ដឹងថាកម្លាំងរុញនេះជាវាយោធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 22,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ២២–២៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=22"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%9C%E1%9E%B6%E1%9E%99%E1%9F%84%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       }
     ],
     "upadarupa24": [
@@ -135,8 +141,8 @@
         "namePaliKhmer": "ចក្ខុបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 25,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 25",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=25"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%85%E1%9E%80%E1%9F%92%E1%9E%81%E1%9E%BB%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%97%E1%9F%92%E1%9E%93%E1%9F%82%E1%9E%80)"
       },
       {
         "id": 6,
@@ -149,8 +155,8 @@
         "namePaliKhmer": "សោតបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 25,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 25",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=25"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9F%E1%9F%84%E1%9E%8F%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%85%E1%9F%80%E1%9E%80)"
       },
       {
         "id": 7,
@@ -163,8 +169,8 @@
         "namePaliKhmer": "ឃានបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 25,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 25",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=25"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%83%E1%9E%B6%E1%9E%93%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%85%E1%9F%92%E1%9E%9A%E1%9E%98%E1%9E%BB%E1%9F%87)"
       },
       {
         "id": 8,
@@ -177,8 +183,8 @@
         "namePaliKhmer": "ជីវ្ហាបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 26,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 26",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=26"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9F%92%E1%9E%A0%E1%9E%B6%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%A2%E1%9E%8E%E1%9F%92%E1%9E%8F%E1%9E%B6%E1%9E%8F)"
       },
       {
         "id": 9,
@@ -191,8 +197,8 @@
         "namePaliKhmer": "កាយបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 26,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 26",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=26"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%80%E1%9E%B6%E1%9E%99%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%9F%E1%9F%92%E1%9E%94%E1%9F%82%E1%9E%80%E1%9E%80%E1%9E%B6%E1%9E%99)"
       },
       {
         "id": 10,
@@ -205,8 +211,8 @@
         "namePaliKhmer": "រូបារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 27,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 27",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=27"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%96%E1%9E%8E%E1%9F%8C%2F%E1%9E%96%E1%9E%93%E1%9F%92%E1%9E%9B%E1%9E%BA)"
       },
       {
         "id": 11,
@@ -219,8 +225,8 @@
         "namePaliKhmer": "សទ្ទារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 27,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 27",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=27"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9F%E1%9E%91%E1%9F%92%E1%9E%91%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%9F%E1%9F%86%E1%9E%A1%E1%9F%81%E1%9E%84)"
       },
       {
         "id": 12,
@@ -233,8 +239,8 @@
         "namePaliKhmer": "គន្ធារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 27,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 27",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=27"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%82%E1%9E%93%E1%9F%92%E1%9E%92%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%80%E1%9F%92%E1%9E%9B%E1%9E%B7%E1%9E%93)"
       },
       {
         "id": 13,
@@ -247,8 +253,8 @@
         "namePaliKhmer": "រសារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 28,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 28",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=28"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%9F%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7)"
       },
       {
         "id": 14,
@@ -261,8 +267,8 @@
         "namePaliKhmer": "ឥត្ថីភាវរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 28,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 28",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=28"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A5%E1%9E%8F%E1%9F%92%E1%9E%90%E1%9E%B8%E1%9E%97%E1%9E%B6%E1%9E%9C%E1%9E%9A%E1%9E%BC%E1%9E%94"
       },
       {
         "id": 15,
@@ -275,8 +281,8 @@
         "namePaliKhmer": "បុរិសភាវរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 29,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 29",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=29"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%94%E1%9E%BB%E1%9E%9A%E1%9E%B7%E1%9E%9F%E1%9E%97%E1%9E%B6%E1%9E%9C%E1%9E%9A%E1%9E%BC%E1%9E%94"
       },
       {
         "id": 16,
@@ -289,8 +295,8 @@
         "namePaliKhmer": "ហទយវត្ថុ",
         "tripitakaVol": "v6",
         "tripitakaPage": 29,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 29",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=29"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A0%E1%9E%91%E1%9E%99%E1%9E%9C%E1%9E%8F%E1%9F%92%E1%9E%90%E1%9E%BB%20(%E1%9E%94%E1%9F%81%E1%9F%87%E1%9E%8A%E1%9E%BC%E1%9E%84)"
       },
       {
         "id": 17,
@@ -303,8 +309,8 @@
         "namePaliKhmer": "ជីវិតិន្ទ្រិយរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 29,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 29",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=29"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9E%B7%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%92%E1%9E%91%E1%9F%92%E1%9E%9A%E1%9E%B7%E1%9E%99%E1%9E%9A%E1%9E%BC%E1%9E%94"
       },
       {
         "id": 18,
@@ -317,8 +323,8 @@
         "namePaliKhmer": "ឱជារូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 30,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 30",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=30"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%B1%E1%9E%87%E1%9E%B6%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%A0%E1%9E%B6%E1%9E%9A)"
       },
       {
         "id": 19,
@@ -331,8 +337,8 @@
         "namePaliKhmer": "អាកាសធាតុ",
         "tripitakaVol": "v6",
         "tripitakaPage": 30,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 30",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=30"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A2%E1%9E%B6%E1%9E%80%E1%9E%B6%E1%9E%9F%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB%20(%E1%9E%85%E1%9E%93%E1%9F%92%E1%9E%9B%E1%9F%84%E1%9F%87%E1%9E%91%E1%9E%91%E1%9F%81)"
       },
       {
         "id": 20,
@@ -345,8 +351,8 @@
         "namePaliKhmer": "កាយវិញ្ញត្តិ",
         "tripitakaVol": "v6",
         "tripitakaPage": 31,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 31",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=31"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%80%E1%9E%B6%E1%9E%99%E1%9E%9C%E1%9E%B7%E1%9E%89%E1%9F%92%E1%9E%89%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9E%B7"
       },
       {
         "id": 21,
@@ -359,8 +365,8 @@
         "namePaliKhmer": "វចីវិញ្ញត្តិ",
         "tripitakaVol": "v6",
         "tripitakaPage": 31,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 31",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=31"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9C%E1%9E%85%E1%9E%B8%E1%9E%9C%E1%9E%B7%E1%9E%89%E1%9F%92%E1%9E%89%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9E%B7"
       },
       {
         "id": 22,
@@ -373,8 +379,8 @@
         "namePaliKhmer": "រូបស្ស លဟုតា",
         "tripitakaVol": "v6",
         "tripitakaPage": 31,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 31",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=31"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%9F%E1%9F%92%E1%9E%9F%20%E1%9E%9B%E1%80%9F%E1%80%AF%E1%9E%8F%E1%9E%B6%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%9F%E1%9F%92%E1%9E%9A%E1%9E%B6%E1%9E%9B)"
       },
       {
         "id": 23,
@@ -387,8 +393,8 @@
         "namePaliKhmer": "រូបស្ស មុទុតា",
         "tripitakaVol": "v6",
         "tripitakaPage": 32,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 32",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=32"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%9F%E1%9F%92%E1%9E%9F%20%E1%9E%98%E1%9E%BB%E1%9E%91%E1%9E%BB%E1%9E%8F%E1%9E%B6%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%91%E1%9E%93%E1%9F%8B)"
       },
       {
         "id": 24,
@@ -401,8 +407,8 @@
         "namePaliKhmer": "រូបស្ស កម្មញ្ញតា",
         "tripitakaVol": "v6",
         "tripitakaPage": 32,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 32",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=32"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%9F%E1%9F%92%E1%9E%9F%20%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%89%E1%9F%92%E1%9E%89%E1%9E%8F%E1%9E%B6%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%82%E1%9E%BD%E1%9E%9A%E1%9E%8A%E1%9E%9B%E1%9F%8B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%84%E1%9E%B6%E1%9E%9A)"
       },
       {
         "id": 25,
@@ -415,8 +421,8 @@
         "namePaliKhmer": "ឧបច័យរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 33,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 33",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=33"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A7%E1%9E%94%E1%9E%85%E1%9F%90%E1%9E%99%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%80%E1%9E%80%E1%9E%BE%E1%9E%8F%E1%9E%8A%E1%9F%86%E1%9E%94%E1%9E%BC%E1%9E%84)"
       },
       {
         "id": 26,
@@ -429,8 +435,8 @@
         "namePaliKhmer": "សន្តតិរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 33,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 33",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=33"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9F%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9E%8F%E1%9E%B7%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%94%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9E%94%E1%9E%93%E1%9F%92%E1%9E%91%E1%9E%B6%E1%9E%94%E1%9F%8B)"
       },
       {
         "id": 27,
@@ -443,8 +449,8 @@
         "namePaliKhmer": "ជរតារូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 33,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 33",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=33"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%87%E1%9E%9A%E1%9E%8F%E1%9E%B6%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%91%E1%9F%92%E1%9E%9A%E1%9E%BB%E1%9E%8C%E1%9E%91%E1%9F%92%E1%9E%9A%E1%9F%84%E1%9E%98)"
       },
       {
         "id": 28,
@@ -457,38 +463,50 @@
         "namePaliKhmer": "អនិច្ចតារូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 34,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 34",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=34"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A2%E1%9E%93%E1%9E%B7%E1%9E%85%E1%9F%92%E1%9E%85%E1%9E%8F%E1%9E%B6%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%94%E1%9F%82%E1%9E%80%E1%9E%92%E1%9F%92%E1%9E%9B%E1%9E%B6%E1%9E%99%E1%9E%9F%E1%9F%92%E1%9E%9B%E1%9E%B6%E1%9E%94%E1%9F%8B)"
       }
     ],
     "samutthana4": [
       {
         "id": "kamma",
         "nameKh": "កម្មសមុដ្ឋានរូប",
-        "namePali": "Kamma-samuṭṭhāna-rūpa",
+        "namePaliKhmer": "កម្មសមុដ្ឋានរូប",
+        "namePali": "កម្មសមុដ្ឋានរូប",
         "cause": "អំពើចេតនាក្នុងអតីតជាតិ (កុសល ឬអកុសល)",
-        "producedRupa": "បសាទរូប ៥, ភាវរូប ២, ហទយវត្ថុ ១, ជីវិតរូប ១ (រូប ៩ នេះកើតពីកម្មសុទ្ធ)"
+        "producedRupa": "បសាទរូប ៥, ភាវរូប ២, ហទយវត្ថុ ១, ជីវិតរូប ១ (រូប ៩ នេះកើតពីកម្មសុទ្ធ)",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=124"
       },
       {
         "id": "citta",
         "nameKh": "ចិត្តសមុដ្ឋានរូប",
-        "namePali": "Citta-samuṭṭhāna-rūpa",
+        "namePaliKhmer": "ចិត្តសមុដ្ឋានរូប",
+        "namePali": "ចិត្តសមុដ្ឋានរូប",
         "cause": "គំនិត និងចេតនាបច្ចុប្បន្ន (ចិត្ត និងចេតសិក)",
-        "producedRupa": "ដង្ហើមចេញចូល, ឥរិយាបថទាំង ៤ (ដើរ ឈរ អង្គុយ ដេក), វិញ្ញត្តិរូប ២ (កាយវិញ្ញត្តិ វចីវិញ្ញត្តិ)"
+        "producedRupa": "ដង្ហើមចេញចូល, ឥរិយាបថទាំង ៤ (ដើរ ឈរ អង្គុយ ដេក), វិញ្ញត្តិរូប ២ (កាយវិញ្ញត្តិ វចីវិញ្ញត្តិ)",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=124"
       },
       {
         "id": "utu",
         "nameKh": "ឧតុសមុដ្ឋានរូប",
-        "namePali": "Utu-samuṭṭhāna-rūpa",
+        "namePaliKhmer": "ឧតុសមុដ្ឋានរូប",
+        "namePali": "ឧតុសមុដ្ឋានរូប",
         "cause": "តេជោធាតុ (កម្តៅ និងភាពត្រជាក់)",
-        "producedRupa": "សរីរាង្គកាយខាងក្រៅ, ពិភពធម្មជាតិ, ភ្នំ, ទឹក, ដើមឈើ, របស់របរប្រើប្រាស់"
+        "producedRupa": "សរីរាង្គកាយខាងក្រៅ, ពិភពធម្មជាតិ, ភ្នំ, ទឹក, ដើមឈើ, របស់របរប្រើប្រាស់",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=125"
       },
       {
         "id": "ahara",
         "nameKh": "អាហារសមុដ្ឋានរូប",
-        "namePali": "Āhāra-samuṭṭhāna-rūpa",
+        "namePaliKhmer": "អាហារសមុដ្ឋានរូប",
+        "namePali": "អាហារសមុដ្ឋានរូប",
         "cause": "ឱជា (ជីវជាតិ) នៃអាហារដែលបរិភោគចូលទៅ",
-        "producedRupa": "កោសិកាថ្មីៗដែលលូតលាស់, សាច់ឈាមរឹងមាំ, ការទ្រទ្រង់កម្លាំងពលំ"
+        "producedRupa": "កោសិកាថ្មីៗដែលលូតលាស់, សាច់ឈាមរឹងមាំ, ការទ្រទ្រង់កម្លាំងពលំ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៦",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=126"
       }
     ]
   },
@@ -504,8 +522,8 @@
         "namePaliKhmer": "វេទនាក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 41,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 41",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=41"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ២០០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100586&page=200"
       },
       {
         "id": "sanna",
@@ -516,8 +534,8 @@
         "namePaliKhmer": "សញ្ញាក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 46,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 46",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=46"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ២១០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100588&page=210"
       },
       {
         "id": "sankhara",
@@ -528,8 +546,8 @@
         "namePaliKhmer": "សង្ខារក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 51,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 51",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=51"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ២១៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100590&page=214"
       },
       {
         "id": "vinnana",
@@ -540,8 +558,8 @@
         "namePaliKhmer": "វិញ្ញាណក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 56,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 56",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=56"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ១៣៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100584&page=135"
       }
     ],
     "citta89": {
@@ -564,8 +582,8 @@
       ],
       "tripitakaVol": "v6",
       "tripitakaPage": 55,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ៥៥–៦៥",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=55"
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ១៣៥–២០០",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100584&page=135"
     },
     "cetasika52": {
       "summary": "ចេតសិក ៥២ កើតរួម រលត់រួម មានអារម្មណ៍ដូចចិត្ត និងអាស្រ័យវត្ថុដូចចិត្ត។",
@@ -589,8 +607,8 @@
       ],
       "tripitakaVol": "v6",
       "tripitakaPage": 68,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ៦៨–៩៥",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=68"
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ២១៤–២៦៩",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100590&page=214"
     }
   },
   "similes": [
@@ -601,12 +619,12 @@
       "story": "បុរសខ្វាក់ភ្នែកពីកំណើតម្នាក់មានកម្លាំងជើងដើរផ្លូវឆ្ងាយបាន តែមើលផ្លូវមិនឃើញ។ បុរសខ្វិនជើងម្នាក់ទៀតភ្នែកភ្លឺច្បាស់ មើលឃើញផ្លូវកាត់ ថ្លុក ជ្រោះ តែគ្មានជើងដើរ។ អ្នកទាំងពីរបានព្រមព្រៀងគ្នា៖ បុរសខ្វិនឡើងជិះលើស្មាបុរសខ្វាក់ ហើយប្រាប់ផ្លូវ 'បត់ឆ្វេង បត់ស្តាំ ដើរត្រង់' រីឯបុរសខ្វាក់ប្រើកម្លាំងជើងដើរតាមបញ្ជា។ ដោយសារការសហការគ្នានេះ អ្នកទាំងពីរក៏បានទៅដល់គោលដៅដោយសុវត្ថិភាព។",
       "rupaRepresentation": "រូបធម៌ ប្រៀបដូចជា បុរសខ្វាក់៖ មានកម្លាំងដើរ ឈរ អង្គុយ ដេក តែគ្មានចិត្តដឹងអារម្មណ៍ មិនដឹងផ្លូវខុសត្រូវ។",
       "namaRepresentation": "នាមធម៌ ប្រៀបដូចជា បុរសខ្វិន៖ ភ្នែកភ្លឺថ្លា ដឹងអារម្មណ៍ ចង់ដើរ ចង់និយាយ តែគ្មានជើងសាច់ឈាមដើរដោយខ្លួនឯងបាន។",
-      "moral": "រូបគ្មានចិត្តដឹង នាមគ្មានកាយរើបំរះ។ ពេលចិត្តចង់ដើរ ខ្យល់ចិត្តសមុដ្ឋានក៏រុញកាយឱ្យឈានទៅ។ រូបនិងនាមអាស្រ័យគ្នាទៅវិញទៅមក (Aññamaññanissitā) គ្មានព្រលឹងអាត្មា ឬព្រះអាទិទេពណាមកបង្កើតឡើយ។",
+      "moral": "រូបគ្មានចិត្តដឹង នាមគ្មានកាយរើបំរះ។ ពេលចិត្តចង់ដើរ ខ្យល់ចិត្តសមុដ្ឋានក៏រុញកាយឱ្យឈានទៅ។ រូបនិងនាមអាស្រ័យគ្នាទៅវិញទៅមក (អញ្ញមញ្ញនិស្សិតា) គ្មានព្រលឹងអាត្មា ឬព្រះអាទិទេពណាមកបង្កើតឡើយ។",
       "visualizationKey": "ស្រមៃឃើញបុរសខ្វិនជិះលើស្មាបុរសខ្វាក់៖ កាយជាអ្នកដើរ ចិត្តជាអ្នកបញ្ជា តែគ្មាននរណាម្នាក់ជាម្ចាស់ឯករាជ្យឡើយ។",
-      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិនិទ្ទេស ភាគ ២ ទំព័រ ៤១៨ (Book 89 / v7)",
-      "paliKhmer": "ជច្ចន្ធ-បីឋសប្បិ ឧបមា",
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤១៨",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=418"
+      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤១៨",
+      "paliKhmer": "អន្ធពធិរោបមា",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤១៨",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=418"
     },
     {
       "id": "wooden_puppet",
@@ -617,10 +635,10 @@
       "namaRepresentation": "ចិត្ត និងចេតនា ប្រៀបដូចជា អ្នកលេងអាយ៉ង; ខ្យល់កើតអំពីចិត្ត ប្រៀបដូចជា ខ្សែទាញសរសៃកាយ។",
       "moral": "ពេលចិត្តគិតចង់លើកដៃ ខ្យល់ចិត្តសមុដ្ឋានក៏រត់ទៅទាញសរសៃពួរ ដៃក៏លើកឡើង។ គ្មាន 'ខ្ញុំ' លើកដៃទេ គឺមានតែចលនានៃខ្យល់ និងសរសៃដែលរុញដោយកម្លាំងចិត្តប៉ុណ្ណោះ។",
       "visualizationKey": "ស្រមៃឃើញរូបអាយ៉ងឈើដែលគ្មានព្រលឹង គ្រាន់តែរាំតាមខ្សែទាញនៃចិត្ត។",
-      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិនិទ្ទេស ភាគ ២ ទំព័រ ៤២០ (Book 89 / v7)",
-      "paliKhmer": "ទារុយន្ត ឧបមា",
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤២០",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=420"
+      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២០",
+      "paliKhmer": "នាវាយន្តោបមា",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២០",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=420"
     },
     {
       "id": "chariot_parts",
@@ -631,10 +649,10 @@
       "namaRepresentation": "ការបររថ ការបញ្ជាទិសដៅ ប្រៀបដូចជា នាមក្ខន្ធ (វេទនា សញ្ញា សង្ខារ វិញ្ញាណ)។",
       "moral": "បើដោះកង់ ដោះដុំ ដោះទ្រុងចេញ ពាក្យថារថនឹងរលាយបាត់សូន្យ។ ដូចគ្នានេះដែរ បើញែកខន្ធ ៥ នាម និងរូបចេញ តើ 'ខ្លួនខ្ញុំ' នៅឯណា? គ្មានខ្ញុំ គ្មានមនុស្សឡើយ មានតែការប្រជុំគ្នានៃធម៌សុទ្ធសាធ! (ទិដ្ឋិវិសុទ្ធិ)",
       "visualizationKey": "ស្រមៃឃើញរថមួយត្រូវគេដោះគ្រឿងបន្លាស់ចេញម្តងមួយៗ រហូតលែងសល់ពាក្យថារថ។",
-      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិនិទ្ទេស ភាគ ២ ទំព័រ ៤២៣ (Book 89 / v7) & សំយុត្តនិកាយ វជិរាសូត្រ",
-      "paliKhmer": "រថស្ស អង្គានិ ឧបមា",
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤២៣",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=423"
+      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២៣",
+      "paliKhmer": "នឡកលាបោបមា",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២៣",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=423"
     }
   ],
   "vipassanaSteps": [
@@ -647,8 +665,8 @@
       "insight": "ការប៉ះទង្គិចជាទ្វារដំបូងដែលបង្ហាញនូវវត្តមាននៃសភាវធម៌ពិតក្នុងបច្ចុប្បន្នខណៈ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 401,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 401",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=401",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤០១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100664&page=401",
       "paliKhmer": "ផស្សសម្ផុល្ល (ផស្សៈដឹងការប៉ះ)"
     },
     {
@@ -660,8 +678,8 @@
       "insight": "រូបកាយនេះជារូបធម៌សុទ្ធសាធ គ្មានវិញ្ញាណខាងក្នុងដុំសាច់ឡើយ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 407,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 407",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=407",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421",
       "paliKhmer": "រូបំ រុប្បតីតិ ន ជានាតិ (រូបធម៌មិនដឹងអារម្មណ៍)"
     },
     {
@@ -673,21 +691,21 @@
       "insight": "ចិត្ត និងចេតសិកជានាមធម៌ គ្រាន់តែជាអ្នកដឹង មិនមែនជារូបកាយឡើយ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 413,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 413",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=413",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤១៨",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=418",
       "paliKhmer": "នាមំ អារម្មណំ នមតិ (នាមបង្អោនទៅកាន់អារម្មណ៍)"
     },
     {
       "step": 4,
       "titleKh": "ជំហានទី ៤៖ ពិចារណាការអាស្រ័យគ្នាទៅវិញទៅមក",
       "instruction": "ពិចារណាថា បើគ្មានកាយប៉ះកម្រាល (គ្មានរូប) តើចិត្តដឹងអាចកើតបានទេ? បើគ្មានចិត្តដឹង (គ្មាននាម) តើកាយនេះខុសពីសាកសពទេ?",
-      "notice": "រូប និងនាម អាស្រ័យគ្នាដូច បុរសខ្វាក់ និងបុរសខ្វិន ឬដូចដើមត្រែងពីរដើមដែលផ្អែកគ្នាឈរ (Naḷakalāpī)។",
+      "notice": "រូប និងនាម អាស្រ័យគ្នាដូច បុរសខ្វាក់ និងបុរសខ្វិន ឬដូចដើមត្រែងពីរដើមដែលផ្អែកគ្នាឈរ (នឡកលាបី)។",
       "paliAnchor": "អញ្ញមញ្ញបច្ចយេន បច្ចយា (អាស្រ័យគ្នាទៅវិញទៅមក)",
       "insight": "ជីវិតដំណើរការទៅបានដោយសារការផ្គុំគ្នានៃរូបនិងនាម គ្មានអ្នកណាជាម្ចាស់ឯករាជ្យឡើយ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 419,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 419",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=419",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤៥៧",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100672&page=457",
       "paliKhmer": "អញ្ញមញ្ញបច្ចយេន បច្ចយា (អាស្រ័យគ្នាទៅវិញទៅមក)"
     },
     {
@@ -699,8 +717,8 @@
       "insight": "ទិដ្ឋិវិសុទ្ធិកើតឡើង កម្ចាត់បង់នូវសក្កាយទិដ្ឋិ ចិត្តមានសេរីភាព រំដោះចាកការជាប់ជំពាក់។",
       "tripitakaVol": "v7",
       "tripitakaPage": 425,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 425",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=425",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៨ (ក្បាល ៩០) ទំព័រ ១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v8&id=100674&page=1",
       "paliKhmer": "សព្វេ ធម្មា អនត្តា (ធម៌ទាំងពួងជាអនត្តា)"
     }
   ],
@@ -709,31 +727,41 @@
       "portal": "ទ្វារខ្យល់ដង្ហើមចេញចូល",
       "rupa": "ខ្យល់ដង្ហើមប៉ះមាត់ច្រមុះ (វាយោធាតុ & ផោដ្ឋព្វរូប)",
       "nama": "សតិ និងចិត្តដែលដឹងដង្ហើមចូល-ចេញ (វិញ្ញាណក្ខន្ធ)",
-      "mantra": "ដង្ហើមជារូប ចិត្តដឹងជានាម កើតហើយរលត់ គ្មានខ្ញុំដកដង្ហើមទេ"
+      "mantra": "ដង្ហើមជារូប ចិត្តដឹងជានាម កើតហើយរលត់ គ្មានខ្ញុំដកដង្ហើមទេ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារសូរសំឡេង",
       "rupa": "រលកសូរ (សទ្ទរូប) ប៉ះប្រហោងត្រចៀក (សោតបសាទ)",
       "nama": "សោតវិញ្ញាណ និងសញ្ញាដែលដឹង និងស្គាល់សំឡេង",
-      "mantra": "សំឡេងជារូប ការឮជានាម កើតហើយរលត់ កុំខឹងកុំត្រេកអរ"
+      "mantra": "សំឡេងជារូប ការឮជានាម កើតហើយរលត់ កុំខឹងកុំត្រេកអរ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារការឈានជើងដើរចង្ក្រម",
       "rupa": "ចលនាជើង និងការប៉ះផ្ទៃដី (វាយោធាតុ & បឋវីធាតុ)",
       "nama": "ចេតនានាំឱ្យបោះជំហាន និងចិត្តដឹងការឈានជើង",
-      "mantra": "ដូចរូបអាយ៉ងឈើ ចិត្តគិតចង់ដើរ ខ្យល់ក៏រុញជើងឱ្យឈានទៅ"
+      "mantra": "ដូចរូបអាយ៉ងឈើ ចិត្តគិតចង់ដើរ ខ្យល់ក៏រុញជើងឱ្យឈានទៅ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារការបរិភោគអាហារ",
       "rupa": "បាយទឹក និងរសជាតិផ្អែមប្រៃ (រូបារម្មណ៍ រសារម្មណ៍ ឱជា)",
       "nama": "ចិត្តចង់ញ៉ាំ ជីវ្ហាវិញ្ញាណ និងវេទនាសោយរសឆ្ងាញ់",
-      "mantra": "អាហារចិញ្ចឹមកាយជារូប ចិត្តដឹងរសជានាម បរិភោគដើម្បីបំពេញធម៌"
+      "mantra": "អាហារចិញ្ចឹមកាយជារូប ចិត្តដឹងរសជានាម បរិភោគដើម្បីបំពេញធម៌",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារពេលកើតកំហឹង ឬទោមនស្ស",
       "rupa": "បេះដូងលោតញាប់ កម្តៅភាយលើមុខ (តេជោធាតុ)",
       "nama": "ទោសចេតសិក និងទោមនស្សវេទនា (អកុសលនាមធម៌)",
-      "mantra": "កំហឹងជាទោសចេតសិកកើតពីអារម្មណ៍មិនគាប់ចិត្ត វាមិនមែនជាអញឡើយ"
+      "mantra": "កំហឹងជាទោសចេតសិកកើតពីអារម្មណ៍មិនគាប់ចិត្ត វាមិនមែនជាអញឡើយ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     }
   ],
   "canonicalCitations": [

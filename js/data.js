@@ -248,7 +248,9 @@ export const CARITA_PROFILES = {
     "remedyText": "គប្បីបដិបត្តិអសុភកម្មដ្ឋាន និងពិចារណាកាយ ៣២ កោដ្ឋាស ដើម្បីកាត់ផ្តាច់សេចក្តីជាប់ជំពាក់នឹងរូបកាយ។ សេនាសនៈមិនគួរបំពាក់គ្រឿងលំអហួសហេតុឡើយ។",
     "attainment": "សម្រេចបានត្រឹមបឋមជ្ឈាន (បឋមជ្ឈាន (ឈានទី ១))",
     "sappaya": "សេនាសនៈសាមញ្ញ គ្មានកម្រាលប្រណីត អាហារសាមញ្ញមិនផ្អែមពេក",
-    "bookRef": "Book 84, pp. 75-115; វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ១",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥–១១៥ និង ភាគ ២ ទំព័រ ១",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100302&page=75",
     "paliKhmer": "រាគចរិត"
   },
   "dosa": {
@@ -259,7 +261,9 @@ export const CARITA_PROFILES = {
     "remedyText": "គប្បីចម្រើនមេត្តាភាវនាជាប្រចាំដើម្បីរំលត់ភ្លើងកំហឹង។ ពណ៌កសិណស្អាតបរិសុទ្ធជួយសម្រាលអារម្មណ៍តានតឹងឲ្យត្រជាក់ស្រទន់។",
     "attainment": "មេត្តាសម្រេចដល់តតិយជ្ឈាន (តតិយជ្ឈាន (ឈានទី ៣)); កសិណសម្រេចដល់ចតុត្ថជ្ឈាន (ចតុត្ថជ្ឈាន (ឈានទី ៤))",
     "sappaya": "សេនាសនៈទូលាយ ស្រឡះ ខ្យល់ត្រជាក់ បរិយាកាសស្ងប់ អាហារមិនហឹរមិនក្តៅពេក",
-    "bookRef": "Book 84, pp. 75-115; វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ១៥២",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥–១១៥ និង ភាគ ៣ ទំព័រ ១៥២",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100302&page=75",
     "paliKhmer": "ទោសចរិត"
   },
   "moha": {
@@ -270,7 +274,9 @@ export const CARITA_PROFILES = {
     "remedyText": "គប្បីចាប់ផ្តើមដោយការរាប់ខ្យល់ដង្ហើមចេញចូលឲ្យច្បាស់ដើម្បីកុំឲ្យចិត្តធ្លាក់ចូលទៅក្នុងភាពងោកងុយ។ សេនាសនៈត្រូវមានពន្លឺថ្ងៃច្បាស់លាស់។",
     "attainment": "សម្រេចបានរហូតដល់ចតុត្ថជ្ឈាន (ចតុត្ថជ្ឈាន (ឈានទី ៤))",
     "sappaya": "ទីកន្លែងមានពន្លឺថ្ងៃគ្រប់គ្រាន់ មិនអាប់អួរ គប់រកកល្យាណមិត្តពូកែពន្យល់ធម៌",
-    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៧៥ និង ភាគ ៣",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥ និង ភាគ ៣",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100302&page=75",
     "paliKhmer": "មោហចរិត"
   },
   "vitakka": {
@@ -281,7 +287,9 @@ export const CARITA_PROFILES = {
     "remedyText": "ព្រះពុទ្ធឃោសាចារ្យបញ្ជាក់ថា អានាបានស្សតិជាកំពូលកម្មដ្ឋានសម្រាប់កាត់ផ្តាច់វិតក្កៈ (ការគិតរវើរវាយ)។ ត្រូវដោតចិត្តនៅត្រង់កន្លែងប៉ះកុំឲ្យរត់ទៅណា។",
     "attainment": "សម្រេចបានរហូតដល់ចតុត្ថជ្ឈាន (ចតុត្ថជ្ឈាន (ឈានទី ៤))",
     "sappaya": "បន្ទប់បិទជិតបន្តិច គ្មានទេសភាពខាងក្រៅរំខានភ្នែក បរិយាកាសស្ងាត់ជ្រងំ",
-    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៧៥ និង ភាគ ៣",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥ និង ភាគ ៣",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100302&page=75",
     "paliKhmer": "វិតក្កចរិត"
   },
   "saddha": {
@@ -292,7 +300,9 @@ export const CARITA_PROFILES = {
     "remedyText": "ការរលឹកដល់ព្រះពុទ្ធ ព្រះធម៌ ព្រះសង្ឃ ធ្វើឲ្យសទ្ធាដែលមានកម្លាំងក្លាយទៅជាសមាធិដ៏ផូរផង់ មិនធ្លាក់ទៅជាជំនឿខ្វាក់ខ្វើកឡើយ។",
     "attainment": "សម្រេចបានត្រឹមឧបចារសមាធិ (ឧបចារសមាធិ)",
     "sappaya": "ទីកន្លែងស្អាតស្អំ មានពុទ្ធរូប ឬវត្ថុអនុស្សាវរីយ៍គួរជាទីជ្រះថ្លា",
-    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៧៥ និង ភាគ ២",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥ និង ភាគ ២",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100302&page=75",
     "paliKhmer": "សទ្ធាចរិត"
   },
   "buddhi": {
@@ -303,7 +313,9 @@ export const CARITA_PROFILES = {
     "remedyText": "កម្មដ្ឋានដែលប្រើប្រាជ្ញាពិចារណាលើធាតុ ៤ ឬសេចក្តីស្លាប់ ត្រូវគ្នានឹងនិស្ស័យប្រាជ្ញា ជួយឲ្យចិត្តចូលកាន់ឧបចារសមាធិបានលឿន និងត្រៀមទៅកាន់វិបស្សនា។",
     "attainment": "សម្រេចបានត្រឹមឧបចារសមាធិ (ឧបចារសមាធិ)",
     "sappaya": "ទីស្ងាត់សមគួរ គ្មានការរំខានផ្នែកសតិបញ្ញា",
-    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៧៥ និង ភាគ ៤",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥ និង ភាគ ៤",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ៧៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100302&page=75",
     "paliKhmer": "ពុទ្ធិចរិត / ញាណចរិត"
   }
 };
@@ -319,7 +331,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណដី រៀនកំណត់ដីស្អាតរលោង រហូតកើតបដិភាគនិមិត្តភ្លឺថ្លា",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ១៥៣",
     "paliKhmer": "បឋវីកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=153"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=153",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ១៥៣"
   },
   {
     "id": 2,
@@ -331,7 +344,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណទឹក កំណត់ទឹកថ្លាបរិសុទ្ធក្នុងភាជន៍",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤០១",
     "paliKhmer": "អាបោកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=401"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=401",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤០១"
   },
   {
     "id": 3,
@@ -343,7 +357,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណភ្លើង កំណត់អណ្តាតភ្លើងតាមប្រហោងជញ្ជាំង",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤០៥",
     "paliKhmer": "តេជោកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=405"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=405",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤០៥"
   },
   {
     "id": 4,
@@ -355,7 +370,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណខ្យល់ កំណត់ខ្យល់បក់ប៉ះចុងឈើ ឬកាយ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤០៨",
     "paliKhmer": "វាយោកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=408"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=408",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤០៨"
   },
   {
     "id": 5,
@@ -367,7 +383,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណពណ៌ខៀវផ្កាត្រកៀត ឬសំពត់ខៀវ ជួយរំលត់ទោសៈ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១០",
     "paliKhmer": "នីលកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=410"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=410",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១០"
   },
   {
     "id": 6,
@@ -379,7 +396,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណពណ៌លឿងផ្កាកណ្ណិការ ឬសំពត់លឿង",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១២",
     "paliKhmer": "បីតកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=412"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=412",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១២"
   },
   {
     "id": 7,
@@ -391,7 +409,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណពណ៌ក្រហមផ្កាឈូកក្រហម ឬសំពត់ក្រហម",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១៣",
     "paliKhmer": "លោហិតកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=413"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=413",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១៣"
   },
   {
     "id": 8,
@@ -403,7 +422,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណពណ៌សផ្កាម្លិះ ឬបន្ទះប្រាក់ ធ្វើឲ្យចិត្តភ្លឺថ្លាស្អាត",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១៤",
     "paliKhmer": "ឱទាតកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=414"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=414",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១៤"
   },
   {
     "id": 9,
@@ -415,7 +435,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កសិណពន្លឺព្រះអាទិត្យ ព្រះច័ន្ទ ឬចង្កៀង បំបាត់ភាពងងឹតងងុយ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១៦",
     "paliKhmer": "អាលោកកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=416"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=416",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៤១៦"
   },
   {
     "id": 10,
@@ -427,7 +448,8 @@ export const KAMMATTHANA_40 = [
     "desc": "ការកំណត់យកចន្លោះប្រហោង ឬលំហអាកាសដែលមានព្រំដែនកំណត់ (ដូចជាចន្លោះជញ្ជាំង ឬប្រហោងបង្អួច) ជាអារម្មណ៍សមាធិ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ១១៦",
     "paliKhmer": "បរិច្ឆិន្នាកាសកសិណ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=116"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=116",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ១១៦"
   },
   {
     "id": 11,
@@ -439,7 +461,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពហើមប៉ោង រំលាយការជាប់ចិត្តនឹងទ្រង់ទ្រាយកាយ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៧",
     "paliKhmer": "ឧទ្ធុមាតកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=7"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=7",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៧"
   },
   {
     "id": 12,
@@ -451,7 +474,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពមានពណ៌ខៀវជាំ រំលាយការជាប់នឹងសម្បុរស្បែក",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៤៩",
     "paliKhmer": "វិនីលកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=49"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=49",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៤៩"
   },
   {
     "id": 13,
@@ -463,7 +487,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពមានទឹកខ្ទុះហូរ រំលាយការជាប់នឹងក្លិនក្រអូបនៃកាយ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥០",
     "paliKhmer": "វិបុព្វកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=50"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=50",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥០"
   },
   {
     "id": 14,
@@ -475,7 +500,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពដាច់ជាពីរភាគ រំលាយការយល់ថារូបកាយជារបស់រឹងមាំតែមួយ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥២",
     "paliKhmer": "វិច្ឆិទ្ទកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=52"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=52",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥២"
   },
   {
     "id": 15,
@@ -487,7 +513,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពដែលសត្វស៊ី រំលាយការជាប់ជំពាក់នឹងសាច់ដុំកាយ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៣",
     "paliKhmer": "វិក្ខាយិតកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=53"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=53",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៣"
   },
   {
     "id": 16,
@@ -499,7 +526,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពដែលរាយប៉ាយដាច់ដៃដាច់ជើង រំលាយការជាប់នឹងឥរិយាបថដើរឈរ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៤",
     "paliKhmer": "វិក្ខិត្តកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=54"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=54",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៤"
   },
   {
     "id": 17,
@@ -511,7 +539,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពដែលត្រូវគេកាប់ចិញ្ច្រាំ រំលាយការជាប់នឹងភាពពេញលេញនៃរាងកាយ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៥",
     "paliKhmer": "ហតវិក្ខិត្តកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=55"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=55",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៥"
   },
   {
     "id": 18,
@@ -523,7 +552,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពប្រឡាក់ដោយឈាមស្រោចស្រព រំលាយការជាប់នឹងគ្រឿងអលង្ការប្រណីត",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៦",
     "paliKhmer": "លោហិតកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=56"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=56",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៦"
   },
   {
     "id": 19,
@@ -535,7 +565,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សាកសពពេញដោយដង្កូវជញ្ជក់ស៊ី រំលាយការយល់ថាកាយជារបស់អញ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៧",
     "paliKhmer": "បុឡុវកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=57"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=57",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៧"
   },
   {
     "id": 20,
@@ -547,7 +578,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រាងឆ្អឹងស ពិចារណាឃើញឆ្អឹង ៣០០ កំណាត់",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៨",
     "paliKhmer": "អដ្ឋិកអសុភ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=58"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=58",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៥៨"
   },
   {
     "id": 21,
@@ -559,7 +591,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់ព្រះពុទ្ធគុណទាំង ៩",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៧7",
     "paliKhmer": "ពុទ្ធានុស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=77"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=77",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៧7"
   },
   {
     "id": 22,
@@ -571,7 +604,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់ព្រះធម៌គុណទាំង ៦",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៣២",
     "paliKhmer": "ធម្មានុស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=232"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=232",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៣២"
   },
   {
     "id": 23,
@@ -583,7 +617,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់ព្រះសង្ឃគុណទាំង ៩",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៧៣",
     "paliKhmer": "សង្ឃានុស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=273"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=273",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៧៣"
   },
   {
     "id": 24,
@@ -595,7 +630,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់សីលបរិសុទ្ធដែលខ្លួនបានរក្សា",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៩០",
     "paliKhmer": "សីលានុស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=290"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=290",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៩០"
   },
   {
     "id": 25,
@@ -607,7 +643,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់ការលះបង់ និងការបរិច្ចាគទាន",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៩៦",
     "paliKhmer": "ចាគានុស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=296"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=296",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ២៩៦"
   },
   {
     "id": 26,
@@ -619,7 +656,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់គុណធម៌ដែលធ្វើឲ្យកើតជាទេវតា (សទ្ធា សីល សុត ចាគ បញ្ញា)",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៣០៤",
     "paliKhmer": "ទេវតានុស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=304"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=304",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៣០៤"
   },
   {
     "id": 27,
@@ -631,7 +669,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់សេចក្តីស្លាប់ ៨ ប្រការ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៣១៧",
     "paliKhmer": "មរណស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=317"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=317",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៣១៧"
   },
   {
     "id": 28,
@@ -643,7 +682,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កំណត់ពិចារណាកោដ្ឋាស ៣២ (សក់ រោម ក្រចក ធ្មេញ ស្បែក...)",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៣៦០",
     "paliKhmer": "កាយគតាសតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=360"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=360",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៣៦០"
   },
   {
     "id": 29,
@@ -655,7 +695,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដឹងខ្យល់ដង្ហើមចេញចូល ១៦ ដំណាក់ ៨ វិធី",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ១",
     "paliKhmer": "អានាបានស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=1"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=1",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ១"
   },
   {
     "id": 30,
@@ -667,7 +708,8 @@ export const KAMMATTHANA_40 = [
     "desc": "រលឹកដល់ព្រះនិព្វានជាទីរំលត់កិលេស និងសេចក្តីស្ងប់ដ៏ក្រៃលែង",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ១42",
     "paliKhmer": "ឧបសមានុស្សតិ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=142"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=142",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ១42"
   },
   {
     "id": 31,
@@ -679,7 +721,8 @@ export const KAMMATTHANA_40 = [
     "desc": "ផ្សាយសេចក្តីប្រាថ្នាល្អ និងសេចក្តីសុខដល់សត្វគ្រប់ទិស",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ១52",
     "paliKhmer": "មេត្តាព្រហ្មវិហារ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=152"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=152",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ១52"
   },
   {
     "id": 32,
@@ -691,7 +734,8 @@ export const KAMMATTHANA_40 = [
     "desc": "ផ្សាយការអាណិតអាសូរដល់សត្វដែលមានសេចក្តីទុក្ខ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ២៤៤",
     "paliKhmer": "ករុណាព្រហ្មវិហារ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=244"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=244",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ២៤៤"
   },
   {
     "id": 33,
@@ -703,7 +747,8 @@ export const KAMMATTHANA_40 = [
     "desc": "ផ្សាយការត្រេកអរចំពោះសេចក្តីចម្រើន និងសេចក្តីសុខរបស់អ្នកដទៃ",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ២៥៤",
     "paliKhmer": "មុទិតាព្រហ្មវិហារ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=254"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=254",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ២៥៤"
   },
   {
     "id": 34,
@@ -715,7 +760,8 @@ export const KAMMATTHANA_40 = [
     "desc": "តម្កល់ចិត្តជាកណ្តាលចំពោះសត្វលោកតាមកម្មរៀងៗខ្លួន",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ២៦០",
     "paliKhmer": "ឧបេក្ខាព្រហ្មវិហារ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=260"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=260",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ២៦០"
   },
   {
     "id": 35,
@@ -727,7 +773,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កន្លងរូបកសិណ កំណត់អាកាសមិនមានទីបំផុត",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣២៥",
     "paliKhmer": "អាកាសានញ្ចាយតនៈ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=325"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=325",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣២៥"
   },
   {
     "id": 36,
@@ -739,7 +786,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កំណត់វិញ្ញាណដែលដឹងអាកាសមិនមានទីបំផុត",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣៥៥",
     "paliKhmer": "វិញ្ញាណញ្ចាយតនៈ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=355"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=355",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣៥៥"
   },
   {
     "id": 37,
@@ -751,7 +799,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កំណត់សេចក្តីមិនមានអ្វីបន្តិចបន្តួចឡើយ (នត្ថិ កិញ្ចិ)",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣៦៤",
     "paliKhmer": "អាកិញ្ចញ្ញាយតនៈ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=364"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=364",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣៦៤"
   },
   {
     "id": 38,
@@ -763,7 +812,8 @@ export const KAMMATTHANA_40 = [
     "desc": "សញ្ញាល្អិតដល់កម្រិត មានសញ្ញាក៏មិនមែន មិនមានសញ្ញាក៏មិនមែន",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣៩៨",
     "paliKhmer": "នេវសញ្ញានាសញ្ញាយតនៈ",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=398"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=398",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣៩៨"
   },
   {
     "id": 39,
@@ -775,7 +825,8 @@ export const KAMMATTHANA_40 = [
     "desc": "កំណត់ពិចារណាអាហារជាជារបស់គួរខ្ពើម ១០ យ៉ាង",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ ទំព័រ ៧",
     "paliKhmer": "អាហារេបដិកូលសញ្ញា",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=7"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=7",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ ទំព័រ ៧"
   },
   {
     "id": 40,
@@ -787,7 +838,8 @@ export const KAMMATTHANA_40 = [
     "desc": "វិនិច្ឆ័យធាតុ ៤ ក្នុងកាយ (បឋវី អាបោ តេជោ វាយោ)",
     "book": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ ទំព័រ ៤៧",
     "paliKhmer": "ចតុធាតុវវដ្ឋាន",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=47"
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=47",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ ទំព័រ ៤៧"
   }
 ];
 
@@ -986,32 +1038,37 @@ export const STEPPING_STONES = [
     "pali": "« សីលវិសុទ្ធិ » (ការជម្រះកាយវាចាឲ្យបរិសុទ្ធ)",
     "badge": "គ្រឹះស្ថាននៃចិត្ត",
     "desc": "សីលជាគ្រឹះមិនអាចខ្វះបាន។ បើគ្មានសីល ចិត្តនឹងពោរពេញដោយវិប្បដិសារី (ការក្តៅក្រហាយស្តាយក្រោយ) មិនអាចកើតសមាធិឡើយ។ កាលបើសីលបរិសុទ្ធ ចិត្តរមែងស្ងប់ រីករាយ និងរួចផុតពីការភ័យខ្លាច។",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ (ក្បាល ៨៣)",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&id=100251&page=1",
     "bookTitle": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស",
     "pillars": [
       {
         "title": "១. បាតិមោក្ខសំវរសីល",
         "desc": "ការរក្សាសីល ៥ ជាប្រចាំ ឬសីល ៨ ក្នុងថ្ងៃឧបោសថ មិនសម្លាប់ មិនលួច មិនប្រព្រឹត្តខុសក្នុងកាម មិនកុហក មិនសេពគ្រឿងស្រវឹង។",
         "bookRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ១៦",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&page=16"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ១៦",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&id=100256&page=116"
       },
       {
         "title": "២. ឥន្ទ្រិយសំវរសីល",
         "desc": "ការគ្រប់គ្រងទ្វារទាំង ៦ (ភ្នែក ត្រចៀក ច្រមុះ អណ្តាត កាយ ចិត្ត) មិនឲ្យរាគៈ និងទោសៈហូរចូលពេលឃើញរូប ឮសំឡេង ឬប្រើប្រាស់ទូរសព្ទ។",
         "bookRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ២០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&page=20"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ២០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&id=100260&page=187"
       },
       {
         "title": "៣. អាជីវបារិសុទ្ធិសីល",
         "desc": "ការចិញ្ចឹមជីវិតដោយសុចរិត មិនបោកប្រាស់ មិនភូតភរ មិនកេងប្រវ័ញ្ចអ្នកដទៃក្នុងការរកស៊ី និងបំពេញការងារ។",
         "bookRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ៣២",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&page=32"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ៣២",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&id=100256&page=115"
       },
       {
         "title": "៤. បច្ចយសន្និស្សិតសីល",
         "desc": "ការពិចារណាដោយបញ្ញាមុនពេលប្រើប្រាស់បច្ច័យ ៤ (សម្លៀកបំពាក់ អាហារ ទីលំនៅ ថ្នាំសង្កូវ) មិនមែនដើម្បីលម្អ ឬក្អេងក្អាង គឺដើម្បីទ្រទ្រង់កាយបដិបត្តិធម៌។",
         "bookRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ៤៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&page=45"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សីលនិទ្ទេស ភាគ ១ ទំព័រ ៤៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v1&id=100256&page=115"
       }
     ]
   },
@@ -1021,32 +1078,37 @@ export const STEPPING_STONES = [
     "pali": "« ចិត្តវិសុទ្ធិ » (ការជម្រះចិត្តឲ្យស្ងប់នឹងនរ)",
     "badge": "កម្លាំងតម្កល់ចិត្ត",
     "desc": "កាលបើសីលស្អាតហើយ ចិត្តរមែងគ្មានទោស។ យោគាវចរកាត់បលិពោធ ១០ ចម្រើនចតុរារក្ខ និងផ្ចង់សតិលើអានាបានស្សតិ ឬកម្មដ្ឋានសមស្របនឹងចរិត រហូតកម្ចាត់នីវរណៈ ៥ កើតបដិភាគនិមិត្ត និងចូលកាន់ឈាន។",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤)",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100286&page=2",
     "bookTitle": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ដល់ ភាគ ៤",
     "pillars": [
       {
         "title": "១. ការកាត់បលិពោធ ១០",
-        "desc": "លះបង់កង្វល់ផ្ទះសម្បែង ការងារ លុយកាក់ ក្រុមជជែក និងរឿងរ៉ាវស្មុគស្មាញមុនពេលអង្គុយភាវនា។",
+        "desc": "លះបង់កង្វល់ផ្ទះសម្បែង ការងារ គ្រួសារ ទ្រព្យសម្បត្តិ និងគណៈ ដើម្បីឱ្យចិត្តមានឱកាសទទេស្អាតក្នុងការចម្រើនភាវនា។",
         "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៣៩",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=39"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៣៩",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100298&page=39"
       },
       {
-        "title": "២. ចតុរារក្ខ (សព្វត្ថកកម្មដ្ឋាន)",
-        "desc": "ចម្រើនពុទ្ធានុស្សតិ និងមេត្តាភាវនា ៥ នាទីរាល់ថ្ងៃ ដើម្បីការពារចិត្តពីកំហឹង និងសេចក្តីភ័យខ្លាច។",
-        "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ ទំព័រ ៧៧",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=77"
+        "title": "២. ចតុរារក្ខកម្មដ្ឋាន ៤",
+        "desc": "សូត្រនិងរំពឹងពុទ្ធានុស្សតិ មេត្តាភាវនា អសុភកម្មដ្ឋាន និងមរណស្សតិ ជាអាវក្រោះការពារចិត្តពីសត្រូវខាងក្នុងនិងខាងក្រៅ។",
+        "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២–៣",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២–៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100357&page=77"
       },
       {
         "title": "៣. អានាបានស្សតិ (គណនា ផុសនា ឋបនា)",
         "desc": "រាប់ខ្យល់ដង្ហើម ៥-១០ តម្កល់សតិនៅចុងច្រមុះ រហូតដល់កើតបដិភាគនិមិត្តភ្លឺថ្លា។",
-        "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣៩",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=39"
+        "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣០",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៣០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100419&page=30"
       },
       {
         "title": "៤. ឈាន ៤ & វសី ៥",
         "desc": "ចូលកាន់បឋមជ្ឈានដែលមានអង្គ ៥ (វិតក្ក វិចារ បីតិ សុខ ឯកគ្គតា) និងហ្វឹកហាត់វសី ៥ ឲ្យស្ទាត់ជំនាញ។",
         "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ២៥៤",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=254"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ២៥៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100319&page=205"
       }
     ]
   },
@@ -1055,33 +1117,38 @@ export const STEPPING_STONES = [
     "name": "ជណ្តើរទី ៣៖ បញ្ញានិទ្ទេស",
     "pali": "« ទិដ្ឋិវិសុទ្ធិ » ដល់ « ញាណទស្សនវិសុទ្ធិ » (ការត្រាស់ដឹងសច្ចធម៌)",
     "badge": "ពន្លឺបំផ្លាញអវិជ្ជា",
-    "desc": "បញ្ញាជាកំពូលនៃត្រៃសិក្ខា មានលក្ខណៈចាក់ធ្លុះនូវសភាវធម៌ពិត (ការចាក់ធ្លុះនូវសភាវធម៌ពិត)។ ចេញពីសមាធិ យោគាវចរយកចិត្តស្ងប់នោះមកពិចារណារូបធម៌ និងនាមធម៌ ឃើញអនិច្ចំ ទុក្ខំ អនត្តា កាត់ផ្តាច់សំយោជនៈ សម្រេចមគ្គផលនិព្វាន។",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6",
+    "desc": "បញ្ញាជាកំពូលនៃត្រៃសិក្ខា មានលក្ខណៈចាក់ធ្លុះនូវសភាវធម៌ពិត។ ចេញពីសមាធិ យោគាវចរយកចិត្តស្ងប់នោះមកពិចារណារូបធម៌ និងនាមធម៌ ឃើញអនិច្ចំ ទុក្ខំ អនត្តា កាត់ផ្តាច់សំយោជនៈ សម្រេចមគ្គផលនិព្វាន។",
+    "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨)",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100532&page=1",
     "bookTitle": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ ដល់ ភាគ ៣",
     "pillars": [
       {
         "title": "១. បញ្ញាភូមិ (ដីរបស់បញ្ញា)",
         "desc": "ស្វែងយល់ខន្ធ ៥, អាយតនៈ ១២, ធាតុ ១៨, ឥន្ទ្រិយ ២២, អរិយសច្ច ៤, និងបដិច្ចសមុប្បាទ ១២។",
         "bookRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ ទំព័រ ១",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=1"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ ទំព័រ ១",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100532&page=1"
       },
       {
         "title": "២. ទិដ្ឋិវិសុទ្ធិ (ការញែកនាម និងរូប)",
         "desc": "កំណត់ដឹងច្បាស់ថា ក្នុងខ្លួននេះមានតែរូបធម៌ (រូបកាយ ខ្យល់ដង្ហើម) និងនាមធម៌ (ចិត្ត វេទនា សញ្ញា) មិនមែនជាតួខ្លួន ឬសត្វបុគ្គលឡើយ។",
         "bookRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ ទំព័រ ៤០១",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=401"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ ទំព័រ ៤០១",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100664&page=401"
       },
       {
         "title": "៣. កង្ខាវិតរណវិសុទ្ធិ (ឆ្លងផុតសេចក្តីសង្ស័យ)",
         "desc": "យល់ច្បាស់នូវហេតុនិងបច្ច័យ ថានាមនិងរូបកើតឡើងដោយសារអវិជ្ជា តណ្ហា កម្ម អាហារ មិនមែនកើតដោយឯកឯង ឬព្រះអាទិទេពបង្កើតឡើយ។",
-        "bookRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ ទំព័រ ៤៣១",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=431"
+        "bookRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ ទំព័រ ៤៥៧",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ ទំព័រ ៤៥៧",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100672&page=457"
       },
       {
         "title": "៤. វិបស្សនាញាណ ៩ & មគ្គផល ៤",
         "desc": "ពិចារណាឃើញការកើតរលត់ (ឧទយព្វយញាណ) រហូតកើតសង្ខារុបេក្ខាញាណ និងសម្រេចអរិយមគ្គទាំង ៤ (សោតាបត្តិ ដល់ អរហត្ត)។",
-        "bookRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៨ ទំព័រ ៨១",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v8&page=81"
+        "bookRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៨ ទំព័រ ១",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៨ ទំព័រ ១",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v8&id=100674&page=1"
       }
     ]
   }
@@ -1270,31 +1337,28 @@ export const DAILY_ROUTINE_CYCLE = [
 
 export const ANAPANASATI_SIMILES = [
   {
-    "id": "gatekeeper",
-    "name": "ឧបមាឆ្មាំទ្វារនគរ (ទ្វារបាល)",
-    "pali": "Dvārapālopama",
-    "quote": "ដូចឆ្មាំទ្វារនគរមិនដើរតាមមនុស្សចូលក្នុង ឬចេញក្រៅក្រុង គឺឈរស្ងៀមត្រួតពិនិត្យតែត្រង់មាត់ទ្វារយ៉ាងណា...",
-    "instruction": "យោគាវចរមិនត្រូវដេញតាមខ្យល់ចូលដល់ផ្ចិត ឬតាមខ្យល់ចេញទៅក្រៅឡើយ គឺត្រូវតម្កល់ស្មារតីសង្កេតត្រឹមតែ «ផុសនស្ថាន» គឺត្រង់ចុងច្រមុះ ឬបបូរមាត់លើតែប៉ុណ្ណោះ។",
-    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៧៩–៨១",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=79"
+    "title": "ឧបមាអ្នកយាមទ្វារ (ទ្វារបាល)",
+    "pali": "ទ្វារបាលោបមា",
+    "paliKhmer": "ទ្វារបាលោបមា",
+    "lesson": "អ្នកយាមទ្វារមិនដើរតាមសួរមនុស្សគ្រប់គ្នាក្នុងក្រុង ឬក្រៅក្រុងឡើយ គឺឈរស្ងៀមចាំមើលតែត្រង់ទ្វារ។ យ៉ាងណាមិញ យោគាវចរមិនត្រូវតាមខ្យល់ចូលដល់ពោះ ឬតាមខ្យល់ចេញទៅក្រៅឆ្ងាយឡើយ ត្រូវដឹងតែត្រង់ចុងច្រមុះ ឬបបូរមាត់លើ។",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៨៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100430&page=85"
   },
   {
-    "id": "saw",
-    "name": "ឧបមារណារអារឈើ (កកចូបមា)",
-    "pali": "Urabhantararannopama",
-    "quote": "ដូចជាងអារឈើផ្តោតភ្នែកលើធ្មេញរណារដែលប៉ះដើមឈើ មិនតាមចុងរណារដែលរត់ទៅរត់មកយ៉ាងណា...",
-    "instruction": "ដើមឈើ = ផុសនស្ថាន (ចុងច្រមុះ), ធ្មេញរណារ = ខ្យល់ដង្ហើមចេញចូល, ការប្រឹងទាញរណារ = សតិនិងវីរិយៈ។ ផ្តោតសតិត្រង់កន្លែងប៉ះកុំឱ្យរង្គោះរង្គើ។",
-    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៨១–៨៣",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100428&page=81&find=ឧបមាដោយរណា"
+    "title": "ឧបមាកូនសត្វឈ្លូស ឬស្វាព្រៃ",
+    "pali": "ឧរភន្តររញ្ញោបមា",
+    "paliKhmer": "ឧរភន្តររញ្ញោបមា",
+    "lesson": "ដូចបុរសទាក់សត្វព្រៃយកមកចងភ្ជាប់នឹងបង្គោលដ៏រឹងមាំ សត្វនោះរើបម្រះចុះឡើង ទាល់តែអស់កម្លាំងទើបដេកផ្អែកនឹងបង្គោលនោះ។ ចិត្តដែលធ្លាប់រត់លេងតាមកាមគុណ ត្រូវចងភ្ជាប់នឹងខ្យល់ដង្ហើមដោយខ្សែសតិ រហូតដល់ស្ងប់នឹងស្ងៀម។",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៨៦",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100430&page=86"
   },
   {
-    "id": "hammock",
-    "name": "ឧបមាជនពិការជើងលើអង្រឹង ",
-    "pali": "Chinnakapurisopama",
-    "quote": "ដូចបុរសពិការជើងយោលអង្រឹងក្មេង គាត់អង្គុយស្ងៀមមួយកន្លែងចាំមើលតែចលនាអង្រឹងឆ្លងកាត់...",
-    "instruction": "ចិត្តស្ថិតនៅស្ងៀមត្រង់ផុសនស្ថាន ដូចជនពិការមិនរត់តាមអង្រឹងឡើយ ចាំដឹងត្រឹមខ្យល់ចេញចូលប៉ះប៉ុណ្ណោះ។",
-    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៨៣–៨៥",
-    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=83"
+    "title": "ឧបមាបុរសកាត់ឈើដោយរណា",
+    "pali": "ឆិន្នកបុរិសោបមា",
+    "paliKhmer": "ឆិន្នកបុរិសោបមា",
+    "lesson": "បុរសអារឈើ មិនតាមមើលធ្មេញរណាដែលរត់ទៅរត់មកទេ តែផ្ចង់ភ្នែកមើលត្រង់កន្លែងដែលធ្មេញរណាប៉ះនឹងដើមឈើ។ យ៉ាងណាមិញ យោគាវចរផ្ចង់សតិដឹងត្រង់កន្លែងខ្យល់ប៉ះច្រមុះ មិនតាមដង្ហើមទៅមុខទៅក្រោយឡើយ។",
+    "bookRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ ទំព័រ ៨៧",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100430&page=87"
   }
 ];
 
@@ -1320,10 +1384,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សីលនិទ្ទេស — គ្រឹះនៃព្រះបរិយត្តិ និងវិសុទ្ធិ",
     "badgeClass": "badge-sila",
     "title": "១. គាថាផ្តើមនៃគម្ពីរវិសុទ្ធិមគ្គ (ទ្វារនៃវិសុទ្ធិមគ្គ)",
-    "paliVerse": "សីលេ បតិដ្ឋាយ នរោ សបញ្ញោ
-ចិត្តំ បញ្ញញ្ច ភាវយំ
-អាតាបី និបកោ ភិក្ខុ
-សោ ឥមំ វិជដយេ ជដំ។",
+    "paliVerse": "សីលេ បតិដ្ឋាយ នរោ សបញ្ញោ\nចិត្តំ បញ្ញញ្ច ភាវយំ\nអាតាបី និបកោ ភិក្ខុ\nសោ ឥមំ វិជដយេ ជដំ។",
     "wordMeaning": "ភិក្ខុដែលជាអ្នកឆ្លាត មានសេចក្តីព្យាយាម មានបញ្ញាជាគ្រឿងរក្សាខ្លួន តាំងនៅក្នុងសីលហើយ អប់រំចិត្ត និងបញ្ញា គប្បីឆ្ការនូវគ្រឿងចាក់ស្រែះនេះបាន ពាក្យនេះព្រះមានព្រះភាគទ្រង់ត្រាស់ទុក ។",
     "canonicalTranslation": "ភិក្ខុដែលជាអ្នកឆ្លាត មានសេចក្តីព្យាយាម មានបញ្ញាជាគ្រឿងរក្សាខ្លួន តាំងនៅក្នុងសីលហើយ អប់រំចិត្ត និងបញ្ញា គប្បីឆ្ការនូវគ្រឿងចាក់ស្រែះនេះបាន ពាក្យនេះព្រះមានព្រះភាគទ្រង់ត្រាស់ទុក ។",
     "whyMemorize": "នេះជាគាថាពុទ្ធដីកាដ៏សំខាន់បំផុត ដែលព្រះសម្មាសម្ពុទ្ធត្រាស់ឆ្លើយនឹងទេវតា ហើយជាគាថាឫសគល់ដែលព្រះពុទ្ធឃោសាចារ្យលើកមកកត់ត្រានិងពន្យល់ជាគម្ពីរវិសុទ្ធិមគ្គទាំងមូល។",
@@ -1339,10 +1400,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សីលនិទ្ទេស — សីលបរិសុទ្ធ ៤ ប្រការ",
     "badgeClass": "badge-sila",
     "title": "២. ចតុបារិសុទ្ធិសីល (សីលបរិសុទ្ធ ៤ យ៉ាង)",
-    "paliVerse": "បាតិមោក្ខសំវរសីលំ
-ឥន្ទ្រិយសំវរសីលំ
-អាជីវបារិសុទ្ធិសីលំ
-បច្ចយសន្និស្សិតសីលំ។",
+    "paliVerse": "បាតិមោក្ខសំវរសីលំ\nឥន្ទ្រិយសំវរសីលំ\nអាជីវបារិសុទ្ធិសីលំ\nបច្ចយសន្និស្សិតសីលំ។",
     "wordMeaning": "សីល ៤ ប្រការគឺ បាតិមោក្ខសំវរសីល ឥន្ទ្រិយសំវរសីល អាជីវបារិសុទ្ធិសីល និងបច្ចយសន្និស្សិតសីល ។ ដែលឈ្មោះថា បាតិមោក្ខសំវរសីល គឺសិក្ខាបទដែលទាក់ទងនឹងព្រះវិន័យ... សតិសំវរៈ បានដល់ការរក្សាឥន្ទ្រិយ៍ទាំងឡាយ មានចិត្តជាទី ៦... អាជីវបារិសុទ្ធិសីល គឺការវៀរចាកមិច្ឆាជីវៈ... បច្ចយសន្និស្សិតសីល គឺការពិចារណាក្នុងបច្ច័យ ៤ ។",
     "canonicalTranslation": "សីល ៤ ប្រការគឺ បាតិមោក្ខសំវរសីល ឥន្ទ្រិយសំវរសីល អាជីវបារិសុទ្ធិសីល និងបច្ចយសន្និស្សិតសីល ។ ដែលឈ្មោះថា បាតិមោក្ខសំវរសីល គឺសិក្ខាបទដែលទាក់ទងនឹងព្រះវិន័យ... សតិសំវរៈ បានដល់ការរក្សាឥន្ទ្រិយ៍ទាំងឡាយ មានចិត្តជាទី ៦... អាជីវបារិសុទ្ធិសីល គឺការវៀរចាកមិច្ឆាជីវៈ... បច្ចយសន្និស្សិតសីល គឺការពិចារណាក្នុងបច្ច័យ ៤ ។",
     "whyMemorize": "ព្រះពុទ្ធឃោសាចារ្យបញ្ជាក់ថា ចតុបារិសុទ្ធិសីលជាគ្រឿងការពារចិត្តមិនឱ្យក្តៅក្រហាយ ជាគ្រឹះដែលមិនអាចខ្វះបានក្នុងការចម្រើនសមាធិ។",
@@ -1358,8 +1416,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សីលនិទ្ទេស — ធុតង្គវត្ត ១៣ ប្រការ",
     "badgeClass": "badge-sila",
     "title": "៣. ធុតង្គនិទ្ទេស (ធម៌ជាគ្រឿងដុសខាត់កិលេស)",
-    "paliVerse": "តេរស ធុតង្គានិ សមាទាយ វដ្ដតិ។
-សល្លេខវុត្តិយា ឯតំ អធិវចនំ។",
+    "paliVerse": "តេរស ធុតង្គានិ សមាទាយ វដ្ដតិ។\nសល្លេខវុត្តិយា ឯតំ អធិវចនំ។",
     "wordMeaning": "ព្រោះហេតុដែលព្រះយោគីអ្នកបានសមាទាននូវសីលហើយ គួរធ្វើការសមាទានធុតង្គ កាលធ្វើយ៉ាងនោះ សីលរបស់លោកត្រូវបានលាងមន្ទិលហើយដោយទឹក គឺគុណ មានសេចក្តីប្រាថ្នាតិច និងសេចក្តីសន្តោស ការដុសខាត់ ភាពស្ងប់ ការមិនសន្សំ ( នៃកិលេស ) ការប្រារព្ធសេចក្តីព្យាយាម និងភាពជាអ្នកចិញ្ចឹមងាយជាដើម នឹងជាសីលបរិសុទ្ធល្អ ។",
     "canonicalTranslation": "ព្រោះហេតុដែលព្រះយោគីអ្នកបានសមាទាននូវសីលហើយ គួរធ្វើការសមាទានធុតង្គ កាលធ្វើយ៉ាងនោះ សីលរបស់លោកត្រូវបានលាងមន្ទិលហើយដោយទឹក គឺគុណ មានសេចក្តីប្រាថ្នាតិច និងសេចក្តីសន្តោស ការដុសខាត់ ភាពស្ងប់ ការមិនសន្សំ ( នៃកិលេស ) ការប្រារព្ធសេចក្តីព្យាយាម និងភាពជាអ្នកចិញ្ចឹមងាយជាដើម នឹងជាសីលបរិសុទ្ធល្អ ។",
     "whyMemorize": "ធុតង្គជាវត្តបដិបត្តិដុសខាត់កិលេស បន្ថយសេចក្តីលោភលន់ក្នុងសម្ភារៈ ធ្វើឱ្យចិត្តស្អាតស្រាល ងាយស្ងប់ក្នុងសមាធិ។",
@@ -1375,11 +1432,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — និយមន័យ និងលក្ខណៈនៃសមាធិ",
     "badgeClass": "badge-samadhi",
     "title": "៤. លក្ខណាទិចតុកៈនៃសមាធិ (ធម្មជាតិតាំងមាំនៃចិត្ត)",
-    "paliVerse": "កុសលចិត្តេកគ្គតា សមាធិ។
-អវិក្ខេបលក្ខណោ,
-វិក្ខេបវិទ្ធំសនរសោ,
-អវិកម្បនបច្ចុបដ្ឋានោ,
-សុខបទដ្ឋានោ។",
+    "paliVerse": "កុសលចិត្តេកគ្គតា សមាធិ។\nអវិក្ខេបលក្ខណោ,\nវិក្ខេបវិទ្ធំសនរសោ,\nអវិកម្បនបច្ចុបដ្ឋានោ,\nសុខបទដ្ឋានោ។",
     "wordMeaning": "ភាពមានអារម្មណ៍តែមួយនៃចិត្តដែលជាកុសល ជាសមាធិ... សមាធិមានការមិនរាយមាយជាលក្ខណៈ មានការកម្ចាត់ភាពរាយមាយជារស ( កិច្ច ) មានការមិនញាប់ញ័រជាបច្ចុប្បដ្ឋាន ចំណែកបទដ្ឋាននៃសមាធិនោះ គឺសេចក្តីសុខ តាមព្រះបាលីថា ចិត្តរបស់អ្នកមានសេចក្តីសុខ រមែងតាំងមាំ ដូច្នេះ ។",
     "canonicalTranslation": "ភាពមានអារម្មណ៍តែមួយនៃចិត្តដែលជាកុសល ជាសមាធិ... សមាធិមានការមិនរាយមាយជាលក្ខណៈ មានការកម្ចាត់ភាពរាយមាយជារស ( កិច្ច ) មានការមិនញាប់ញ័រជាបច្ចុប្បដ្ឋាន ចំណែកបទដ្ឋាននៃសមាធិនោះ គឺសេចក្តីសុខ តាមព្រះបាលីថា ចិត្តរបស់អ្នកមានសេចក្តីសុខ រមែងតាំងមាំ ដូច្នេះ ។",
     "whyMemorize": "នេះជាមេមេរៀនគ្រឹះកាត់សេចក្តីយល់ច្រឡំថា សមាធិគឺការតាំងចិត្តលើអកុសល។ សមាធិពិតត្រូវតែកើតជាមួយកុសលចិត្តប៉ុណ្ណោះ។",
@@ -1395,10 +1448,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — ឧបសគ្គរារាំងសមាធិ",
     "badgeClass": "badge-samadhi",
     "title": "៥. ទសបលិពោធ (គ្រឿងកង្វល់ទាំង ១០ ប្រការ)",
-    "paliVerse": "អាវាសោ ច កុលំ លាភោ
-គណោ កម្មញ្ច បញ្ចមំ
-អទ្ធានំ ញាតិ អាពាធោ
-គន្ថោ ឥទ្ធីតិ តេ ទស។",
+    "paliVerse": "អាវាសោ ច កុលំ លាភោ\nគណោ កម្មញ្ច បញ្ចមំ\nអទ្ធានំ ញាតិ អាពាធោ\nគន្ថោ ឥទ្ធីតិ តេ ទស។",
     "wordMeaning": "បលិពោធ ( គ្រឿងកង្វល់ ) ១០ ប្រការគឺ អាវាសៈ ១ ត្រកូល ១ លាភ ១ ពួកគណៈ ១ ការងារជាគម្រប់ ៥ ១ ផ្លូវឆ្ងាយ ១ ញាតិ ១ អាពាធ ១ គន្ថៈ ( ការរៀនសូត្រ ) ១ ឫទ្ធិ ១ ទាំង ១០ នេះឈ្មោះថា បលិពោធ ។ ព្រះយោគាវចរគប្បីកាត់បលិពោធទាំងនោះចេញ ទើបកាន់យកកម្មដ្ឋានបាន ។",
     "canonicalTranslation": "បលិពោធ ( គ្រឿងកង្វល់ ) ១០ ប្រការគឺ អាវាសៈ ១ ត្រកូល ១ លាភ ១ ពួកគណៈ ១ ការងារជាគម្រប់ ៥ ១ ផ្លូវឆ្ងាយ ១ ញាតិ ១ អាពាធ ១ គន្ថៈ ( ការរៀនសូត្រ ) ១ ឫទ្ធិ ១ ទាំង ១០ នេះឈ្មោះថា បលិពោធ ។ ព្រះយោគាវចរគប្បីកាត់បលិពោធទាំងនោះចេញ ទើបកាន់យកកម្មដ្ឋានបាន ។",
     "whyMemorize": "បើមិនកាត់បលិពោធទាំង ១០ នេះទេ ចិត្តនឹងតែងតែរវើរវាយទៅកាន់ទីកន្លែង មនុស្ស ការងារ និងទ្រព្យសម្បត្តិ មិនអាចសម្រេចសមាធិឡើយ។",
@@ -1414,10 +1464,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — ការស្វែងរកកល្យាណមិត្ត",
     "badgeClass": "badge-samadhi",
     "title": "៦. កល្យាណមិត្តុបសង្កមនៈ (ការចូលទៅរកគ្រូកល្យាណមិត្ត)",
-    "paliVerse": "បិយោ គរុ ភាវនីយោ
-វត្តា ច វចនក្ខមោ
-គម្ភីរញ្ច កថំ កត្តា
-នោ ច អដ្ឋានេ និយោជយេ។",
+    "paliVerse": "បិយោ គរុ ភាវនីយោ\nវត្តា ច វចនក្ខមោ\nគម្ភីរញ្ច កថំ កត្តា\nនោ ច អដ្ឋានេ និយោជយេ។",
     "wordMeaning": "ពាក្យថា អ្នកដែលជាកល្យាណមិត្ត គឺ អ្នកជាមិត្តល្អ អ្នកតាំងខ្លួននៅក្នុង ចំណែកចម្រើន ហើយស្វែងរកប្រយោជន៍ឲ្យ( អ្នកដទៃ )តែម្យ៉ាង ប្រកបដោយគុណ គឺ ជាទីស្រឡាញ់ ១ ជាទីគោរព ១ គួរចម្រើនចិត្ត ១ ជាអ្នកចេះប្រដៅ ១ ជាអ្នកអត់ធន់នឹងពាក្យសម្តី ១ ជាអ្នកសម្តែងធម៌ដ៏ជ្រាលជ្រៅបាន ១ មិនដឹកនាំក្នុងផ្លូវមិនគប្បី ១ ។",
     "canonicalTranslation": "ពាក្យថា អ្នកដែលជាកល្យាណមិត្ត គឺ អ្នកជាមិត្តល្អ អ្នកតាំងខ្លួននៅក្នុង ចំណែកចម្រើន ហើយស្វែងរកប្រយោជន៍ឲ្យ( អ្នកដទៃ )តែម្យ៉ាង ប្រកបដោយគុណ គឺ ជាទីស្រឡាញ់ ១ ជាទីគោរព ១ គួរចម្រើនចិត្ត ១ ជាអ្នកចេះប្រដៅ ១ ជាអ្នកអត់ធន់នឹងពាក្យសម្តី ១ ជាអ្នកសម្តែងធម៌ដ៏ជ្រាលជ្រៅបាន ១ មិនដឹកនាំក្នុងផ្លូវមិនគប្បី ១ ។",
     "whyMemorize": "ការចម្រើនសមាធិដោយគ្មានកល្យាណមិត្តណែនាំ ងាយនឹងវង្វេងផ្លូវ ឬជាប់ជំពាក់ក្នុងឧបក្កិលេស។",
@@ -1433,10 +1480,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — ការវិនិច្ឆ័យចរិតរបស់យោគី",
     "badgeClass": "badge-samadhi",
     "title": "៧. ចរិតវិនិច្ឆ័យ ៦ ប្រការ (ការស្គាល់និស្ស័យចិត្ត)",
-    "paliVerse": "ឆ ចរិតានិ ហោន្តិ
-រាគចរិតំ ទោសចរិតំ
-មោហចរិតំ សទ្ធាចរិតំ
-ពុទ្ធិចរិតំ វិតក្កចរិតន្តិ។",
+    "paliVerse": "ឆ ចរិតានិ ហោន្តិ\nរាគចរិតំ ទោសចរិតំ\nមោហចរិតំ សទ្ធាចរិតំ\nពុទ្ធិចរិតំ វិតក្កចរិតន្តិ។",
     "wordMeaning": "ទាក់ទងដោយចរិយា ៦ នោះ បុគ្គលក៏មាន ៦ ដូចគ្នា គឺ បុគ្គលរាគចរិត បុគ្គលទោសចរិត បុគ្គលមោហចរិត បុគ្គលសទ្ធាចរិត បុគ្គលពុទ្ធិចរិត បុគ្គលវិតក្កចរិត ព្រោះហេតុដែលបុគ្គល ៦ ពួកនោះ បុគ្គលរាគចរិត ក្នុងពេលធ្វើកុសល រមែងមានសេចក្តីប្រាថ្នាល្អិតល្អន់... ចំណែកបុគ្គលទោសចរិត រមែងមានចិត្តរួសរាន់... ។",
     "canonicalTranslation": "ទាក់ទងដោយចរិយា ៦ នោះ បុគ្គលក៏មាន ៦ ដូចគ្នា គឺ បុគ្គលរាគចរិត បុគ្គលទោសចរិត បុគ្គលមោហចរិត បុគ្គលសទ្ធាចរិត បុគ្គលពុទ្ធិចរិត បុគ្គលវិតក្កចរិត ព្រោះហេតុដែលបុគ្គល ៦ ពួកនោះ បុគ្គលរាគចរិត ក្នុងពេលធ្វើកុសល រមែងមានសេចក្តីប្រាថ្នាល្អិតល្អន់... ចំណែកបុគ្គលទោសចរិត រមែងមានចិត្តរួសរាន់... ។",
     "whyMemorize": "ការដឹងចរិតខ្លួនឯង ជួយឱ្យជ្រើសរើសអារម្មណ៍កម្មដ្ឋានបានត្រូវ មិនខាតពេល (ដូចជា រាគចរិតត្រូវនឹងអសុភ, ទោសចរិតត្រូវនឹងមេត្តា)។",
@@ -1452,11 +1496,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — ដែននៃអារម្មណ៍សមថកម្មដ្ឋាន",
     "badgeClass": "badge-samadhi",
     "title": "៨. កម្មដ្ឋាន ៤០ ដោយសង្ខេប (អារម្មណ៍ភាវនាទាំង ៤០)",
-    "paliVerse": "ចត្តាឡីស កម្មដ្ឋានានិ
-កសិណា ទស, អសុភា ទស,
-អនុស្សតិយោ ទស,
-ព្រហ្មវិហារា ចត្តារោ, អារុប្បា ចត្តារោ,
-អាហារេ បដិកូលសញ្ញា ឯកា, ចតុធាតុវវដ្ឋានំ ឯកន្តិ។",
+    "paliVerse": "ចត្តាឡីស កម្មដ្ឋានានិ\nកសិណា ទស, អសុភា ទស,\nអនុស្សតិយោ ទស,\nព្រហ្មវិហារា ចត្តារោ, អារុប្បា ចត្តារោ,\nអាហារេ បដិកូលសញ្ញា ឯកា, ចតុធាតុវវដ្ឋានំ ឯកន្តិ។",
     "wordMeaning": "កម្មដ្ឋាន ៤០ ក្នុងពាក្យនោះ គឺ កសិណ ១០, អសុភ ១០, អនុស្សតិ ១០, ព្រហ្មវិហារ ៤, អារុប្ប ៤, អាហារេបដិកូលសញ្ញា ១, ចតុធាតុវវដ្ឋាន ១ ។",
     "canonicalTranslation": "កម្មដ្ឋាន ៤០ ក្នុងពាក្យនោះ គឺ កសិណ ១០, អសុភ ១០, អនុស្សតិ ១០, ព្រហ្មវិហារ ៤, អារុប្ប ៤, អាហារេបដិកូលសញ្ញា ១, ចតុធាតុវវដ្ឋាន ១ ។",
     "whyMemorize": "នេះជាមាតិកាពេញលេញនៃសមថកម្មដ្ឋានទាំងអស់ក្នុងព្រះពុទ្ធសាសនា ដែលព្រះពុទ្ធឃោសាចារ្យប្រមូលចងក្រងទុកក្នុងវិសុទ្ធិមគ្គ។",
@@ -1472,10 +1512,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — ការចម្រើនកសិណ និងការកើតនៃនិមិត្ត",
     "badgeClass": "badge-samadhi",
     "title": "៩. បឋវីកសិណ និងត្រៃនិមិត្ត (ដំណាក់កាលនៃរូបនិមិត្ត)",
-    "paliVerse": "បរិកម្មនិមិត្តំ ឧគ្គហនិមិត្តំ
-បដិភាគនិមិត្តន្តិ តិវិធំ និមិត្តំ
-តត្ថ បរិកម្មភាវនា ឧបចារភាវនា
-អប្បនាភាវនាតិ តិស្សោ ភាវនា។",
+    "paliVerse": "បរិកម្មនិមិត្តំ ឧគ្គហនិមិត្តំ\nបដិភាគនិមិត្តន្តិ តិវិធំ និមិត្តំ\nតត្ថ បរិកម្មភាវនា ឧបចារភាវនា\nអប្បនាភាវនាតិ តិស្សោ ភាវនា។",
     "wordMeaning": "ក្នុងកម្មដ្ឋានទាំងនោះ ដំបូងកាលនឹងប្រាប់បឋវីកសិណកម្មដ្ឋាន គប្បីប្រាប់អាការ ៩ នេះគឺ... បរិកម្មនិមិត្ត ឧគ្គហនិមិត្ត បដិភាគនិមិត្ត និងការកើតឡើងនៃភាវនា ៣ គឺ បរិកម្មភាវនា ឧបចារភាវនា អប្បនាភាវនា... កាលបើបដិភាគនិមិត្តកើតឡើង ចិត្តក៏តម្កល់ស្ងប់ក្នុងឧបចារៈ ។",
     "canonicalTranslation": "ក្នុងកម្មដ្ឋានទាំងនោះ ដំបូងកាលនឹងប្រាប់បឋវីកសិណកម្មដ្ឋាន គប្បីប្រាប់អាការ ៩ នេះគឺ... បរិកម្មនិមិត្ត ឧគ្គហនិមិត្ត បដិភាគនិមិត្ត និងការកើតឡើងនៃភាវនា ៣ គឺ បរិកម្មភាវនា ឧបចារភាវនា អប្បនាភាវនា... កាលបើបដិភាគនិមិត្តកើតឡើង ចិត្តក៏តម្កល់ស្ងប់ក្នុងឧបចារៈ ។",
     "whyMemorize": "យោគីត្រូវស្គាល់ភាពខុសគ្នារវាងឧគ្គហនិមិត្ត (រូបជាប់ភ្នែកនៅមានស្នាមខ្វក់) និងបដិភាគនិមិត្ត (រូបផុសចេញពីចិត្ត ភ្លឺថ្លាដូចកញ្ចក់) ដើម្បីកុំឱ្យច្រឡំ។",
@@ -1491,10 +1528,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — កម្រិតនៃការតម្កល់ចិត្ត",
     "badgeClass": "badge-samadhi",
     "title": "១០. ឧបចារសមាធិ និងអប្បនាសមាធិ (កម្រិតចិត្តស្ងប់ជិត និងស្ងប់មាំ)",
-    "paliVerse": "ទុវិធោ សមាធិ
-ឧបចារសមាធិ ច អប្បនាសមាធិ ច
-ឧបចារេ នីវរណប្បហានំ
-អប្បនាយំ អង្គបាតុភាវោ។",
+    "paliVerse": "ទុវិធោ សមាធិ\nឧបចារសមាធិ ច អប្បនាសមាធិ ច\nឧបចារេ នីវរណប្បហានំ\nអប្បនាយំ អង្គបាតុភាវោ។",
     "wordMeaning": "ឯកគ្គតានៃចិត្តដែលព្រះយោគាវចរបានដោយអំណាចធម៌ទាំងនេះ គឺ អនុស្សតិដ្ឋានទាំង ៦ មរណស្សតិ ឧបសមានុស្សតិ អាហារេបដិកូលសញ្ញា ចតុធាតុវវដ្ឋានក្តី ឯកគ្គតាក្នុងឧបចារៈនៃអប្បនាសមាធិក្តី នេះឈ្មោះថា ឧបចារសមាធិ ។ ឯកគ្គតានៃចិត្តដែលកើតឡើងក្នុងអប្បនា ឈ្មោះថា អប្បនាសមាធិ ។",
     "canonicalTranslation": "ឯកគ្គតានៃចិត្តដែលព្រះយោគាវចរបានដោយអំណាចធម៌ទាំងនេះ គឺ អនុស្សតិដ្ឋានទាំង ៦ មរណស្សតិ ឧបសមានុស្សតិ អាហារេបដិកូលសញ្ញា ចតុធាតុវវដ្ឋានក្តី ឯកគ្គតាក្នុងឧបចារៈនៃអប្បនាសមាធិក្តី នេះឈ្មោះថា ឧបចារសមាធិ ។ ឯកគ្គតានៃចិត្តដែលកើតឡើងក្នុងអប្បនា ឈ្មោះថា អប្បនាសមាធិ ។",
     "whyMemorize": "ដើម្បីដឹងថាកម្មដ្ឋានណាផ្តល់ត្រឹមឧបចារសមាធិ (ដូចជា ពុទ្ធានុស្សតិ, មរណស្សតិ) និងកម្មដ្ឋានណាអាចឡើងដល់ឈាន (ដូចជា អានាបានស្សតិ, កសិណ)។",
@@ -1510,10 +1544,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — រូបជ្ឈាន ៤ ប្រការ",
     "badgeClass": "badge-samadhi",
     "title": "១១. ចតុក្កនយរូបជ្ឈាន (អង្គឈានទាំង ៥ និងឈាន ៤)",
-    "paliVerse": "វិតក្កវិចារបីតិសុខេកគ្គតាសហិតំ បឋមជ្ឈានំ
-អវិតក្កវិចារមត្តំ ទុតិយជ្ឈានំ
-បីតិវិរាគា តតិយជ្ឈានំ
-ឧបេក្ខាសតិបារិសុទ្ធិ ចតុត្ថជ្ឈានន្តិ។",
+    "paliVerse": "វិតក្កវិចារបីតិសុខេកគ្គតាសហិតំ បឋមជ្ឈានំ\nអវិតក្កវិចារមត្តំ ទុតិយជ្ឈានំ\nបីតិវិរាគា តតិយជ្ឈានំ\nឧបេក្ខាសតិបារិសុទ្ធិ ចតុត្ថជ្ឈានន្តិ។",
     "wordMeaning": "សមាធិ ក្នុងបឋមជ្ឈាន និង ឧបចារសមាធិ ចាត់ជាសវិតក្កសវិចារសមាធិ ( សមាធិមានទាំងវិតក្កៈ មានទាំងវិចារៈ ) សមាធិក្នុងទុតិយជ្ឈាន... ចាត់ជាអវិតក្កវិចារមត្តសមាធិ... សមាធិក្នុងតតិយជ្ឈាន និងចតុត្ថជ្ឈាន ចាត់ជាអវិតក្កអវិចារសមាធិ... មានឧបេក្ខា និងសតិដ៏បរិសុទ្ធ ។",
     "canonicalTranslation": "សមាធិ ក្នុងបឋមជ្ឈាន និង ឧបចារសមាធិ ចាត់ជាសវិតក្កសវិចារសមាធិ ( សមាធិមានទាំងវិតក្កៈ មានទាំងវិចារៈ ) សមាធិក្នុងទុតិយជ្ឈាន... ចាត់ជាអវិតក្កវិចារមត្តសមាធិ... សមាធិក្នុងតតិយជ្ឈាន និងចតុត្ថជ្ឈាន ចាត់ជាអវិតក្កអវិចារសមាធិ... មានឧបេក្ខា និងសតិដ៏បរិសុទ្ធ ។",
     "whyMemorize": "ការស្គាល់អង្គឈានទាំង ៥ (វិតក្កៈ វិចារៈ បីតិ សុខ ឯកគ្គតា) ជាបន្ទាត់វាស់ស្ទង់ការឡើងថ្នាក់នៃឈានពីបឋមជ្ឈានរហូតដល់ចតុត្ថជ្ឈាន។",
@@ -1529,10 +1560,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — អរូបជ្ឈាន ៤ ប្រការ",
     "badgeClass": "badge-samadhi",
     "title": "១២. ចតុរារុប្បសមាបត្តិ (អរូបសមាបត្តិទាំង ៤)",
-    "paliVerse": "អាកាសានញ្ចាយតនំ
-វិញ្ញាណញ្ចាយតនំ
-អាកិញ្ចញ្ញាយតនំ
-នេវសញ្ញានាសញ្ញាយតនន្តិ។",
+    "paliVerse": "អាកាសានញ្ចាយតនំ\nវិញ្ញាណញ្ចាយតនំ\nអាកិញ្ចញ្ញាយតនំ\nនេវសញ្ញានាសញ្ញាយតនន្តិ។",
     "wordMeaning": "បុគ្គលខ្លះទៀត ប្រាថ្នាថា យើងនឹងសោយសម្បត្តិក្នុងអរូបភព ហើយចម្រើន សមាបត្តិ មានអាកាសានញ្ចាយតនៈជាដើម... កាលបរិបូរទៅដោយភាវនា គេក៏កើតក្នុងអរូបភពនោះៗ កម្មដែលជាហេតុឲ្យកើតក្នុងអរូបភពនោះ ឈ្មោះថា អរូបាវចរកុសល ។",
     "canonicalTranslation": "បុគ្គលខ្លះទៀត ប្រាថ្នាថា យើងនឹងសោយសម្បត្តិក្នុងអរូបភព ហើយចម្រើន សមាបត្តិ មានអាកាសានញ្ចាយតនៈជាដើម... កាលបរិបូរទៅដោយភាវនា គេក៏កើតក្នុងអរូបភពនោះៗ កម្មដែលជាហេតុឲ្យកើតក្នុងអរូបភពនោះ ឈ្មោះថា អរូបាវចរកុសល ។",
     "whyMemorize": "អរូបជ្ឈានជាកំពូលនៃសមថភាវនា ដែលកន្លងផុតរូបារម្មណ៍ទាំងពួង តម្កល់ចិត្តក្នុងអាកាស វិញ្ញាណ អាកិញ្ចញ្ញៈ និងនេវសញ្ញានាសញ្ញា។",
@@ -1548,10 +1576,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — ចតុរារក្ខា និងអប្បមញ្ញា",
     "badgeClass": "badge-samadhi",
     "title": "១៣. ចតុរប្បមញ្ញាព្រហ្មវិហារ (មេត្តា ករុណា មុទិតា ឧបេក្ខា)",
-    "paliVerse": "មេត្តា ករុណា មុទិតា ឧបេក្ខា ចាតិ
-ចតស្សោ ឥមា អប្បមញ្ញាយោ
-សព្វសត្តេសុ សមំ ផរិត្វា
-វិហរតិ មហគ្គតេន ចេតសា។",
+    "paliVerse": "មេត្តា ករុណា មុទិតា ឧបេក្ខា ចាតិ\nចតស្សោ ឥមា អប្បមញ្ញាយោ\nសព្វសត្តេសុ សមំ ផរិត្វា\nវិហរតិ មហគ្គតេន ចេតសា។",
     "wordMeaning": "ចំណែកបុគ្គលខ្លះទៀត... ចម្រើនមេត្តា ចម្រើនករុណា មុទិតា ឧបេក្ខា... កាលពេញទៅដោយភាវនា គេក៏ទៅកើតក្នុងព្រហ្មលោក ព្រោះហេតុនោះ កុសលចេតនាដែលប្រព្រឹត្តទៅក្នុងព្រហ្មវិហារទាំង ៤ នេះ ទើបឈ្មោះថា រូបាវចរកុសល ។",
     "canonicalTranslation": "ចំណែកបុគ្គលខ្លះទៀត... ចម្រើនមេត្តា ចម្រើនករុណា មុទិតា ឧបេក្ខា... កាលពេញទៅដោយភាវនា គេក៏ទៅកើតក្នុងព្រហ្មលោក ព្រោះហេតុនោះ កុសលចេតនាដែលប្រព្រឹត្តទៅក្នុងព្រហ្មវិហារទាំង ៤ នេះ ទើបឈ្មោះថា រូបាវចរកុសល ។",
     "whyMemorize": "ព្រហ្មវិហារធម៌ជាថ្នាំបន្សាបទោសៈ ព្យាបាទ និងឥស្សា ជួយឱ្យចិត្តទូលំទូលាយ រកព្រំដែនគ្មាន ស្ងប់ស្ងាត់ចាកកំហឹង។",
@@ -1567,10 +1592,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "សមាធិនិទ្ទេស — អានិសង្សនៃសមាធិ និងអភិញ្ញា",
     "badgeClass": "badge-samadhi",
     "title": "១៤. អភិញ្ញា និងអានិសង្សនៃសមាធិ (ផលដ៏ខ្ពង់ខ្ពស់នៃសមថៈ)",
-    "paliVerse": "ឥទ្ធិវិធំ ទិព្វសោតំ
-ចេតោបរិយញាណំ
-បុព្វេនិវាសានុស្សតិ
-ទិព្វចក្ខុ អាសវក្ខយោតិ។",
+    "paliVerse": "ឥទ្ធិវិធំ ទិព្វសោតំ\nចេតោបរិយញាណំ\nបុព្វេនិវាសានុស្សតិ\nទិព្វចក្ខុ អាសវក្ខយោតិ។",
     "wordMeaning": "៣ - មានអភិញ្ញាជាអានិសង្ស : ចំណែកភិក្ខុពួកណាញ៉ាំងសមាបត្តិ ៨ ឲ្យកើតហើយ ចូលឈានដែលជា បាទនៃអភិញ្ញា ចេញចាកសមាបត្តិហើយ កាលប្រាថ្នា ក៏ធ្វើអភិញ្ញាដែលមានន័យ ដូចពោលទុកដោយប្រការថា ជាមនុស្សម្នាក់ ហើយ ( អធិដ្ឋាន ) ឲ្យជាមនុស្សច្រើននាក់... នូវធម៌ដែលគួរធ្វើឲ្យជាក់ច្បាស់ដោយអភិញ្ញា គឺ នូវធម៌ដែលគួរធ្វើឲ្យជាក់ច្បាស់ដោយបញ្ញាដ៏វិសេសក្រៃលែង ។",
     "canonicalTranslation": "៣ - មានអភិញ្ញាជាអានិសង្ស : ចំណែកភិក្ខុពួកណាញ៉ាំងសមាបត្តិ ៨ ឲ្យកើតហើយ ចូលឈានដែលជា បាទនៃអភិញ្ញា ចេញចាកសមាបត្តិហើយ កាលប្រាថ្នា ក៏ធ្វើអភិញ្ញាដែលមានន័យ ដូចពោលទុកដោយប្រការថា ជាមនុស្សម្នាក់ ហើយ ( អធិដ្ឋាន ) ឲ្យជាមនុស្សច្រើននាក់... នូវធម៌ដែលគួរធ្វើឲ្យជាក់ច្បាស់ដោយអភិញ្ញា គឺ នូវធម៌ដែលគួរធ្វើឲ្យជាក់ច្បាស់ដោយបញ្ញាដ៏វិសេសក្រៃលែង ។",
     "whyMemorize": "ដើម្បីដឹងច្បាស់ថា សមាធិដែលអប់រំល្អហើយរមែងបង្កើតអានិសង្ស ៥ យ៉ាង ពិសេសជាបាទគ្រឹះដ៏មាំសម្រាប់ញ៉ាំងវិបស្សនាបញ្ញាឱ្យកើតឡើង។",
@@ -1586,9 +1608,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "បញ្ញានិទ្ទេស — ទីកើតនៃបញ្ញា (បញ្ញាភូមិ)",
     "badgeClass": "badge-panna",
     "title": "១៥. បញ្ញាភូមិ ៦ ពួក (ខន្ធ អាយតនៈ ធាតុ ឥន្ទ្រិយ សច្ចៈ បដិច្ចសមុប្បាទ)",
-    "paliVerse": "ខន្ធាយតនធាតុឥន្ទ្រិយសច្ចបដិច្ចសមុប្បាទាទិភេទា ធម្មា ភូមិ
-សីលវិសុទ្ធិ ចិត្តវិសុទ្ធិ ចាតិ ឥមា ទ្វេ វិសុទ្ធិយោ មូលំ
-ទិដ្ឋិវិសុទ្ធិ... ញាណទស្សនវិសុទ្ធីតិ ឥមា បញ្ច វិសុទ្ធិយោ សរីរំ។",
+    "paliVerse": "ខន្ធាយតនធាតុឥន្ទ្រិយសច្ចបដិច្ចសមុប្បាទាទិភេទា ធម្មា ភូមិ\nសីលវិសុទ្ធិ ចិត្តវិសុទ្ធិ ចាតិ ឥមា ទ្វេ វិសុទ្ធិយោ មូលំ\nទិដ្ឋិវិសុទ្ធិ... ញាណទស្សនវិសុទ្ធីតិ ឥមា បញ្ច វិសុទ្ធិយោ សរីរំ។",
     "wordMeaning": "ព្រោះហេតុដែលធម៌ទាំងឡាយដែលចែកប្រភេទជាខន្ធ អាយតនៈ ធាតុ ឥន្ទ្រិយ សច្ចៈ និងបដិច្ចសមុប្បាទជាដើម ជាភូមិ ( ទីកើត ) របស់បញ្ញានេះ វិសុទ្ធិ ២ គឺសីលវិសុទ្ធិ និងចិត្តវិសុទ្ធិជាមូល ជាឫសគល់ ។ វិសុទ្ធិ ៥ នេះ គឺទិដ្ឋិវិសុទ្ធិ កង្ខាវិតរណវិសុទ្ធិ មគ្គាមគ្គញ្ញាណទស្សនវិសុទ្ធិ បដិបទាញាណទស្សនវិសុទ្ធិ ញាណទស្សនវិសុទ្ធិ ជាសរីរៈ ( ជារាង ឬតួ ) របស់បញ្ញានេះ ។",
     "canonicalTranslation": "ព្រោះហេតុដែលធម៌ទាំងឡាយដែលចែកប្រភេទជាខន្ធ អាយតនៈ ធាតុ ឥន្ទ្រិយ សច្ចៈ និងបដិច្ចសមុប្បាទជាដើម ជាភូមិ ( ទីកើត ) របស់បញ្ញានេះ វិសុទ្ធិ ២ គឺសីលវិសុទ្ធិ និងចិត្តវិសុទ្ធិជាមូល ជាឫសគល់ ។ វិសុទ្ធិ ៥ នេះ គឺទិដ្ឋិវិសុទ្ធិ កង្ខាវិតរណវិសុទ្ធិ មគ្គាមគ្គញ្ញាណទស្សនវិសុទ្ធិ បដិបទាញាណទស្សនវិសុទ្ធិ ញាណទស្សនវិសុទ្ធិ ជាសរីរៈ ( ជារាង ឬតួ ) របស់បញ្ញានេះ ។",
     "whyMemorize": "នេះជាគ្រឹះទ្រឹស្តីដ៏ធំបំផុតនៃគម្ពីរវិសុទ្ធិមគ្គទាំងមូល ដែលបែងចែករវាង «ភូមិបញ្ញា» «ឫសគល់បញ្ញា» និង «តួអង្គបញ្ញា»។",
@@ -1604,10 +1624,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "បញ្ញានិទ្ទេស — សរីរៈបញ្ញាទី ១",
     "badgeClass": "badge-panna",
     "title": "១៦. ទិដ្ឋិវិសុទ្ធិ (ការកំណត់ឃើញនាម និងរូបតាមពិត)",
-    "paliVerse": "នាមរូបានំ យថាវទស្សនំ
-ទិដ្ឋិវិសុទ្ធិ នាម។
-តត្ថ លក្ខណរសបច្ចុបដ្ឋានបទដ្ឋានវសេន
-នាមរូបបរិច្ឆេទោ ហោតិ។",
+    "paliVerse": "នាមរូបានំ យថាវទស្សនំ\nទិដ្ឋិវិសុទ្ធិ នាម។\nតត្ថ លក្ខណរសបច្ចុបដ្ឋានបទដ្ឋានវសេន\nនាមរូបបរិច្ឆេទោ ហោតិ។",
     "wordMeaning": "ការឃើញនាម និងរូបដោយពិត ឈ្មោះថា ទិដ្ឋិវិសុទ្ធិ... ព្រះយោគាវចរប្រាថ្នានឹងធ្វើទិដ្ឋិវិសុទ្ធិនោះ ឲ្យដល់ព្រម ចេញអំពីរូបាវចរជ្ឈាន និងអរូបាវចរជ្ឈានដ៏សេស... កំណត់នាមរូបដោយសង្ខេបថា វត្ថុដែលមានការបង្អោនទៅបានជាលក្ខណៈ ជានាម វត្ថុដែលមានការបែកធ្លាយបានជាលក្ខណៈ ជារូប ។",
     "canonicalTranslation": "ការឃើញនាម និងរូបដោយពិត ឈ្មោះថា ទិដ្ឋិវិសុទ្ធិ... ព្រះយោគាវចរប្រាថ្នានឹងធ្វើទិដ្ឋិវិសុទ្ធិនោះ ឲ្យដល់ព្រម ចេញអំពីរូបាវចរជ្ឈាន និងអរូបាវចរជ្ឈានដ៏សេស... កំណត់នាមរូបដោយសង្ខេបថា វត្ថុដែលមានការបង្អោនទៅបានជាលក្ខណៈ ជានាម វត្ថុដែលមានការបែកធ្លាយបានជាលក្ខណៈ ជារូប ។",
     "whyMemorize": "ទិដ្ឋិវិសុទ្ធិជាជំហានដំបូងនៃវិបស្សនាពិតប្រាកដ ដែលបំបែក «សក្កាយទិដ្ឋិ» គឺការប្រកាន់ថាយើង គេ ស្រី ប្រុស មកជាត្រឹមតែនាម និងរូប។",
@@ -1623,9 +1640,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "បញ្ញានិទ្ទេស — សរីរៈបញ្ញាទី ២",
     "badgeClass": "badge-panna",
     "title": "១៧. កង្ខាវិតរណវិសុទ្ធិ (ការឆ្លងផុតសេចក្តីសង្ស័យដោយស្គាល់បច្ច័យ)",
-    "paliVerse": "តស្សេវ នាមរូបស្ស បច្ចយបរិគ្គហេន
-តីសុ អទ្ធាសុ កង្ខាវិតរណំ ញាណំ
-កង្ខាវិតរណវិសុទ្ធិ នាម។",
+    "paliVerse": "តស្សេវ នាមរូបស្ស បច្ចយបរិគ្គហេន\nតីសុ អទ្ធាសុ កង្ខាវិតរណំ ញាណំ\nកង្ខាវិតរណវិសុទ្ធិ នាម។",
     "wordMeaning": "ចំណែកញាណដែលឆ្លងសេចក្តីសង្ស័យក្នុងអទ្ធា ៣ បាន ដោយការកំណត់ បច្ច័យរបស់នាមរូបនោះឯង ហើយតាំងនៅ ឈ្មោះថា កង្ខាវិតរណវិសុទ្ធិ ។",
     "canonicalTranslation": "ចំណែកញាណដែលឆ្លងសេចក្តីសង្ស័យក្នុងអទ្ធា ៣ បាន ដោយការកំណត់ បច្ច័យរបស់នាមរូបនោះឯង ហើយតាំងនៅ ឈ្មោះថា កង្ខាវិតរណវិសុទ្ធិ ។",
     "whyMemorize": "ការយល់ដឹងអំពីបច្ច័យ (អវិជ្ជា តណ្ហា កម្ម អាហារ) ធ្វើឱ្យអស់ការសង្ស័យទាំង ១៦ ប្រការក្នុងអតីត អនាគត និងបច្ចុប្បន្ន ក្លាយជា «ចុឡសោតាបន្ន»។",
@@ -1641,9 +1656,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "បញ្ញានិទ្ទេស — សរីរៈបញ្ញាទី ៣",
     "badgeClass": "badge-panna",
     "title": "១៨. មគ្គាមគ្គញ្ញាណទស្សនវិសុទ្ធិ (ការកាត់សេចក្តីវិបស្សនូបក្កិលេស)",
-    "paliVerse": "មគ្គោ អយំ, អយំ ន មគ្គោតិ
-ឯវំ មគ្គាមគ្គវវត្ថបនំ ញាណំ
-មគ្គាមគ្គញ្ញាណទស្សនវិសុទ្ធិ នាម។",
+    "paliVerse": "មគ្គោ អយំ, អយំ ន មគ្គោតិ\nឯវំ មគ្គាមគ្គវវត្ថបនំ ញាណំ\nមគ្គាមគ្គញ្ញាណទស្សនវិសុទ្ធិ នាម។",
     "wordMeaning": "ចំណែកញាណដែលដឹងធម៌ជាផ្លូវ និងធម៌ដែលមិនមែនផ្លូវថា នេះជាផ្លូវ នេះ មិនមែនផ្លូវ ដូច្នេះហើយ តាំងនៅ ឈ្មោះថា មគ្គាមគ្គញ្ញាណទស្សនវិសុទ្ធិ ។ ព្រះយោគាវចរ... កាលបើពន្លឺភ្លឺចិញ្ចាច ( ឱភាស ) បីតិ បស្សទ្ធិ សុខ កើតឡើង មិនលង់ច្រឡំថាជាមគ្គផលឡើយ ស្គាល់ច្បាស់ថាជាវិបស្សនូបក្កិលេស ។",
     "canonicalTranslation": "ចំណែកញាណដែលដឹងធម៌ជាផ្លូវ និងធម៌ដែលមិនមែនផ្លូវថា នេះជាផ្លូវ នេះ មិនមែនផ្លូវ ដូច្នេះហើយ តាំងនៅ ឈ្មោះថា មគ្គាមគ្គញ្ញាណទស្សនវិសុទ្ធិ ។ ព្រះយោគាវចរ... កាលបើពន្លឺភ្លឺចិញ្ចាច ( ឱភាស ) បីតិ បស្សទ្ធិ សុខ កើតឡើង មិនលង់ច្រឡំថាជាមគ្គផលឡើយ ស្គាល់ច្បាស់ថាជាវិបស្សនូបក្កិលេស ។",
     "whyMemorize": "យោគីជាច្រើនតែងជាប់គាំងត្រង់ចំណុចនេះ ដោយច្រឡំពន្លឺភ្លឺស្វាង ឬសេចក្តីសុខក្នុងវិបស្សនាថាជាព្រះនិព្វាន។ វិសុទ្ធិនេះជាត្រីវិស័យការពារកុំឱ្យវង្វេង។",
@@ -1659,12 +1672,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "បញ្ញានិទ្ទេស — សរីរៈបញ្ញាទី ៤",
     "badgeClass": "badge-panna",
     "title": "១៩. បដិបទាញាណទស្សនវិសុទ្ធិ (វិបស្សនាញាណទាំង ៩)",
-    "paliVerse": "នវហិ វិបស្សនាញាណෙහි
-វុឌ្ឍិប្បត្តា បដិបទាញាណទស្សនវិសុទ្ធិ នាម
-ឧទយព្វយញាណំ ភង្គញាណំ
-ភយញាណំ អាទីនវញាណំ និព្វិទាញាណំ
-មុញ្ចិតុកម្យតាញាណំ បដិសង្ខាញាណំ
-សង្ខារុបេក្ខាញាណំ សច្ចានុលោមិកញ្ញាណន្តិ។",
+    "paliVerse": "នវហិ វិបស្សនាញាណෙහි\nវុឌ្ឍិប្បត្តា បដិបទាញាណទស្សនវិសុទ្ធិ នាម\nឧទយព្វយញាណំ ភង្គញាណំ\nភយញាណំ អាទីនវញាណំ និព្វិទាញាណំ\nមុញ្ចិតុកម្យតាញាណំ បដិសង្ខាញាណំ\nសង្ខារុបេក្ខាញាណំ សច្ចានុលោមិកញ្ញាណន្តិ។",
     "wordMeaning": "ចំណែកវិបស្សនា ដែលដល់កំពូលដោយអំណាចញាណ ៨ និងញាណទី ៩ គឺសច្ចានុលោមិកញ្ញាណនេះឯង ឈ្មោះថា បដិបទាញាណទស្សនវិសុទ្ធិ ។",
     "canonicalTranslation": "ចំណែកវិបស្សនា ដែលដល់កំពូលដោយអំណាចញាណ ៨ និងញាណទី ៩ គឺសច្ចានុលោមិកញ្ញាណនេះឯង ឈ្មោះថា បដិបទាញាណទស្សនវិសុទ្ធិ ។",
     "whyMemorize": "នេះជាខ្សែសង្វាក់វិបស្សនាញាណទាំង ៩ ថ្នាក់ ដែលដុសខាត់បញ្ញារហូតដល់កំពូលត្រៀមចុះកាន់អរិយមគ្គ។",
@@ -1680,10 +1688,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "បញ្ញានិទ្ទេស — សរីរៈបញ្ញាទី ៥ (កំពូលនៃវិសុទ្ធិ)",
     "badgeClass": "badge-panna",
     "title": "២០. ញាណទស្សនវិសុទ្ធិ (លោកុត្តរមគ្គញ្ញាណទាំង ៤)",
-    "paliVerse": "ឥមេសុ បន ចតូសុ មគ្គេសុ
-ញាណំ ញាណទស្សនវិសុទ្ធិ នាម
-សោតាបត្តិមគ្គោ សកទាគាមិមគ្គោ
-អនាគាមិមគ្គោ អរហត្តមគ្គោតិ។",
+    "paliVerse": "ឥមេសុ បន ចតូសុ មគ្គេសុ\nញាណំ ញាណទស្សនវិសុទ្ធិ នាម\nសោតាបត្តិមគ្គោ សកទាគាមិមគ្គោ\nអនាគាមិមគ្គោ អរហត្តមគ្គោតិ។",
     "wordMeaning": "ចំណែកញាណក្នុងមគ្គ ៤ នេះ គឺសោតាបត្តិមគ្គ សកទាគាមិមគ្គ អនាគាមិមគ្គ អរហត្តមគ្គ ឈ្មោះថា ញាណទស្សនវិសុទ្ធិ ។ ក្នុងមគ្គញ្ញាណ ៤ នោះ... គោត្រភូញាណធ្វើព្រះនិព្វានដែលមិនមាននិមិត្ត មិនមានបវត្ត ប្រាសចាកសង្ខារ ជានិរោធ ( ទីរំលត់ ) ឲ្យជាអារម្មណ៍ ក៏ឈានកន្លងបង់នូវបុថុជ្ជនគោត្រ... ឈានចុះកាន់អរិយគោត្រ ។",
     "canonicalTranslation": "ចំណែកញាណក្នុងមគ្គ ៤ នេះ គឺសោតាបត្តិមគ្គ សកទាគាមិមគ្គ អនាគាមិមគ្គ អរហត្តមគ្គ ឈ្មោះថា ញាណទស្សនវិសុទ្ធិ ។ ក្នុងមគ្គញ្ញាណ ៤ នោះ... គោត្រភូញាណធ្វើព្រះនិព្វានដែលមិនមាននិមិត្ត មិនមានបវត្ត ប្រាសចាកសង្ខារ ជានិរោធ ( ទីរំលត់ ) ឲ្យជាអារម្មណ៍ ក៏ឈានកន្លងបង់នូវបុថុជ្ជនគោត្រ... ឈានចុះកាន់អរិយគោត្រ ។",
     "whyMemorize": "នេះជាគោលដៅកំពូលនៃការបដិបត្តិនៃព្រះពុទ្ធសាសនា គឺការកាត់ផ្តាច់សំយោជនកិលេសដោយអរិយមគ្គ ៤ សម្រេចព្រះនិព្វានជាស្ថាពរ។",
@@ -1699,11 +1704,7 @@ export const STEPPING_STONE_STAGES = [
     "stage": "បរិបូណ៌ — វិមុត្តិ និងការស្រាយបណ្តាញតណ្ហា",
     "badgeClass": "badge-panna",
     "title": "២១. គាថាចុងបករណ៍នៃវិសុទ្ធិមគ្គ (ការសម្រេចការឆ្ការបណ្តាញជដា)",
-    "paliVerse": "សីលេ បតិដ្ឋាយ នរោ សបញ្ញោ
-ចិត្តំ បញ្ញញ្ច ភាវយំ
-អាតាបី និបកោ ភិក្ខុ
-សោ ឥមំ វិជដយេ ជដន្តិ។
-វិសុទ្ធិមគ្គោ និដ្ឋិតោ។",
+    "paliVerse": "សីលេ បតិដ្ឋាយ នរោ សបញ្ញោ\nចិត្តំ បញ្ញញ្ច ភាវយំ\nអាតាបី និបកោ ភិក្ខុ\nសោ ឥមំ វិជដយេ ជដន្តិ។\nវិសុទ្ធិមគ្គោ និដ្ឋិតោ។",
     "wordMeaning": "សីលេ បតិដ្ឋាយ នរោ សប្បញ្ញោ ... សោ ឥមំ វិជដយេ ជដំ ទុកហើយ បានពោលពាក្យណាទុកថា ឥឡូវនេះ ខ្ញុំកាលពណ៌នាអត្ថដែលផ្សេងដោយគុណ មានសីលជាដើម ក្នុង គាថានេះ ភិក្ខុអ្នកស្វែងរកគុណធំ សម្តែងទុកតាមសេចក្តីពិត... រមែងសម្រេចនូវការស្រាយនូវបណ្តាញតណ្ហានោះបាន ដូច្នេះឯង ។ វិសុទ្ធិមគ្គចប់បរិបូណ៌ ។",
     "canonicalTranslation": "សីលេ បតិដ្ឋាយ នរោ សប្បញ្ញោ ... សោ ឥមំ វិជដយេ ជដំ ទុកហើយ បានពោលពាក្យណាទុកថា ឥឡូវនេះ ខ្ញុំកាលពណ៌នាអត្ថដែលផ្សេងដោយគុណ មានសីលជាដើម ក្នុង គាថានេះ ភិក្ខុអ្នកស្វែងរកគុណធំ សម្តែងទុកតាមសេចក្តីពិត... រមែងសម្រេចនូវការស្រាយនូវបណ្តាញតណ្ហានោះបាន ដូច្នេះឯង ។ វិសុទ្ធិមគ្គចប់បរិបូណ៌ ។",
     "whyMemorize": "ជាគាថាបិទបញ្ចប់គម្ពីរវិសុទ្ធិមគ្គ បញ្ជាក់ថាអ្នកដែលបានបំពេញសីល សមាធិ និងបញ្ញាពេញលេញហើយ រមែងអាចឆ្ការកម្ទេចបណ្តាញតណ្ហា រួចចាកវដ្តទុក្ខទាំងស្រុង។",
@@ -1719,599 +1720,395 @@ export const STEPPING_STONE_STAGES = [
 export const SAMADHI_PRACTICE_METHODS = [
   {
     "id": "anapanasati",
-    "name": "អានាបានស្សតិ (រលឹកដឹងខ្យល់ដង្ហើមចេញចូល)",
+    "name": "អានាបានស្សតិ (ការដឹងខ្យល់ដង្ហើមចេញចូល)",
     "pali": "អានាបានស្សតិ",
+    "namePaliKhmer": "អានាបានស្សតិ",
     "category": "អនុស្សតិ ១០",
     "catId": "anussati",
-    "caritaSuitability": "វិតក្កចរិត (អ្នកចូលចិត្តគិតច្រើន រវើរវាយ) និង មោហចរិត (អ្នកស្រពោនស្រពន់ ងងឹតងងុយ)",
-    "maxJhana": "ចតុត្ថជ្ឈាន (ចតុត្ថជ្ឈាន (ឈានទី ៤))",
-    "description": "កម្មដ្ឋានកំពូលដែលព្រះពុទ្ធគ្រប់ព្រះអង្គតែងចម្រើនដើម្បីសម្រេចព្រះសម្ពោធិញាណ។ ជាការតម្កល់សតិដឹងខ្យល់ដង្ហើមចេញចូលត្រង់ចំណុចប៉ះ (ចុងច្រមុះ ឬបបូរមាត់លើ) ដោយមិនរត់តាមខ្យល់ទៅក្នុង ឬក្រៅឡើយ រហូតសម្រេចដល់បដិភាគនិមិត្ត និងឈានទាំង ៤ កម្រិត។",
-    "timerDefaults": [
-      15,
-      20,
-      30,
-      45,
-      60
-    ],
+    "caritaSuitability": "វិតក្កចរិត & មោហចរិត (និងគ្រប់ចរិត)",
+    "maxJhana": "ចតុត្ថជ្ឈាន (ឈានទី ៤) ឆ្ពោះទៅវិបស្សនា",
+    "description": "កម្មដ្ឋានរាជានៃសមាធិ ដែលព្រះសម្មាសម្ពុទ្ធគ្រប់ព្រះអង្គទ្រង់ត្រាស់ដឹង។ តម្កល់សតិដឹងខ្យល់ដង្ហើមត្រង់ផុសនស្ថាន (ចុងច្រមុះ ឬបបូរមាត់លើ) ឆ្លងកាត់ការរាប់ (គណនា) ការតាមដាន (អនុពន្ធនា) រហូតផុសឡើងនូវឧបចារៈ និងអប្បនាសមាធិ។",
+    "timerDefaults": 15,
     "tripitakaVol": "v4",
-    "tripitakaPage": 4,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ៤-១៤០",
+    "tripitakaPage": 30,
+    "tripitakaId": 100419,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ៣០–១៤៣",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100419&page=30",
     "nimittaGuide": {
-      "parikamma": "ការដឹងនូវការប៉ះទង្គិចពិតនៃខ្យល់ដង្ហើមត្រង់ចុងច្រមុះ ឬបបូរមាត់លើ (សភាពត្រជាក់ ក្តៅ កកិត ឬទន់)។",
-      "uggaha": "រូបរាងខ្យល់ចាប់ផ្តើមលេចជានិមិត្តក្នុងចិត្តពេលបិទភ្នែក ហាក់ដូចជាផ្សែងស្តើងៗ ឬចំហាយទឹក ប៉ុន្តែមិនទាន់នៅនឹងនរនៅឡើយ។",
-      "patibhaga": "និមិត្តផ្លាស់ប្តូរទៅជាពន្លឺភ្លឺថ្លាស្អាត ដូចជាដុំកប្បាសទន់ល្មើយ ដូចផ្កាយព្រឹកចាំងពន្លឺ ឬដូចកញ្ចក់ឆ្លុះរលោងស្រោបដោយត្បូងកែវ។ ពេលនេះនីវរណៈទាំង ៥ រលត់អស់ ចិត្តស្ងប់ចុះកាន់ឧបចារសមាធិ និងអប្បនាសមាធិ (បឋមជ្ឈាន)។"
+      "parikamma": "ដង្ហើមគ្រោតគ្រាតដំបូង ដែលដឹងដោយការប៉ះពាល់ចុងច្រមុះ ឬបបូរមាត់ខាងលើ។",
+      "uggaha": "ដង្ហើមប្រែជាល្អិតផូរផង់ ដូចផ្សែងស្តើង ឬដូចដុំកប្បាសប៉ះនឹងស្បែកយ៉ាងស្រាលស្រទន់។",
+      "patibhaga": "ពន្លឺថ្លាស្អាតដូចដួងផ្កាយ ដូចកញ្ចក់ឆ្លុះ ឬដូចដួងចន្ទ្រពេញវង់ ផុសឡើងស្ងប់នឹងក្នុងចិត្ត។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "គណនាវិធី — ការរាប់ដង្ហើមយឺត និងលឿន",
-        "instruction": "អង្គុយពត់ព្រះភ្នែន ត្រង់កាយ តម្កល់សតិនៅត្រង់ចុងច្រមុះ។ ដកដង្ហើមចេញចូលរួចរាប់ ១... ដកដង្ហើមចេញចូលរួចរាប់ ២... រហូតដល់ ៥ ឬ ១០ (មិនឱ្យតិចជាង ៥ នាំឱ្យចង្អៀតចិត្ត មិនឱ្យលើសពី ១០ នាំឱ្យវង្វេងនឹងលេខ)។ ពេលដង្ហើមស្មើល្អ ប្តូរទៅរាប់លឿនតាមចង្វាក់ខ្យល់ប៉ះ។",
-        "paliChant": "ទីឃំ វា អស្សសន្តោ ទីឃំ អស្សសាមីតិ បជានាតិ, ទីឃំ វា បស្សសន្តោ ទីឃំ បស្សសាមីតិ បជានាតិ, រស្សំ វា អស្សសន្តោ រស្សំ អស្សសាមីតិ បជានាតិ, រស្សំ វា បស្សសន្តោ រស្សំ បស្សសាមីតិ បជានាតិ។",
-        "khmerTranslation": "កាលដកដង្ហើមវែង ក៏ដឹងច្បាស់ថា អាត្មាអញដកដង្ហើមវែង។ កាលដកដង្ហើមខ្លី ក៏ដឹងច្បាស់ថា អាត្មាអញដកដង្ហើមខ្លី។",
-        "paliChantKhmer": "ទីឃំ វា អស្សសន្តោ ទីឃំ អស្សសាមីតិ បជានាតិ, ទីឃំ វា បស្សសន្តោ ទីឃំ បស្សសាមីតិ បជានាតិ, រស្សំ វា អស្សសន្តោ រស្សំ អស្សសាមីតិ បជានាតិ, រស្សំ វា បស្សសន្តោ រស្សំ បស្សសាមីតិ បជានាតិ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 39,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ៣៩–៤៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=39"
+        "step": 1,
+        "title": "គណនា (ការរាប់ដង្ហើម)",
+        "instruction": "ដកដង្ហើមចូល-ចេញ ដឹងច្បាស់ ហើយរាប់ ១, ២, ៣ រហូតដល់ ៥ មិនឱ្យលើសពី ១០ មិនឱ្យខ្វះពី ៥ ដើម្បីកាត់ផ្តាច់វិតក្កៈរវើរវាយខាងក្រៅ។",
+        "paliAnchor": "គណនា",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៣ ទំព័រ ៧៥–៨២",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100428&page=75"
       },
       {
-        "stepNum": 2,
-        "title": "អនុពន្ធនាវិធី — ការតាមដានជាប់មិនដាច់",
-        "instruction": "លះបង់ការរាប់លេខចេញ។ រក្សាសតិដឹងនូវលំហូរដង្ហើមចេញចូលជាប់មិនដាច់ មិនឱ្យចិត្តរបូតទៅគិតរឿងអតីត ឬអនាគតឡើយ។ ហាមដាច់ខាតមិនឱ្យដេញតាមដង្ហើមចូលទៅដល់ទ្រូង ឬពោះឡើយ។",
-        "paliChant": "សព្វកាយបដិសំវេទី អស្សសិស្សាមីតិ សិក្ខតិ, សព្វកាយបដិសំវេទី បស្សសិស្សាមីតិ សិក្ខតិ។",
-        "khmerTranslation": "យោគាវចររមែងសិក្សាថា អាត្មាអញជាអ្នកដឹងច្បាស់នូវកាយដង្ហើមទាំងពួង នឹងដកដង្ហើមចេញចូល។",
-        "paliChantKhmer": "សព្វកាយបដិសំវេទី អស្សសិស្សាមីតិ សិក្ខតិ, សព្វកាយបដិសំវេទី បស្សសិស្សាមីតិ សិក្ខតិ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 50,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ៥០–៥៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=50"
+        "step": 2,
+        "title": "អនុពន្ធនា (ការតាមដង្ហើមជាប់)",
+        "instruction": "លែងរាប់លេខ ផ្ចង់ស្មារតីតាមដឹងខ្យល់ចេញចូលជាប់មិនដាច់ តែមិនរត់តាមខ្យល់ចូលក្នុងពោះ ឬតាមខ្យល់ចេញក្រៅឆ្ងាយឡើយ គឺដឹងត្រង់ច្រកទ្វារ។",
+        "paliAnchor": "អនុពន្ធនា",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៣ ទំព័រ ៨២–៨៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100429&page=82"
       },
       {
-        "stepNum": 3,
-        "title": "ផុសនាវិធី — ផ្ចង់ស្មារតីត្រង់ចំណុចប៉ះតែមួយ",
-        "instruction": "ប្រៀបដូចជាងអារឈើក្រឡេកមើលតែធ្មេញរណារត្រង់កន្លែងកាត់ឈើមួយកន្លែងដូច្នោះដែរ។ តម្កល់សតិឱ្យនឹងនរត្រង់ចុងច្រមុះ ឬបបូរមាត់លើ មិនរវល់តាមដង្ហើមឡើយ គឺដឹងតែត្រង់កន្លែងដែលខ្យល់ប៉ះខ្ទប់ប៉ុណ្ណោះ។",
-        "paliChant": "បស្សម្ភយំ កាយសង្ខារំ អស្សសិស្សាមីតិ សិក្ខតិ, បស្សម្ភយំ កាយសង្ខារំ បស្សសិស្សាមីតិ សិក្ខតិ។",
-        "khmerTranslation": "យោគាវចររមែងសិក្សាថា អាត្មាអញរម្ងាប់កាយសង្ខារ (ធ្វើឱ្យខ្យល់ដង្ហើមល្អិតស្មើ) នឹងដកដង្ហើមចេញចូល។",
-        "paliChantKhmer": "បស្សម្ភយំ កាយសង្ខារំ អស្សសិស្សាមីតិ សិក្ខតិ, បស្សម្ភយំ កាយសង្ខារំ បស្សសិស្សាមីតិ សិក្ខតិ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 62,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ៦២–៧០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=62"
+        "step": 3,
+        "title": "ផុសនា (ការតម្កល់ត្រង់កន្លែងប៉ះ)",
+        "instruction": "ផ្ចង់ចិត្តយ៉ាងមុតមាំត្រង់កន្លែងដែលខ្យល់ប៉ះខ្លាំងជាងគេ (ចុងច្រមុះ ឬបបូរមាត់លើ) ដូចអ្នកយាមទ្វារចាំពិនិត្យមនុស្សចេញចូលត្រង់ខ្លោងទ្វារ។",
+        "paliAnchor": "ផុសនា",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៣ ទំព័រ ៨៥–៨៨",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100430&page=85"
       },
       {
-        "stepNum": 4,
-        "title": "ឋបនាវិធី — ការតម្កល់ចិត្តលើបដិភាគនិមិត្តចូលកាន់ឈាន",
-        "instruction": "កាលណាខ្យល់ដង្ហើមរម្ងាប់ល្អិតស្មើ បដិភាគនិមិត្តនឹងភ្លឺឡើង។ ផ្ទេរអារម្មណ៍ពីខ្យល់ធម្មតា ទៅតម្កល់លើពន្លឺបដិភាគនិមិត្តនោះឱ្យជាប់ស្អិតល្មួត។ អង្គឈានទាំង ៥ (វិតក្ក វិចារ បីតិ សុខ ឯកគ្គតា) នឹងប្រជុំព្រមគ្នាចូលកាន់បឋមជ្ឈាន។",
-        "paliChant": "បីតិបដិសំវេទី... សុខបដិសំវេទី... ចិត្តសង្ខារបដិសំវេទី... បស្សម្ភយំ ចិត្តសង្ខារំ អស្សសិស្សាមិ បស្សសិស្សាមីតិ សិក្ខតិ។",
-        "khmerTranslation": "ដឹងច្បាស់នូវបីតិ... ដឹងច្បាស់នូវសេចក្តីសុខ... ដឹងច្បាស់នូវចិត្តសង្ខារ... រម្ងាប់ចិត្តសង្ខារ ចូលកាន់ឈានសមាបត្តិ។",
-        "paliChantKhmer": "បីតិបដិសំវេទី... សុខបដិសំវេទី... ចិត្តសង្ខារបដិសំវេទី... បស្សម្ភយំ ចិត្តសង្ខារំ អស្សសិស្សាមិ បស្សសិស្សាមីតិ សិក្ខតិ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 75,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ៧៥–៨៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=75"
+        "step": 4,
+        "title": "ឋបនា (ការតម្កល់ចិត្តក្នុងអប្បនា)",
+        "instruction": "ចិត្តចូលកាន់បដិភាគនិមិត្ត កម្ចាត់នីវរណៈទាំង ៥ បានដាច់ស្រឡះ សម្រេចបឋមជ្ឈានរហូតដល់ចតុត្ថជ្ឈានដ៏ស្ងប់ស្ងាត់បំផុត។",
+        "paliAnchor": "ឋបនា",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៣ ទំព័រ ៨៨–១០០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100431&page=88"
       }
-    ],
-    "namePaliKhmer": "អានាបានស្សតិ"
+    ]
   },
   {
     "id": "buddhanussati",
-    "name": "ពុទ្ធានុស្សតិ (រលឹកដល់ព្រះពុទ្ធគុណទាំង ៩)",
+    "name": "ពុទ្ធានុស្សតិ (ការរលឹកដល់ព្រះពុទ្ធគុណ)",
     "pali": "ពុទ្ធានុស្សតិ",
+    "namePaliKhmer": "ពុទ្ធានុស្សតិ",
     "category": "អនុស្សតិ ១០",
     "catId": "anussati",
-    "caritaSuitability": "សទ្ធាចរិត (អ្នកមានសេចក្តីជ្រះថ្លាខ្លាំង) និងជាសព្វត្ថកកម្មដ្ឋានសម្រាប់មនុស្សគ្រប់រូប",
-    "maxJhana": "ត្រឹមឧបចារសមាធិ",
-    "description": "ការសញ្ជឹងគិត និងរលឹកដល់ព្រះគុណដ៏វិសេសវិសាលទាំង ៩ ប្រការរបស់ព្រះសម្មាសម្ពុទ្ធ (នវគុណ)។ ជួយបណ្តេញសេចក្តីភ័យខ្លាច ភាពកំសាក និងភាពសៅហ្មងចេញពីដួងចិត្ត បំពេញចិត្តដោយបីតិ បាមោជ្ជៈ និងពន្លឺជ្រះថ្លា។",
-    "timerDefaults": [
-      15,
-      20,
-      30
-    ],
+    "caritaSuitability": "សទ្ធាចរិត (ចម្រើនសទ្ធា និងកម្ចាត់ការភ័យខ្លាច)",
+    "maxJhana": "ឧបចារសមាធិ (ដោយព្រះគុណជ្រាលជ្រៅអស្ចារ្យ)",
+    "description": "ការតាំងចិត្តរលឹកដល់ព្រះសម្មាសម្ពុទ្ធ តាមរយៈព្រះពុទ្ធគុណទាំង ៩ ប្រការ មាន អរហំ សម្មាសម្ពុទ្ធោ ជាដើម បង្កើតនូវសេចក្តីជ្រះថ្លា កម្ចាត់ភ័យខ្លាច និងធ្វើឱ្យចិត្តស្ងប់ផូរផង់។",
+    "timerDefaults": 20,
     "tripitakaVol": "v3",
     "tripitakaPage": 77,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៧៧-២៣២",
+    "tripitakaId": 100357,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៧៧–២៣១",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100357&page=77",
     "nimittaGuide": {
-      "parikamma": "ការសូត្រ និងសញ្ជឹងរលឹកដល់ពាក្យថា 'អរហំ' ឬសូត្រព្រះពុទ្ធគុណ ៩ ពេញលេញ ដោយការនឹកឃើញរូបព្រះពុទ្ធបដិមាដ៏ស្ងប់ស្ងាត់។",
-      "uggaha": "រូបព្រះពុទ្ធលេចឡើងក្នុងចិត្តយ៉ាងច្បាស់ពេលបិទភ្នែក ហាក់ដូចជាព្រះអង្គកំពុងគង់នៅចំពោះមុខ ស្រោចស្រពដោយភាពកក់ក្តៅ។",
-      "patibhaga": "ចិត្តជ្រួតជ្រាបដោយព្រះពុទ្ធគុណ រូបកាយស្រាលដូចអណ្តែតលើអាកាស ព្រឺរោមព្រឺស្បែក (លោមហំស) កើតពន្លឺរស្មីផូរផង់ក្នុងចិត្ត នីវរណៈទាំងឡាយស្ងប់រម្ងាប់ទាំងស្រុង តម្កល់ក្នុងឧបចារសមាធិ។"
+      "parikamma": "ការសូត្ររំលឹកព្រះគុណ ៩ ប្រការ និងការផ្ចង់ឃើញពុទ្ធរូបក្នុងចិត្ត។",
+      "uggaha": "រូបព្រះសម្មាសម្ពុទ្ធប្រាកដច្បាស់ក្នុងចិត្ត ដូចគង់នៅចំពោះមុខ។",
+      "patibhaga": "ព្រះគុណទាំងឡាយបញ្ចេញពន្លឺភ្លឺចិញ្ចែងចិញ្ចាចក្នុងចិត្ត ធ្វើឱ្យបីតិ និងបាមោជ្ជៈកើតឡើងពេញបរិបូណ៌។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "បទថា អរហំ — ព្រះអង្គឆ្ងាយចាកកិលេសទាំងពួង",
-        "instruction": "បិទភ្នែកតាំងអារម្មណ៍ឱ្យស្ងប់ រលឹកសូត្រថា 'អរហំ, អរហំ...' ពិចារណាថា ព្រះសម្ពុទ្ធទ្រង់បានបណ្តេញរាគៈ ទោសៈ មោហៈ ស្អាតបរិសុទ្ធ គ្មានមន្ទិលសូម្បីក្នុងទីកំបាំង គួរជាទីគោរពបូជាដ៏ឧត្តម។",
-        "paliChant": "ឥតិបិ សោ ភគវា អរហំ · អរហំ វត្ត សោ ភគវា អរហត្តា អារកត្តា កិលេសេហិ ហតារត្តា សង្សារចក្កស្ស អរហោ បច្ចយាទិនំ ន រហោ ករោតិ បាបន្តិ អរហំ។",
-        "khmerTranslation": "ព្រះដ៏មានព្រះភាគអង្គនោះ ព្រះនាមថា អរហំ ព្រោះព្រះអង្គឆ្ងាយចាកសេចក្តីសៅហ្មងទាំងពួង គួរទទួលនូវគ្រឿងបូជាពិសេស។",
-        "paliChantKhmer": "ឥតិបិ សោ ភគវា អរហំ · អរហំ វត្ត សោ ភគវា អរហត្តា អារកត្តា កិលេសេហិ ហតារត្តា សង្សារចក្កស្ស អរហោ បច្ចយាទិនំ ន រហោ ករោតិ បាបន្តិ អរហំ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 78,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៧៨–៨៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=78"
+        "step": 1,
+        "title": "ពិចារណាព្រះគុណ អរហំ",
+        "instruction": "រលឹកថា ព្រះអង្គជាព្រះអរហន្ត ព្រោះឆ្ងាយចាកកិលេសទាំងពួង មិនមានសេចក្តីសៅហ្មងក្នុងព្រះហឫទ័យឡើយ។",
+        "paliAnchor": "ឥតិបិ សោ ភគវា អរហំ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៧៨–១០០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100358&page=78"
       },
       {
-        "stepNum": 2,
-        "title": "បទថា សម្មាសម្ពុទ្ធោ ដល់ សុគតោ",
-        "instruction": "រលឹកដល់ការត្រាស់ដឹងនូវសច្ចធម៌ដោយព្រះអង្គឯងដោយប្រពៃ (សម្មាសម្ពុទ្ធោ), ព្រះអង្គបរិបូរណ៍ដោយវិជ្ជា និងចរណធម៌ខ្ពង់ខ្ពស់ (វិជ្ជាចរណសម្បន្នោ), និងការយាងទៅកាន់ព្រះនិព្វានប្រកបដោយសេចក្តីល្អបរិសុទ្ធ (សុគតោ)។",
-        "paliChant": "សម្មាសម្ពុទ្ធោ វិជ្ជាចរណសម្បន្នោ សុគតោ។",
-        "khmerTranslation": "ទ្រង់ត្រាស់ដឹងដោយព្រះអង្គឯងដោយប្រពៃ បរិបូរណ៍ដោយវិជ្ជា និងចរណៈ យាងទៅកាន់ទីដ៏ល្អ ពោលតែពាក្យពិតមានប្រយោជន៍។",
-        "paliChantKhmer": "សម្មាសម្ពុទ្ធោ វិជ្ជាចរណសម្បន្នោ សុគតោ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 89,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៨៩–១២០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=89"
+        "step": 2,
+        "title": "ពិចារណាព្រះគុណ សម្មាសម្ពុទ្ធោ",
+        "instruction": "រលឹកថា ព្រះអង្គត្រាស់ដឹងនូវញេយ្យធម៌ទាំងពួងដោយព្រះអង្គឯងត្រឹមត្រូវឥតមានគ្រូអាចារ្យណាប្រដៅឡើយ។",
+        "paliAnchor": "សម្មាសម្ពុទ្ធោ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ១០០–១១៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100359&page=100"
       },
       {
-        "stepNum": 3,
-        "title": "បទថា លោកវិទូ ដល់ ភគវា",
-        "instruction": "រលឹកដល់ព្រះអង្គជាអ្នកជ្រាបច្បាស់នូវលោកទាំង ៣ (លោកវិទូ), ជាអ្នកទូន្មានមនុស្សដែលគួរទូន្មាន (អនុត្តរោ បុរិសទម្មសារថិ), ជាគ្រូនៃទេវតានិងមនុស្ស (សត្ថា ទេវមនុស្សានំ), ត្រាស់ដឹងនិងដាស់សត្វឱ្យដឹងតាម (ពុទ្ធោ), និងជាអ្នកមានភ័ព្វបែងចែកធម៌ (ភគវា)។",
-        "paliChant": "លោកវិទូ អនុត្តរោ បុរិសទម្មសារថិ សត្ថា ទេវមនុស្សានំ ពុទ្ធោ ភគវាតិ។",
-        "khmerTranslation": "ជ្រាបច្បាស់នូវត្រៃលោក ជាសារថីទូន្មានបុរស ជាគ្រូនៃទេវតានិងមនុស្ស ត្រាស់ដឹងនូវសច្ចធម៌ និងជាអ្នកមានភ័ព្វបែងចែកធម៌ទេសនា។",
-        "paliChantKhmer": "លោកវិទូ អនុត្តរោ បុរិសទម្មសារថិ សត្ថា ទេវមនុស្សានំ ពុទ្ធោ ភគវាតិ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 121,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ១២១–១៦៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=121"
-      },
-      {
-        "stepNum": 4,
-        "title": "ការតម្កល់ចិត្តក្នុងឧបចារសមាធិ",
-        "instruction": "ប្រមូលចិត្តផ្ដោតលើអារម្មណ៍ជ្រះថ្លាតែមួយ មិនរវើរវាយ។ អារម្មណ៍បីតិ និងសុខនឹងកើតឡើងយ៉ាងក្រៃលែង ធ្វើឱ្យកាយស្រាល ចិត្តស្ងប់បរិសុទ្ធ គ្មានការភ័យខ្លាច គ្មានមន្ទិលសង្ស័យ។",
-        "paliChant": "នត្ថិ មេ សរណំ អញ្ញំ ពុទ្ធោ មេ សរណំ វរំ · យំ យំ គុណំ អនុស្សរតិ តស្មឹ តស្មឹ បីតិ បាមោជ្ជំ ឧប្បជ្ជតិ។",
-        "khmerTranslation": "ព្រះពុទ្ធជាទីពឹងទីរលឹកដ៏ប្រសើររបស់ខ្ញុំ គ្មានទីពឹងដទៃក្រៅពីព្រះអង្គឡើយ។",
-        "paliChantKhmer": "នត្ថិ មេ សរណំ អញ្ញំ ពុទ្ធោ មេ សរណំ វរំ · យំ យំ គុណំ អនុស្សរតិ តស្មឹ តស្មឹ បីតិ បាមោជ្ជំ ឧប្បជ្ជតិ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 170,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ១៧០–១៨០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=170"
+        "step": 3,
+        "title": "ញ៉ាំងបីតិឱ្យពេញបរិបូណ៌",
+        "instruction": "កាលបើចិត្តជ្រះថ្លានឹងព្រះសម្មាសម្ពុទ្ធ បីតិ ៥ យ៉ាងផុសឡើង កម្ចាត់នីវរណៈ ចិត្តក៏តម្កល់ស្ងប់ក្នុងឧបចារសមាធិ។",
+        "paliAnchor": "បីតិបាមោជ្ជំ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ២២២–២៣១",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100370&page=222"
       }
-    ],
-    "namePaliKhmer": "ពុទ្ធានុស្សតិ"
+    ]
   },
   {
     "id": "metta",
-    "name": "មេត្តាព្រហ្មវិហារ (ការផ្សាយក្តីស្រឡាញ់ និងសេចក្តីសុខ)",
-    "pali": "មេត្តាព្រហ្មវិហារ",
+    "name": "មេត្តាព្រហ្មវិហារ (ការផ្សាយសេចក្តីស្រឡាញ់រាប់អាន)",
+    "pali": "មេត្តាភាវនា",
+    "namePaliKhmer": "មេត្តាភាវនា",
     "category": "ព្រហ្មវិហារ ៤",
     "catId": "brahmavihara",
-    "caritaSuitability": "ទោសចរិត (អ្នកឆាប់ខឹង មួរម៉ៅ គុំកួន ចិត្តក្តៅក្រហាយ)",
-    "maxJhana": "តតិយជ្ឈាន (តតិយជ្ឈាន (ឈានទី ៣))",
-    "description": "ការផ្សាយទឹកចិត្តប្រកបដោយសេចក្តីស្រឡាញ់ ករុណា និងបំណងល្អបរិសុទ្ធ មិនមានការប្រកាន់ មិនមានការរើសអើង ដល់សត្វលោកទាំងពួងក្នុងទិសទាំង ១០។ ជាឱសថដ៏ពូកែស័ក្តិសិទ្ធិក្នុងការរំលត់ភ្លើងកំហឹង និងទទួលបានអានិសង្ស ១១ ប្រការ។",
-    "timerDefaults": [
-      15,
-      20,
-      30,
-      45
-    ],
+    "caritaSuitability": "ទោសចរិត (រំលត់ភ្លើងកំហឹង និងចងគំនុំ)",
+    "maxJhana": "តតិយជ្ឈាន (ឈានទី ៣ ក្នុងចតុក្កន័យ)",
+    "description": "ការផ្សាយសេចក្តីប្រាថ្នាល្អ និងសេចក្តីសុខដល់សព្វសត្វឥតព្រំដែន ចាប់ផ្តើមពីខ្លួនឯង ទៅកាន់មនុស្សជាទីស្រឡាញ់ មនុស្សកណ្តាលៗ និងសត្រូវ រហូតបំបែកព្រំដែន (សីមាសម្ភេទ)។",
+    "timerDefaults": 20,
     "tripitakaVol": "v4",
     "tripitakaPage": 152,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ១៥២-២៤៣",
+    "tripitakaId": 100440,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ១៥២–២៤៤",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100440&page=152",
     "nimittaGuide": {
-      "parikamma": "ការសូត្រភាវនាផ្សាយមេត្តាដល់ខ្លួនឯងជាបន្ទាត់វាស់ស្ទង់ រួចផ្សាយទៅកាន់បុគ្គលជាទីស្រឡាញ់ និងគោរព។",
-      "uggaha": "ទឹកមុខ និងស្នាមញញឹមដ៏ស្ងប់ស្ងាត់របស់បុគ្គលជាទីស្រឡាញ់លេចឡើងក្នុងចិត្ត បេះដូងពោរពេញដោយភាពទន់ភ្លន់ កក់ក្តៅ និងត្រជាក់ស្រួល។",
-      "patibhaga": "ការរំលាយព្រំដែន (សីមាសម្ភេទ) បានសម្រេច៖ ចិត្តស្រឡាញ់ខ្លួនឯង មិត្តភក្តិ មនុស្សកណ្តាល និងសត្រូវ មានកម្រិតស្មើគ្នាបេះបិទ។ ពន្លឺមេត្តាផ្សាយចេញពីទ្រូងគ្របដណ្តប់ពេញទិសទាំង ១០ សម្រេចដល់តតិយជ្ឈាន។"
+      "parikamma": "ផ្សាយចិត្តមេត្តាថា «សូមឱ្យខ្ញុំបានសុខ ផុតចាកទុក្ខ» ជាមុនសិន។",
+      "uggaha": "អារម្មណ៍ស្ងប់ត្រជាក់ដូចទឹកអម្រឹតសាយភាយពេញរាងកាយ និងចិត្ត។",
+      "patibhaga": "ការឃើញមនុស្សគ្រប់គ្នាស្មើៗគ្នា គ្មានសត្រូវ គ្មានមិត្ត ចិត្តរលត់កំហឹងដាច់ស្រឡះ។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "ផ្សាយមេត្តាដល់ខ្លួនឯងជាបន្ទាត់វាស់ស្ទង់",
-        "instruction": "អង្គុយឱ្យស្រួល តាំងចិត្តឱ្យទន់ភ្លន់ ផ្សាយមេត្តាដល់ខ្លួនឯងជាមុនសិន ដើម្បីដឹងថា 'ខ្លួនយើងស្រឡាញ់សុខ ស្អប់ទុក្ខយ៉ាងណា សត្វដទៃក៏ស្រឡាញ់សុខ ស្អប់ទុក្ខយ៉ាងនោះដែរ'។",
-        "paliChant": "អហំ សុខិតោ ហោមិ, និទ្ទុក្ខោ ហោមិ, អវេរោ ហោមិ, អព្យាបជ្ឈោ ហោមិ, អនីឃោ ហោមិ, សុខី អត្តានំ បរិហរាមិ។",
-        "khmerTranslation": "សូមឱ្យខ្ញុំបានដល់នូវសេចក្តីសុខ មិនមានសេចក្តីទុក្ខ មិនមានពៀរ មិនមានការបៀតបៀន មិនមានសេចក្តីលំបាក រក្សាខ្លួនឱ្យមានសេចក្តីសុខចុះ។",
-        "paliChantKhmer": "អហំ សុខិតោ ហោមិ, និទ្ទុក្ខោ ហោមិ, អវេរោ ហោមិ, អព្យាបជ្ឈោ ហោមិ, អនីឃោ ហោមិ, សុខី អត្តានំ បរិហរាមិ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 162,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ១៦២–១៦៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=162"
+        "step": 1,
+        "title": "ផ្សាយដល់ខ្លួនឯងជាមុន",
+        "instruction": "ផ្សាយថា «អហំ សុខិតោ ហោមិ និទ្ទុក្ខោ» ដើម្បីយកខ្លួនជាសាក្សីថា ខ្លួនស្រឡាញ់សុខ ស្អប់ទុក្ខយ៉ាងណា សត្វដទៃក៏យ៉ាងនោះដែរ។",
+        "paliAnchor": "អហំ សុខិតោ ហោមិ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៣ ទំព័រ ១៦១–១៦៨",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100442&page=161"
       },
       {
-        "stepNum": 2,
-        "title": "ផ្សាយមេត្តាដល់បុគ្គលជាទីគោរព និងស្រឡាញ់",
-        "instruction": "នឹកដល់គ្រូអាចារ្យ ឪពុកម្តាយ ឬអ្នកមានគុណដែលខ្លួនគោរពស្រឡាញ់បំផុត។ បញ្ជូនរលកចិត្តប្រកបដោយសេចក្តីសុខ និងដឹងគុណទៅកាន់ពួកគាត់ឱ្យពេញបេះដូង។",
-        "paliChant": "អយំ មេ គរុ អាចរិយោ សុខិតោ ហោតុ, និទ្ទុក្ខោ ហោតុ, អវេរោ ហោតុ, អព្យាបជ្ឈោ ហោតុ, អនីឃោ ហោតុ, សុខី អត្តានំ បរិហរតុ។",
-        "khmerTranslation": "សូមឱ្យលោកគ្រូ អ្នកមានគុណរបស់ខ្ញុំ បានដល់នូវសេចក្តីសុខ គ្មានសេចក្តីទុក្ខ គ្មានពៀរវេរា គ្មានការបៀតបៀនឡើយ។",
-        "paliChantKhmer": "អយំ មេ គរុ អាចរិយោ សុខិតោ ហោតុ, និទ្ទុក្ខោ ហោតុ, អវេរោ ហោតុ, អព្យាបជ្ឈោ ហោតុ, អនីឃោ ហោតុ, សុខី អត្តានំ បរិហរតុ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 172,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ១៧២–១៨០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=172"
+        "step": 2,
+        "title": "ផ្សាយដល់កល្យាណមិត្ត និងអ្នកមានគុណ",
+        "instruction": "ផ្សាយទៅកាន់មាតាបិតា គ្រូឧបជ្ឈាយ៍ និងមិត្តសម្លាញ់ដែលគួរជាទីស្រឡាញ់ ដោយរំលឹកគុណូបការៈ។",
+        "paliAnchor": "បិយបុគ្គល",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៣ ទំព័រ ១៦៨–១៧៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100443&page=168"
       },
       {
-        "stepNum": 3,
-        "title": "ផ្សាយដល់មនុស្សកណ្តាល និងសត្រូវ",
-        "instruction": "ផ្សាយបន្តទៅមនុស្សដែលមិនស្គាល់គ្នា (មនុស្សកណ្តាល) រួចផ្សាយទៅកាន់មនុស្សដែលធ្លាប់ឈ្លោះ ឬធ្វើបាបយើង (សត្រូវ) ដោយគិតថា 'គេក៏ជាជនរងគ្រោះដោយសារអវិជ្ជា និងសេចក្តីទុក្ខដូចយើងដែរ'។",
-        "paliChant": "សព្វេ វេរិនោ សុខិតា ហោន្តុ, អវេរា ហោន្តុ, អព្យាបជ្ឈា ហោន្តុ, អនីឃា ហោន្តុ, សុខី អត្តានំ បរិហរន្តុ។",
-        "khmerTranslation": "សូមឱ្យសត្រូវ និងមនុស្សទាំងឡាយដែលធ្លាប់ខឹងគុំគួន បានដល់នូវសេចក្តីសុខ កុំមានពៀរនឹងគ្នាឡើយ។",
-        "paliChantKhmer": "សព្វេ វេរិនោ សុខិតា ហោន្តុ, អវេរា ហោន្តុ, អព្យាបជ្ឈា ហោន្តុ, អនីឃា ហោន្តុ, សុខី អត្តានំ បរិហរន្តុ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 185,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ១៨៥–១៩៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=185"
-      },
-      {
-        "stepNum": 4,
-        "title": "ទម្លុះព្រំដែន និងផ្សាយទៅកាន់ទិសទាំង ១០",
-        "instruction": "កាលណាចិត្តស្មើគ្នាចំពោះមនុស្សគ្រប់រូបហើយ ចូរផ្សាយរលកចិត្តមេត្តាដ៏ធំទូលាយគ្មានព្រំដែន ទៅកាន់ទិសខាងកើត ខាងលិច ខាងជើង ខាងត្បូង ខាងលើ និងខាងក្រោម គ្របដណ្តប់សត្វលោកទាំងអស់។",
-        "paliChant": "សព្វេ សត្តា សព្វេ បាណា សព្វេ ភូតា សព្វេ បុគ្គលា សព្វេ អត្តភាវបរិយាបន្នា អវេរា ហោន្តុ, អព្យាបជ្ឈា ហោន្តុ, អនីឃា ហោន្តុ, សុខី អត្តានំ បរិហរន្តុ។",
-        "khmerTranslation": "សូមសត្វទាំងពួង កុំមានពៀរនឹងគ្នា កុំបៀតបៀនគ្នា កុំមានសេចក្តីលំបាក រក្សាខ្លួនឱ្យមានសេចក្តីសុខគ្រប់ៗគ្នាចុះ។",
-        "paliChantKhmer": "សព្វេ សត្តា សព្វេ បាណា សព្វេ ភូតា សព្វេ បុគ្គលា សព្វេ អត្តភាវបរិយាបន្នា អវេរា ហោន្តុ, អព្យាបជ្ឈា ហោន្តុ, អនីឃា ហោន្តុ, សុខី អត្តានំ បរិហរន្តុ។",
-        "tripitakaVol": "v4",
-        "tripitakaPage": 205,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៣ (ក្បាល ៨៦) ទំព័រ ២០៥–២២០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&page=205"
+        "step": 3,
+        "title": "ផ្សាយដល់មនុស្សកណ្តាល និងសត្រូវ (សីមាសម្ភេទ)",
+        "instruction": "ផ្សាយទៅកាន់មនុស្សដែលមិនស្អប់មិនស្រឡាញ់ និងមនុស្សដែលធ្លាប់ខឹងគុំគួន រហូតដល់ចិត្តមានមេត្តាស្មើគ្នាគ្រប់បុគ្គល។",
+        "paliAnchor": "សីមាសម្ភេទ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៣ ទំព័រ ១៩០–២១០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v4&id=100445&page=190"
       }
-    ],
-    "namePaliKhmer": "មេត្តាព្រហ្មវិហារ"
+    ]
   },
   {
     "id": "maranassati",
-    "name": "មរណស្សតិ (រលឹកដល់សេចក្តីស្លាប់ ៨ ប្រការ)",
+    "name": "មរណស្សតិ (ការរលឹកដល់សេចក្តីស្លាប់)",
     "pali": "មរណស្សតិ",
+    "namePaliKhmer": "មរណស្សតិ",
     "category": "អនុស្សតិ ១០",
     "catId": "anussati",
-    "caritaSuitability": "ពុទ្ធិចរិត (អ្នកមានប្រាជ្ញា ចូលចិត្តពិចារណាវិភាគហេតុផល)",
-    "maxJhana": "ត្រឹមឧបចារសមាធិ",
-    "description": "ការពិចារណារលឹកដល់សេចក្តីពិតនៃជីវិត ថាសេចក្តីស្លាប់នឹងមកដល់រូបយើងជាក់ជាមិនខាន។ កាត់ផ្តាច់សេចក្តីខ្ជិលច្រអូស បង្កើតសេចក្តីសង្វេគ ធ្វើឱ្យមិនធ្វេសប្រហែសក្នុងជីវិត និងរួសរាន់សន្សំបុណ្យកុសលរាល់ថ្ងៃ។",
-    "timerDefaults": [
-      10,
-      15,
-      20
-    ],
+    "caritaSuitability": "ពុទ្ធិចរិត (ញ៉ាំងសេចក្តីសង្វេគ និងកម្ចាត់ការប្រមាទ)",
+    "maxJhana": "ឧបចារសមាធិ (កម្ចាត់សេចក្តីខ្ជិលច្រអូស)",
+    "description": "ការពិចារណាឃើញថា ជីវិតនេះមិនទៀងទាត់ឡើយ មានសេចក្តីស្លាប់ជាទីបំផុត ដូចផ្លេកបន្ទោរ ដូចទឹកសន្សើមលើចុងស្មៅ ដើម្បីដាស់ស្មារតីកុំឱ្យប្រមាទក្នុងវ័យ និងជីវិត។",
+    "timerDefaults": 15,
     "tripitakaVol": "v3",
     "tripitakaPage": 317,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣១៧-៣៦០",
+    "tripitakaId": 100401,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣១៧–៣៦១",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100401&page=317",
     "nimittaGuide": {
-      "parikamma": "ការសូត្ររំពឹងថា 'មរណំ មេ ភវិស្សតិ, ជីវិតំ មេ អនិយតំ, មរណំ មេ និយតំ' ពិចារណាឃើញខ្លួនឯងដេកស្លាប់លើគ្រែ ឬក្នុងមឈូស។",
-      "uggaha": "រូបសាកសពរបស់ខ្លួនឯង ឬអ្នកដទៃលេចឡើងក្នុងចិត្ត បង្កើតនូវសេចក្តីតក់ស្លុតផ្លូវចិត្តជាកុសល (សង្វេគ) មិនមែនជាការភ័យខ្លាចឡើយ។",
-      "patibhaga": "ចិត្តលះបង់ការជាប់ជំពាក់នឹងទ្រព្យសម្បត្តិ ផ្ទះសម្បែង និងរូបរាងកាយទាំងស្រុង។ កើតសេចក្តីស្ងប់រម្ងាប់ដ៏ជ្រាលជ្រៅ មានសតិភ្លឺស្វាង តម្កល់ក្នុងឧបចារសមាធិ។"
+      "parikamma": "រំលឹកថា «មរណំ មេ ភវិស្សតិ» សេចក្តីស្លាប់នឹងមានដល់អាត្មាអញជាពិតប្រាកដ។",
+      "uggaha": "ការកើតឡើងនូវសេចក្តីសង្វេគដ៏ខ្លាំងក្លា រំលាយការជាប់ជំពាក់ក្នុងទ្រព្យសម្បត្តិ និងរូបកាយ។",
+      "patibhaga": "ចិត្តប្រែជាមុតស្រួច ភ្លឺស្វាង គ្មានការតក់ស្លុត ស្ងប់រម្ងាប់ក្នុងឧបចារសមាធិ។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "ពិចារណាសេចក្តីស្លាប់ដូចពេជ្ឈឃាតយារដាវ",
-        "instruction": "ពិចារណាថាតាំងពីវិនាទីដែលចាប់កំណើតមក សេចក្តីស្លាប់ដើរតាមយើងជាប់រាល់ជំហាន ដូចពេជ្ឈឃាតដែលយារដាវស្រួចស្រាវដើរតាមពីក្រោយ រង់ចាំតែពេលកាត់ក្បាលប៉ុណ្ណោះ។",
-        "paliChant": "មរណំ មេ ភវិស្សតិ, ជីវិតំ មេ អនិយតំ, មរណំ មេ និយតំ, វធកោ វិយ ឧក្ខិត្តាសិកោ បច្ចុបដ្ឋិតមរណំ។",
-        "khmerTranslation": "សេចក្តីស្លាប់នឹងមានដល់ខ្ញុំ, ជីវិតរបស់ខ្ញុំមិនទៀងទាត់ឡើយ, តែសេចក្តីស្លាប់របស់ខ្ញុំពិតជាទៀងទាត់ណាស់។",
-        "paliChantKhmer": "មរណំ មេ ភវិស្សតិ, ជីវិតំ មេ អនិយតំ, មរណំ មេ និយតំ, វធកោ វិយ ឧក្ខិត្តាសិកោ បច្ចុបដ្ឋិតមរណំ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 320,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣២០–៣២៧",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=320"
+        "step": 1,
+        "title": "ពិចារណាដោយការចូលមកដល់នៃពេជ្ឈឃាត",
+        "instruction": "សេចក្តីស្លាប់ដើរតាមយើងជាប់ជានិច្ច តាំងពីថ្ងៃបដិសន្ធិមក ដូចពេជ្ឈឃាតយារដាវដើរតាមពីក្រោយរង់ចាំកាត់ក្បាល។",
+        "paliAnchor": "វធកប្បច្ចុបដ្ឋានតោ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៣១៩–៣២៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100402&page=319"
       },
       {
-        "stepNum": 2,
-        "title": "ពិចារណាភាពគ្មាននិមិត្តសញ្ញាប្រាប់មុន ៥ យ៉ាង",
-        "instruction": "រលឹកថា យើងមិនដឹងអាយុ (ថានឹងស្លាប់ពេលណា), មិនដឹងរោគ (ថានឹងស្លាប់ដោយរោគអ្វី), មិនដឹងពេលវេលា (ថាស្លាប់ពេលថ្ងៃ ឬពេលយប់), មិនដឹងទីកន្លែងស្លាប់, និងមិនដឹងជាតិកំណើតខាងមុខឡើយ។",
-        "paliChant": "ជីវិតំ ព្យាធិ កាលោ ច ទេហនិក្ខេបនំ គតិ · បញ្ចេតេ ជីវលោកស្មឹ អនិមិត្តា ន ញាយរេ។",
-        "khmerTranslation": "ជីវិតរបស់ខ្ញុំមិនអាចដឹងមុនបានឡើយ, ប៉ុន្តែសេចក្តីស្លាប់របស់ខ្ញុំពិតជាដឹងជាក់ច្បាស់ថានឹងមកដល់។",
-        "paliChantKhmer": "ជីវិតំ ព្យាធិ កាលោ ច ទេហនិក្ខេបនំ គតិ · បញ្ចេតេ ជីវលោកស្មឹ អនិមិត្តា ន ញាយរេ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 330,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៣០–៣៣៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=330"
+        "step": 2,
+        "title": "ពិចារណាដោយសេចក្តីវិនាសនៃសម្បត្តិ",
+        "instruction": "សម្បត្តិទាំងពួងមានវិបត្តិជាទីបំផុត សុខភាពមានរោគាជាទីបំផុត ជីវិតមានសេចក្តីស្លាប់ជាទីបំផុត គ្មានអ្នកណាគេចផុតឡើយ។",
+        "paliAnchor": "សម្បត្តិវិបត្តិភាវតោ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៣២៥–៣៣០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100402&page=325"
       },
       {
-        "stepNum": 3,
-        "title": "ពិចារណាភាពខ្លីនៃខណៈចិត្ត",
-        "instruction": "ពិចារណាថាតាមពិត ជីវិតនេះរស់នៅត្រឹមតែមួយខណៈដង្ហើម ឬមួយខណៈចិត្តប៉ុណ្ណោះ។ បើដង្ហើមចេញហើយមិនចូលវិញ គឺស្លាប់ភ្លាម។ ជីវិតនេះផុយស្រួយដូចពពុះទឹក។",
-        "paliChant": "ខណបរិត្តតោ · ឯកចិត្តក្ខណិកំ ជីវិតំ រូបាវត្ថិតំ និរុទ្ធេ ចិត្តេ និរុទ្ធោ ជីវលោកោ។",
-        "khmerTranslation": "ជីវិតរបស់ខ្ញុំមានសេចក្តីស្លាប់ជាទីបញ្ចប់, ជីវិតនេះពិតជាខ្លី និងផុយស្រួយណាស់។",
-        "paliChantKhmer": "ខណបរិត្តតោ · ឯកចិត្តក្ខណិកំ ជីវិតំ រូបាវត្ថិតំ និរុទ្ធេ ចិត្តេ និរុទ្ធោ ជីវលោកោ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 342,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៤២–៣៤៩",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=342"
-      },
-      {
-        "stepNum": 4,
-        "title": "ការដាស់តឿនសតិ និងបង្កើតសេចក្តីសង្វេគ",
-        "instruction": "បង្វែរអារម្មណ៍ពីការភ័យខ្លាច មកជាកម្លាំងជំរុញចិត្ត៖ 'ថ្ងៃស្អែក និងសេចក្តីស្លាប់ មិនដឹងថាមួយណានឹងមកដល់មុនឡើយ! ចូររួសរាន់ធ្វើអំពើល្អ សម្អាតចិត្ត កុំពន្យារពេលឡើយ!'។ ចិត្តនឹងស្ងប់ចុះកាន់ឧបចារសមាធិ។",
-        "paliChant": "អជ្ជេវ កិច្ចមាតប្បំ កោ ជញ្ញា មរណំ សុវេ · ន ហិ នោ សង្គរំ តេន មហាសេនេន មច្ចុនា។",
-        "khmerTranslation": "កិច្ចដែលត្រូវធ្វើ ចូរប្រញាប់ប្រញាល់ធ្វើក្នុងថ្ងៃនេះឯង តើនរណាដឹងថាសេចក្តីស្លាប់នឹងមកដល់នៅថ្ងៃស្អែក?",
-        "paliChantKhmer": "អជ្ជេវ កិច្ចមាតប្បំ កោ ជញ្ញា មរណំ សុវេ · ន ហិ នោ សង្គរំ តេន មហាសេនេន មច្ចុនា។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 350,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៥០–៣៥៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=350"
+        "step": 3,
+        "title": "ពិចារណាដោយខណៈនៃជីវិតខ្លីក្រៃលែង",
+        "instruction": "ជីវិតពិតប្រាកដរស់នៅត្រឹមតែមួយខណៈចិត្តប៉ុណ្ណោះ កាលបើចិត្តរលត់ទៅ ជីវិតក៏កន្លងផុតទៅ គ្មានអ្វីនៅឋិតថេរឡើយ។",
+        "paliAnchor": "ខណបរិត្តតោ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៣៣០–៣៣៦",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100402&page=330"
       }
-    ],
-    "namePaliKhmer": "មរណស្សតិ"
+    ]
   },
   {
     "id": "kayagata",
-    "name": "កាយគតាសតិ (ពិចារណាកោដ្ឋាស ៣២ ក្នុងរូបកាយ)",
+    "name": "កាយគតាសតិ (ពិចារណាអាការ ៣២ ក្នុងកាយ)",
     "pali": "កាយគតាសតិ",
+    "namePaliKhmer": "កាយគតាសតិ",
     "category": "អនុស្សតិ ១០",
     "catId": "anussati",
-    "caritaSuitability": "រាគចរិត (អ្នកជាប់ជំពាក់នឹងរូបកាយ សម្រស់ និងកាមគុណ)",
-    "maxJhana": "បឋមជ្ឈាន (បឋមជ្ឈាន (ឈានទី ១))",
-    "description": "ការពិនិត្យមើលរូបកាយជាចំណែកៗចំនួន ៣២ កោដ្ឋាស (សក់ រោម ក្រចក ធ្មេញ ស្បែក សាច់ ឆ្អឹង...) ដោយឃើញច្បាស់នូវភាពមិនស្អាត មិនល្អគន់ គួរខ្ពើមរអើម និងជាធាតុប្រជុំគ្នា។ ប្រៀបដូចជាការស្រាយមាត់ថង់គ្រាប់ធញ្ញជាតិចម្រុះមើលយ៉ាងដូច្នោះ។",
-    "timerDefaults": [
-      15,
-      20,
-      30
-    ],
+    "caritaSuitability": "រាគចរិត (ដកស្រង់សេចក្តីត្រេកត្រអាលលើកាយ)",
+    "maxJhana": "បឋមជ្ឈាន (ឈានទី ១)",
+    "description": "ការពិចារណាលើកោដ្ឋាសទាំង ៣២ នៃរាងកាយ មាន សក់ រោម ក្រចក ធ្មេញ ស្បែក ជាដើម ដោយពណ៌ ទ្រង់ទ្រាយ ក្លិន ទីតាំង និងការមិនស្អាត ដើម្បីដោះខ្លួនចេញពីអន្លង់តណ្ហា។",
+    "timerDefaults": 20,
     "tripitakaVol": "v3",
     "tripitakaPage": 360,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៦០-៤៣៧",
+    "tripitakaId": 100405,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៦០–៤៣៩",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100405&page=360",
     "nimittaGuide": {
-      "parikamma": "ការសូត្រទន្ទេញបញ្ចកៈស្បែក ៥ (កេសា លោមា នខា ទន្តា តចោ) ទាំងទៅមុខ និងថយក្រោយ ផ្ចង់មើលរូបរាង និងពណ៌នៃកោដ្ឋាសនីមួយៗ។",
-      "uggaha": "រូបរាងសក់ រោម ក្រចក ធ្មេញ ស្បែក ឬរាងឆ្អឹងស លេចឡើងក្នុងចិត្តយ៉ាងច្បាស់ពេលបិទភ្នែក ដូចជាកំពុងមើលឃើញដោយភ្នែកស្រស់។",
-      "patibhaga": "សេចក្តីជាប់ចិត្តនឹងសម្រស់ខាងក្រៅរលាយបាត់ទាំងស្រុង។ កាយលេចឡើងជាចំណែកមិនស្អាត ឬជាដុំពន្លឺពណ៌សនៃឆ្អឹងស្អាតស្អំ ចិត្តស្ងប់ចុះកម្ចាត់នីវរណៈ សម្រេចបឋមជ្ឈាន។"
+      "parikamma": "សូត្រនិងពិចារណាកោដ្ឋាស ៥ ខាងដើម (តចបញ្ចកកម្មដ្ឋាន)៖ កេសា លោមា នខា ទន្តា តចោ។",
+      "uggaha": "ការឃើញចំណែកនៃកាយនីមួយៗច្បាស់លាស់ក្នុងចិត្ត តាមសភាពមិនស្អាតពិតប្រាកដ។",
+      "patibhaga": "និមិត្តភ្លឺស្អាតផុសឡើង ដកការជាប់ជំពាក់លើរូបកាយទាំងស្រុង សម្រេចបឋមជ្ឈាន។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "តចបញ្ចកៈ — បញ្ចកៈស្បែក ៥ ទៅមុខ និងថយក្រោយ",
-        "instruction": "សូត្រដោយពាក្យសម្តី និងដោយចិត្តនូវកោដ្ឋាស ៥ ដំបូង៖ សក់ រោម ក្រចក ធ្មេញ ស្បែក។ រួចសូត្រថយក្រោយវិញ៖ ស្បែក ធ្មេញ ក្រចក រោម សក់។ ពិចារណាពណ៌ រូបរាង ក្លិន និងទីតាំងរបស់វា។",
-        "paliChant": "អត្ថិ ឥមស្មឹ កាយេ៖ កេសា លោមា នខា ទន្តា តចោ · តចោ ទន្តា នខា លោមា កេសា។",
-        "khmerTranslation": "នៅក្នុងកាយនេះមាន៖ សក់, រោម, ក្រចក, ធ្មេញ, ស្បែក។ ស្បែក, ធ្មេញ, ក្រចក, រោម, សក់។",
-        "paliChantKhmer": "អត្ថិ ឥមស្មឹ កាយេ៖ កេសា លោមា នខា ទន្តា តចោ · តចោ ទន្តា នខា លោមា កេសា។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 365,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៦៥–៣៨០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=365"
+        "step": 1,
+        "title": "ពិចារណាតចបញ្ចកៈ (៥ ខាងដើម)",
+        "instruction": "ពិចារណាសក់ រោម ក្រចក ធ្មេញ ស្បែក ដែលជាចំណែកខាងក្រៅ កាលណាមិនបានលាងសម្អាតតែមួយថ្ងៃពីថ្ងៃ នឹងជះក្លិនអាក្រក់គួរខ្ពើម។",
+        "paliAnchor": "កេសា លោមា នខា ទន្តា តចោ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៣៦៤–៣៨០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100406&page=364"
       },
       {
-        "stepNum": 2,
-        "title": "វក្កបញ្ចកៈ និង បប្ផាសបញ្ចកៈ — ពិនិត្យសាច់ សរសៃ ឆ្អឹង និងសរីរាង្គក្នុង",
-        "instruction": "បន្តសូត្រពិចារណាកោដ្ឋាសខាងក្នុង៖ សាច់ សរសៃ ឆ្អឹង ខួរក្នុងឆ្អឹង វ៉ាក់ (តម្រងនោម) បេះដូង ថ្លើម វាវ អណ្តែត សួត។ ពិចារណាឃើញថាសរីរាង្គទាំងនេះសុទ្ធតែប្រឡាក់ដោយឈាម និងទឹករំអិល។",
-        "paliChant": "មំសំ ន្ហារុ អដ្ឋិ អដ្ឋិមិញ្ជំ វក្កំ · ហទយំ យកនំ កិលោមភំ បិហកំ បប្ផាសំ។",
-        "khmerTranslation": "សាច់, សរសៃ, ឆ្អឹង, ខួរក្នុងឆ្អឹង, វ៉ាក់, បេះដូង, ថ្លើម, វាវ, អណ្តែត, សួត។",
-        "paliChantKhmer": "មំសំ ន្ហារុ អដ្ឋិ អដ្ឋិមិញ្ជំ វក្កំ · ហទយំ យកនំ កិលោមភំ បិហកំ បប្ផាសំ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 382,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៨២–៣៩៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=382"
+        "step": 2,
+        "title": "ពិចារណាអាការខាងក្នុងកាយ",
+        "instruction": "ពិចារណាសាច់ សរសៃ ឆ្អឹង ខួរក្នុងឆ្អឹង តម្រងនោម បេះដូង ថ្លើម វាវ ក្រពះ ពោះវៀនធំ ពោះវៀនតូច អាហារថ្មី អាហារចាស់ និងខួរក្បាល។",
+        "paliAnchor": "អដ្ឋិមិញ្ជំ វក្កំ ហទយំ យកនំ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៣៨០–៤០០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100408&page=380"
       },
       {
-        "stepNum": 3,
-        "title": "មត្ថលុង្គបញ្ចកៈ និង ធាតុរាវទាំង ១២ — ពិនិត្យអាហារថ្មី អាហារចាស់ និងទឹកក្នុងកាយ",
-        "instruction": "ពិចារណាពោះវៀនធំ ពោះវៀនតូច អាហារថ្មី អាហារចាស់ (លាមក) ខួរក្នុងក្បាល ព្រមទាំងទឹកប្រមាត់ ស្លេស្ម ខ្ទុះ ឈាម ញើស ខ្លាញ់ខាប់ ទឹកភ្នែក ខ្លាញ់រាវ ទឹកមាត់ សម្បោរ ទឹកសន្លាក់ និងទឹកនោម។",
-        "paliChant": "អន្តំ អន្តគុណំ ឧទរិយំ ករីសំ មត្ថលុង្គំ · បិត្តំ សេម្ហំ បុព្វោ លោហិតំ សេទោ មេទោ អស្សុ វសា ខេឡោ សិង្ឃាណិកា លសិកា មុត្តំ។",
-        "khmerTranslation": "ពោះវៀនធំ, ពោះវៀនតូច, អាហារថ្មី, អាហារចាស់, ខួរក្នុងក្បាល... វត្ថុទាំងអស់នេះសុទ្ធតែមិនស្អាត គួរខ្ពើមរអើមទាំងអស់។",
-        "paliChantKhmer": "អន្តំ អន្តគុណំ ឧទរិយំ ករីសំ មត្ថលុង្គំ · បិត្តំ សេម្ហំ បុព្វោ លោហិតំ សេទោ មេទោ អស្សុ វសា ខេឡោ សិង្ឃាណិកា លសិកា មុត្តំ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 398,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៣៩៨–៤១៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=398"
-      },
-      {
-        "stepNum": 4,
-        "title": "ឧបមាស្រាយមាត់ថង់ និងការចូលកាន់បឋមជ្ឈាន",
-        "instruction": "ប្រៀបដូចបុរសស្រាយមាត់ថង់ធញ្ញជាតិចម្រុះមើលឃើញគ្រាប់អង្ករ សណ្តែក ល្ង ច្បាស់លាស់។ យោគាវចរពិនិត្យកាយឃើញជាកោដ្ឋាស ៣២ មិនមានសត្វ បុគ្គល ប្រុស ស្រីឡើយ។ រាគៈរលាយបាត់ សម្រេចបឋមជ្ឈាន។",
-        "paliChant": "សេយ្យថាបិ មុតោលី បូរា នានាវិហិតស្ស ធញ្ញស្ស... ឯវមេវ ខោ ឥមមេវ កាយំ ឧទ្ធំ បាទតលា អធោ កេសមត្ថកា តចបរិយន្តំ បូរំ នានប្បការស្ស អសុចិនោ បច្ចវេក្ខតិ។",
-        "khmerTranslation": "ប្រៀបដូចជាថង់ច្រកគ្រាប់ធញ្ញជាតិផ្សេងៗ... យោគាវចរពិចារណាឃើញកាយនេះមានចំណែកផ្សេងៗយ៉ាងដូច្នោះឯង។",
-        "paliChantKhmer": "សេយ្យថាបិ មុតោលី បូរា នានាវិហិតស្ស ធញ្ញស្ស... ឯវមេវ ខោ ឥមមេវ កាយំ ឧទ្ធំ បាទតលា អធោ កេសមត្ថកា តចបរិយន្តំ បូរំ នានប្បការស្ស អសុចិនោ បច្ចវេក្ខតិ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 420,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៤២០–៤៣៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=420"
+        "step": 3,
+        "title": "ពិចារណាដោយអាការ ៥ យ៉ាង",
+        "instruction": "ពិចារណាដោយពណ៌ (វណ្ណៈ), ទ្រង់ទ្រាយ (សណ្ឋាន), ក្លិន (គន្ធ), ទីតាំង (ឱកាស), និងការប្រជុំគ្នា (អាសយ) ដើម្បីចាក់ធ្លុះភាពមិនស្អាត។",
+        "paliAnchor": "វណ្ណសណ្ឋានគន្ធាសយឱកាសតោ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៤០០–៤២៦",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100410&page=400"
       }
-    ],
-    "namePaliKhmer": "កាយគតាសតិ"
+    ]
   },
   {
     "id": "catudhatu",
-    "name": "ចតុធាតុវវដ្ឋាន (វិនិច្ឆ័យធាតុ ៤ ក្នុងកាយ)",
+    "name": "ចតុធាតុវវដ្ឋាន (ការកំណត់ធាតុទាំង ៤ ក្នុងកាយ)",
     "pali": "ចតុធាតុវវដ្ឋាន",
+    "namePaliKhmer": "ចតុធាតុវវដ្ឋាន",
     "category": "វវដ្ឋាន ១",
     "catId": "vavatthana",
-    "caritaSuitability": "ពុទ្ធិចរិត (អ្នកមានបញ្ញាចូលចិត្តញែកធម៌ និងស្វែងរកសច្ចភាព)",
-    "maxJhana": "ត្រឹមឧបចារសមាធិ — ជាស្ពានមាសទៅកាន់វិបស្សនា",
-    "description": "ការវិភាគញែករូបកាយឱ្យឃើញច្បាស់តាមធាតុដើមទាំង ៤ គឺ ធាតុដី (បឋវីធាតុ - សភាពរឹងទន់), ធាតុទឹក (អាបោធាតុ - សភាពហូរស្អិត), ធាតុភ្លើង (តេជោធាតុ - សភាពក្តៅត្រជាក់), និងធាតុខ្យល់ (វាយោធាតុ - សភាពតានតឹងរំកិល)។ រំលាយការយល់ខុសថាមាន 'ខ្លួនយើង'។",
-    "timerDefaults": [
-      15,
-      20,
-      30
-    ],
+    "caritaSuitability": "ពុទ្ធិចរិត (ទម្លុះសក្កាយទិដ្ឋិ ឃើញត្រឹមតែធាតុដុះលើធាតុ)",
+    "maxJhana": "ឧបចារសមាធិ (ស្ពានចម្លងផ្ទាល់ទៅកាន់វិបស្សនា)",
+    "description": "ការវិភាគញែកកាយនេះជាធាតុ ៤ គឺ បឋវី (រឹង-ទន់), អាបោ (ហូរ-ជ្រាប), តេជោ (ក្តៅ-ត្រជាក់), និង វាយោ (តឹង-រុញច្រាន) ដើម្បីដឹងច្បាស់ថាគ្មានសត្វ បុគ្គល តួខ្លួនឡើយ មានត្រឹមតែធាតុប្រជុំគ្នា។",
+    "timerDefaults": 20,
     "tripitakaVol": "v5",
     "tripitakaPage": 47,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ (ក្បាល ៨៧) ទំព័រ ៤៧-១០០",
+    "tripitakaId": 100477,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ (ក្បាល ៨៧) ទំព័រ ៤៧–១០០",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&id=100477&page=47",
     "nimittaGuide": {
-      "parikamma": "ការយកចិត្តស្ទាបស្ទង់ដឹងសភាពរឹងត្រង់ធ្មេញ ឆ្អឹង, សភាពក្តៅត្រជាក់ក្នុងកាយ, សភាពតានតឹងពេលដកដង្ហើម, និងសភាពរាវហូរនៃញើសទឹកមាត់។",
-      "uggaha": "រូបរាងកាយទាំងមូលបាត់បង់រូបសណ្ឋានជាមនុស្ស ប្រែក្លាយទៅជាសំណុំនៃធាតុរឹង ធាតុរាវ ធាតុក្តៅ និងធាតុខ្យល់ដែលកំពុងមានប្រតិកម្មតភ្ជាប់គ្នា។",
-      "patibhaga": "កាយទាំងមូលប្រែជាថ្លាដូចកញ្ចក់ ឬដូចប្រហោងអាកាសដែលពោរពេញដោយរលកធាតុទាំង ៤។ គំនិតថា 'រូបខ្ញុំ ប្រុស ស្រី' រលាយបាត់អស់ កើតឧបចារសមាធិ និងជាបាទគ្រឹះនៃនាមរូបបរិច្ឆេទញាណ។"
+      "parikamma": "ប៉ះដឹងលក្ខណៈរឹង-ទន់ ត្រជាក់-ក្តៅ តឹង-យារ ក្នុងកាយទាំងមូល។",
+      "uggaha": "ការលែងឃើញកាយជារូបរាងមនុស្ស ឃើញត្រឹមតែដុំធាតុដែលផ្លាស់ប្តូរជានិច្ច។",
+      "patibhaga": "ចិត្តភ្លឺថ្លាស្អាត ចាក់ធ្លុះទិដ្ឋិវិសុទ្ធិ បែងចែកនាមនិងរូបដាច់ស្រឡះពីគ្នា។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "កំណត់បឋវីធាតុ — សភាពរឹង និងទន់",
-        "instruction": "ផ្ចង់ស្មារតីសង្កេតមើលចំណែករឹងក្នុងកាយ ដូចជាធ្មេញខាំប៉ះគ្នា, ឆ្អឹងខ្នង, ក្បាល, សាច់ដុំ ឬការប៉ះលើកម្រាល។ កំណត់ដឹងសភាពរឹង និងទន់ថា 'នេះគ្រាន់តែជាបឋវីធាតុ មិនមែនយើង មិនមែនជារបស់យើងឡើយ'។",
-        "paliChant": "ឥមស្មឹ កាយេ យំ កក្ខឡត្តំ វា មុទុត្តំ វា, អយំ វុច្ចតិ បឋវីធាតុ · បឋវីធាតុ បរិគ្គណ្ហាតិ។",
-        "khmerTranslation": "ក្នុងកាយនេះ សភាពណាដែលរឹង ឬទន់ សភាពនោះហៅថា ធាតុដី។",
-        "paliChantKhmer": "ឥមស្មឹ កាយេ យំ កក្ខឡត្តំ វា មុទុត្តំ វា, អយំ វុច្ចតិ បឋវីធាតុ · បឋវីធាតុ បរិគ្គណ្ហាតិ។",
-        "tripitakaVol": "v5",
-        "tripitakaPage": 50,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ (ក្បាល ៨៧) ទំព័រ ៥០–៦២",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=50"
+        "step": 1,
+        "title": "កំណត់បឋវីធាតុ (ភាពរឹង និងទន់)",
+        "instruction": "កំណត់ដឹងសក់ រោម ក្រចក ធ្មេញ ស្បែក សាច់ សរសៃ ឆ្អឹងថាជាបឋវីធាតុ ដែលមានលក្ខណៈរឹង ឬទន់សម្រាប់ទ្រទ្រង់។",
+        "paliAnchor": "កក្ខឡត្តលក្ខណា បឋវីធាតុ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៤ ទំព័រ ៥៩–៧១",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&id=100479&page=59"
       },
       {
-        "stepNum": 2,
-        "title": "កំណត់អាបោធាតុ — សភាពហូរ និងស្អិតផ្សារភ្ជាប់",
-        "instruction": "សង្កេតមើលជាតិសំណើម ទឹកមាត់ក្នុងមាត់ ញើស ឈាមដែលហូរក្នុងសរសៃ និងកម្លាំងស្អិតផ្សារភ្ជាប់រូបកាយមិនឱ្យរលាយបែកចេញពីគ្នា។ កំណត់ដឹងថា 'នេះជាអាបោធាតុ គ្រាន់តែជាទឹកប៉ុណ្ណោះ'។",
-        "paliChant": "យំ បគ្ឃរណំ វា អាពន្ធនំ វា, អយំ វុច្ចតិ អាបោធាតុ · អាបោធាតុ បរិគ្គណ្ហាតិ។",
-        "khmerTranslation": "សភាពណាដែលហូរ ឬស្អិតផ្សារភ្ជាប់រូប សភាពនោះហៅថា ធាតុទឹក។",
-        "paliChantKhmer": "យំ បគ្ឃរណំ វា អាពន្ធនំ វា, អយំ វុច្ចតិ អាបោធាតុ · អាបោធាតុ បរិគ្គណ្ហាតិ។",
-        "tripitakaVol": "v5",
-        "tripitakaPage": 63,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ (ក្បាល ៨៧) ទំព័រ ៦៣–៧៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=63"
+        "step": 2,
+        "title": "កំណត់អាបោធាតុ និងតេជោធាតុ",
+        "instruction": "កំណត់ឈាម ញើស ទឹកភ្នែក ទឹកសំបោរថាជាអាបោធាតុ (ហូរនិងជ្រាប) ហើយកំណត់កម្តៅរាងកាយ ការរំលាយអាហារថាជាតេជោធាតុ (កម្តៅនិងត្រជាក់)។",
+        "paliAnchor": "បគ្ឃរណលក្ខណា អាបោ, ឧណ្ហត្តលក្ខណា តេជោ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៤ ទំព័រ ៧០–៨៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&id=100480&page=70"
       },
       {
-        "stepNum": 3,
-        "title": "កំណត់តេជោធាតុ និងវាយោធាតុ — កម្តៅ និងការតានតឹង",
-        "instruction": "សង្កេតមើលកម្តៅក្តៅត្រជាក់ដែលភាយចេញពីស្បែក ការរំលាយអាហារក្នុងពោះ (តេជោធាតុ) និងកម្លាំងខ្យល់ដែលច្រានដង្ហើមចេញចូល ការតានតឹងទ្រទ្រង់ឥរិយាបថអង្គុយមិនឱ្យដួល (វាយោធាតុ)។",
-        "paliChant": "យំ ឧណ្ហត្តំ វា សីតត្តំ វា តេជោធាតុ · យំ វិត្ថម្ភនំ វា សមីរណំ វា វាយោធាតុ។",
-        "khmerTranslation": "សភាពក្តៅ ឬត្រជាក់ជាធាតុភ្លើង, សភាពតានតឹង ឬរំកិលទ្រទ្រង់ជាធាតុខ្យល់។",
-        "paliChantKhmer": "យំ ឧណ្ហត្តំ វា សីតត្តំ វា តេជោធាតុ · យំ វិត្ថម្ភនំ វា សមីរណំ វា វាយោធាតុ។",
-        "tripitakaVol": "v5",
-        "tripitakaPage": 76,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ (ក្បាល ៨៧) ទំព័រ ៧៦–៨៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=76"
-      },
-      {
-        "stepNum": 4,
-        "title": "រំលាយសត្តសញ្ញា — ឃើញកាយជាម៉ាស៊ីនធាតុ ៤",
-        "instruction": "ប្រមូលអារម្មណ៍ពិនិត្យកាយទាំងមូលព្រមគ្នា៖ រឹង ស្អិត ក្តៅ តឹង។ ដឹងច្បាស់ថាគ្មាន 'មនុស្ស' កំពុងអង្គុយទេ មានតែធាតុ ៤ ប្រជុំគ្នា។ ចិត្តស្ងប់ចុះកាន់ឧបចារសមាធិ និងត្រៀមឈានចូលវិបស្សនា។",
-        "paliChant": "នេតំ មម, នេសោហមស្មិ, ន មេសោ អត្តាតិ · ធាតុបច្ចវេក្ខណំ ធាតុវវត្ថានំ សត្តសញ្ញាយ សមុគ្ឃាតោ។",
-        "khmerTranslation": "របស់នេះមិនមែនជារបស់យើង, មិនមែនជាយើង, មិនមែនជាខ្លួនយើងឡើយ។ របស់ទាំងអស់នេះគ្រាន់តែជាធាតុសុទ្ធសាធប៉ុណ្ណោះ។",
-        "paliChantKhmer": "នេតំ មម, នេសោហមស្មិ, ន មេសោ អត្តាតិ · ធាតុបច្ចវេក្ខណំ ធាតុវវត្ថានំ សត្តសញ្ញាយ សមុគ្ឃាតោ។",
-        "tripitakaVol": "v5",
-        "tripitakaPage": 90,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ៤ (ក្បាល ៨៧) ទំព័រ ៩០–៩៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&page=90"
+        "step": 3,
+        "title": "កំណត់វាយោធាតុ (ការរុញច្រាន និងចលនា)",
+        "instruction": "កំណត់ខ្យល់ដង្ហើមចេញចូល ខ្យល់ក្នុងពោះ ខ្យល់រុញសរសៃ និងចលនាទាំងពួងថាជាវាយោធាតុ រួចញែកឱ្យឃើញថាគ្មានខ្លួនយើងក្នុងធាតុទាំងនោះឡើយ។",
+        "paliAnchor": "វិត្ថម្ភនលក្ខណា វាយោធាតុ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៤ ទំព័រ ៨៣–៩៩",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v5&id=100482&page=83"
       }
-    ],
-    "namePaliKhmer": "ចតុធាតុវវដ្ឋាន"
+    ]
   },
   {
     "id": "kasina",
-    "name": "បឋវីកសិណ (សមាធិមណ្ឌលដី បង្កើតឈានជ្រៅ)",
+    "name": "បឋវីកសិណ (ការផ្ចង់អារម្មណ៍លើដី)",
     "pali": "បឋវីកសិណ",
+    "namePaliKhmer": "បឋវីកសិណ",
     "category": "កសិណ ១០",
     "catId": "kasina",
-    "caritaSuitability": "ទូទៅ (សមស្របសម្រាប់មនុស្សគ្រប់រូបដែលចង់បានឈានជ្រៅ និងអភិញ្ញា)",
-    "maxJhana": "ចតុត្ថជ្ឈាន (ចតុត្ថជ្ឈាន (ឈានទី ៤))",
-    "description": "ការប្រើប្រាស់មណ្ឌលដីស្អាតពណ៌ដូចអរុណរះ ជាអារម្មណ៍សម្លឹងរហូតកើតជារូបតំណាងក្នុងចិត្ត (ឧគ្គហនិមិត្ត) និងប្រែជាពន្លឺថ្លាស្អាតដូចកញ្ចក់ឆ្លុះ (បដិភាគនិមិត្ត) ឈានចូលសម្រេចរូបជ្ឈានទាំង ៤ ថ្នាក់ និងជាគ្រឹះនៃអរូបជ្ឈាន។",
-    "timerDefaults": [
-      20,
-      30,
-      45,
-      60
-    ],
+    "caritaSuitability": "គ្រប់ចរិត (ជាពិសេសអ្នកចង់បានសមាបត្តិ និងឈានជ្រៅ)",
+    "maxJhana": "ចតុត្ថជ្ឈាន (ឈានទី ៤ សម្រេចអភិញ្ញា)",
+    "description": "ការធ្វើមណ្ឌលដីស្អាតពណ៌ដូចព្រលឹមស្រាងៗ យកភ្នែករំពៃមើលហើយបិទភ្នែកកំណត់ក្នុងចិត្តថា «បឋវី បឋវី» រហូតកើតឧបចារសមាធិ និងអប្បនាសមាធិពេញលេញ។",
+    "timerDefaults": 30,
     "tripitakaVol": "v2",
     "tripitakaPage": 153,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ១៥៣-៤០០",
+    "tripitakaId": 100308,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ១៥៣–៤២០",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100308&page=153",
     "nimittaGuide": {
-      "parikamma": "ការសម្លឹងមើលផ្ទាំងដីរលោងទំហំប្រហែល ៣០ សង់ទីម៉ែត្រ ចម្ងាយ ១.២ ម៉ែត្រ ដោយបើកភ្នែកល្មមៗ ភាវនាថា 'បឋវី, បឋវី'។",
-      "uggaha": "ពេលបិទភ្នែក រូបមណ្ឌលដីលេចឡើងក្នុងចិត្តច្បាស់ដូចបើកភ្នែក ប៉ុន្តែនៅជាប់ស្នាមស្នឹម ក្រឡោត ឬស្លាកស្នាមដី។",
-      "patibhaga": "រូបមណ្ឌលដីប្រែជាផ្ទាំងពន្លឺរលោងស្អាត ភ្លឺថ្លាដូចកញ្ចក់ឆ្លុះថ្លាខ្យង គ្មានស្នាមប្រឡាក់ឡើយ។ យោគាវចរអាចពង្រីកពន្លឺនេះឱ្យធំគ្របដណ្តប់ពេញបន្ទប់ និងចក្រវាល សម្រេចចតុត្ថជ្ឈាន។"
+      "parikamma": "មណ្ឌលដីរលោងដែលរៀបចំទុក ឬផ្ទៃដីស្អាតធម្មជាតិ។",
+      "uggaha": "ពេលបិទភ្នែក ឃើញផ្ទាំងដីច្បាស់ក្នុងចិត្តដូចបើកភ្នែកមើល។",
+      "patibhaga": "និមិត្តដីប្រែជាពន្លឺថ្លាដូចកញ្ចក់ឆ្លុះ គ្មានស្លាកស្នាមសៅហ្មង ចិត្តធ្លាក់ចូលក្នុងឈាន។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "ការតាំងមណ្ឌលដី និងការសម្លឹងបរិកម្ម",
-        "instruction": "ដាក់មណ្ឌលដីស្អាតពណ៌ក្រហមដីឥដ្ឋរលោងស្មើនៅចំពោះមុខ ចម្ងាយប្រហែល ២ ហត្ថកន្លះ។ អង្គុយតម្រង់កាយ សម្លឹងមើលមណ្ឌលដីដោយភ្នែកបើកល្មមៗ (ដូចឆ្លុះកញ្ចក់) ហើយសូត្រក្នុងចិត្តថា 'បឋវី, បឋវី...'។",
-        "paliChant": "បឋវី បឋវីតិ វា, មហី មេទិនី ភូមិ វសុធា វសុន្ធរាតិ វា... បរិកម្មនិមិត្តំ គណ្ហាតិ។",
-        "khmerTranslation": "ដី, ដី... ផែនដី, ធរណី, ភូមិស្ថាន, មណ្ឌលដីដ៏ស្អាតបរិសុទ្ធ។",
-        "paliChantKhmer": "បឋវី បឋវីតិ វា, មហី មេទិនី ភូមិ វសុធា វសុន្ធរាតិ វា... បរិកម្មនិមិត្តំ គណ្ហាតិ។",
-        "tripitakaVol": "v2",
-        "tripitakaPage": 160,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ១៦០–១៧៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=160"
+        "step": 1,
+        "title": "ការធ្វើមណ្ឌលកសិណ",
+        "instruction": "យកដីស្អាតគ្មានកម្ទេចថ្មមកលញ់ធ្វើជាបន្ទះរង្វង់មុខកាត់ប្រមាណ ១ ចង្អាម ៤ ធ្នាប់ រួចតម្កល់ក្នុងចម្ងាយសមរម្យ។",
+        "paliAnchor": "កសិណមណ្ឌល",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ១ ទំព័រ ១៧៣–១៨៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100315&page=173"
       },
       {
-        "stepNum": 2,
-        "title": "ការចាប់យកឧគ្គហនិមិត្ត",
-        "instruction": "សម្លឹងឆ្លាស់គ្នារវាងការបើកភ្នែក និងបិទភ្នែក រហូតទាល់តែពេលបិទភ្នែក រូបមណ្ឌលដីនោះលេចឡើងក្នុងចិត្តយ៉ាងច្បាស់ ដូចជាកំពុងបើកភ្នែកមើល។ ពេលនេះអាចក្រោកចេញពីមណ្ឌលដីទៅអង្គុយក្នុងកុដិ ឬបន្ទប់បាន។",
-        "paliChant": "ឧគ្គហនិមិត្តំ ឧប្បជ្ជតិ, ចក្ខុនា ទិស្វា មនសា បស្សតិ និម្មិតំ វិយ បច្ចុបដ្ឋាតិ។",
-        "khmerTranslation": "ឧគ្គហនិមិត្តរមែងកើតឡើង ឃើញដោយភ្នែកយ៉ាងណា រមែងឃើញដោយចិត្តយ៉ាងនោះ។",
-        "paliChantKhmer": "ឧគ្គហនិមិត្តំ ឧប្បជ្ជតិ, ចក្ខុនា ទិស្វា មនសា បស្សតិ និម្មិតំ វិយ បច្ចុបដ្ឋាតិ។",
-        "tripitakaVol": "v2",
-        "tripitakaPage": 178,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ១៧៨–១៩០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=178"
+        "step": 2,
+        "title": "ការទន្ទេញភាវនា",
+        "instruction": "បើកភ្នែកមើលល្មមៗ កុំបើកធំពេក កុំបិទជិតពេក រួចទន្ទេញក្នុងចិត្តថា «បឋវី បឋវី» រាប់រយរាប់ពាន់ដងរហូតចាំជាប់ក្នុងចិត្ត។",
+        "paliAnchor": "បឋវី បឋវី",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ១ ទំព័រ ១៨៥–២០៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100317&page=185"
       },
       {
-        "stepNum": 3,
-        "title": "ការបណ្តុះបដិភាគនិមិត្ត",
-        "instruction": "បន្តផ្ចង់ស្មារតីលើរូបមណ្ឌលដីក្នុងចិត្តនោះកុំឱ្យបាត់។ បន្តិចក្រោយមក ស្នាមស្នឹមដីនឹងរលាយបាត់ អារម្មណ៍ប្រែក្លាយជាពន្លឺភ្លឺថ្លាស្អាត ដូចជាកញ្ចក់ ឬព្រះចន្ទពេញបូណ៌មី។ នីវរណៈ ៥ រលត់ ចូលកាន់ឧបចារសមាធិ។",
-        "paliChant": "វិមលោ វិសុទ្ធោ អាទាសមណ្ឌលំ វិយ បដិភាគនិមិត្តំ បាតុភវតិ ឧបចារសមាធិប្បត្តោ។",
-        "khmerTranslation": "បដិភាគនិមិត្តដ៏បរិសុទ្ធ គ្មានមន្ទិល រមែងប្រាកដឡើងក្នុងចិត្ត។",
-        "paliChantKhmer": "វិមលោ វិសុទ្ធោ អាទាសមណ្ឌលំ វិយ បដិភាគនិមិត្តំ បាតុភវតិ ឧបចារសមាធិប្បត្តោ។",
-        "tripitakaVol": "v2",
-        "tripitakaPage": 195,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ១៩៥–២០៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=195"
-      },
-      {
-        "stepNum": 4,
-        "title": "ការសម្រេចបឋមជ្ឈាន និងការពង្រីកនិមិត្ត",
-        "instruction": "បង្អោនចិត្តចូលកាន់បឋមជ្ឈានប្រកបដោយអង្គ ៥ (វិតក្ក វិចារ បីតិ សុខ ឯកគ្គតា)។ ក្រោយមក ហ្វឹកហាត់ពង្រីកបដិភាគនិមិត្តឱ្យធំឡើងម្តងមួយចំអាម ពេញបន្ទប់ ពេញភូមិ រហូតដល់ចក្រវាលទាំងមូល ឆ្លងចូលឈានទី ២, ៣, ៤។",
-        "paliChant": "វិវិច្ចេវ កាមេហិ វិវិច្ច អកុសលេហិ ធម្មេហិ សវិតក្កំ សវិចារំ វិវេកជំ បីតិសុខំ បឋមំ ឈានំ ឧបសម្បជ្ជ វិហរតិ។",
-        "khmerTranslation": "ស្ងាត់ចាកកាមទាំងឡាយ ស្ងាត់ចាកអកុសលធម៌ ចូលកាន់បឋមជ្ឈាន សម្រេចសម្រាន្តនៅ។",
-        "paliChantKhmer": "វិវិច្ចេវ កាមេហិ វិវិច្ច អកុសលេហិ ធម្មេហិ សវិតក្កំ សវិចារំ វិវេកជំ បីតិសុខំ បឋមំ ឈានំ ឧបសម្បជ្ជ វិហរតិ។",
-        "tripitakaVol": "v2",
-        "tripitakaPage": 210,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ (ក្បាល ៨៤) ទំព័រ ២១០–២២៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&page=210"
+        "step": 3,
+        "title": "ការរីកធំនៃបដិភាគនិមិត្ត",
+        "instruction": "កាលបើបដិភាគនិមិត្តកើតឡើង គប្បីពង្រីកនិមិត្តនោះឱ្យធំពេញទិសទាំងពួង រួចតម្កល់ចិត្តចូលកាន់បឋមជ្ឈានរហូតដល់ចតុត្ថជ្ឈាន។",
+        "paliAnchor": "និមិត្តវឌ្ឍនា",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ១ ទំព័រ ២០៥–២៥០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v2&id=100319&page=205"
       }
-    ],
-    "namePaliKhmer": "បឋវីកសិណ"
+    ]
   },
   {
     "id": "asubha",
-    "name": "អសុភភាវនា (ពិចារណាសាកសព ១០ ដំណាក់កាលកាត់ផ្តាច់រាគៈ)",
-    "pali": "អសុភភាវនា",
+    "name": "អសុភ ១០ (ការពិចារណាសាកសពមិនស្អាត)",
+    "pali": "អសុភកម្មដ្ឋាន",
+    "namePaliKhmer": "អសុភកម្មដ្ឋាន",
     "category": "អសុភ ១០",
     "catId": "asubha",
-    "caritaSuitability": "រាគចរិត (អ្នកជាប់ជំពាក់នឹងរូបសម្រស់ កាមគុណ និងភេទផ្ទុយ)",
-    "maxJhana": "បឋមជ្ឈាន (បឋមជ្ឈាន (ឈានទី ១))",
-    "description": "ការពិចារណាសាកសព ១០ ដំណាក់កាល (សាកសពហើមប៉ោង ខៀវជាំ ហូរទឹកខ្ទុះ រហូតដល់ឆ្អឹងស) ដើម្បីកាត់ផ្តាច់ការជាប់ចិត្តនឹងរូបសម្រស់ ក្លិនក្រអូប និងការតុបតែងកាយ។ ធ្វើឱ្យចិត្តស្ងប់ស្អាត និងសម្រេចបឋមជ្ឈាន។",
-    "timerDefaults": [
-      15,
-      20,
-      30
-    ],
+    "caritaSuitability": "រាគចរិត (បន្សាបរាគៈតណ្ហាយ៉ាងមុតស្រួច)",
+    "maxJhana": "បឋមជ្ឈាន (ឈានទី ១)",
+    "description": "ការពិចារណាសាកសព ១០ ដំណាក់ មាន សាកសពហើមប៉ោង សាកសពខៀវស្វាយ សាកសពបែកខ្ទុះ ឆ្អឹងស ជាដើម ដើម្បីរំលាយការជាប់ចិត្តនឹងរូបកាយដ៏ស្រស់ស្អាតដែលជាការបោកបញ្ឆោត។",
+    "timerDefaults": 15,
     "tripitakaVol": "v3",
     "tripitakaPage": 1,
-    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ១-៧៥",
+    "tripitakaId": 100347,
+    "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ១–៧៥",
+    "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100347&page=1",
     "nimittaGuide": {
-      "parikamma": "ការសម្លឹងមើលរូបសាកសព ឬការស្រមើស្រមៃឃើញសាកសពហើមប៉ោង ភាវនាថា 'ឧទ្ធុមាតកំ អសុភំ' (សាកសពហើមប៉ោងជាអសុភ)។",
-      "uggaha": "រូបសាកសពហើមប៉ោង ខៀវជាំ គួរឱ្យខ្លាច លេចឡើងក្នុងចិត្តច្បាស់ពេលបិទភ្នែក។",
-      "patibhaga": "រូបសាកសពគួរឱ្យខ្លាចនោះប្រែប្រួលទៅជារូបស្ងប់ស្ងៀម បរិសុទ្ធ ដូចជារូបចម្លាក់កែវ ឬដុំម្សៅពណ៌ស។ ចិត្តលែងមានការខ្ពើមរអើម ឬភ័យខ្លាចឡើយ មានតែការស្ងប់រម្ងាប់ និងមិនជាប់ជំពាក់ ចូលកាន់បឋមជ្ឈាន។"
+      "parikamma": "ការឃើញសាកសព ឬការនឹកឃើញរូបសាកសពដែលហើមប៉ោង ធុំក្លិនអាក្រក់។",
+      "uggaha": "ការឃើញរូបសាកសពនោះច្បាស់ក្នុងចិត្តទាំងបិទភ្នែក គួរឱ្យសង្វេគខ្លាំង។",
+      "patibhaga": "រូបសាកសពប្រែជានិមិត្តស្ងប់ ចិត្តផ្តាច់ចេញពីរាគៈ សម្រេចបឋមជ្ឈាន។"
     },
     "practiceSteps": [
       {
-        "stepNum": 1,
-        "title": "ឧទ្ធុមាតកអសុភ — សាកសពហើមប៉ោង",
-        "instruction": "សញ្ជឹងគិតដល់រូបកាយដែលស្លាប់ទៅបាន ១ ទៅ ៣ ថ្ងៃ កំពុងហើមប៉ោងដូចថង់ខ្យល់ ខៀវជាំ គ្មានជីវិត។ ភាវនាក្នុងចិត្តដើម្បីកម្ចាត់ការជាប់ចិត្តនឹងទ្រង់ទ្រាយកាយស្អាត។",
-        "paliChant": "ឧទ្ធុមាតកំ អសុភំ, បដិកូលំ អសុភំ · វាយុបុណ្ណទិតិ វិយ ឧទ្ធុមាតកសរីរំ។",
-        "khmerTranslation": "សាកសពហើមប៉ោងជារបស់មិនស្អាត, ជារបស់បដិកូល គួរខ្ពើមរអើម។",
-        "paliChantKhmer": "ឧទ្ធុមាតកំ អសុភំ, បដិកូលំ អសុភំ · វាយុបុណ្ណទិតិ វិយ ឧទ្ធុមាតកសរីរំ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 5,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៥–១៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=5"
+        "step": 1,
+        "title": "ការកំណត់ឧទ្ធុមាតកៈ (សាកសពហើមប៉ោង)",
+        "instruction": "កំណត់រូបសាកសពដែលដេកស្លាប់ហើមប៉ោងខៀវស្វាយ ធ្លាយទឹកលឿង គ្មានវិញ្ញាណ គ្មានសម្រស់អ្វីទាំងអស់។",
+        "paliAnchor": "ឧទ្ធុមាតកំ បដិកូលំ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៧–១៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100348&page=7"
       },
       {
-        "stepNum": 2,
-        "title": "វិនីលកៈ និង វិបុព្វកៈ — សាកសពខៀវជាំ និងហូរទឹកខ្ទុះរលួយ",
-        "instruction": "ពិចារណាឃើញស្បែកដែលធ្លាប់តែសម៉ដ្ឋ ប្រែជាខៀវជាំ ក្រហមខ្មៅ ហើយមានទឹកខ្ទុះហូរចេញតាមទ្វារទាំង ៩។ កម្ចាត់ការជាប់ចិត្តនឹងសម្បុរស្បែក និងក្លិនក្រអូបទឹកអប់។",
-        "paliChant": "វិនីលកំ អសុភំ, វិបុព្វកំ អសុភំ · ភិន្នតចា នីលលោហិតកាលសរីរំ បុព្វំ បគ្ឃរន្តំ។",
-        "khmerTranslation": "សាកសពមានពណ៌ខៀវជាំជាអសុភ, សាកសពមានទឹកខ្ទុះហូររលួយជាអសុភ។",
-        "paliChantKhmer": "វិនីលកំ អសុភំ, វិបុព្វកំ អសុភំ · ភិន្នតចា នីលលោហិតកាលសរីរំ បុព្វំ បគ្ឃរន្តំ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 20,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ២០–៣៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=20"
+        "step": 2,
+        "title": "ការបង្អោនចូលមកក្នុងខ្លួន",
+        "instruction": "បង្អោនមកពិចារណាកាយខ្លួនឯងថា «កាយនេះក៏មានសភាពយ៉ាងនេះជាធម្មតា មិនអាចកន្លងផុតនូវសភាពយ៉ាងនេះឡើយ»។",
+        "paliAnchor": "ឯវំធម្មោ ឯវំភាវី",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ១៥–៣៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100350&page=15"
       },
       {
-        "stepNum": 3,
-        "title": "អដ្ឋិកអសុភ — គ្រោងឆ្អឹងសកណ្តក",
-        "instruction": "ពិចារណាឃើញសាច់ និងស្បែករលួយជ្រុះអស់ នៅសល់តែគ្រោងឆ្អឹងសកណ្តក ៣០០ កំណាត់ តភ្ជាប់គ្នាដោយសរសៃ។ កម្ចាត់ការជាប់ចិត្តនឹងស្នាមញញឹម និងធ្មេញស្អាត។",
-        "paliChant": "អដ្ឋិកំ អសុភំ, អដ្ឋិសង្ខលិកំ អសុភំ · សីសច្ឆវិតោ បដ្ឋាយ យាវ បាទតលា អដ្ឋិសង្ខលិកំ បស្សតិ។",
-        "khmerTranslation": "រាងឆ្អឹងជាអសុភ, គ្រោងឆ្អឹងដែលតភ្ជាប់គ្នាដោយសរសៃជាអសុភ។",
-        "paliChantKhmer": "អដ្ឋិកំ អសុភំ, អដ្ឋិសង្ខលិកំ អសុភំ · សីសច្ឆវិតោ បដ្ឋាយ យាវ បាទតលា អដ្ឋិសង្ខលិកំ បស្សតិ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 40,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៤០–៥៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=40"
-      },
-      {
-        "stepNum": 4,
-        "title": "ការបង្អោនចូលមកក្នុងខ្លួន និងសម្រេចបឋមជ្ឈាន",
-        "instruction": "បង្អោនគំនិតនោះចូលមកក្នុងរូបកាយខ្លួនឯងថា 'រូបកាយយើងនេះក៏នឹងទៅជាយ៉ាងនេះដូចគ្នា មិនអាចកន្លងផុតពីសភាពហើមរលួយនេះឡើយ'។ តម្រេកកាមគុណរលាយបាត់ ចិត្តស្ងប់ស្អាតចូលកាន់បឋមជ្ឈាន។",
-        "paliChant": "អយម្បិ ខោ មេ កាយោ ឯវំធម្មោ ឯវំភាវី ឯវំអនតីតោ · រាគោ បហីយតិ, វិតក្កាទិយុត្តំ បឋមជ្ឈានំ ឧបសម្បជ្ជ វិហរតិ។",
-        "khmerTranslation": "រូបកាយរបស់អាត្មាអញនេះឯង ក៏មានសភាពយ៉ាងនេះជាធម្មតា នឹងទៅជាយ៉ាងនេះ មិនកន្លងផុតសេចក្តីនេះឡើយ។",
-        "paliChantKhmer": "អយម្បិ ខោ មេ កាយោ ឯវំធម្មោ ឯវំភាវី ឯវំអនតីតោ · រាគោ បហីយតិ, វិតក្កាទិយុត្តំ បឋមជ្ឈានំ ឧបសម្បជ្ជ វិហរតិ។",
-        "tripitakaVol": "v3",
-        "tripitakaPage": 60,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ២ (ក្បាល ៨៥) ទំព័រ ៦០–៧២",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&page=60"
+        "step": 3,
+        "title": "ការសម្រេចបឋមជ្ឈាន",
+        "instruction": "កាលបើចិត្តស្អប់ខ្ពើមរាគៈ តណ្ហារលត់ទៅ ចិត្តតម្កល់ស្ងប់ក្នុងបឋមជ្ឈានប្រកបដោយ វិតក្ក វិចារ បីតិ សុខ ឯកគ្គតា។",
+        "paliAnchor": "បឋមជ្ឈាន",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ២ ទំព័រ ៣៥–៦២",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v3&id=100352&page=35"
       }
-    ],
-    "namePaliKhmer": "អសុភភាវនា"
+    ]
   }
 ];
 
@@ -2321,16 +2118,16 @@ export const SAMADHI_PRACTICE_METHODS = [
 export const PANNA_NAMARUPA = {
   "overview": {
     "titleKh": "បញ្ញានិទ្ទេស៖ នាម និង រូប (ការយល់ដឹងស៊ីជម្រៅ)",
-    "titlePali": "Paññā Niddesa: Nāma & Rūpa",
+    "titlePali": "បញ្ញានិទ្ទេស៖ នាម និង រូប",
     "canonicalPurpose": "ការកម្ចាត់បង់នូវសក្កាយទិដ្ឋិ និងអវិជ្ជា ដោយញែកឱ្យឃើញច្បាស់នូវរូបធម៌ (សភាពមិនដឹងអារម្មណ៍) និងនាមធម៌ (សភាពដឹងអារម្មណ៍) តាមសភាវៈពិត (ទិដ្ឋិវិសុទ្ធិ) ដើម្បីចាក់ធ្លុះត្រៃលក្ខណ៍ និងសម្រេចអរិយមគ្គ។",
     "paliMotto": "សីលេ បតិដ្ឋាយ នរោ សបញ្ញោ ចិត្តំ បញ្ញញ្ច ភាវយំ... នាមរូបវវដ្ឋានំ ទិដ្ឋិវិសុទ្ធិ។",
     "lakkhanaCatukka": {
       "lakkhana": {
-        "pali": "Dhammasabhāvapaṭivedha-lakkhaṇā",
+        "pali": "ធម្មសភាវបដិវេធលក្ខណា",
         "khmer": "មានការចាក់ធ្លុះនូវសភាវធម៌ពិត (អនិច្ចំ ទុក្ខំ អនត្តា) ជាលក្ខណៈ"
       },
       "rasa": {
-        "pali": "វិសយោភាសនរសា មោហន្ធការវិទ្ធំសនរសា",
+        "pali": "វិសយោភាសនរសា / មោហន្ធការវិទ្ធំសនរសា",
         "khmer": "មានការបំភ្លឺអារម្មណ៍ឱ្យច្បាស់ ឬបំផ្លាញនូវងងឹតគឺមោហៈ (អវិជ្ជា) ជាកិច្ច"
       },
       "paccupatthana": {
@@ -2343,47 +2140,53 @@ export const PANNA_NAMARUPA = {
       }
     },
     "coinSimile": {
-      "title": "ឧបមាកាក់ប្រាក់ ៣ កម្រិត (The Coin Simile)",
-      "sanna": "សញ្ញា (Perception) ដូចក្មេងមិនដឹងក្តី ស្គាល់ត្រឹមពណ៌ខៀវក្រហម មូលជ្រុង តែមិនដឹងថាកាក់ចាយបានឬអត់",
-      "vinnana": "វិញ្ញាណ (Consciousness) ដូចអ្នកស្រុកធម្មតា ដឹងថាកាក់ចាយទិញទំនិញបាន តែមិនដឹងលោហធាតុពិតឬក្លែងក្លាយ",
-      "panna": "បញ្ញា (Wisdom) ដូចអ្នកជំនាញកាត់ប្រាក់ (Hiraññaka) ពិនិត្យដឹងទាំងតម្លៃ លោហធាតុ ទីកន្លែងស្ល និងចាក់ធ្លុះដល់សច្ចធម៌"
+      "title": "ឧបមាកាក់ប្រាក់ ៣ កម្រិត",
+      "sanna": "សញ្ញា ដូចក្មេងមិនដឹងក្តី ស្គាល់ត្រឹមពណ៌ខៀវក្រហម មូលជ្រុង តែមិនដឹងថាកាក់ចាយបានឬអត់",
+      "vinnana": "វិញ្ញាណ ដូចអ្នកស្រុកធម្មតា ដឹងថាកាក់ចាយទិញទំនិញបាន តែមិនដឹងលោហធាតុពិតឬក្លែងក្លាយ",
+      "panna": "បញ្ញា ដូចអ្នកជំនាញកាត់ប្រាក់ (ហិរញ្ញកៈ) ពិនិត្យដឹងទាំងតម្លៃ លោហធាតុ ទីកន្លែងស្ល និងចាក់ធ្លុះដល់សច្ចធម៌"
     },
     "bhumi6": [
       {
         "number": 1,
-        "namePali": "Pañcakkhandhā",
+        "namePali": "បញ្ចក្ខន្ធ",
         "nameKh": "ខន្ធ ៥",
-        "desc": "រូបក្ខន្ធ, វេទនាក្ខន្ធ, សញ្ញាក្ខន្ធ, សង្ខារក្ខន្ធ, វិញ្ញាណក្ខន្ធ"
+        "desc": "រូបក្ខន្ធ, វេទនាក្ខន្ធ, សញ្ញាក្ខន្ធ, សង្ខារក្ខន្ធ, វិញ្ញាណក្ខន្ធ",
+        "namePaliKhmer": "បញ្ចក្ខន្ធ"
       },
       {
         "number": 2,
-        "namePali": "ទ្វាទសាយតនានិ",
+        "namePali": "ទ្វាទសាយតនៈ",
         "nameKh": "អាយតនៈ ១២",
-        "desc": "អាយតនៈខាងក្នុង ៦ (ភ្នែក ត្រចៀក ច្រមុះ អណ្តាត កាយ ចិត្ត) + អាយតនៈខាងក្រៅ ៦ (រូប សំឡេង ក្លិន រស ពាល់ត្រូវ ធម្មារម្មណ៍)"
+        "desc": "អាយតនៈខាងក្នុង ៦ (ភ្នែក ត្រចៀក ច្រមុះ អណ្តាត កាយ ចិត្ត) + អាយតនៈខាងក្រៅ ៦ (រូប សំឡេង ក្លិន រស ពាល់ត្រូវ ធម្មារម្មណ៍)",
+        "namePaliKhmer": "ទ្វាទសាយតនៈ"
       },
       {
         "number": 3,
-        "namePali": "Aṭṭhārasa Dhātuyo",
+        "namePali": "អដ្ឋារសធាតុ",
         "nameKh": "ធាតុ ១៨",
-        "desc": "ទ្វារ ៦, អារម្មណ៍ ៦, និងវិញ្ញាណ ៦ ដែលជាដំណើរដឹងអារម្មណ៍នៃលោកធាតុ"
+        "desc": "ទ្វារ ៦, អារម្មណ៍ ៦, និងវិញ្ញាណ ៦ ដែលជាដំណើរដឹងអារម្មណ៍នៃលោកធាតុ",
+        "namePaliKhmer": "អដ្ឋារសធាតុ"
       },
       {
         "number": 4,
-        "namePali": "ពាវីសតិន្ទ្រិយានិ",
+        "namePali": "ពាវីសតិន្ទ្រិយៈ",
         "nameKh": "ឥន្ទ្រិយ ២២",
-        "desc": "ធម្មជាតិជាធំក្នុងការគ្រប់គ្រង (ទ្វារ ៦, ភេទ ២, ជីវិត ១, វេទនា ៥, សទ្ធា-វិរិយ-សតិ-សមាធិ-បញ្ញា ៥, លោកុត្តរិន្ទ្រិយ ៣)"
+        "desc": "ធម្មជាតិជាធំក្នុងការគ្រប់គ្រង (ទ្វារ ៦, ភេទ ២, ជីវិត ១, វេទនា ៥, សទ្ធា-វិរិយ-សតិ-សមាធិ-បញ្ញា ៥, លោកុត្តរិន្ទ្រិយ ៣)",
+        "namePaliKhmer": "ពាវីសតិន្ទ្រិយៈ"
       },
       {
         "number": 5,
-        "namePali": "Cattāri Ariyasaccāni",
+        "namePali": "ចត្តារិ អរិយសច្ចានិ",
         "nameKh": "អរិយសច្ច ៤",
-        "desc": "ទុក្ខសច្ច (ខន្ធ ៥), សមុទយសច្ច (តណ្ហា), និរោធសច្ច (និព្វាន), មគ្គសច្ច (អដ្ឋង្គិកមគ្គ)"
+        "desc": "ទុក្ខសច្ច (ខន្ធ ៥), សមុទយសច្ច (តណ្ហា), និរោធសច្ច (និព្វាន), មគ្គសច្ច (អដ្ឋង្គិកមគ្គ)",
+        "namePaliKhmer": "ចត្តារិ អរិយសច្ចានិ"
       },
       {
         "number": 6,
-        "namePali": "Dvādasa Paṭiccasamuppādāṅgāni",
+        "namePali": "ទ្វាទស បដិច្ចសមុប្បាទង្គ",
         "nameKh": "បដិច្ចសមុប្បាទ ១២",
-        "desc": "ខ្សែច្រវាក់នៃហេតុផល ១២ តាំងពីអវិជ្ជា រហូតដល់ជរាមរណៈ និងបច្ច័យ ២៤"
+        "desc": "ខ្សែច្រវាក់នៃហេតុផល ១២ តាំងពីអវិជ្ជា រហូតដល់ជរាមរណៈ និងបច្ច័យ ២៤",
+        "namePaliKhmer": "ទ្វាទស បដិច្ចសមុប្បាទង្គ"
       }
     ]
   },
@@ -2400,8 +2203,8 @@ export const PANNA_NAMARUPA = {
         "dailyAnchor": "ពេលជើងជាន់ដី ពេលអង្គុយប៉ះកម្រាល ដឹងថាសភាពរឹងទន់នេះជាបឋវីធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 16,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១៦–១៨",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=16"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%94%E1%9E%8B%E1%9E%9C%E1%9E%B8%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       },
       {
         "namePaliKhmer": "អាបោធាតុ",
@@ -2413,8 +2216,8 @@ export const PANNA_NAMARUPA = {
         "dailyAnchor": "ពេលបែកញើស ទឹកមាត់ ឈាមរត់ ដឹងថាសភាពស្អិតរាវនេះជាអាបោធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 18,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១៨–២០",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=18"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%A2%E1%9E%B6%E1%9E%94%E1%9F%84%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       },
       {
         "namePaliKhmer": "តេជោធាតុ",
@@ -2426,8 +2229,8 @@ export const PANNA_NAMARUPA = {
         "dailyAnchor": "ពេលប៉ះកម្តៅថ្ងៃ ពេលត្រជាក់រងារ ដឹងថាកម្តៅត្រជាក់នេះជាតេជោធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 20,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ២០–២២",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=20"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%8F%E1%9F%81%E1%9E%87%E1%9F%84%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       },
       {
         "namePaliKhmer": "វាយោធាតុ",
@@ -2439,8 +2242,8 @@ export const PANNA_NAMARUPA = {
         "dailyAnchor": "ពេលដកដង្ហើមចេញចូល ពេលឈានជើងដើរ ដឹងថាកម្លាំងរុញនេះជាវាយោធាតុ មិនមែនជាខ្ញុំទេ",
         "tripitakaVol": "v6",
         "tripitakaPage": 22,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ២២–២៥",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=22"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100551&page=44&find=%E1%9E%9C%E1%9E%B6%E1%9E%99%E1%9F%84%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB"
       }
     ],
     "upadarupa24": [
@@ -2455,8 +2258,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ចក្ខុបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 25,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 25",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=25"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%85%E1%9E%80%E1%9F%92%E1%9E%81%E1%9E%BB%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%97%E1%9F%92%E1%9E%93%E1%9F%82%E1%9E%80)"
       },
       {
         "id": 6,
@@ -2469,8 +2272,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "សោតបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 25,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 25",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=25"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9F%E1%9F%84%E1%9E%8F%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%85%E1%9F%80%E1%9E%80)"
       },
       {
         "id": 7,
@@ -2483,8 +2286,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ឃានបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 25,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 25",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=25"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%83%E1%9E%B6%E1%9E%93%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%85%E1%9F%92%E1%9E%9A%E1%9E%98%E1%9E%BB%E1%9F%87)"
       },
       {
         "id": 8,
@@ -2497,8 +2300,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ជីវ្ហាបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 26,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 26",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=26"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9F%92%E1%9E%A0%E1%9E%B6%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%A2%E1%9E%8E%E1%9F%92%E1%9E%8F%E1%9E%B6%E1%9E%8F)"
       },
       {
         "id": 9,
@@ -2511,8 +2314,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "កាយបសាទ",
         "tripitakaVol": "v6",
         "tripitakaPage": 26,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 26",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=26"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%80%E1%9E%B6%E1%9E%99%E1%9E%94%E1%9E%9F%E1%9E%B6%E1%9E%91%20(%E1%9E%9F%E1%9F%92%E1%9E%94%E1%9F%82%E1%9E%80%E1%9E%80%E1%9E%B6%E1%9E%99)"
       },
       {
         "id": 10,
@@ -2525,8 +2328,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "រូបារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 27,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 27",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=27"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%96%E1%9E%8E%E1%9F%8C%2F%E1%9E%96%E1%9E%93%E1%9F%92%E1%9E%9B%E1%9E%BA)"
       },
       {
         "id": 11,
@@ -2539,8 +2342,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "សទ្ទារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 27,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 27",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=27"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9F%E1%9E%91%E1%9F%92%E1%9E%91%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%9F%E1%9F%86%E1%9E%A1%E1%9F%81%E1%9E%84)"
       },
       {
         "id": 12,
@@ -2553,8 +2356,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "គន្ធារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 27,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 27",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=27"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%82%E1%9E%93%E1%9F%92%E1%9E%92%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%80%E1%9F%92%E1%9E%9B%E1%9E%B7%E1%9E%93)"
       },
       {
         "id": 13,
@@ -2567,8 +2370,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "រសារម្មណ៍",
         "tripitakaVol": "v6",
         "tripitakaPage": 28,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 28",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=28"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%9F%E1%9E%B6%E1%9E%9A%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%8E%E1%9F%8D%20(%E1%9E%9A%E1%9E%9F%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7)"
       },
       {
         "id": 14,
@@ -2581,8 +2384,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ឥត្ថីភាវរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 28,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 28",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=28"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A5%E1%9E%8F%E1%9F%92%E1%9E%90%E1%9E%B8%E1%9E%97%E1%9E%B6%E1%9E%9C%E1%9E%9A%E1%9E%BC%E1%9E%94"
       },
       {
         "id": 15,
@@ -2595,8 +2398,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "បុរិសភាវរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 29,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 29",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=29"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%94%E1%9E%BB%E1%9E%9A%E1%9E%B7%E1%9E%9F%E1%9E%97%E1%9E%B6%E1%9E%9C%E1%9E%9A%E1%9E%BC%E1%9E%94"
       },
       {
         "id": 16,
@@ -2609,8 +2412,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ហទយវត្ថុ",
         "tripitakaVol": "v6",
         "tripitakaPage": 29,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 29",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=29"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A0%E1%9E%91%E1%9E%99%E1%9E%9C%E1%9E%8F%E1%9F%92%E1%9E%90%E1%9E%BB%20(%E1%9E%94%E1%9F%81%E1%9F%87%E1%9E%8A%E1%9E%BC%E1%9E%84)"
       },
       {
         "id": 17,
@@ -2623,8 +2426,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ជីវិតិន្ទ្រិយរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 29,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 29",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=29"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9E%B7%E1%9E%8F%E1%9E%B7%E1%9E%93%E1%9F%92%E1%9E%91%E1%9F%92%E1%9E%9A%E1%9E%B7%E1%9E%99%E1%9E%9A%E1%9E%BC%E1%9E%94"
       },
       {
         "id": 18,
@@ -2637,8 +2440,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ឱជារូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 30,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 30",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=30"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%B1%E1%9E%87%E1%9E%B6%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%87%E1%9E%B8%E1%9E%9C%E1%9E%87%E1%9E%B6%E1%9E%8F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%A0%E1%9E%B6%E1%9E%9A)"
       },
       {
         "id": 19,
@@ -2651,8 +2454,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "អាកាសធាតុ",
         "tripitakaVol": "v6",
         "tripitakaPage": 30,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 30",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=30"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A2%E1%9E%B6%E1%9E%80%E1%9E%B6%E1%9E%9F%E1%9E%92%E1%9E%B6%E1%9E%8F%E1%9E%BB%20(%E1%9E%85%E1%9E%93%E1%9F%92%E1%9E%9B%E1%9F%84%E1%9F%87%E1%9E%91%E1%9E%91%E1%9F%81)"
       },
       {
         "id": 20,
@@ -2665,8 +2468,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "កាយវិញ្ញត្តិ",
         "tripitakaVol": "v6",
         "tripitakaPage": 31,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 31",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=31"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%80%E1%9E%B6%E1%9E%99%E1%9E%9C%E1%9E%B7%E1%9E%89%E1%9F%92%E1%9E%89%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9E%B7"
       },
       {
         "id": 21,
@@ -2679,8 +2482,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "វចីវិញ្ញត្តិ",
         "tripitakaVol": "v6",
         "tripitakaPage": 31,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 31",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=31"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9C%E1%9E%85%E1%9E%B8%E1%9E%9C%E1%9E%B7%E1%9E%89%E1%9F%92%E1%9E%89%E1%9E%8F%E1%9F%92%E1%9E%8F%E1%9E%B7"
       },
       {
         "id": 22,
@@ -2693,8 +2496,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "រូបស្ស លဟုតា",
         "tripitakaVol": "v6",
         "tripitakaPage": 31,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 31",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=31"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%9F%E1%9F%92%E1%9E%9F%20%E1%9E%9B%E1%80%9F%E1%80%AF%E1%9E%8F%E1%9E%B6%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%9F%E1%9F%92%E1%9E%9A%E1%9E%B6%E1%9E%9B)"
       },
       {
         "id": 23,
@@ -2707,8 +2510,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "រូបស្ស មុទុតា",
         "tripitakaVol": "v6",
         "tripitakaPage": 32,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 32",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=32"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%9F%E1%9F%92%E1%9E%9F%20%E1%9E%98%E1%9E%BB%E1%9E%91%E1%9E%BB%E1%9E%8F%E1%9E%B6%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%91%E1%9E%93%E1%9F%8B)"
       },
       {
         "id": 24,
@@ -2721,8 +2524,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "រូបស្ស កម្មញ្ញតា",
         "tripitakaVol": "v6",
         "tripitakaPage": 32,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 32",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=32"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9A%E1%9E%BC%E1%9E%94%E1%9E%9F%E1%9F%92%E1%9E%9F%20%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%89%E1%9F%92%E1%9E%89%E1%9E%8F%E1%9E%B6%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%82%E1%9E%BD%E1%9E%9A%E1%9E%8A%E1%9E%9B%E1%9F%8B%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%84%E1%9E%B6%E1%9E%9A)"
       },
       {
         "id": 25,
@@ -2735,8 +2538,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ឧបច័យរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 33,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 33",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=33"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A7%E1%9E%94%E1%9E%85%E1%9F%90%E1%9E%99%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%80%E1%9E%80%E1%9E%BE%E1%9E%8F%E1%9E%8A%E1%9F%86%E1%9E%94%E1%9E%BC%E1%9E%84)"
       },
       {
         "id": 26,
@@ -2749,8 +2552,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "សន្តតិរូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 33,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 33",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=33"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%9F%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9E%8F%E1%9E%B7%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%94%E1%9E%93%E1%9F%92%E1%9E%8F%E1%9E%94%E1%9E%93%E1%9F%92%E1%9E%91%E1%9E%B6%E1%9E%94%E1%9F%8B)"
       },
       {
         "id": 27,
@@ -2763,8 +2566,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "ជរតារូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 33,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 33",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=33"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%87%E1%9E%9A%E1%9E%8F%E1%9E%B6%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%91%E1%9F%92%E1%9E%9A%E1%9E%BB%E1%9E%8C%E1%9E%91%E1%9F%92%E1%9E%9A%E1%9F%84%E1%9E%98)"
       },
       {
         "id": 28,
@@ -2777,38 +2580,50 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "អនិច្ចតារូប",
         "tripitakaVol": "v6",
         "tripitakaPage": 34,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 34",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=34"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ៤៨–១១៣",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100552&page=48&find=%E1%9E%A2%E1%9E%93%E1%9E%B7%E1%9E%85%E1%9F%92%E1%9E%85%E1%9E%8F%E1%9E%B6%E1%9E%9A%E1%9E%BC%E1%9E%94%20(%E1%9E%80%E1%9E%B6%E1%9E%9A%E1%9E%94%E1%9F%82%E1%9E%80%E1%9E%92%E1%9F%92%E1%9E%9B%E1%9E%B6%E1%9E%99%E1%9E%9F%E1%9F%92%E1%9E%9B%E1%9E%B6%E1%9E%94%E1%9F%8B)"
       }
     ],
     "samutthana4": [
       {
         "id": "kamma",
         "nameKh": "កម្មសមុដ្ឋានរូប",
-        "namePali": "Kamma-samuṭṭhāna-rūpa",
+        "namePaliKhmer": "កម្មសមុដ្ឋានរូប",
+        "namePali": "កម្មសមុដ្ឋានរូប",
         "cause": "អំពើចេតនាក្នុងអតីតជាតិ (កុសល ឬអកុសល)",
-        "producedRupa": "បសាទរូប ៥, ភាវរូប ២, ហទយវត្ថុ ១, ជីវិតរូប ១ (រូប ៩ នេះកើតពីកម្មសុទ្ធ)"
+        "producedRupa": "បសាទរូប ៥, ភាវរូប ២, ហទយវត្ថុ ១, ជីវិតរូប ១ (រូប ៩ នេះកើតពីកម្មសុទ្ធ)",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=124"
       },
       {
         "id": "citta",
         "nameKh": "ចិត្តសមុដ្ឋានរូប",
-        "namePali": "Citta-samuṭṭhāna-rūpa",
+        "namePaliKhmer": "ចិត្តសមុដ្ឋានរូប",
+        "namePali": "ចិត្តសមុដ្ឋានរូប",
         "cause": "គំនិត និងចេតនាបច្ចុប្បន្ន (ចិត្ត និងចេតសិក)",
-        "producedRupa": "ដង្ហើមចេញចូល, ឥរិយាបថទាំង ៤ (ដើរ ឈរ អង្គុយ ដេក), វិញ្ញត្តិរូប ២ (កាយវិញ្ញត្តិ វចីវិញ្ញត្តិ)"
+        "producedRupa": "ដង្ហើមចេញចូល, ឥរិយាបថទាំង ៤ (ដើរ ឈរ អង្គុយ ដេក), វិញ្ញត្តិរូប ២ (កាយវិញ្ញត្តិ វចីវិញ្ញត្តិ)",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=124"
       },
       {
         "id": "utu",
         "nameKh": "ឧតុសមុដ្ឋានរូប",
-        "namePali": "Utu-samuṭṭhāna-rūpa",
+        "namePaliKhmer": "ឧតុសមុដ្ឋានរូប",
+        "namePali": "ឧតុសមុដ្ឋានរូប",
         "cause": "តេជោធាតុ (កម្តៅ និងភាពត្រជាក់)",
-        "producedRupa": "សរីរាង្គកាយខាងក្រៅ, ពិភពធម្មជាតិ, ភ្នំ, ទឹក, ដើមឈើ, របស់របរប្រើប្រាស់"
+        "producedRupa": "សរីរាង្គកាយខាងក្រៅ, ពិភពធម្មជាតិ, ភ្នំ, ទឹក, ដើមឈើ, របស់របរប្រើប្រាស់",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=125"
       },
       {
         "id": "ahara",
         "nameKh": "អាហារសមុដ្ឋានរូប",
+        "namePaliKhmer": "អាហារសមុដ្ឋានរូប",
         "namePali": "អាហារសមុដ្ឋានរូប",
         "cause": "ឱជា (ជីវជាតិ) នៃអាហារដែលបរិភោគចូលទៅ",
-        "producedRupa": "កោសិកាថ្មីៗដែលលូតលាស់, សាច់ឈាមរឹងមាំ, ការទ្រទ្រង់កម្លាំងពលំ"
+        "producedRupa": "កោសិកាថ្មីៗដែលលូតលាស់, សាច់ឈាមរឹងមាំ, ការទ្រទ្រង់កម្លាំងពលំ",
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៦",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100581&page=126"
       }
     ]
   },
@@ -2824,8 +2639,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "វេទនាក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 41,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 41",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=41"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ២០០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100586&page=200"
       },
       {
         "id": "sanna",
@@ -2836,8 +2651,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "សញ្ញាក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 46,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 46",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=46"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ២១០",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100588&page=210"
       },
       {
         "id": "sankhara",
@@ -2848,8 +2663,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "សង្ខារក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 51,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 51",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=51"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ២១៤",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100590&page=214"
       },
       {
         "id": "vinnana",
@@ -2860,8 +2675,8 @@ export const PANNA_NAMARUPA = {
         "namePaliKhmer": "វិញ្ញាណក្ខន្ធ",
         "tripitakaVol": "v6",
         "tripitakaPage": 56,
-        "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ 56",
-        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=56"
+        "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ១៣៥",
+        "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100584&page=135"
       }
     ],
     "citta89": {
@@ -2884,8 +2699,8 @@ export const PANNA_NAMARUPA = {
       ],
       "tripitakaVol": "v6",
       "tripitakaPage": 55,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ៥៥–៦៥",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=55"
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ១៣៥–២០០",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100584&page=135"
     },
     "cetasika52": {
       "summary": "ចេតសិក ៥២ កើតរួម រលត់រួម មានអារម្មណ៍ដូចចិត្ត និងអាស្រ័យវត្ថុដូចចិត្ត។",
@@ -2909,8 +2724,8 @@ export const PANNA_NAMARUPA = {
       ],
       "tripitakaVol": "v6",
       "tripitakaPage": 68,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ៦៨–៩៥",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&page=68"
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ១ (ក្បាល ៨៨) ទំព័រ ២១៤–២៦៩",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v6&id=100590&page=214"
     }
   },
   "similes": [
@@ -2921,12 +2736,12 @@ export const PANNA_NAMARUPA = {
       "story": "បុរសខ្វាក់ភ្នែកពីកំណើតម្នាក់មានកម្លាំងជើងដើរផ្លូវឆ្ងាយបាន តែមើលផ្លូវមិនឃើញ។ បុរសខ្វិនជើងម្នាក់ទៀតភ្នែកភ្លឺច្បាស់ មើលឃើញផ្លូវកាត់ ថ្លុក ជ្រោះ តែគ្មានជើងដើរ។ អ្នកទាំងពីរបានព្រមព្រៀងគ្នា៖ បុរសខ្វិនឡើងជិះលើស្មាបុរសខ្វាក់ ហើយប្រាប់ផ្លូវ 'បត់ឆ្វេង បត់ស្តាំ ដើរត្រង់' រីឯបុរសខ្វាក់ប្រើកម្លាំងជើងដើរតាមបញ្ជា។ ដោយសារការសហការគ្នានេះ អ្នកទាំងពីរក៏បានទៅដល់គោលដៅដោយសុវត្ថិភាព។",
       "rupaRepresentation": "រូបធម៌ ប្រៀបដូចជា បុរសខ្វាក់៖ មានកម្លាំងដើរ ឈរ អង្គុយ ដេក តែគ្មានចិត្តដឹងអារម្មណ៍ មិនដឹងផ្លូវខុសត្រូវ។",
       "namaRepresentation": "នាមធម៌ ប្រៀបដូចជា បុរសខ្វិន៖ ភ្នែកភ្លឺថ្លា ដឹងអារម្មណ៍ ចង់ដើរ ចង់និយាយ តែគ្មានជើងសាច់ឈាមដើរដោយខ្លួនឯងបាន។",
-      "moral": "រូបគ្មានចិត្តដឹង នាមគ្មានកាយរើបំរះ។ ពេលចិត្តចង់ដើរ ខ្យល់ចិត្តសមុដ្ឋានក៏រុញកាយឱ្យឈានទៅ។ រូបនិងនាមអាស្រ័យគ្នាទៅវិញទៅមក (Aññamaññanissitā) គ្មានព្រលឹងអាត្មា ឬព្រះអាទិទេពណាមកបង្កើតឡើយ។",
+      "moral": "រូបគ្មានចិត្តដឹង នាមគ្មានកាយរើបំរះ។ ពេលចិត្តចង់ដើរ ខ្យល់ចិត្តសមុដ្ឋានក៏រុញកាយឱ្យឈានទៅ។ រូបនិងនាមអាស្រ័យគ្នាទៅវិញទៅមក (អញ្ញមញ្ញនិស្សិតា) គ្មានព្រលឹងអាត្មា ឬព្រះអាទិទេពណាមកបង្កើតឡើយ។",
       "visualizationKey": "ស្រមៃឃើញបុរសខ្វិនជិះលើស្មាបុរសខ្វាក់៖ កាយជាអ្នកដើរ ចិត្តជាអ្នកបញ្ជា តែគ្មាននរណាម្នាក់ជាម្ចាស់ឯករាជ្យឡើយ។",
-      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិនិទ្ទេស ភាគ ២ ទំព័រ ៤១៨ (Book 89 / v7)",
-      "paliKhmer": "ជច្ចន្ធ-បីឋសប្បិ ឧបមា",
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤១៨",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=418"
+      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤១៨",
+      "paliKhmer": "អន្ធពធិរោបមា",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤១៨",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=418"
     },
     {
       "id": "wooden_puppet",
@@ -2937,10 +2752,10 @@ export const PANNA_NAMARUPA = {
       "namaRepresentation": "ចិត្ត និងចេតនា ប្រៀបដូចជា អ្នកលេងអាយ៉ង; ខ្យល់កើតអំពីចិត្ត ប្រៀបដូចជា ខ្សែទាញសរសៃកាយ។",
       "moral": "ពេលចិត្តគិតចង់លើកដៃ ខ្យល់ចិត្តសមុដ្ឋានក៏រត់ទៅទាញសរសៃពួរ ដៃក៏លើកឡើង។ គ្មាន 'ខ្ញុំ' លើកដៃទេ គឺមានតែចលនានៃខ្យល់ និងសរសៃដែលរុញដោយកម្លាំងចិត្តប៉ុណ្ណោះ។",
       "visualizationKey": "ស្រមៃឃើញរូបអាយ៉ងឈើដែលគ្មានព្រលឹង គ្រាន់តែរាំតាមខ្សែទាញនៃចិត្ត។",
-      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិនិទ្ទេស ភាគ ២ ទំព័រ ៤២០ (Book 89 / v7)",
-      "paliKhmer": "ទារុយន្ត ឧបមា",
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤២០",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=420"
+      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២០",
+      "paliKhmer": "នាវាយន្តោបមា",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២០",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=420"
     },
     {
       "id": "chariot_parts",
@@ -2951,10 +2766,10 @@ export const PANNA_NAMARUPA = {
       "namaRepresentation": "ការបររថ ការបញ្ជាទិសដៅ ប្រៀបដូចជា នាមក្ខន្ធ (វេទនា សញ្ញា សង្ខារ វិញ្ញាណ)។",
       "moral": "បើដោះកង់ ដោះដុំ ដោះទ្រុងចេញ ពាក្យថារថនឹងរលាយបាត់សូន្យ។ ដូចគ្នានេះដែរ បើញែកខន្ធ ៥ នាម និងរូបចេញ តើ 'ខ្លួនខ្ញុំ' នៅឯណា? គ្មានខ្ញុំ គ្មានមនុស្សឡើយ មានតែការប្រជុំគ្នានៃធម៌សុទ្ធសាធ! (ទិដ្ឋិវិសុទ្ធិ)",
       "visualizationKey": "ស្រមៃឃើញរថមួយត្រូវគេដោះគ្រឿងបន្លាស់ចេញម្តងមួយៗ រហូតលែងសល់ពាក្យថារថ។",
-      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិនិទ្ទេស ភាគ ២ ទំព័រ ៤២៣ (Book 89 / v7) & សំយុត្តនិកាយ វជិរាសូត្រ",
-      "paliKhmer": "រថស្ស អង្គានិ ឧបមា",
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤២៣",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=423"
+      "canonicalSource": "វិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២៣",
+      "paliKhmer": "នឡកលាបោបមា",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២៣",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=423"
     }
   ],
   "vipassanaSteps": [
@@ -2967,8 +2782,8 @@ export const PANNA_NAMARUPA = {
       "insight": "ការប៉ះទង្គិចជាទ្វារដំបូងដែលបង្ហាញនូវវត្តមាននៃសភាវធម៌ពិតក្នុងបច្ចុប្បន្នខណៈ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 401,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 401",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=401",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤០១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100664&page=401",
       "paliKhmer": "ផស្សសម្ផុល្ល (ផស្សៈដឹងការប៉ះ)"
     },
     {
@@ -2980,8 +2795,8 @@ export const PANNA_NAMARUPA = {
       "insight": "រូបកាយនេះជារូបធម៌សុទ្ធសាធ គ្មានវិញ្ញាណខាងក្នុងដុំសាច់ឡើយ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 407,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 407",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=407",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421",
       "paliKhmer": "រូបំ រុប្បតីតិ ន ជានាតិ (រូបធម៌មិនដឹងអារម្មណ៍)"
     },
     {
@@ -2993,8 +2808,8 @@ export const PANNA_NAMARUPA = {
       "insight": "ចិត្ត និងចេតសិកជានាមធម៌ គ្រាន់តែជាអ្នកដឹង មិនមែនជារូបកាយឡើយ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 413,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 413",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=413",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤១៨",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100665&page=418",
       "paliKhmer": "នាមំ អារម្មណំ នមតិ (នាមបង្អោនទៅកាន់អារម្មណ៍)"
     },
     {
@@ -3006,8 +2821,8 @@ export const PANNA_NAMARUPA = {
       "insight": "ជីវិតដំណើរការទៅបានដោយសារការផ្គុំគ្នានៃរូបនិងនាម គ្មានអ្នកណាជាម្ចាស់ឯករាជ្យឡើយ។",
       "tripitakaVol": "v7",
       "tripitakaPage": 419,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 419",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=419",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤៥៧",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100672&page=457",
       "paliKhmer": "អញ្ញមញ្ញបច្ចយេន បច្ចយា (អាស្រ័យគ្នាទៅវិញទៅមក)"
     },
     {
@@ -3019,8 +2834,8 @@ export const PANNA_NAMARUPA = {
       "insight": "ទិដ្ឋិវិសុទ្ធិកើតឡើង កម្ចាត់បង់នូវសក្កាយទិដ្ឋិ ចិត្តមានសេរីភាព រំដោះចាកការជាប់ជំពាក់។",
       "tripitakaVol": "v7",
       "tripitakaPage": 425,
-      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧ (ក្បាល ៨៩) ទំព័រ 425",
-      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&page=425",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ ភាគ ៨ (ក្បាល ៩០) ទំព័រ ១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v8&id=100674&page=1",
       "paliKhmer": "សព្វេ ធម្មា អនត្តា (ធម៌ទាំងពួងជាអនត្តា)"
     }
   ],
@@ -3029,31 +2844,41 @@ export const PANNA_NAMARUPA = {
       "portal": "ទ្វារខ្យល់ដង្ហើមចេញចូល",
       "rupa": "ខ្យល់ដង្ហើមប៉ះមាត់ច្រមុះ (វាយោធាតុ & ផោដ្ឋព្វរូប)",
       "nama": "សតិ និងចិត្តដែលដឹងដង្ហើមចូល-ចេញ (វិញ្ញាណក្ខន្ធ)",
-      "mantra": "ដង្ហើមជារូប ចិត្តដឹងជានាម កើតហើយរលត់ គ្មានខ្ញុំដកដង្ហើមទេ"
+      "mantra": "ដង្ហើមជារូប ចិត្តដឹងជានាម កើតហើយរលត់ គ្មានខ្ញុំដកដង្ហើមទេ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារសូរសំឡេង",
       "rupa": "រលកសូរ (សទ្ទរូប) ប៉ះប្រហោងត្រចៀក (សោតបសាទ)",
       "nama": "សោតវិញ្ញាណ និងសញ្ញាដែលដឹង និងស្គាល់សំឡេង",
-      "mantra": "សំឡេងជារូប ការឮជានាម កើតហើយរលត់ កុំខឹងកុំត្រេកអរ"
+      "mantra": "សំឡេងជារូប ការឮជានាម កើតហើយរលត់ កុំខឹងកុំត្រេកអរ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារការឈានជើងដើរចង្ក្រម",
       "rupa": "ចលនាជើង និងការប៉ះផ្ទៃដី (វាយោធាតុ & បឋវីធាតុ)",
       "nama": "ចេតនានាំឱ្យបោះជំហាន និងចិត្តដឹងការឈានជើង",
-      "mantra": "ដូចរូបអាយ៉ងឈើ ចិត្តគិតចង់ដើរ ខ្យល់ក៏រុញជើងឱ្យឈានទៅ"
+      "mantra": "ដូចរូបអាយ៉ងឈើ ចិត្តគិតចង់ដើរ ខ្យល់ក៏រុញជើងឱ្យឈានទៅ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារការបរិភោគអាហារ",
       "rupa": "បាយទឹក និងរសជាតិផ្អែមប្រៃ (រូបារម្មណ៍ រសារម្មណ៍ ឱជា)",
       "nama": "ចិត្តចង់ញ៉ាំ ជីវ្ហាវិញ្ញាណ និងវេទនាសោយរសឆ្ងាញ់",
-      "mantra": "អាហារចិញ្ចឹមកាយជារូប ចិត្តដឹងរសជានាម បរិភោគដើម្បីបំពេញធម៌"
+      "mantra": "អាហារចិញ្ចឹមកាយជារូប ចិត្តដឹងរសជានាម បរិភោគដើម្បីបំពេញធម៌",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     },
     {
       "portal": "ទ្វារពេលកើតកំហឹង ឬទោមនស្ស",
       "rupa": "បេះដូងលោតញាប់ កម្តៅភាយលើមុខ (តេជោធាតុ)",
       "nama": "ទោសចេតសិក និងទោមនស្សវេទនា (អកុសលនាមធម៌)",
-      "mantra": "កំហឹងជាទោសចេតសិកកើតពីអារម្មណ៍មិនគាប់ចិត្ត វាមិនមែនជាអញឡើយ"
+      "mantra": "កំហឹងជាទោសចេតសិកកើតពីអារម្មណ៍មិនគាប់ចិត្ត វាមិនមែនជាអញឡើយ",
+      "tripitakaRef": "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ២ (ក្បាល ៨៩) ទំព័រ ៤២១",
+      "tripitakaUrl": "https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421"
     }
   ],
   "canonicalCitations": [

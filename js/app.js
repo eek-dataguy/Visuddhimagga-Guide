@@ -4,8 +4,8 @@
 // Pure SVG Iconography & Humane Meditative Design System
 // ==========================================================================
 
-import { audioEngine } from './audio.js?v=2.2.2';
-import { renderIcon } from './icons.js?v=2.2.2';
+import { audioEngine } from './audio.js?v=2.2.3';
+import { renderIcon } from './icons.js?v=2.2.3';
 import { 
   PALIBODHA_10, 
   CATURARAKKHA, 
@@ -21,7 +21,7 @@ import {
   LOST_BREATH_REMEDY,
   SAMADHI_PRACTICE_METHODS,
   PANNA_NAMARUPA
-} from './data.js?v=2.2.2';
+} from './data.js?v=2.2.3';
 
 function getTripitakaUrl(refText) {
   if (!refText) return "https://www.tripitaka82.com/";
@@ -553,7 +553,7 @@ class SamadhiApp {
         </div>
         <div class="k-meta">
           <span>ឈានខ្ពស់បំផុត៖ <strong>${k.maxJhana}</strong></span>
-          <a href="${getTripitakaUrl(k.book)}" target="_blank" rel="noopener" class="citation-badge">
+          <a href="${k.tripitakaUrl || getTripitakaUrl(k.book)}" target="_blank" rel="noopener" class="citation-badge">
             ${renderIcon('citations', 12)} ${k.book} ${renderIcon('externalLink', 10)}
           </a>
         </div>
@@ -1173,7 +1173,7 @@ class SamadhiApp {
               ${method.description}
             </div>
           </div>
-          <a href="https://www.tripitaka82.com/read.html?book=${method.tripitakaVol}&page=${method.tripitakaPage}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.85rem; padding: 6px 12px;">
+          <a href="${method.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.85rem; padding: 6px 12px;">
              អានក្នុងគម្ពីរដើម ↗
           </a>
         </div>
@@ -1181,7 +1181,7 @@ class SamadhiApp {
         <div class="method-meta-strip">
           <span class="meta-pill highlight">ឈានខ្ពស់បំផុត៖ ${method.maxJhana}</span>
           <span class="meta-pill">សមស្របនឹង៖ ${method.caritaSuitability}</span>
-          <span class="meta-pill">ក្បាលគម្ពីរ៖ ${method.tripitakaVol.toUpperCase()} (p. ${method.tripitakaPage})</span>
+          <span class="meta-pill">គម្ពីរដកស្រង់៖ ${method.tripitakaRef}</span>
         </div>
       `;
     }
@@ -1338,7 +1338,7 @@ class SamadhiApp {
 
             <!-- Direct Canonical Citation to tripitaka82.com -->
             <div style="display: flex; justify-content: flex-end; align-items: center; margin-top: 10px;">
-              <a href="${s.tripitakaUrl || `https://www.tripitaka82.com/read.html?book=${method.tripitakaVol}&page=${method.tripitakaPage}`}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; padding: 4px 12px;">
+              <a href="${s.tripitakaUrl || method.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; padding: 4px 12px;">
                  ${s.tripitakaRef || method.tripitakaRef} ↗
               </a>
             </div>
@@ -1438,7 +1438,7 @@ class SamadhiApp {
       });
     });
 
-    this.renderPannaTabContent(this.currentPannaTab);
+    this.renderPannaTabContent(this.currentPannaTab || 'rupa28');
   }
 
   renderPannaTabContent(tabKey) {
@@ -1449,7 +1449,7 @@ class SamadhiApp {
       const { mahabhuta4, upadarupa24, samutthana4 } = PANNA_NAMARUPA.rupa28;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title"> មហាភូតរូប ៤ (The 4 Great Essentials in Khmer Pali)</div>
+          <div class="panna-section-title"> មហាភូតរូប ៤ (ធាតុដើមទាំង ៤)</div>
           <div class="panna-section-desc">
             ធាតុដើមទាំង ៤ ជាគ្រឹះទ្រទ្រង់រូបកាយទាំងមូល គ្មានពណ៌ គ្មានរូបរាង តែមានលក្ខណៈជាក់ស្តែងប៉ះដឹងបានដោយកាយសម្ផ័ស្ស៖
           </div>
@@ -1478,8 +1478,8 @@ class SamadhiApp {
         </div>
 
         <div class="panna-section-header" style="margin-top: 36px;">
-          <div class="panna-section-title"> ឧបាទាយរូប ២៤ (24 Derived Matter with Canonical Citations)</div>
-          <div class="panna-section-desc">រូបដែលកើតអាស្រ័យនឹងមហាភូតរូប ៤ ចែកជា ១០ ពួក តាមគម្ពីរវិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦៖</div>
+          <div class="panna-section-title"> ឧបាទាយរូប ២៤</div>
+          <div class="panna-section-desc">រូបដែលកើតអាស្រ័យនឹងមហាភូតរូប ៤ ចែកជា ១០ ពួក តាមគម្ពីរវិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ (ក្បាល ៨៨)៖</div>
         </div>
 
         <div class="upadarupa-grid">
@@ -1503,17 +1503,26 @@ class SamadhiApp {
 
         <div class="card" style="margin-top: 24px; border-left: 4px solid var(--gold-primary);">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
-            <h3 style="font-size: 1.15rem; margin: 0;"> សមុដ្ឋាន ៤ នៃរូប (The 4 Origins of Physical Matter)</h3>
-            <a href="https://www.tripitaka82.com/read.html?book=v6&page=35" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
-               វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ៣៥–៤០ ↗
+            <h3 style="font-size: 1.15rem; margin: 0;"> សមុដ្ឋាន ៤ នៃរូប</h3>
+            <a href="https://www.tripitaka82.com/read.html?book=v6&id=100581&page=124" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               វិសុទ្ធិមគ្គ ភាគ ៦ (ក្បាល ៨៨) ទំព័រ ១២៤–១២៨ ↗
             </a>
           </div>
           <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">រូបធម៌ក្នុងកាយមិនមែនកើតឡើងឯកឯងទេ គឺកើតឡើងអំពីហេតុបច្ច័យ ៤ យ៉ាង៖</p>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
             ${samutthana4.map(s => `
-              <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 10px 12px;">
-                <strong style="color: var(--text-primary); font-size: 0.92rem;">${s.originKh}</strong>
-                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">${s.desc}</div>
+              <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 12px 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+                  <strong style="color: var(--text-primary); font-size: 0.95rem;">${s.nameKh}</strong>
+                  <span style="font-family: var(--font-pali); color: var(--gold-primary); font-size: 0.85rem; font-weight: 700;">« ${s.namePaliKhmer} »</span>
+                </div>
+                <div style="font-size: 0.85rem; color: var(--gold-primary); margin-top: 4px;"><strong>ហេតុបច្ច័យ៖</strong> ${s.cause}</div>
+                <div style="font-size: 0.83rem; color: var(--text-secondary); margin-top: 4px; line-height: 1.5;"><strong>រូបដែលកើត៖</strong> ${s.producedRupa}</div>
+                <div style="display: flex; justify-content: flex-end; margin-top: 8px;">
+                  <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.74rem;">
+                     ${s.tripitakaRef} ↗
+                  </a>
+                </div>
               </div>
             `).join('')}
           </div>
@@ -1523,7 +1532,7 @@ class SamadhiApp {
       const { khandhas, citta89, cetasika52 } = PANNA_NAMARUPA.namaSummary;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title"> អរូបក្ខន្ធ ៤ (The 4 Immaterial Mental Aggregates)</div>
+          <div class="panna-section-title"> អរូបក្ខន្ធ ៤ (នាមក្ខន្ធ ៤)</div>
           <div class="panna-section-desc">នាមធម៌ គឺធម្មជាតិដែលបង្អោនទៅកាន់អារម្មណ៍ ដឹងអារម្មណ៍ សោយអារម្មណ៍ និងតាក់តែងចេតនា៖</div>
         </div>
 
@@ -1550,8 +1559,8 @@ class SamadhiApp {
         <div class="card" style="margin-bottom: 24px;">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
             <h3 style="font-size: 1.2rem; margin: 0;"> ធម្មជាតិនៃចិត្ត ៨៩/១២១ និងកិច្ច ១៤ យ៉ាង</h3>
-            <a href="${citta89.tripitakaUrl || 'https://www.tripitaka82.com/read.html?book=v6&page=55'}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
-               ${citta89.tripitakaRef || 'វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ ទំព័រ ៥៥'} ↗
+            <a href="${citta89.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               ${citta89.tripitakaRef} ↗
             </a>
           </div>
           <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
@@ -1567,9 +1576,9 @@ class SamadhiApp {
 
         <div class="panna-section-header">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-            <div class="panna-section-title"> ចេតសិក ៥២ (The 52 Mental Factors)</div>
-            <a href="${cetasika52.tripitakaUrl || 'https://www.tripitaka82.com/read.html?book=v6&page=68'}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
-               ${cetasika52.tripitakaRef || 'វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ ទំព័រ ៦៨'} ↗
+            <div class="panna-section-title"> ចេតសិក ៥២</div>
+            <a href="${cetasika52.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               ${cetasika52.tripitakaRef} ↗
             </a>
           </div>
           <div class="panna-section-desc">${cetasika52.summary}</div>
@@ -1590,7 +1599,7 @@ class SamadhiApp {
       const { similes } = PANNA_NAMARUPA;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title"> ឧបមាអមតៈទាំង ៣ ក្នុងវិសុទ្ធិមគ្គ (The 3 Master Similes)</div>
+          <div class="panna-section-title"> ឧបមាអមតៈទាំង ៣ ក្នុងវិសុទ្ធិមគ្គ</div>
           <div class="panna-section-desc">ព្រះពុទ្ធឃោសាចារ្យបានលើកឧបមាដ៏អស្ចារ្យ ៣ យ៉ាង ដើម្បីកម្ចាត់សក្កាយទិដ្ឋិ (ការប្រកាន់ថាខ្លួនយើង) ឱ្យឃើញច្បាស់នូវធម្មជាតិនៃនាមនិងរូប៖</div>
         </div>
 
@@ -1610,11 +1619,11 @@ class SamadhiApp {
 
             <div class="simile-breakdown">
               <div>
-                <strong style="color: var(--accent-crimson);"> រូបធម៌ (Rūpa) ក្នុងឧបមា៖</strong>
+                <strong style="color: var(--accent-crimson);"> រូបធម៌ ក្នុងឧបមា៖</strong>
                 <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.rupaRepresentation || s.rupaMeaning}</div>
               </div>
               <div>
-                <strong style="color: var(--gold-primary);"> នាមធម៌ (Nāma) ក្នុងឧបមា៖</strong>
+                <strong style="color: var(--gold-primary);"> នាមធម៌ ក្នុងឧបមា៖</strong>
                 <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.namaRepresentation || s.namaMeaning}</div>
               </div>
             </div>
@@ -1635,7 +1644,7 @@ class SamadhiApp {
       const { vipassanaSteps, dailySensoryPortals } = PANNA_NAMARUPA;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title"> វិធីបដិបត្តិពិចារណានាម-រូប ៥ ជំហាន (5-Step Vipassanā Method)</div>
+          <div class="panna-section-title"> វិធីបដិបត្តិពិចារណានាម-រូប ៥ ជំហាន</div>
           <div class="panna-section-desc">វិធីចម្រើនវិបស្សនាជាក់ស្តែងក្នុងពេលអង្គុយសមាធិ តាមគន្លងវិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ (ក្បាល ៨៩)៖</div>
         </div>
 
@@ -1659,8 +1668,8 @@ class SamadhiApp {
         <div class="card" style="margin-top: 28px; border-left: 4px solid var(--accent-sage);">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
             <h3 style="font-size: 1.2rem; margin: 0;"> ទ្វារអនុវត្តន៍ពិចារណានាម-រូបក្នុងជីវិតរស់នៅប្រចាំថ្ងៃ</h3>
-            <a href="https://www.tripitaka82.com/read.html?book=v7&page=435" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
-               វិសុទ្ធិមគ្គ ភាគ ៧ ទំព័រ ៤៣៥ ↗
+            <a href="https://www.tripitaka82.com/read.html?book=v7&id=100666&page=421" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               វិសុទ្ធិមគ្គ ភាគ ៧ (ក្បាល ៨៩) ទំព័រ ៤២១–៤៣៥ ↗
             </a>
           </div>
           <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
@@ -1674,6 +1683,11 @@ class SamadhiApp {
                 <div style="font-size: 0.85rem; color: var(--accent-crimson); margin-top: 4px;"><strong> រូប៖</strong> ${p.rupa}</div>
                 <div style="font-size: 0.85rem; color: var(--gold-primary); margin-top: 2px;"><strong> នាម៖</strong> ${p.nama}</div>
                 <div style="font-size: 0.83rem; color: var(--text-muted); font-style: italic; margin-top: 6px; background: rgba(184, 123, 34, 0.08); padding: 6px 10px; border-radius: 4px;"> « ${p.mantra} »</div>
+                <div style="display: flex; justify-content: flex-end; margin-top: 6px;">
+                  <a href="${p.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.72rem;">
+                     ${p.tripitakaRef} ↗
+                  </a>
+                </div>
               </div>
             `).join('')}
           </div>
@@ -1683,7 +1697,6 @@ class SamadhiApp {
   }
 
 }
-
 // Initialize on DOM Ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
