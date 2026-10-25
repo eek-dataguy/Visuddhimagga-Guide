@@ -752,7 +752,7 @@ class SamadhiApp {
 
               <!-- Word by Word Meaning -->
               <div class="stepstone-section">
-                <div class="stepstone-sec-title">សម្រាយន័យពាក្យធម៌ (Word-by-Word Meaning)៖</div>
+                <div class="stepstone-sec-title">សេចក្តីប្រែសម្រួលដើមផ្ទាល់ពីសៀវភៅគម្ពីរ (ពាក្យក្នុងក្បួនខ្នាត)៖</div>
                 <div class="stepstone-sec-content" style="font-family: inherit; line-height: 1.7;">
                   ${s.wordMeaning.replace(/\n/g, '<br>')}
                 </div>
