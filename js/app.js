@@ -1,9 +1,11 @@
 // ==========================================================================
-// Samādhi Daily Guide - Application Controller
-// Method strictly grounded in Visuddhimagga Samādhi Niddesa (Books 84-87)
+// Samādhi Daily Guide - Application Controller (Redesigned)
+// Method strictly grounded in Visuddhimagga (Volumes v1 through v8)
+// Pure SVG Iconography & Humane Meditative Design System
 // ==========================================================================
 
 import { audioEngine } from './audio.js';
+import { renderIcon } from './icons.js';
 import { 
   PALIBODHA_10, 
   CATURARAKKHA, 
@@ -13,9 +15,10 @@ import {
   PROGRESSIVE_CURRICULUM,
   NIVARANA_ANTIDOTES,
   STEPPING_STONES,
-  DAILY_ROUTINE_CYCLE
+  DAILY_ROUTINE_CYCLE,
+  ANAPANASATI_SIMILES,
+  LOST_BREATH_REMEDY
 } from './data.js';
-
 
 function getTripitakaUrl(refText) {
   if (!refText) return "https://www.tripitaka82.com/";
@@ -52,6 +55,9 @@ class SamadhiApp {
     this.inhaleSeconds = 4;
     this.holdSeconds = 1;
     this.exhaleSeconds = 4;
+
+    // Routine filter
+    this.activeRoutinePhase = 'all'; // 'all', 'morning', 'daytime', 'evening'
 
     // Quiz State
     this.quizAnswers = {};
@@ -97,6 +103,7 @@ class SamadhiApp {
     this.renderNivaranaList();
     this.renderSteppingStones();
     this.renderDailyRoutineCycle();
+    this.renderAnapanasatiGuides();
     this.updateStatsDisplay();
     this.setupTheme();
   }
@@ -107,6 +114,7 @@ class SamadhiApp {
       btn.addEventListener('click', (e) => {
         const target = e.currentTarget.getAttribute('data-view-target');
         this.switchView(target);
+        this.closeMobileDharmaSheet();
       });
     });
 
@@ -162,7 +170,7 @@ class SamadhiApp {
       });
     }
 
-    // Sound test
+    // Sound test bell
     const bellBtn = document.getElementById('btn-test-bell');
     if (bellBtn) {
       bellBtn.addEventListener('click', () => audioEngine.playBowl());
@@ -178,11 +186,47 @@ class SamadhiApp {
       });
     });
 
-    // Quiz Start & Navigation
+    // Routine Phase Filters
+    document.querySelectorAll('[data-routine-phase]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('[data-routine-phase]').forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        this.activeRoutinePhase = e.currentTarget.getAttribute('data-routine-phase');
+        this.renderDailyRoutineCycle();
+      });
+    });
+
+    // Mobile Dharma Sheet controls
+    const openSheetBtn = document.getElementById('btn-open-dharma-sheet');
+    if (openSheetBtn) {
+      openSheetBtn.addEventListener('click', () => this.openMobileDharmaSheet());
+    }
+    const closeSheetBtn = document.getElementById('btn-close-dharma-sheet');
+    if (closeSheetBtn) {
+      closeSheetBtn.addEventListener('click', () => this.closeMobileDharmaSheet());
+    }
+    const sheetOverlay = document.getElementById('mobile-dharma-sheet');
+    if (sheetOverlay) {
+      sheetOverlay.addEventListener('click', (e) => {
+        if (e.target === sheetOverlay) this.closeMobileDharmaSheet();
+      });
+    }
+
+    // Quiz Start
     const startQuizBtn = document.getElementById('btn-start-quiz');
     if (startQuizBtn) {
       startQuizBtn.addEventListener('click', () => this.startCaritaQuiz());
     }
+  }
+
+  openMobileDharmaSheet() {
+    const sheet = document.getElementById('mobile-dharma-sheet');
+    if (sheet) sheet.classList.add('active');
+  }
+
+  closeMobileDharmaSheet() {
+    const sheet = document.getElementById('mobile-dharma-sheet');
+    if (sheet) sheet.classList.remove('active');
   }
 
   switchView(viewName) {
@@ -213,9 +257,9 @@ class SamadhiApp {
   }
 
   updateThemeIcon(theme) {
-    const icon = document.querySelector('#theme-toggle-btn span');
-    if (icon) {
-      icon.textContent = theme === 'dark' ? '☀' : '☾';
+    const iconBtn = document.getElementById('theme-toggle-btn');
+    if (iconBtn) {
+      iconBtn.innerHTML = theme === 'dark' ? renderIcon('sun', 18) : renderIcon('moon', 18);
     }
   }
 
@@ -238,13 +282,13 @@ class SamadhiApp {
       clearInterval(this.timerInterval);
       this.stopBreathCycle();
       const btn = document.getElementById('btn-timer-start');
-      if (btn) btn.innerHTML = "<span>▶</span> ចាប់ផ្តើមបន្ត";
+      if (btn) btn.innerHTML = `${renderIcon('play', 18)} ចាប់ផ្តើមបន្ត`;
     } else {
       // Start
       this.isTimerRunning = true;
       audioEngine.playBowl(261.63, 5.0); // Ring opening bell
       const btn = document.getElementById('btn-timer-start');
-      if (btn) btn.innerHTML = "<span>⏸</span> ផ្អាកបណ្តោះអាសន្ន";
+      if (btn) btn.innerHTML = `${renderIcon('pause', 18)} ផ្អាកបណ្តោះអាសន្ន`;
 
       this.startBreathCycle();
 
@@ -386,11 +430,13 @@ class SamadhiApp {
       const isChecked = (this.userProfile.checkedPalibodha || []).includes(p.id);
       return `
         <div class="checklist-item ${isChecked ? 'checked' : ''}" data-palibodha-id="${p.id}">
-          <div class="checklist-checkbox">${isChecked ? '✓' : ''}</div>
+          <div class="checklist-checkbox">${isChecked ? renderIcon('check', 14) : ''}</div>
           <div style="flex: 1">
-            <div style="display: flex; justify-content: space-between; align-items: baseline">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px;">
               <span class="checklist-title">${p.id}. ${p.khmer} (${p.pali})</span>
-              <a href="${getTripitakaUrl(p.bookRef)}" target="_blank" rel="noopener" class="citation-badge" title="បើកអានក្នុង tripitaka82.com">📖 ${p.bookRef} ↗</a>
+              <a href="${p.tripitakaUrl || getTripitakaUrl(p.bookRef)}" target="_blank" rel="noopener" class="citation-badge" onclick="event.stopPropagation();">
+                ${renderIcon('citations', 12)} ${p.bookRef} ${renderIcon('externalLink', 10)}
+              </a>
             </div>
             <div class="checklist-desc" style="margin-top: 4px;"><strong>កង្វល់៖</strong> ${p.meaning}</div>
             <div class="checklist-desc" style="color: var(--gold-primary); margin-top: 2px;"><strong>វិធីកាត់៖</strong> ${p.remedy}</div>
@@ -413,6 +459,7 @@ class SamadhiApp {
       list = list.filter(x => x !== id);
     } else {
       list.push(id);
+      audioEngine.playBreathCue(true);
     }
     this.userProfile.checkedPalibodha = list;
     this.saveStorage('samadhi_user_profile', this.userProfile);
@@ -427,7 +474,7 @@ class SamadhiApp {
     container.innerHTML = CATURARAKKHA.map(c => `
       <div class="card" style="margin-bottom: 14px;">
         <div class="card-header">
-          <div class="card-icon-wrap">☸</div>
+          <div class="card-icon-wrap">${renderIcon('dhammaWheel', 22)}</div>
           <div>
             <div class="card-title">${c.title}</div>
             <div class="card-sub">${c.sub} · ${c.duration}</div>
@@ -441,11 +488,13 @@ class SamadhiApp {
             ${c.translation}
           </div>
           <div style="font-size: 0.82rem; color: var(--accent-sage); font-weight: 600;">
-            ✓ អានិសង្ស៖ ${c.benefit}
+            ${renderIcon('check', 14)} អានិសង្ស៖ ${c.benefit}
           </div>
         </div>
         <div style="display: flex; justify-content: flex-end;">
-          <a href="${getTripitakaUrl(c.bookRef)}" target="_blank" rel="noopener" class="citation-badge" title="បើកអានក្នុង tripitaka82.com">📖 ${c.bookRef} ↗</a>
+          <a href="${getTripitakaUrl(c.bookRef)}" target="_blank" rel="noopener" class="citation-badge">
+            ${renderIcon('citations', 12)} ${c.bookRef} ${renderIcon('externalLink', 10)}
+          </a>
         </div>
       </div>
     `).join('');
@@ -470,7 +519,9 @@ class SamadhiApp {
         </div>
         <div class="k-meta">
           <span>ឈានខ្ពស់បំផុត៖ <strong>${k.maxJhana}</strong></span>
-          <a href="${getTripitakaUrl(k.book)}" target="_blank" rel="noopener" class="citation-badge" title="បើកអានក្នុង tripitaka82.com">📖 ${k.book} ↗</a>
+          <a href="${getTripitakaUrl(k.book)}" target="_blank" rel="noopener" class="citation-badge">
+            ${renderIcon('citations', 12)} ${k.book} ${renderIcon('externalLink', 10)}
+          </a>
         </div>
       </div>
     `).join('');
@@ -510,7 +561,7 @@ class SamadhiApp {
           `).join('')}
         </ul>
         <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 10px 14px; font-size: 0.86rem; color: var(--text-secondary); margin-top: 12px;">
-          🚩 <strong>សញ្ញាសម្គាល់ការឆ្លងផុត៖</strong> ${c.milestone}
+          <strong>សញ្ញាសម្គាល់ការឆ្លងផុត៖</strong> ${c.milestone}
         </div>
       </div>
     `).join('');
@@ -524,7 +575,9 @@ class SamadhiApp {
     container.innerHTML = NIVARANA_ANTIDOTES.map(n => `
       <div class="card" style="margin-bottom: 14px;">
         <div class="card-header">
-          <div class="card-icon-wrap" style="color: var(--accent-crimson); background: rgba(166, 61, 61, 0.1);">⚠</div>
+          <div class="card-icon-wrap" style="color: var(--accent-crimson); background: rgba(166, 61, 61, 0.1);">
+            ${renderIcon('nivarana', 22)}
+          </div>
           <div>
             <div class="card-title">${n.khmer}</div>
             <div class="card-sub">${n.pali}</div>
@@ -533,17 +586,197 @@ class SamadhiApp {
         <div class="card-body">
           <div style="margin-bottom: 6px;"><strong>រោគសញ្ញាក្នុងចិត្ត៖</strong> ${n.symptom}</div>
           <div style="color: var(--accent-sage); font-weight: 600; margin-bottom: 6px;">
-            💊 <strong>ឱសថកម្ចាត់៖</strong> ${n.antidote}
+            <strong>ឱសថកម្ចាត់៖</strong> ${n.antidote}
           </div>
           <div style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 8px;">
             ${n.method}
           </div>
           <div style="background: var(--gold-subtle); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 0.84rem; color: var(--gold-primary); font-weight: 600;">
-            ★ អង្គឈានដែលកើតមកជំនួស៖ ${n.jhānaFactor}
+            អង្គឈានដែលកើតមកជំនួស៖ ${n.jhānaFactor}
           </div>
         </div>
       </div>
     `).join('');
+  }
+
+  // Stepping Stones (Sīla, Samādhi, Paññā)
+  renderSteppingStones() {
+    const container = document.getElementById('stepping-stones-container');
+    if (!container) return;
+
+    container.innerHTML = STEPPING_STONES.map(s => `
+      <div class="stepping-card ${s.id}-card">
+        <div>
+          <span class="stepstone-badge badge-${s.id}">${s.badge}</span>
+          <h3 style="font-size: 1.35rem; margin: 10px 0 4px;">${s.name}</h3>
+          <div style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 10px;">${s.pali}</div>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px;">
+            ${s.desc}
+          </p>
+
+          <div style="margin-bottom: 18px;">
+            <strong style="font-size: 0.95rem; color: var(--text-primary);">សសរទ្រទ្រង់ទាំង ៤ (Pillars)៖</strong>
+            <div style="margin-top: 8px;">
+              ${s.pillars.map(p => `
+                <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 8px; font-size: 0.86rem;">
+                  <strong style="color: var(--text-primary);">${p.title}</strong>
+                  <div style="color: var(--text-secondary); margin-top: 2px;">${p.desc}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-color); padding-top: 14px; display: flex; justify-content: space-between; align-items: center;">
+          <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; font-weight: 700;">
+            ${renderIcon('citations', 12)} អានក្នុង ${s.bookTitle} ${renderIcon('externalLink', 10)}
+          </a>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // Daily Routine Cycle (Morning, Day, Evening) with Collapsible Pāḷi Drawers & Tabs
+  renderDailyRoutineCycle() {
+    const container = document.getElementById('daily-routine-container');
+    if (!container) return;
+
+    // Reset habits if new day
+    const today = new Date().toDateString();
+    if (this.userProfile.lastRoutineDate !== today) {
+      this.userProfile.completedHabits = [];
+      this.userProfile.lastRoutineDate = today;
+      this.saveStorage('samadhi_user_profile', this.userProfile);
+    }
+
+    const completed = this.userProfile.completedHabits || [];
+    let totalHabitsCount = 0;
+    DAILY_ROUTINE_CYCLE.forEach(p => totalHabitsCount += p.habits.length);
+    const progressPercent = totalHabitsCount > 0 ? Math.round((completed.length / totalHabitsCount) * 100) : 0;
+
+    // Update Progress Bar
+    const progressEl = document.getElementById('routine-progress-fill');
+    if (progressEl) progressEl.style.width = `${progressPercent}%`;
+    const progressText = document.getElementById('routine-progress-text');
+    if (progressText) progressText.textContent = `${completed.length}/${totalHabitsCount} កិច្ច (${progressPercent}%)`;
+
+    // Filter phases
+    const phasesToShow = this.activeRoutinePhase === 'all'
+      ? DAILY_ROUTINE_CYCLE
+      : DAILY_ROUTINE_CYCLE.filter(p => p.phaseId === this.activeRoutinePhase);
+
+    container.innerHTML = phasesToShow.map(phase => `
+      <div class="routine-phase-card">
+        <div class="routine-phase-header">
+          <div>
+            <h3 style="font-size: 1.28rem; font-weight: 700; color: var(--text-primary);">${phase.phaseName}</h3>
+            <div style="font-size: 0.85rem; color: var(--gold-primary); font-weight: 600;">⏱ ${phase.timeRange} · ${phase.motto}</div>
+          </div>
+        </div>
+
+        <div>
+          ${phase.habits.map(h => {
+            const isDone = completed.includes(h.id);
+            return `
+              <div class="routine-habit-item ${isDone ? 'completed' : ''}" data-habit-id="${h.id}">
+                <div class="checklist-checkbox">${isDone ? renderIcon('check', 14) : ''}</div>
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 4px;">
+                    <span style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">${h.title}</span>
+                    <span class="stepstone-badge ${h.badgeClass}">${h.stepStone}</span>
+                  </div>
+                  <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">${h.desc}</div>
+
+                  <!-- Collapsible Pāḷi Drawer -->
+                  <details class="pali-drawer" onclick="event.stopPropagation();">
+                    <summary class="pali-drawer-summary">
+                      <span class="pali-snippet">« ${h.paliFormula.substring(0, 36)}... »</span>
+                      <span class="pali-drawer-badge">ស្មូតធម៌ ${renderIcon('chevronDown', 12)}</span>
+                    </summary>
+                    <div class="pali-drawer-content">
+                      <div class="pali-verse-text">« ${h.paliFormula} »</div>
+                      <div style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 8px;">${h.translation}</div>
+                      <div style="display: flex; justify-content: flex-end;">
+                        <a href="${h.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge">
+                          ${renderIcon('citations', 12)} ${h.tripitakaLabel} ${renderIcon('externalLink', 10)}
+                        </a>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    container.querySelectorAll('[data-habit-id]').forEach(item => {
+      item.addEventListener('click', (e) => {
+        // Prevent toggle if clicking inside details
+        if (e.target.closest('details')) return;
+        const id = e.currentTarget.getAttribute('data-habit-id');
+        this.toggleDailyHabit(id);
+      });
+    });
+  }
+
+  toggleDailyHabit(habitId) {
+    let list = this.userProfile.completedHabits || [];
+    if (list.includes(habitId)) {
+      list = list.filter(x => x !== habitId);
+    } else {
+      list.push(habitId);
+      audioEngine.playBreathCue(true); // subtle wholesome audio tick
+    }
+    this.userProfile.completedHabits = list;
+    this.saveStorage('samadhi_user_profile', this.userProfile);
+    this.renderDailyRoutineCycle();
+  }
+
+  // Canonical Similes & Lost Breath Guidance
+  renderAnapanasatiGuides() {
+    const container = document.getElementById('anapanasati-similes-container');
+    if (!container) return;
+
+    container.innerHTML = `
+      <div class="card" style="margin-top: 24px; border-left: 4px solid var(--gold-primary);">
+        <h3 style="font-size: 1.15rem; margin-bottom: 12px; color: var(--text-primary);">
+          ឧបមា ៣ យ៉ាងក្នុងគម្ពីរអានាបានស្សតិ (Visuddhimagga Similes)
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+          ${ANAPANASATI_SIMILES.map(s => `
+            <div style="background: var(--bg-secondary); border-radius: var(--radius-md); padding: 14px;">
+              <strong style="color: var(--gold-primary); font-size: 0.95rem;">${s.name}</strong>
+              <div style="font-size: 0.84rem; color: var(--text-muted); font-style: italic; margin: 4px 0;">${s.quote}</div>
+              <div style="font-size: 0.86rem; color: var(--text-secondary); margin-top: 4px;">${s.instruction}</div>
+              <div style="margin-top: 8px; text-align: right;">
+                <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.74rem;">
+                  ${renderIcon('citations', 10)} ${s.bookRef} ${renderIcon('externalLink', 8)}
+                </a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div style="margin-top: 18px; background: var(--gold-subtle); border-radius: var(--radius-md); padding: 16px;">
+          <h4 style="font-size: 1rem; color: var(--gold-primary); margin-bottom: 6px;">
+            ${LOST_BREATH_REMEDY.title}
+          </h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 6px;">
+            <strong>មូលហេតុ៖</strong> ${LOST_BREATH_REMEDY.cause}
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">
+            <strong>វិធីដោះស្រាយ៖</strong> ${LOST_BREATH_REMEDY.instruction}
+          </p>
+          <div style="margin-top: 8px; text-align: right;">
+            <a href="${LOST_BREATH_REMEDY.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.74rem;">
+              ${renderIcon('citations', 10)} ${LOST_BREATH_REMEDY.bookRef} ${renderIcon('externalLink', 8)}
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
   }
 
   // Carita Quiz Logic
@@ -560,7 +793,7 @@ class SamadhiApp {
         <div class="quiz-question-box">
           <div style="display: flex; justify-content: space-between; margin-bottom: 14px; font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">
             <span>សំណួរទី ${idx + 1} នៃ ${CARITA_QUESTIONS.length}</span>
-            <span>យោងតាមវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៧៥ (<a href="https://www.tripitaka82.com/read.html?book=v2&page=75" target="_blank" rel="noopener" style="color: var(--gold-primary); text-decoration: none;">tripitaka82.com ↗</a>)</span>
+            <span>យោងតាមវិសុទ្ធិមគ្គ សមាធិនិទ្ទេស ភាគ ១ ទំព័រ ៧៥–៩៣</span>
           </div>
           <h3 style="font-size: 1.2rem; margin-bottom: 18px;">${q.title}</h3>
           <div>
@@ -616,35 +849,35 @@ class SamadhiApp {
 
     container.innerHTML = `
       <div class="card" style="border: 2px solid var(--gold-primary); padding: 32px 24px; text-align: center;">
-        <span class="hero-tag">លទ្ធផលវិនិច្ឆ័យចរិត</span>
+        <span class="hero-tag">លទ្ធផលវិនិច្ឆ័យចរិត តាមគម្ពីរវិសុទ្ធិមគ្គ</span>
         <h2 style="font-size: 1.8rem; margin: 12px 0 6px;">${profile.name}</h2>
         <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 20px;">${profile.sub}</p>
         
         <div style="background: var(--bg-secondary); border-radius: var(--radius-md); padding: 20px; text-align: left; margin-bottom: 24px;">
           <div style="margin-bottom: 12px;">
-            <strong style="color: var(--gold-primary);">🎯 កម្មដ្ឋានចម្បង (Pārihāriya)៖</strong>
+            <strong style="color: var(--gold-primary);">កម្មដ្ឋានចម្បង (Pārihāriya)៖</strong>
             <div style="font-size: 1.1rem; font-weight: 700; margin-top: 4px;">${profile.primaryKammatthana}</div>
           </div>
           <div style="margin-bottom: 12px;">
-            <strong>📖 ឱវាទក្នុងវិសុទ្ធិមគ្គ៖</strong>
+            <strong>ឱវាទក្នុងវិសុទ្ធិមគ្គ៖</strong>
             <p style="font-size: 0.92rem; color: var(--text-secondary); margin-top: 4px;">${profile.remedyText}</p>
           </div>
           <div style="margin-bottom: 12px;">
-            <strong>🌿 សប្បាយសមគួរ (Sappāya)៖</strong>
+            <strong>សប្បាយសមគួរ (Sappāya 7)៖</strong>
             <p style="font-size: 0.92rem; color: var(--text-secondary); margin-top: 4px;">${profile.sappaya}</p>
           </div>
           <div>
-            <strong>🏆 ការសម្រេចឈាន៖</strong>
+            <strong>ការសម្រេចឈានខ្ពស់បំផុត៖</strong>
             <span style="font-size: 0.92rem; color: var(--accent-sage); font-weight: 600;">${profile.attainment}</span>
           </div>
         </div>
 
         <div style="display: flex; justify-content: center; gap: 12px;">
           <button class="btn-primary" data-view-target="practice">
-            <span>☸</span> ចាប់ផ្តើមភាវនាឥឡូវនេះ
+            ${renderIcon('meditator', 18)} ចាប់ផ្តើមភាវនាឥឡូវនេះ
           </button>
           <button class="btn-secondary" id="btn-retake-quiz">
-            ធ្វើតេស្តឡើងវិញ
+            ${renderIcon('reset', 16)} ធ្វើតេស្តឡើងវិញ
           </button>
         </div>
       </div>
@@ -663,132 +896,4 @@ class SamadhiApp {
 // Initialize on DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
   window.samadhiApp = new SamadhiApp();
-
-  // ==========================================
-  // Stepping Stones (Sīla, Samādhi, Paññā)
-  // ==========================================
-  renderSteppingStones() {
-    const container = document.getElementById('stepping-stones-container');
-    if (!container) return;
-
-    container.innerHTML = STEPPING_STONES.map(s => `
-      <div class="stepping-card ${s.id}-card">
-        <div>
-          <span class="stepstone-badge badge-${s.id}">${s.badge}</span>
-          <h3 style="font-size: 1.35rem; margin: 10px 0 4px;">${s.name}</h3>
-          <div style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 10px;">${s.pali}</div>
-          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px;">
-            ${s.desc}
-          </p>
-
-          <div style="margin-bottom: 18px;">
-            <strong style="font-size: 0.95rem; color: var(--text-primary);">សសរទ្រទ្រង់ទាំង ៤ (Pillars)៖</strong>
-            <div style="margin-top: 8px;">
-              ${s.pillars.map(p => `
-                <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 8px; font-size: 0.86rem;">
-                  <strong style="color: var(--text-primary);">${p.title}</strong>
-                  <div style="color: var(--text-secondary); margin-top: 2px;">${p.desc}</div>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        </div>
-
-        <div style="border-top: 1px solid var(--border-color); padding-top: 14px; display: flex; justify-content: space-between; align-items: center;">
-          <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; font-weight: 700;">
-            📖 អានក្នុង ${s.bookTitle} ↗
-          </a>
-        </div>
-      </div>
-    `).join('');
-  }
-
-  // ==========================================
-  // Daily Routine Cycle (Morning, Day, Evening)
-  // ==========================================
-  renderDailyRoutineCycle() {
-    const container = document.getElementById('daily-routine-container');
-    if (!container) return;
-
-    // Reset habits if new day
-    const today = new Date().toDateString();
-    if (this.userProfile.lastRoutineDate !== today) {
-      this.userProfile.completedHabits = [];
-      this.userProfile.lastRoutineDate = today;
-      this.saveStorage('samadhi_user_profile', this.userProfile);
-    }
-
-    const completed = this.userProfile.completedHabits || [];
-    let totalHabitsCount = 0;
-    DAILY_ROUTINE_CYCLE.forEach(p => totalHabitsCount += p.habits.length);
-    const progressPercent = totalHabitsCount > 0 ? Math.round((completed.length / totalHabitsCount) * 100) : 0;
-
-    // Update Progress Bar
-    const progressEl = document.getElementById('routine-progress-fill');
-    if (progressEl) progressEl.style.width = `${progressPercent}%`;
-    const progressText = document.getElementById('routine-progress-text');
-    if (progressText) progressText.textContent = `${completed.length}/${totalHabitsCount} កិច្ច (${progressPercent}%)`;
-
-    container.innerHTML = DAILY_ROUTINE_CYCLE.map(phase => `
-      <div class="routine-phase-card">
-        <div class="routine-phase-header">
-          <div>
-            <h3 style="font-size: 1.28rem; font-weight: 700; color: var(--text-primary);">${phase.phaseName}</h3>
-            <div style="font-size: 0.85rem; color: var(--gold-primary); font-weight: 600;">⏱ ${phase.timeRange} · ${phase.motto}</div>
-          </div>
-        </div>
-
-        <div>
-          ${phase.habits.map(h => {
-            const isDone = completed.includes(h.id);
-            return `
-              <div class="routine-habit-item ${isDone ? 'completed' : ''}" data-habit-id="${h.id}">
-                <div class="checklist-checkbox">${isDone ? '✓' : ''}</div>
-                <div style="flex: 1;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 4px;">
-                    <span style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">${h.title}</span>
-                    <span class="stepstone-badge ${h.badgeClass}">${h.stepStone}</span>
-                  </div>
-                  <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">${h.desc}</div>
-
-                  <!-- Pali Chant Box -->
-                  <div class="pali-chant-box">
-                    <div class="pali-verse-text">« ${h.paliFormula} »</div>
-                    <div style="font-size: 0.82rem; color: var(--text-secondary);">${h.translation}</div>
-                  </div>
-
-                  <div style="margin-top: 8px; display: flex; justify-content: flex-end;">
-                    <a href="${h.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" onclick="event.stopPropagation();">
-                      📖 ${h.tripitakaLabel} ↗
-                    </a>
-                  </div>
-                </div>
-              </div>
-            `;
-          }).join('')}
-        </div>
-      </div>
-    `).join('');
-
-    container.querySelectorAll('[data-habit-id]').forEach(item => {
-      item.addEventListener('click', (e) => {
-        const id = e.currentTarget.getAttribute('data-habit-id');
-        this.toggleDailyHabit(id);
-      });
-    });
-  }
-
-  toggleDailyHabit(habitId) {
-    let list = this.userProfile.completedHabits || [];
-    if (list.includes(habitId)) {
-      list = list.filter(x => x !== habitId);
-    } else {
-      list.push(habitId);
-      audioEngine.playBreathCue(true); // subtle wholesome audio tick
-    }
-    this.userProfile.completedHabits = list;
-    this.saveStorage('samadhi_user_profile', this.userProfile);
-    this.renderDailyRoutineCycle();
-  }
-
-}
+});
