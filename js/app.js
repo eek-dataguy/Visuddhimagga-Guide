@@ -4,8 +4,8 @@
 // Pure SVG Iconography & Humane Meditative Design System
 // ==========================================================================
 
-import { audioEngine } from './audio.js?v=2.2.0';
-import { renderIcon } from './icons.js?v=2.2.0';
+import { audioEngine } from './audio.js?v=2.2.1';
+import { renderIcon } from './icons.js?v=2.2.1';
 import { 
   PALIBODHA_10, 
   CATURARAKKHA, 
@@ -21,16 +21,20 @@ import {
   LOST_BREATH_REMEDY,
   SAMADHI_PRACTICE_METHODS,
   PANNA_NAMARUPA
-} from './data.js?v=2.2.0';
+} from './data.js?v=2.2.1';
 
 function getTripitakaUrl(refText) {
   if (!refText) return "https://www.tripitaka82.com/";
   let v = "v2";
-  if (refText.includes("ភាគ ១")) v = "v2";
-  else if (refText.includes("ភាគ ២")) v = "v3";
-  else if (refText.includes("ភាគ ៣")) v = "v4";
-  else if (refText.includes("ភាគ ៤")) v = "v5";
+  if (refText.includes("ភាគ ១") && refText.includes("សីលនិទ្ទេស")) v = "v1";
   else if (refText.includes("សីលនិទ្ទេស")) v = "v1";
+  else if (refText.includes("សមាធិនិទ្ទេស ភាគ ១") || (refText.includes("ភាគ ១") && !refText.includes("បញ្ញានិទ្ទេស"))) v = "v2";
+  else if (refText.includes("សមាធិនិទ្ទេស ភាគ ២") || refText.includes("ភាគ ២")) v = "v3";
+  else if (refText.includes("សមាធិនិទ្ទេស ភាគ ៣") || refText.includes("ភាគ ៣")) v = "v4";
+  else if (refText.includes("សមាធិនិទ្ទេស ភាគ ៤") || refText.includes("ភាគ ៤")) v = "v5";
+  else if (refText.includes("បញ្ញានិទ្ទេស ភាគ ៦") || refText.includes("ភាគ ៦") || refText.includes("ភាគ ៥")) v = "v6";
+  else if (refText.includes("បញ្ញានិទ្ទេស ភាគ ៧") || refText.includes("ភាគ ៧")) v = "v7";
+  else if (refText.includes("បញ្ញានិទ្ទេស ភាគ ៨") || refText.includes("ភាគ ៨")) v = "v8";
   else if (refText.includes("បញ្ញានិទ្ទេស")) v = "v6";
 
   const normalized = refText.replace(/[០-៩]/g, d => '០១២៣៤៥៦៧៨៩'.indexOf(d));
@@ -463,7 +467,7 @@ class SamadhiApp {
           <div class="checklist-checkbox">${isChecked ? renderIcon('check', 14) : ''}</div>
           <div style="flex: 1">
             <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px;">
-              <span class="checklist-title">${p.id}. ${p.khmer} (${p.pali})</span>
+              <span class="checklist-title">${p.id}. ${p.khmer} <span style="font-family: var(--font-pali); color: var(--gold-primary); font-size: 0.88rem; font-weight: 600;">« ${p.paliKhmer || p.khmer} »</span></span>
               <a href="${p.tripitakaUrl || getTripitakaUrl(p.bookRef)}" target="_blank" rel="noopener" class="citation-badge" onclick="event.stopPropagation();">
                 ${renderIcon('citations', 12)} ${p.bookRef} ${renderIcon('externalLink', 10)}
               </a>
@@ -544,7 +548,7 @@ class SamadhiApp {
         <div>
           <span class="k-badge">${this.getCatName(k.cat)}</span>
           <div class="k-title">${k.id}. ${k.name}</div>
-          <div class="k-pali">${k.pali}</div>
+          <div class="k-pali" style="font-family: var(--font-pali); color: var(--gold-primary); font-size: 0.92rem; font-weight: 600;">« ${k.paliKhmer || k.name} » <span style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(${k.pali})</span></div>
           <div class="k-desc">${k.desc}</div>
         </div>
         <div class="k-meta">
@@ -577,7 +581,9 @@ class SamadhiApp {
 
     container.innerHTML = PROGRESSIVE_CURRICULUM.map(c => `
       <div class="curriculum-card">
-        <div class="curriculum-level">${c.pali}</div>
+        <div class="curriculum-level" style="font-family: var(--font-pali); font-weight: 700; color: var(--gold-primary);">
+          « ${c.paliKhmer || c.pali} »
+        </div>
         <div class="curriculum-title">${c.title}</div>
         <div class="curriculum-time">⏱ រយៈពេលណែនាំ៖ ${c.timeframe}</div>
         <div style="font-size: 0.95rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 12px;">
@@ -592,6 +598,11 @@ class SamadhiApp {
         </ul>
         <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 10px 14px; font-size: 0.86rem; color: var(--text-secondary); margin-top: 12px;">
           <strong>សញ្ញាសម្គាល់ការឆ្លងផុត៖</strong> ${c.milestone}
+        </div>
+        <div style="margin-top: 14px; display: flex; justify-content: flex-end;">
+          <a href="${c.tripitakaUrl || 'https://www.tripitaka82.com/'}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; padding: 4px 12px;">
+             ${c.bookRef || 'វិសុទ្ធិមគ្គ'} ↗
+          </a>
         </div>
       </div>
     `).join('');
@@ -610,7 +621,9 @@ class SamadhiApp {
           </div>
           <div>
             <div class="card-title">${n.khmer}</div>
-            <div class="card-sub">${n.pali}</div>
+            <div class="card-sub" style="font-family: var(--font-pali); color: var(--gold-primary); font-weight: 600;">
+              « ${n.paliKhmer || n.khmer} » <span style="font-size: 0.82rem; color: var(--text-muted); font-style: italic;">(${n.pali})</span>
+            </div>
           </div>
         </div>
         <div class="card-body">
@@ -621,8 +634,13 @@ class SamadhiApp {
           <div style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 8px;">
             ${n.method}
           </div>
-          <div style="background: var(--gold-subtle); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 0.84rem; color: var(--gold-primary); font-weight: 600;">
-            អង្គឈានដែលកើតមកជំនួស៖ ${n.jhānaFactor}
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px;">
+            <div style="background: var(--gold-subtle); padding: 6px 12px; border-radius: var(--radius-sm); font-size: 0.84rem; color: var(--gold-primary); font-weight: 600;">
+              អង្គឈានដែលកើតមកជំនួស៖ ${n.jhānaFactor}
+            </div>
+            <a href="${n.tripitakaUrl || getTripitakaUrl(n.bookRef)}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.8rem; padding: 4px 10px;">
+               ${n.bookRef} ↗
+            </a>
           </div>
         </div>
       </div>
@@ -648,7 +666,7 @@ class SamadhiApp {
               ${renderIcon('steppingStones', 16)} វឌ្ឍនភាពនៃការទន្ទេញមេរៀនគ្រឹះ (Gated Progression)
             </div>
             <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-top: 2px;">
-              ${isAllCompleted ? 'សម្រេចជោគជ័យគ្រប់ ៩ ជំហាន (១០០%)' : `សម្រេច ${completedCount}/${totalSteps} ជំហាន (${progressPct}%) — កំពុងនៅជំហានទី ${this.steppingUnlocked}`}
+              ${isAllCompleted ? `សម្រេចជោគជ័យគ្រប់ ${totalSteps} ជំហាន (១០០%)` : `សម្រេច ${completedCount}/${totalSteps} ជំហាន (${progressPct}%) — កំពុងនៅជំហានទី ${this.steppingUnlocked}`}
             </div>
           </div>
           <button class="btn-reset-stepping" style="background: none; border: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.8rem; padding: 6px 12px; border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 6px;" title="កំណត់វឌ្ឍនភាពឡើងវិញ">
@@ -667,9 +685,9 @@ class SamadhiApp {
       html += `
         <div class="grand-mastery-banner">
           <div style="margin-bottom: 14px;">${renderIcon('award', 48)}</div>
-          <h3 style="font-size: 1.45rem; color: var(--gold-primary); margin-bottom: 8px;">សាធុ! សាធុ! អ្នកបានឆ្លងកាត់ជណ្តើរទាំង ៩ នៃវិសុទ្ធិមគ្គជាស្ថាពរ</h3>
+          <h3 style="font-size: 1.45rem; color: var(--gold-primary); margin-bottom: 8px;">សាធុ! សាធុ! អ្នកបានឆ្លងកាត់ជណ្តើរទាំង ${totalSteps} នៃវិសុទ្ធិមគ្គជាស្ថាពរ</h3>
           <p style="color: var(--text-secondary); max-width: 640px; margin: 0 auto 16px; font-size: 0.95rem; line-height: 1.7;">
-            អ្នកបានទន្ទេញចាំមាត់នូវគាថាពុទ្ធដីកា និងវាក្យគន្លឹះដ៏ពិសិដ្ឋទាំង ៩ ដំណាក់កាល តាំងពី <strong>គាថាដើម «សីលេ បតិដ្ឋាយ»</strong>, <strong>ចតុបារិសុទ្ធិសីល</strong>, <strong>ទសបលិពោធ</strong>, <strong>ចតុរារក្ខា</strong>, <strong>ឧបមាអ្នករក្សាទ្វារនិងរណារ</strong>, <strong>ឧបាយនាំខ្យល់មកវិញ</strong>, <strong>អង្គឈាន ៥</strong>, <strong>បញ្ចវសី</strong> រហូតដល់ <strong>នាមរូបបរិច្ឆេទ & ត្រៃលក្ខណ៍</strong>។ គ្រឹះនៃព្រះបរិយត្តិរបស់អ្នកមានភាពរឹងមាំហើយ សូមបន្តចូលកាន់ការចម្រើនភាវនាជាប្រចាំថ្ងៃ!
+            អ្នកបានទន្ទេញចាំមាត់នូវគាថាពុទ្ធដីកា និងវាក្យគន្លឹះដ៏ពិសិដ្ឋទាំង ${totalSteps} ដំណាក់កាល (ឯកវីសតិបទដ្ឋាន) គ្រប់ដណ្តប់លើគម្ពីរវិសុទ្ធិមគ្គទាំង ៨ ភាគ តាំងពី សីលនិទ្ទេស (គាថាដើម សីលេ បតិដ្ឋាយ, ចតុបារិសុទ្ធិសីល, ធុតង្គ), សមាធិនិទ្ទេស (ទសបលិពោធ, ចរិត ៦, ចតុរារក្ខា, និមិត្ត ៣, អង្គឈាន ៥, បញ្ចវសី, ៣២ កោដ្ឋាស, មរណស្សតិ, ឧបមាអ្នករក្សាទ្វារ-រណារ, ឧបាយខ្យល់បាត់, ចតុរប្បមញ្ញា, ចតុធាតុវវដ្ឋាន) រហូតដល់ បញ្ញានិទ្ទេស (បញ្ចក្ខន្ធ, នាមរូបបរិច្ឆេទ, បច្ចយបរិគ្គហ, វិបស្សនូបក្កិលេស, វិបស្សនាញាណ និងអរិយមគ្គ-ផល)។ គ្រឹះនៃព្រះបរិយត្តិរបស់អ្នកមានភាពរឹងមាំពេញលេញហើយ សូមបន្តចូលកាន់ការចម្រើនភាវនាជាប្រចាំថ្ងៃ!
           </p>
           <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
             <button class="btn-primary" data-view-target="practice" style="font-size: 0.92rem; padding: 10px 22px;">
@@ -706,7 +724,7 @@ class SamadhiApp {
               ${isLocked ? `<span class="badge-status-locked">${renderIcon('lock', 13)} ចាក់សោ</span>` : ''}
             </div>
             <div style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600;">
-              ជំហាន ${s.step} នៃ ៩
+              ជំហាន ${s.step} នៃ ${totalSteps}
             </div>
           </div>
 
@@ -1104,19 +1122,19 @@ class SamadhiApp {
     if (!container || !SAMADHI_PRACTICE_METHODS) return;
 
     const methodIcons = {
-      anapanasati: '💨',
-      buddhanussati: '☸️',
-      metta: '💖',
+      anapanasati: '',
+      buddhanussati: '️',
+      metta: '',
       maranassati: '⌛',
-      kayagata: '🦴',
-      catudhatu: '🌍',
-      kasina: '🟡',
-      asubha: '🕊️'
+      kayagata: '',
+      catudhatu: '',
+      kasina: '',
+      asubha: '️'
     };
 
     container.innerHTML = SAMADHI_PRACTICE_METHODS.map(m => `
       <button class="practice-method-pill ${m.id === this.currentSamadhiMethod ? 'active' : ''}" data-method-id="${m.id}">
-        <span>${methodIcons[m.id] || '☸'}</span>
+        <span>${methodIcons[m.id] || ''}</span>
         <span>${m.name}</span>
       </button>
     `).join('');
@@ -1149,13 +1167,16 @@ class SamadhiApp {
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
           <div>
             <span class="hero-tag">${method.category} · ${method.tripitakaRef}</span>
-            <h2 style="font-size: 1.55rem; margin: 8px 0 4px; color: var(--text-primary);">${method.name} (${method.pali})</h2>
+            <h2 style="font-size: 1.55rem; margin: 8px 0 4px; color: var(--text-primary);">
+              ${method.name} <span style="color: var(--gold-primary); font-weight: 700; font-family: var(--font-pali);">« ${method.namePaliKhmer || method.pali} »</span>
+            </h2>
+            ${method.pali ? `<div style="font-size: 0.88rem; color: var(--text-muted); font-style: italic; margin-bottom: 6px;">(${method.pali})</div>` : ''}
             <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; max-width: 800px;">
               ${method.description}
             </div>
           </div>
           <a href="https://www.tripitaka82.com/read.html?book=${method.tripitakaVol}&page=${method.tripitakaPage}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.85rem; padding: 6px 12px;">
-            📖 អានក្នុងគម្ពីរដើម ↗
+             អានក្នុងគម្ពីរដើម ↗
           </a>
         </div>
 
@@ -1289,12 +1310,12 @@ class SamadhiApp {
       }
     }
 
-    // 3. Render Practice Steps Accordion
+    // 3. Render Practice Steps Accordion with Khmer Pali & Canonical Citations
     const stepsContainer = document.getElementById('practice-steps-container');
     if (stepsContainer && method.practiceSteps) {
       stepsContainer.innerHTML = `
-        <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
-          <span>🧘</span> វិធីចម្រើនតាមលំដាប់ ៤ ជំហាន (Step-by-Step Guidance)៖
+        <div style="font-size: 1.18rem; font-weight: 700; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+          <span></span> វិធីចម្រើនតាមលំដាប់ ៤ ជំហាន តាមគម្ពីរវិសុទ្ធិមគ្គ (Step-by-Step Guidance)៖
         </div>
         ${method.practiceSteps.map(s => `
           <div class="practice-step-card">
@@ -1303,9 +1324,26 @@ class SamadhiApp {
               <div class="practice-step-title">${s.title}</div>
             </div>
             <div class="practice-step-instruction">${s.instruction}</div>
-            <div class="pali-chant-box">
-              <div class="pali-verse-text">« ${s.paliChant} »</div>
-              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">${s.khmerTranslation}</div>
+
+            <!-- Authentic Pali Formula in Khmer Script -->
+            <div class="pali-chant-box" style="background: var(--bg-secondary); border-left: 3px solid var(--gold-primary); padding: 12px 16px; border-radius: var(--radius-sm); margin: 12px 0;">
+              <div style="font-size: 0.78rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 4px; letter-spacing: 0.5px;">
+                 បាលីភាវនា (អក្ខរាខ្មែរ) ៖
+              </div>
+              <div class="pali-verse-text" style="font-size: 1.05rem; font-weight: 700; line-height: 1.6; color: var(--text-primary); font-family: var(--font-pali);">
+                « ${s.paliChantKhmer || s.paliChant} »
+              </div>
+              ${s.paliChantRoman ? `<div style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">(${s.paliChantRoman})</div>` : ''}
+              <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px; border-top: 1px dashed rgba(184, 123, 34, 0.25); padding-top: 8px; line-height: 1.5;">
+                <strong style="color: var(--text-primary);">ប្រែសម្រាយខ្មែរ៖</strong> ${s.khmerTranslation}
+              </div>
+            </div>
+
+            <!-- Direct Canonical Citation to tripitaka82.com -->
+            <div style="display: flex; justify-content: flex-end; align-items: center; margin-top: 10px;">
+              <a href="${s.tripitakaUrl || `https://www.tripitaka82.com/read.html?book=${method.tripitakaVol}&page=${method.tripitakaPage}`}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; padding: 4px 12px;">
+                 ${s.tripitakaRef || method.tripitakaRef} ↗
+              </a>
             </div>
           </div>
         `).join('')}
@@ -1318,7 +1356,7 @@ class SamadhiApp {
       nimittaContainer.innerHTML = `
         <div class="nimitta-guide-card">
           <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
-            ✨ ការវិវត្តនៃនិមិត្តទាំង ៣ (Nimitta Progression)៖
+             ការវិវត្តនៃនិមិត្តទាំង ៣ (Nimitta Progression)៖
           </div>
           <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;">
             ដំណើរចិត្តពីការចាប់ផ្តើមរហូតដល់សម្រេចឈានក្នុងកម្មដ្ឋាននេះ៖
@@ -1414,41 +1452,65 @@ class SamadhiApp {
       const { mahabhuta4, upadarupa24, samutthana4 } = PANNA_NAMARUPA.rupa28;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title">🧱 មហាភូតរូប ៤ (The 4 Great Elements)</div>
-          <div class="panna-section-desc">ធាតុដើមទាំង ៤ ជាគ្រឹះទ្រទ្រង់រូបកាយទាំងមូល គ្មានពណ៌ គ្មានរូបរាង តែមានលក្ខណៈជាក់ស្តែងប៉ះដឹងបានដោយកាយសម្ផ័ស្ស៖</div>
+          <div class="panna-section-title"> មហាភូតរូប ៤ (The 4 Great Essentials in Khmer Pali)</div>
+          <div class="panna-section-desc">
+            ធាតុដើមទាំង ៤ ជាគ្រឹះទ្រទ្រង់រូបកាយទាំងមូល គ្មានពណ៌ គ្មានរូបរាង តែមានលក្ខណៈជាក់ស្តែងប៉ះដឹងបានដោយកាយសម្ផ័ស្ស៖
+          </div>
         </div>
 
         <div class="mahabhuta-grid">
           ${mahabhuta4.map(m => `
             <div class="mahabhuta-card">
               <h3>${m.nameKh}</h3>
-              <div class="pali">${m.namePali} (${m.meaning})</div>
+              <div class="pali" style="font-size: 0.95rem; font-weight: 700; color: var(--gold-primary); margin-bottom: 8px; font-family: var(--font-pali);">
+                « ${m.namePaliKhmer} » — ${m.meaning}
+              </div>
               <div class="trait-row"><strong>លក្ខណៈ៖</strong> ${m.lakkhana}</div>
               <div class="trait-row"><strong>កិច្ច (រស)៖</strong> ${m.kicca}</div>
               <div class="trait-row"><strong>ការប្រាកដ៖</strong> ${m.paccupatthana}</div>
-              <div class="anchor-box">💡 <strong>ចំណុចពិចារណា៖</strong> ${m.dailyAnchor}</div>
+              <div class="anchor-box" style="background: var(--bg-secondary); padding: 8px 12px; border-radius: var(--radius-sm); margin: 10px 0; font-size: 0.85rem;">
+                 <strong>ចំណុចពិចារណា៖</strong> ${m.dailyAnchor}
+              </div>
+              <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+                <a href="${m.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+                   ${m.tripitakaRef} ↗
+                </a>
+              </div>
             </div>
           `).join('')}
         </div>
 
-        <div class="panna-section-header" style="margin-top: 32px;">
-          <div class="panna-section-title">✨ ឧបាទាយរូប ២៤ (24 Derived Matter)</div>
-          <div class="panna-section-desc">រូបដែលកើតអាស្រ័យនឹងមហាភូតរូប ៤ ប្រៀបដូចមែកឈើកើតអាស្រ័យនឹងដើម៖</div>
+        <div class="panna-section-header" style="margin-top: 36px;">
+          <div class="panna-section-title"> ឧបាទាយរូប ២៤ (24 Derived Matter with Canonical Citations)</div>
+          <div class="panna-section-desc">រូបដែលកើតអាស្រ័យនឹងមហាភូតរូប ៤ ចែកជា ១០ ពួក តាមគម្ពីរវិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦៖</div>
         </div>
 
         <div class="upadarupa-grid">
           ${upadarupa24.map(u => `
             <div class="upadarupa-item">
               <span class="group-badge">${u.groupKh}</span>
-              <h4>${u.id}. ${u.nameKh} (${u.namePali})</h4>
+              <h4>${u.id}. ${u.nameKh}</h4>
+              <div style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 700; margin-bottom: 4px; font-family: var(--font-pali);">
+                « ${u.namePaliKhmer || u.namePali} »
+              </div>
               <p>${u.desc}</p>
-              <div style="font-size:0.8rem; color:var(--gold-primary); margin-top:6px;">💡 ${u.dailyAnchor}</div>
+              <div style="font-size: 0.82rem; color: var(--text-muted); margin: 6px 0;"> ${u.dailyAnchor}</div>
+              <div style="display: flex; justify-content: flex-end; margin-top: 6px;">
+                <a href="${u.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.75rem;">
+                   ${u.tripitakaRef} ↗
+                </a>
+              </div>
             </div>
           `).join('')}
         </div>
 
         <div class="card" style="margin-top: 24px; border-left: 4px solid var(--gold-primary);">
-          <h3 style="font-size: 1.15rem; margin-bottom: 8px;">🌱 សមុដ្ឋាន ៤ នៃរូប (The 4 Origins of Physical Matter)</h3>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+            <h3 style="font-size: 1.15rem; margin: 0;"> សមុដ្ឋាន ៤ នៃរូប (The 4 Origins of Physical Matter)</h3>
+            <a href="https://www.tripitaka82.com/read.html?book=v6&page=35" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               វិសុទ្ធិមគ្គ ភាគ ៦ ទំព័រ ៣៥–៤០ ↗
+            </a>
+          </div>
           <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">រូបធម៌ក្នុងកាយមិនមែនកើតឡើងឯកឯងទេ គឺកើតឡើងអំពីហេតុបច្ច័យ ៤ យ៉ាង៖</p>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
             ${samutthana4.map(s => `
@@ -1461,51 +1523,67 @@ class SamadhiApp {
         </div>
       `;
     } else if (tabKey === 'namaSummary') {
-      const { aggregates4, cittaSummary, cetasika52 } = PANNA_NAMARUPA.namaSummary;
+      const { khandhas, citta89, cetasika52 } = PANNA_NAMARUPA.namaSummary;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title">🧠 អរូបក្ខន្ធ ៤ (The 4 Immaterial Mental Aggregates)</div>
+          <div class="panna-section-title"> អរូបក្ខន្ធ ៤ (The 4 Immaterial Mental Aggregates)</div>
           <div class="panna-section-desc">នាមធម៌ គឺធម្មជាតិដែលបង្អោនទៅកាន់អារម្មណ៍ ដឹងអារម្មណ៍ សោយអារម្មណ៍ និងតាក់តែងចេតនា៖</div>
         </div>
 
         <div class="grid-2" style="margin-bottom: 24px;">
-          ${aggregates4.map(a => `
+          ${khandhas.map(a => `
             <div class="card" style="border-left: 4px solid var(--gold-primary);">
-              <h3 style="font-size: 1.15rem; margin-bottom: 4px;">${a.khandhaKh} (${a.pali})</h3>
-              <div style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 6px;">${a.function}</div>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px;">${a.desc}</p>
-              <div class="anchor-box" style="background: var(--bg-secondary); padding: 8px 12px; border-radius: var(--radius-sm); font-size: 0.84rem;">
-                💡 <strong>ចំណុចពិចារណា៖</strong> ${a.dailyReflection}
+              <h3 style="font-size: 1.15rem; margin-bottom: 4px;">${a.nameKh}</h3>
+              <div style="font-size: 0.92rem; color: var(--gold-primary); font-weight: 700; margin-bottom: 6px; font-family: var(--font-pali);">
+                « ${a.namePaliKhmer || a.namePali} »
+              </div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 8px;"><strong>កិច្ច៖</strong> ${a.function}</p>
+              <div class="anchor-box" style="background: var(--bg-secondary); padding: 8px 12px; border-radius: var(--radius-sm); font-size: 0.84rem; margin-bottom: 8px;">
+                 <strong>ចំណុចពិចារណា៖</strong> ${a.contemplation}
+              </div>
+              <div style="display: flex; justify-content: flex-end;">
+                <a href="${a.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.75rem;">
+                   ${a.tripitakaRef} ↗
+                </a>
               </div>
             </div>
           `).join('')}
         </div>
 
         <div class="card" style="margin-bottom: 24px;">
-          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">⚡ ធម្មជាតិនៃចិត្ត ៨៩/១២១ និងកិច្ច ១៤ យ៉ាង</h3>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+            <h3 style="font-size: 1.2rem; margin: 0;"> ធម្មជាតិនៃចិត្ត ៨៩/១២១ និងកិច្ច ១៤ យ៉ាង</h3>
+            <a href="${citta89.tripitakaUrl || 'https://www.tripitaka82.com/read.html?book=v6&page=55'}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               ${citta89.tripitakaRef || 'វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ ទំព័រ ៥៥'} ↗
+            </a>
+          </div>
           <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
-            ${cittaSummary.coreNature}
+            ${citta89.summary}
           </p>
           <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 14px;">
             <strong style="color: var(--text-primary); font-size: 0.95rem;">ដំណើរនៃកិច្ចរបស់ចិត្ត (Citta-kicca) ក្នុងមួយខ្សែជីវិត៖</strong>
             <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.6;">
-              ចាប់ផ្តើមពី <strong>បដិសន្ធិចិត្ត</strong> (កើត) $\\rightarrow$ <strong>ភវង្គ</strong> (រក្សាលំហូរជីវិត) $\\rightarrow$ <strong>អាវជ្ជនៈ</strong> (បែរមករកអារម្មណ៍) $\\rightarrow$ <strong>ទស្សន/សវន/ឃាយន/សាយន/ផុសន</strong> (ឃើញ ឮ ធុំ ដឹងរស ប៉ះ) $\\rightarrow$ <strong>សម្បដិច្ឆន/សន្តីរណ/វោដ្ឋព្វន</strong> (ទទួល ពិចារណា កាត់សេចក្តី) $\\rightarrow$ <strong>ជវនៈ ៧ ខណៈ</strong> (បង្កើតកម្មកុសល ឬអកុសល) $\\rightarrow$ <strong>តទារម្មណ៍</strong> $\\rightarrow$ រហូតដល់ <strong>ចុតិចិត្ត</strong> (ស្លាប់)។
+              ${citta89.functions14.join(' → ')}
             </p>
           </div>
         </div>
 
         <div class="panna-section-header">
-          <div class="panna-section-title">💎 ចេតសិក ៥២ (The 52 Mental Factors)</div>
-          <div class="panna-section-desc">ចេតសិកជាគ្រឿងប្រកបចិត្ត កើតជាមួយចិត្ត រលត់ជាមួយចិត្ត មានអារម្មណ៍ដូចចិត្ត និងមានទីតាំងដូចចិត្ត៖</div>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div class="panna-section-title"> ចេតសិក ៥២ (The 52 Mental Factors)</div>
+            <a href="${cetasika52.tripitakaUrl || 'https://www.tripitaka82.com/read.html?book=v6&page=68'}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               ${cetasika52.tripitakaRef || 'វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៦ ទំព័រ ៦៨'} ↗
+            </a>
+          </div>
+          <div class="panna-section-desc">${cetasika52.summary}</div>
         </div>
 
         <div class="grid-2">
-          ${cetasika52.map(g => `
+          ${cetasika52.groups.map(g => `
             <div class="card">
-              <h4 style="font-size: 1.1rem; color: var(--gold-primary); margin-bottom: 6px;">${g.groupKh} (${g.count} ដួង)</h4>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 10px;">${g.desc}</p>
-              <div style="background: var(--bg-secondary); padding: 8px 12px; border-radius: var(--radius-sm); font-size: 0.84rem; color: var(--text-primary);">
-                <strong>ឧទាហរណ៍៖</strong> ${g.keyExamples.join(', ')}
+              <h4 style="font-size: 1.05rem; color: var(--gold-primary); margin-bottom: 6px; font-family: var(--font-pali);">${g.groupName}</h4>
+              <div style="background: var(--bg-secondary); padding: 10px 12px; border-radius: var(--radius-sm); font-size: 0.86rem; color: var(--text-primary); line-height: 1.6;">
+                ${g.factors}
               </div>
             </div>
           `).join('')}
@@ -1515,17 +1593,19 @@ class SamadhiApp {
       const { similes } = PANNA_NAMARUPA;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title">🎭 ឧបមាអមតៈទាំង ៣ ក្នុងវិសុទ្ធិមគ្គ (The 3 Master Similes)</div>
+          <div class="panna-section-title"> ឧបមាអមតៈទាំង ៣ ក្នុងវិសុទ្ធិមគ្គ (The 3 Master Similes)</div>
           <div class="panna-section-desc">ព្រះពុទ្ធឃោសាចារ្យបានលើកឧបមាដ៏អស្ចារ្យ ៣ យ៉ាង ដើម្បីកម្ចាត់សក្កាយទិដ្ឋិ (ការប្រកាន់ថាខ្លួនយើង) ឱ្យឃើញច្បាស់នូវធម្មជាតិនៃនាមនិងរូប៖</div>
         </div>
 
         ${similes.map(s => `
           <div class="simile-card">
             <div class="simile-card-header">
-              <div class="simile-icon-bubble">☸</div>
+              <div class="simile-icon-bubble"></div>
               <div>
                 <div class="simile-title">${s.titleKh}</div>
-                <div class="simile-pali">${s.paliName} · ${s.visuddhiChapter}</div>
+                <div class="simile-pali" style="color: var(--gold-primary); font-weight: 700; font-family: var(--font-pali);">
+                  « ${s.paliKhmer || s.paliName} » · ${s.visuddhiChapter}
+                </div>
               </div>
             </div>
 
@@ -1533,22 +1613,22 @@ class SamadhiApp {
 
             <div class="simile-breakdown">
               <div>
-                <strong style="color: var(--accent-crimson);">🧱 រូបធម៌ (Rūpa) ក្នុងឧបមា៖</strong>
+                <strong style="color: var(--accent-crimson);"> រូបធម៌ (Rūpa) ក្នុងឧបមា៖</strong>
                 <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.rupaMeaning}</div>
               </div>
               <div>
-                <strong style="color: var(--gold-primary);">🧠 នាមធម៌ (Nāma) ក្នុងឧបមា៖</strong>
+                <strong style="color: var(--gold-primary);"> នាមធម៌ (Nāma) ក្នុងឧបមា៖</strong>
                 <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.namaMeaning}</div>
               </div>
             </div>
 
             <div class="simile-moral">
-              💡 <strong>សច្ចធម៌៖</strong> ${s.moral}
+               <strong>សច្ចធម៌៖</strong> ${s.moral}
             </div>
 
-            <div style="margin-top: 10px; display: flex; justify-content: flex-end;">
-              <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem;">
-                📖 ${s.tripitakaRef} ↗
+            <div style="margin-top: 12px; display: flex; justify-content: flex-end;">
+              <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.85rem; padding: 4px 12px;">
+                 ${s.tripitakaRef} ↗
               </a>
             </div>
           </div>
@@ -1558,22 +1638,34 @@ class SamadhiApp {
       const { vipassanaSteps, dailySensoryPortals } = PANNA_NAMARUPA;
       container.innerHTML = `
         <div class="panna-section-header">
-          <div class="panna-section-title">🧘 វិធីបដិបត្តិពិចារណានាម-រូប ៥ ជំហាន (5-Step Vipassanā Method)</div>
-          <div class="panna-section-desc">វិធីចម្រើនវិបស្សនាជាក់ស្តែងក្នុងពេលអង្គុយសមាធិ តាមគន្លងវិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ៖</div>
+          <div class="panna-section-title"> វិធីបដិបត្តិពិចារណានាម-រូប ៥ ជំហាន (5-Step Vipassanā Method)</div>
+          <div class="panna-section-desc">វិធីចម្រើនវិបស្សនាជាក់ស្តែងក្នុងពេលអង្គុយសមាធិ តាមគន្លងវិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ (ក្បាល ៨៩)៖</div>
         </div>
 
         ${vipassanaSteps.map(st => `
           <div class="vipassana-step-item">
             <span class="vipassana-step-badge">ជំហានទី ${st.step}</span>
-            <div class="vipassana-step-title">${st.title}</div>
-            <div class="vipassana-step-pali">${st.paliConcept}</div>
-            <div class="vipassana-step-desc">${st.practiceMethod}</div>
-            <div class="vipassana-step-quote">« ${st.insightQuestion} »</div>
+            <div class="vipassana-step-title">${st.titleKh || st.title}</div>
+            <div class="vipassana-step-pali" style="font-size: 0.95rem; font-weight: 700; color: var(--gold-primary); font-family: var(--font-pali);">
+              « ${st.paliKhmer || st.paliAnchor || st.paliConcept} »
+            </div>
+            <div class="vipassana-step-desc">${st.instruction || st.practiceMethod}</div>
+            <div class="vipassana-step-quote">« ${st.insight || st.insightQuestion} »</div>
+            <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+              <a href="${st.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; padding: 3px 10px;">
+                 ${st.tripitakaRef} ↗
+              </a>
+            </div>
           </div>
         `).join('')}
 
         <div class="card" style="margin-top: 28px; border-left: 4px solid var(--accent-sage);">
-          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">🚪 ទ្វារអនុវត្តន៍ពិចារណានាម-រូបក្នុងជីវិតរស់នៅប្រចាំថ្ងៃ</h3>
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+            <h3 style="font-size: 1.2rem; margin: 0;"> ទ្វារអនុវត្តន៍ពិចារណានាម-រូបក្នុងជីវិតរស់នៅប្រចាំថ្ងៃ</h3>
+            <a href="https://www.tripitaka82.com/read.html?book=v7&page=435" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.78rem;">
+               វិសុទ្ធិមគ្គ ភាគ ៧ ទំព័រ ៤៣៥ ↗
+            </a>
+          </div>
           <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
             មិនចាំបាច់តែអង្គុយបិទភ្នែកទើបពិនិត្យនាមរូបបានឡើយ គ្រប់ខណៈនៃការរស់នៅសុទ្ធតែជាកន្លែងចម្រើនបញ្ញា៖
           </p>
@@ -1582,7 +1674,9 @@ class SamadhiApp {
             ${dailySensoryPortals.map(p => `
               <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 14px;">
                 <strong style="color: var(--text-primary); font-size: 0.95rem;">${p.portal}</strong>
-                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; line-height: 1.5;">${p.howToContemplate}</div>
+                <div style="font-size: 0.85rem; color: var(--accent-crimson); margin-top: 4px;"><strong> រូប៖</strong> ${p.rupa}</div>
+                <div style="font-size: 0.85rem; color: var(--gold-primary); margin-top: 2px;"><strong> នាម៖</strong> ${p.nama}</div>
+                <div style="font-size: 0.83rem; color: var(--text-muted); font-style: italic; margin-top: 6px; background: rgba(184, 123, 34, 0.08); padding: 6px 10px; border-radius: 4px;"> « ${p.mantra} »</div>
               </div>
             `).join('')}
           </div>
@@ -1590,6 +1684,7 @@ class SamadhiApp {
       `;
     }
   }
+
 }
 
 // Initialize on DOM Ready
