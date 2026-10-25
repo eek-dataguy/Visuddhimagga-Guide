@@ -15,6 +15,7 @@ import {
   PROGRESSIVE_CURRICULUM,
   NIVARANA_ANTIDOTES,
   STEPPING_STONES,
+  STEPPING_STONE_STAGES,
   DAILY_ROUTINE_CYCLE,
   ANAPANASATI_SIMILES,
   LOST_BREATH_REMEDY
@@ -60,7 +61,8 @@ class SamadhiApp {
     this.breathTimeouts = [];
 
     // Routine filter
-    this.activeRoutinePhase = 'all'; // 'all', 'morning', 'daytime', 'evening'
+    this.activeRoutinePhase = 'all';
+    this.steppingUnlocked = parseInt(localStorage.getItem('vism_stepping_unlocked') || '1', 10); // 'all', 'morning', 'daytime', 'evening'
 
     // Quiz State
     this.quizAnswers = {};
@@ -618,41 +620,215 @@ class SamadhiApp {
     `).join('');
   }
 
-  // Stepping Stones (Sīla, Samādhi, Paññā)
+  // Stepping Stones (9 Progressive Locked/Unlocked Stages + Theoretical Pillars)
   renderSteppingStones() {
     const container = document.getElementById('stepping-stones-container');
     if (!container) return;
 
-    container.innerHTML = STEPPING_STONES.map(s => `
-      <div class="stepping-card ${s.id}-card">
-        <div>
-          <span class="stepstone-badge badge-${s.id}">${s.badge}</span>
-          <h3 style="font-size: 1.35rem; margin: 10px 0 4px;">${s.name}</h3>
-          <div style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 10px;">${s.pali}</div>
-          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px;">
-            ${s.desc}
-          </p>
+    const totalSteps = STEPPING_STONE_STAGES.length; // 9
+    const completedCount = Math.min(Math.max(0, this.steppingUnlocked - 1), totalSteps);
+    const progressPct = Math.round((completedCount / totalSteps) * 100);
+    const isAllCompleted = this.steppingUnlocked > totalSteps;
 
-          <div style="margin-bottom: 18px;">
-            <strong style="font-size: 0.95rem; color: var(--text-primary);">សសរទ្រទ្រង់ទាំង ៤ (Pillars)៖</strong>
-            <div style="margin-top: 8px;">
-              ${s.pillars.map(p => `
-                <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 8px; font-size: 0.86rem;">
-                  <strong style="color: var(--text-primary);">${p.title}</strong>
-                  <div style="color: var(--text-secondary); margin-top: 2px;">${p.desc}</div>
-                </div>
-              `).join('')}
+    let html = `
+      <!-- Stepping Stones Progress Tracker -->
+      <div class="stepping-progress-banner">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+          <div>
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--gold-primary); text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
+              ${renderIcon('steppingStones', 16)} វឌ្ឍនភាពនៃការទន្ទេញមេរៀនគ្រឹះ (Gated Progression)
+            </div>
+            <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-top: 2px;">
+              ${isAllCompleted ? 'សម្រេចជោគជ័យគ្រប់ ៩ ជំហាន (១០០%)' : `សម្រេច ${completedCount}/${totalSteps} ជំហាន (${progressPct}%) — កំពុងនៅជំហានទី ${this.steppingUnlocked}`}
             </div>
           </div>
+          <button class="btn-reset-stepping" style="background: none; border: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.8rem; padding: 6px 12px; border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; gap: 6px;" title="កំណត់វឌ្ឍនភាពឡើងវិញ">
+            ${renderIcon('reset', 14)} ចាប់ផ្តើមទន្ទេញឡើងវិញ
+          </button>
         </div>
 
-        <div style="border-top: 1px solid var(--border-color); padding-top: 14px; display: flex; justify-content: space-between; align-items: center;">
-          <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; font-weight: 700;">
-            ${renderIcon('citations', 12)} អានក្នុង ${s.bookTitle} ${renderIcon('externalLink', 10)}
-          </a>
+        <div class="stepping-progress-track">
+          <div class="stepping-progress-bar" style="width: ${progressPct}%;"></div>
         </div>
       </div>
-    `).join('');
+    `;
+
+    // If all completed, render Grand Mastery Celebration banner
+    if (isAllCompleted) {
+      html += `
+        <div class="grand-mastery-banner">
+          <div style="margin-bottom: 14px;">${renderIcon('award', 48)}</div>
+          <h3 style="font-size: 1.45rem; color: var(--gold-primary); margin-bottom: 8px;">សាធុ! សាធុ! អ្នកបានឆ្លងកាត់ជណ្តើរទាំង ៩ នៃវិសុទ្ធិមគ្គជាស្ថាពរ</h3>
+          <p style="color: var(--text-secondary); max-width: 640px; margin: 0 auto 16px; font-size: 0.95rem; line-height: 1.7;">
+            អ្នកបានទន្ទេញចាំមាត់នូវគាថាពុទ្ធដីកា និងវាក្យគន្លឹះដ៏ពិសិដ្ឋទាំង ៩ ដំណាក់កាល តាំងពី <strong>គាថាដើម «សីលេ បតិដ្ឋាយ»</strong>, <strong>ចតុបារិសុទ្ធិសីល</strong>, <strong>ទសបលិពោធ</strong>, <strong>ចតុរារក្ខា</strong>, <strong>ឧបមាអ្នករក្សាទ្វារនិងរណារ</strong>, <strong>ឧបាយនាំខ្យល់មកវិញ</strong>, <strong>អង្គឈាន ៥</strong>, <strong>បញ្ចវសី</strong> រហូតដល់ <strong>នាមរូបបរិច្ឆេទ & ត្រៃលក្ខណ៍</strong>។ គ្រឹះនៃព្រះបរិយត្តិរបស់អ្នកមានភាពរឹងមាំហើយ សូមបន្តចូលកាន់ការចម្រើនភាវនាជាប្រចាំថ្ងៃ!
+          </p>
+          <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <button class="btn-primary" data-view-target="practice" style="font-size: 0.92rem; padding: 10px 22px;">
+              ${renderIcon('meditator', 16)} ចូលទៅកាន់ការអង្គុយភាវនា
+            </button>
+            <button class="btn-reset-stepping btn-secondary" style="font-size: 0.92rem; padding: 10px 22px;">
+              ${renderIcon('reset', 16)} រំលឹកឡើងវិញពីជំហានទី ១
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    // Step Stones Cards List
+    html += `<div class="stepping-stages-list">`;
+
+    STEPPING_STONE_STAGES.forEach(s => {
+      const isPassed = s.step < this.steppingUnlocked;
+      const isActive = s.step === this.steppingUnlocked;
+      const isLocked = s.step > this.steppingUnlocked;
+
+      let cardClass = 'stepstone-card';
+      if (isPassed) cardClass += ' is-passed';
+      else if (isActive) cardClass += ' is-active';
+      else if (isLocked) cardClass += ' is-locked';
+
+      html += `
+        <div class="${cardClass}" id="stepstone-card-${s.step}">
+          <div class="stepstone-card-header">
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <span class="stepstone-badge ${s.badgeClass}">${s.stage}</span>
+              ${isPassed ? `<span class="badge-status-passed">${renderIcon('check', 13)} បានទន្ទេញចាំរួចរាល់</span>` : ''}
+              ${isActive ? `<span class="badge-status-active">${renderIcon('sparkles', 13)} កំពុងទន្ទេញ (ជំហានបច្ចុប្បន្ន)</span>` : ''}
+              ${isLocked ? `<span class="badge-status-locked">${renderIcon('lock', 13)} ចាក់សោ</span>` : ''}
+            </div>
+            <div style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600;">
+              ជំហាន ${s.step} នៃ ៩
+            </div>
+          </div>
+
+          <h3 class="stepstone-card-title">${s.title}</h3>
+
+          ${isLocked ? `
+            <!-- Locked State -->
+            <div class="stepstone-locked-body">
+              <div style="color: var(--text-muted); margin-bottom: 8px;">${renderIcon('lock', 32)}</div>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0; line-height: 1.6;">
+                ជំហានទី ${s.step} នេះនៅជាប់ចាក់សោនៅឡើយ។ សូមទន្ទេញគាថា និងផ្ទៀងផ្ទាត់ <strong>ជំហានទី ${s.step - 1}</strong> ឱ្យបានចាំមាត់ជាមុនសិន ដើម្បីដោះសោឆ្លងមកកាន់ជំហាននេះ!
+              </p>
+            </div>
+          ` : `
+            <!-- Unlocked or Active State -->
+            <div class="stepstone-unlocked-body">
+              <!-- Sacred Pāḷi Verse Box -->
+              <div class="pali-chant-box">
+                <div class="pali-box-header">
+                  <span>${renderIcon('citations', 14)} គាថា / វាក្យគន្លឹះបាលីដែលត្រូវទន្ទេញចាំមាត់</span>
+                </div>
+                <div class="pali-verse-text">${s.paliVerse.replace(/\n/g, '<br>')}</div>
+                <div class="pali-phonetics-text">${s.paliPhonetics.replace(/\n/g, '<br>')}</div>
+              </div>
+
+              <!-- Word by Word Meaning -->
+              <div class="stepstone-section">
+                <div class="stepstone-sec-title">សម្រាយន័យពាក្យធម៌ (Word-by-Word Meaning)៖</div>
+                <div class="stepstone-sec-content" style="font-family: inherit; line-height: 1.7;">
+                  ${s.wordMeaning.replace(/\n/g, '<br>')}
+                </div>
+              </div>
+
+              <!-- Why Memorize First -->
+              <div class="stepstone-section memory-reason-wrap">
+                <div class="stepstone-sec-title" style="color: var(--gold-primary);">
+                  ហេតុអ្វីត្រូវទន្ទេញចាំមាត់ជាមុនសិន៖
+                </div>
+                <div class="stepstone-sec-content">
+                  ${s.whyMemorize}
+                </div>
+              </div>
+
+              <!-- Practical Heart Application -->
+              <div class="stepstone-section practice-app-wrap">
+                <div class="stepstone-sec-title" style="color: var(--accent-sage);">
+                  ការអនុវត្តជាក់ស្តែងក្នុងចិត្តពេលភាវនា៖
+                </div>
+                <div class="stepstone-sec-content">
+                  ${s.practiceApplication}
+                </div>
+              </div>
+
+              <!-- Deep Canonical Citation Link -->
+              <div class="stepstone-citation-wrap">
+                <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-deep-btn" title="ចុចដើម្បីអានអត្ថបទពេញក្នុងគេហទំព័រ tripitaka82.com ដោយលោតចំទំព័រ និង highlight បន្ទាត់">
+                  ${renderIcon('citations', 15)} ផ្ទៀងផ្ទាត់ក្នុង ${s.tripitakaLabel} (លោតទៅបន្ទាត់ & Highlight ពណ៌លឿង) ${renderIcon('externalLink', 12)}
+                </a>
+              </div>
+
+              ${isActive ? `
+                <!-- Active Gate Confirmation Box -->
+                <div class="unlock-gate-box">
+                  <div class="gate-checkbox-row">
+                    <input type="checkbox" id="chk-step-${s.step}" class="step-confirm-chk">
+                    <label for="chk-step-${s.step}" class="gate-label">
+                      ខ្ញុំបានទន្ទេញចាំមាត់ និងពិចារណាយល់សេចក្តីធម៌នៃជំហានទី ${s.step} នេះច្បាស់លាស់ហើយ
+                    </label>
+                  </div>
+                  <div style="margin-top: 14px;">
+                    <button class="btn-unlock-step btn-primary" data-step-target="${s.step + 1}">
+                      ${renderIcon('unlock', 16)} ដោះសោឆ្លងទៅជំហានទី ${s.step + 1} &rarr;
+                    </button>
+                  </div>
+                </div>
+              ` : `
+                <div class="step-passed-footer">
+                  ${renderIcon('check', 14)} អ្នកបានឆ្លងផុតជំហាននេះហើយ (អាចអានរំលឹកឡើងវិញបានគ្រប់ពេល)
+                </div>
+              `}
+            </div>
+          `}
+        </div>
+      `;
+    });
+
+    html += `</div>`;
+
+    // Also include the 3-Tier Theoretical Pillars below as an expandable reference
+    html += `
+      <div style="margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 24px;">
+        <details class="pali-drawer" style="margin-top: 10px;">
+          <summary style="font-weight: 700; color: var(--gold-primary); cursor: pointer; font-size: 0.98rem; display: flex; align-items: center; justify-content: space-between;">
+            <span>${renderIcon('kammatthana', 18)} មើលរចនាសម្ព័ន្ធសសរទ្រទ្រង់ ៤ នៃ សីល សមាធិ បញ្ញា (Theoretical Pillars)</span>
+            ${renderIcon('chevronDown', 16)}
+          </summary>
+          <div class="stepping-grid" style="margin-top: 16px;">
+            ${STEPPING_STONES.map(s => `
+              <div class="stepping-card ${s.id}-card">
+                <div>
+                  <span class="stepstone-badge badge-${s.id}">${s.badge}</span>
+                  <h3 style="font-size: 1.25rem; margin: 10px 0 4px;">${s.name}</h3>
+                  <div style="font-size: 0.86rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 8px;">${s.pali}</div>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
+                    ${s.desc}
+                  </p>
+                  <div>
+                    <strong style="font-size: 0.88rem; color: var(--text-primary);">សសរទ្រទ្រង់ទាំង ៤៖</strong>
+                    <div style="margin-top: 6px;">
+                      ${s.pillars.map(p => `
+                        <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 7px 10px; margin-bottom: 6px; font-size: 0.84rem;">
+                          <strong style="color: var(--text-primary);">${p.title}</strong>
+                          <div style="color: var(--text-secondary); margin-top: 2px;">${p.desc}</div>
+                        </div>
+                      `).join('')}
+                    </div>
+                  </div>
+                </div>
+                <div style="border-top: 1px solid var(--border-color); padding-top: 12px; margin-top: 12px;">
+                  <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.8rem; font-weight: 700;">
+                    ${renderIcon('citations', 12)} អានក្នុង ${s.bookTitle} ${renderIcon('externalLink', 10)}
+                  </a>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </details>
+      </div>
+    `;
+
+    container.innerHTML = html;
   }
 
   // Daily Routine Cycle (Morning, Day, Evening) with Collapsible Pāḷi Drawers & Tabs
