@@ -1,0 +1,19 @@
+{
+  "name": "មគ្គុទ្ទេសក៍សមាធិប្រចាំថ្ងៃ - Samādhi Daily Guide",
+  "short_name": "សមាធិប្រចាំថ្ងៃ",
+  "description": "ការបដិបត្តិសមាធិប្រចាំថ្ងៃ តាមគន្លងគម្ពីរវិសុទ្ធិមគ្គ ព្រះពុទ្ធឃោសាចារ្យ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fcf9f2",
+  "theme_color": "#c98a2c",
+  "orientation": "portrait-primary",
+  "lang": "km",
+  "categories": ["lifestyle", "education", "health"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☸</text></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
