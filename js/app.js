@@ -1604,21 +1604,21 @@ class SamadhiApp {
               <div>
                 <div class="simile-title">${s.titleKh}</div>
                 <div class="simile-pali" style="color: var(--gold-primary); font-weight: 700; font-family: var(--font-pali);">
-                  « ${s.paliKhmer || s.paliName} » · ${s.visuddhiChapter}
+                  « ${s.paliKhmer || s.titlePali || s.paliName} » · ${s.canonicalSource || s.visuddhiChapter || "វិសុទ្ធិមគ្គ បញ្ញានិទ្ទេស ភាគ ៧"}
                 </div>
               </div>
             </div>
 
-            <div class="simile-story">${s.storyKh}</div>
+            <div class="simile-story">${s.story || s.storyKh}</div>
 
             <div class="simile-breakdown">
               <div>
                 <strong style="color: var(--accent-crimson);"> រូបធម៌ (Rūpa) ក្នុងឧបមា៖</strong>
-                <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.rupaMeaning}</div>
+                <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.rupaRepresentation || s.rupaMeaning}</div>
               </div>
               <div>
                 <strong style="color: var(--gold-primary);"> នាមធម៌ (Nāma) ក្នុងឧបមា៖</strong>
-                <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.namaMeaning}</div>
+                <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.namaRepresentation || s.namaMeaning}</div>
               </div>
             </div>
 
