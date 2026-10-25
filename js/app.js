@@ -11,7 +11,9 @@ import {
   CARITA_PROFILES, 
   KAMMATTHANA_40, 
   PROGRESSIVE_CURRICULUM,
-  NIVARANA_ANTIDOTES 
+  NIVARANA_ANTIDOTES,
+  STEPPING_STONES,
+  DAILY_ROUTINE_CYCLE
 } from './data.js';
 
 
@@ -61,7 +63,9 @@ class SamadhiApp {
       totalMinutes: 0,
       dominantCarita: null,
       currentLevel: 1,
-      checkedPalibodha: []
+      checkedPalibodha: [],
+      completedHabits: [],
+      lastRoutineDate: new Date().toDateString()
     });
 
     this.init();
@@ -91,6 +95,8 @@ class SamadhiApp {
     this.renderKammatthanaList('all');
     this.renderCurriculum();
     this.renderNivaranaList();
+    this.renderSteppingStones();
+    this.renderDailyRoutineCycle();
     this.updateStatsDisplay();
     this.setupTheme();
   }
@@ -657,4 +663,132 @@ class SamadhiApp {
 // Initialize on DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
   window.samadhiApp = new SamadhiApp();
-});
+
+  // ==========================================
+  // Stepping Stones (Sīla, Samādhi, Paññā)
+  // ==========================================
+  renderSteppingStones() {
+    const container = document.getElementById('stepping-stones-container');
+    if (!container) return;
+
+    container.innerHTML = STEPPING_STONES.map(s => `
+      <div class="stepping-card ${s.id}-card">
+        <div>
+          <span class="stepstone-badge badge-${s.id}">${s.badge}</span>
+          <h3 style="font-size: 1.35rem; margin: 10px 0 4px;">${s.name}</h3>
+          <div style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 10px;">${s.pali}</div>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px;">
+            ${s.desc}
+          </p>
+
+          <div style="margin-bottom: 18px;">
+            <strong style="font-size: 0.95rem; color: var(--text-primary);">សសរទ្រទ្រង់ទាំង ៤ (Pillars)៖</strong>
+            <div style="margin-top: 8px;">
+              ${s.pillars.map(p => `
+                <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 8px; font-size: 0.86rem;">
+                  <strong style="color: var(--text-primary);">${p.title}</strong>
+                  <div style="color: var(--text-secondary); margin-top: 2px;">${p.desc}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-color); padding-top: 14px; display: flex; justify-content: space-between; align-items: center;">
+          <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem; font-weight: 700;">
+            📖 អានក្នុង ${s.bookTitle} ↗
+          </a>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // ==========================================
+  // Daily Routine Cycle (Morning, Day, Evening)
+  // ==========================================
+  renderDailyRoutineCycle() {
+    const container = document.getElementById('daily-routine-container');
+    if (!container) return;
+
+    // Reset habits if new day
+    const today = new Date().toDateString();
+    if (this.userProfile.lastRoutineDate !== today) {
+      this.userProfile.completedHabits = [];
+      this.userProfile.lastRoutineDate = today;
+      this.saveStorage('samadhi_user_profile', this.userProfile);
+    }
+
+    const completed = this.userProfile.completedHabits || [];
+    let totalHabitsCount = 0;
+    DAILY_ROUTINE_CYCLE.forEach(p => totalHabitsCount += p.habits.length);
+    const progressPercent = totalHabitsCount > 0 ? Math.round((completed.length / totalHabitsCount) * 100) : 0;
+
+    // Update Progress Bar
+    const progressEl = document.getElementById('routine-progress-fill');
+    if (progressEl) progressEl.style.width = `${progressPercent}%`;
+    const progressText = document.getElementById('routine-progress-text');
+    if (progressText) progressText.textContent = `${completed.length}/${totalHabitsCount} កិច្ច (${progressPercent}%)`;
+
+    container.innerHTML = DAILY_ROUTINE_CYCLE.map(phase => `
+      <div class="routine-phase-card">
+        <div class="routine-phase-header">
+          <div>
+            <h3 style="font-size: 1.28rem; font-weight: 700; color: var(--text-primary);">${phase.phaseName}</h3>
+            <div style="font-size: 0.85rem; color: var(--gold-primary); font-weight: 600;">⏱ ${phase.timeRange} · ${phase.motto}</div>
+          </div>
+        </div>
+
+        <div>
+          ${phase.habits.map(h => {
+            const isDone = completed.includes(h.id);
+            return `
+              <div class="routine-habit-item ${isDone ? 'completed' : ''}" data-habit-id="${h.id}">
+                <div class="checklist-checkbox">${isDone ? '✓' : ''}</div>
+                <div style="flex: 1;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 4px;">
+                    <span style="font-weight: 700; font-size: 1rem; color: var(--text-primary);">${h.title}</span>
+                    <span class="stepstone-badge ${h.badgeClass}">${h.stepStone}</span>
+                  </div>
+                  <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">${h.desc}</div>
+
+                  <!-- Pali Chant Box -->
+                  <div class="pali-chant-box">
+                    <div class="pali-verse-text">« ${h.paliFormula} »</div>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary);">${h.translation}</div>
+                  </div>
+
+                  <div style="margin-top: 8px; display: flex; justify-content: flex-end;">
+                    <a href="${h.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" onclick="event.stopPropagation();">
+                      📖 ${h.tripitakaLabel} ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    container.querySelectorAll('[data-habit-id]').forEach(item => {
+      item.addEventListener('click', (e) => {
+        const id = e.currentTarget.getAttribute('data-habit-id');
+        this.toggleDailyHabit(id);
+      });
+    });
+  }
+
+  toggleDailyHabit(habitId) {
+    let list = this.userProfile.completedHabits || [];
+    if (list.includes(habitId)) {
+      list = list.filter(x => x !== habitId);
+    } else {
+      list.push(habitId);
+      audioEngine.playBreathCue(true); // subtle wholesome audio tick
+    }
+    this.userProfile.completedHabits = list;
+    this.saveStorage('samadhi_user_profile', this.userProfile);
+    this.renderDailyRoutineCycle();
+  }
+
+}

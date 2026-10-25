@@ -29,6 +29,8 @@
     <nav>
       <ul class="nav-links">
         <li><button class="nav-btn active" data-view-target="dashboard"><span>🏠</span> ទំព័រដើម</button></li>
+        <li><button class="nav-btn" data-view-target="routine"><span>📅</span> ទម្លាប់ប្រចាំថ្ងៃ</button></li>
+        <li><button class="nav-btn" data-view-target="stepping-stones"><span>🪜</span> ជណ្តើរ ៣ ថ្នាក់</button></li>
         <li><button class="nav-btn" data-view-target="practice"><span>🧘</span> ភាវនា & រាប់ដង្ហើម</button></li>
         <li><button class="nav-btn" data-view-target="carita"><span>🔍</span> វិនិច្ឆ័យចរិត ៦</button></li>
         <li><button class="nav-btn" data-view-target="curriculum"><span>🗺</span> ផែនទី ៤ ដំណាក់កាល</button></li>
@@ -57,11 +59,46 @@
           «កុសលចិត្តេកគ្គតា សមាធិ» — សមាធិគឺការមានអារម្មណ៍តែមួយនៃកុសលចិត្ត។ កម្មវិធីនេះរៀបចំឡើងជាពិសេសសម្រាប់អ្នកត្រូវការបដិបត្តិសមាធិជាប្រចាំថ្ងៃ ចាប់តាំងពីអ្នកទើបផ្តើមដំបូង (អាទិកម្មិកៈ) រហូតដល់ស្ទាត់ជំនាញក្នុងឈាន (វសីប្បត្ត)។
         </p>
         <div class="hero-actions">
-          <button class="btn-primary" data-view-target="practice">
-            <span>🧘</span> ចាប់ផ្តើមភាវនាថ្ងៃនេះ
+          <button class="btn-primary" data-view-target="routine">
+            <span>📅</span> ទម្លាប់ប្រតិបត្តិថ្ងៃនេះ
           </button>
-          <button class="btn-secondary" data-view-target="carita">
-            <span>🔍</span> ធ្វើតេស្តវិនិច្ឆ័យចរិត ៦
+          <button class="btn-secondary" data-view-target="stepping-stones">
+            <span>🪜</span> ជណ្តើរ សីល សមាធិ បញ្ញា
+          </button>
+          <button class="btn-secondary" data-view-target="practice">
+            <span>🧘</span> ភាវនា & រាប់ដង្ហើម
+          </button>
+        </div>
+      </div>
+
+      
+      <!-- Daily Routine & Stepping Stones Highlight Banner -->
+      <div class="grid-2" style="margin-bottom: 24px;">
+        <div class="card" style="border-left: 4px solid var(--gold-primary);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <span class="stepstone-badge badge-samadhi">កាលវិភាគ ២៤ ម៉ោង</span>
+            <span id="routine-progress-text" style="font-size: 0.82rem; font-weight: 700; color: var(--gold-primary);">0/14 កិច្ច (0%)</span>
+          </div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 6px;">ទម្លាប់ជីវិតប្រចាំថ្ងៃ (Daily Routine)</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;">
+            បញ្ចូលសីល សមាធិ និងបញ្ញា ទៅក្នុងជីវិតជាក់ស្តែង ពេលព្រឹក ពេលថ្ងៃធ្វើការ និងពេលយប់មុនគេង។
+          </p>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-fill" id="routine-progress-fill" style="width: 0%;"></div>
+          </div>
+          <button class="btn-primary" data-view-target="routine" style="padding: 8px 18px; font-size: 0.86rem;">
+            បើកមើលកាលវិភាគថ្ងៃនេះ ↗
+          </button>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--accent-sage);">
+          <span class="stepstone-badge badge-sila" style="margin-bottom: 10px;">ត្រៃសិក្ខាផ្លូវរំដោះទុក្ខ</span>
+          <h3 style="font-size: 1.15rem; margin-bottom: 6px;">ជណ្តើរ ៣ ថ្នាក់៖ សីល សមាធិ បញ្ញា</h3>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 18px;">
+            ស្វែងយល់ទំនាក់ទំនង៖ សីលជាគ្រឹះជម្រះកាយវាចា $\rightarrow$ សមាធិជម្រះចិត្តឲ្យស្ងប់នឹងនរ $\rightarrow$ បញ្ញាចាក់ធ្លុះសច្ចធម៌។
+          </p>
+          <button class="btn-secondary" data-view-target="stepping-stones" style="padding: 8px 18px; font-size: 0.86rem;">
+            ពិនិត្យមើលជណ្តើរទាំង ៣ ↗
           </button>
         </div>
       </div>
@@ -275,6 +312,39 @@
       </div>
     </section>
 
+    
+    <!-- NEW VIEW: DAILY ROUTINE (ទម្លាប់ប្រចាំថ្ងៃ) -->
+    <section id="view-routine" class="view-section">
+      <div class="hero-card">
+        <span class="hero-tag">ទម្លាប់ជីវិតប្រចាំថ្ងៃ តាមគន្លង សីល សមាធិ បញ្ញា</span>
+        <h2 class="hero-title">ការបដិបត្តិធម៌រស់នៅ ២៤ ម៉ោង ផ្អែកលើគម្ពីរវិសុទ្ធិមគ្គ</h2>
+        <p class="hero-desc">
+          ព្រះពុទ្ធឃោសាចារ្យបង្រៀនថា ធម៌មិនមែនសម្រាប់តែអង្គុយបិទភ្នែកប៉ុណ្ណោះទេ គឺត្រូវរៀបចំជីវិតទាំងមូលជាសង្វៀនបដិបត្តិ៖ ចាប់ពីការតាំងសីលពេលភ្ញាក់ ពិចារណាអាហារ សង្រួមភ្នែកត្រចៀកពេលធ្វើការងារ ភាវនាដង្ហើម រហូតដល់ការគេងដោយសតិសម្បជញ្ញៈ។
+        </p>
+      </div>
+
+      <!-- Routine Container -->
+      <div id="daily-routine-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- NEW VIEW: STEPPING STONES (ជណ្តើរ ៣ ថ្នាក់) -->
+    <section id="view-stepping-stones" class="view-section">
+      <div class="hero-card">
+        <span class="hero-tag">មាគ៌ាត្រៃសិក្ខា នៃគម្ពីរវិសុទ្ធិមគ្គ</span>
+        <h2 class="hero-title">ជណ្តើរ ៣ ថ្នាក់៖ សីលនិទ្ទេស $\rightarrow$ សមាធិនិទ្ទេស $\rightarrow$ បញ្ញានិទ្ទេស</h2>
+        <p class="hero-desc">
+          «សីលេ បតិដ្ឋាយ នរោ សបញ្ញោ ចិត្តំ បញ្ញញ្ច ភាវយំ» — សីលជាគ្រឹះស្ថាន សមាធិជាកម្លាំងតម្កល់ចិត្ត បញ្ញាជាពន្លឺបំផ្លាញអវិជ្ជា។ ស្វែងយល់សសរទ្រទ្រង់ទាំង ៤ នៃជណ្តើរនីមួយៗ និងតំណភ្ជាប់ទៅកាន់គម្ពីរដើមក្នុង tripitaka82.com។
+        </p>
+      </div>
+
+      <!-- Stepping Stones Container -->
+      <div class="stepping-grid" id="stepping-stones-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
     <!-- 7. CANONICAL CITATIONS VIEW -->
     <section id="view-citations" class="view-section">
       <div class="hero-card">
@@ -348,21 +418,21 @@
       <span class="icon">🏠</span>
       <span>ទំព័រដើម</span>
     </button>
+    <button class="mobile-nav-btn" data-view-target="routine">
+      <span class="icon">📅</span>
+      <span>ទម្លាប់</span>
+    </button>
+    <button class="mobile-nav-btn" data-view-target="stepping-stones">
+      <span class="icon">🪜</span>
+      <span>ជណ្តើរ</span>
+    </button>
     <button class="mobile-nav-btn" data-view-target="practice">
       <span class="icon">🧘</span>
       <span>ភាវនា</span>
     </button>
     <button class="mobile-nav-btn" data-view-target="carita">
       <span class="icon">🔍</span>
-      <span>ចរិត ៦</span>
-    </button>
-    <button class="mobile-nav-btn" data-view-target="curriculum">
-      <span class="icon">🗺</span>
-      <span>ផែនទី</span>
-    </button>
-    <button class="mobile-nav-btn" data-view-target="kammatthana">
-      <span class="icon">📚</span>
-      <span>កម្មដ្ឋាន</span>
+      <span>ចរិត</span>
     </button>
   </nav>
 
