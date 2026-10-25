@@ -4,8 +4,8 @@
 // Pure SVG Iconography & Humane Meditative Design System
 // ==========================================================================
 
-import { audioEngine } from './audio.js?v=2.2.1';
-import { renderIcon } from './icons.js?v=2.2.1';
+import { audioEngine } from './audio.js?v=2.2.2';
+import { renderIcon } from './icons.js?v=2.2.2';
 import { 
   PALIBODHA_10, 
   CATURARAKKHA, 
@@ -21,7 +21,7 @@ import {
   LOST_BREATH_REMEDY,
   SAMADHI_PRACTICE_METHODS,
   PANNA_NAMARUPA
-} from './data.js?v=2.2.1';
+} from './data.js?v=2.2.2';
 
 function getTripitakaUrl(refText) {
   if (!refText) return "https://www.tripitaka82.com/";
@@ -548,7 +548,7 @@ class SamadhiApp {
         <div>
           <span class="k-badge">${this.getCatName(k.cat)}</span>
           <div class="k-title">${k.id}. ${k.name}</div>
-          <div class="k-pali" style="font-family: var(--font-pali); color: var(--gold-primary); font-size: 0.92rem; font-weight: 600;">« ${k.paliKhmer || k.name} » <span style="font-size: 0.8rem; color: var(--text-muted); font-style: italic;">(${k.pali})</span></div>
+          <div class="k-pali" style="font-family: var(--font-pali); color: var(--gold-primary); font-size: 0.95rem; font-weight: 700;">« ${k.paliKhmer || k.name} »</div>
           <div class="k-desc">${k.desc}</div>
         </div>
         <div class="k-meta">
@@ -622,7 +622,7 @@ class SamadhiApp {
           <div>
             <div class="card-title">${n.khmer}</div>
             <div class="card-sub" style="font-family: var(--font-pali); color: var(--gold-primary); font-weight: 600;">
-              « ${n.paliKhmer || n.khmer} » <span style="font-size: 0.82rem; color: var(--text-muted); font-style: italic;">(${n.pali})</span>
+              « ${n.paliKhmer || n.khmer} »
             </div>
           </div>
         </div>
@@ -663,7 +663,7 @@ class SamadhiApp {
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
           <div>
             <div style="font-size: 0.82rem; font-weight: 700; color: var(--gold-primary); text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
-              ${renderIcon('steppingStones', 16)} វឌ្ឍនភាពនៃការទន្ទេញមេរៀនគ្រឹះ (Gated Progression)
+              ${renderIcon('steppingStones', 16)} វឌ្ឍនភាពនៃការទន្ទេញមេរៀនគ្រឹះ តាមគម្ពីរវិសុទ្ធិមគ្គ
             </div>
             <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-top: 2px;">
               ${isAllCompleted ? `សម្រេចជោគជ័យគ្រប់ ${totalSteps} ជំហាន (១០០%)` : `សម្រេច ${completedCount}/${totalSteps} ជំហាន (${progressPct}%) — កំពុងនៅជំហានទី ${this.steppingUnlocked}`}
@@ -744,10 +744,10 @@ class SamadhiApp {
               <!-- Sacred Pāḷi Verse Box -->
               <div class="pali-chant-box">
                 <div class="pali-box-header">
-                  <span>${renderIcon('citations', 14)} គាថា / វាក្យគន្លឹះបាលីដែលត្រូវទន្ទេញចាំមាត់</span>
+                  <span>${renderIcon('citations', 14)} គាថា និងវាក្យគន្លឹះបាលីអក្ខរាខ្មែរដែលត្រូវទន្ទេញចាំមាត់</span>
                 </div>
                 <div class="pali-verse-text">${s.paliVerse.replace(/\n/g, '<br>')}</div>
-                <div class="pali-phonetics-text">${s.paliPhonetics.replace(/\n/g, '<br>')}</div>
+                
               </div>
 
               <!-- Word by Word Meaning -->
@@ -1077,7 +1077,7 @@ class SamadhiApp {
         
         <div style="background: var(--bg-secondary); border-radius: var(--radius-md); padding: 20px; text-align: left; margin-bottom: 24px;">
           <div style="margin-bottom: 12px;">
-            <strong style="color: var(--gold-primary);">កម្មដ្ឋានចម្បង (Pārihāriya)៖</strong>
+            <strong style="color: var(--gold-primary);">កម្មដ្ឋានចម្បងដែលសមស្របនឹងនិស្ស័យ៖</strong>
             <div style="font-size: 1.1rem; font-weight: 700; margin-top: 4px;">${profile.primaryKammatthana}</div>
           </div>
           <div style="margin-bottom: 12px;">
@@ -1085,7 +1085,7 @@ class SamadhiApp {
             <p style="font-size: 0.92rem; color: var(--text-secondary); margin-top: 4px;">${profile.remedyText}</p>
           </div>
           <div style="margin-bottom: 12px;">
-            <strong>សប្បាយសមគួរ (Sappāya 7)៖</strong>
+            <strong>ទីសេនាសនៈ និងបរិយាកាសសប្បាយសមគួរ៖</strong>
             <p style="font-size: 0.92rem; color: var(--text-secondary); margin-top: 4px;">${profile.sappaya}</p>
           </div>
           <div>
@@ -1168,9 +1168,7 @@ class SamadhiApp {
           <div>
             <span class="hero-tag">${method.category} · ${method.tripitakaRef}</span>
             <h2 style="font-size: 1.55rem; margin: 8px 0 4px; color: var(--text-primary);">
-              ${method.name} <span style="color: var(--gold-primary); font-weight: 700; font-family: var(--font-pali);">« ${method.namePaliKhmer || method.pali} »</span>
-            </h2>
-            ${method.pali ? `<div style="font-size: 0.88rem; color: var(--text-muted); font-style: italic; margin-bottom: 6px;">(${method.pali})</div>` : ''}
+              ${method.name} <span style="color: var(--gold-primary); font-weight: 700; font-family: var(--font-pali);">« ${method.namePaliKhmer || method.name} »</span>
             <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; max-width: 800px;">
               ${method.description}
             </div>
@@ -1333,7 +1331,6 @@ class SamadhiApp {
               <div class="pali-verse-text" style="font-size: 1.05rem; font-weight: 700; line-height: 1.6; color: var(--text-primary); font-family: var(--font-pali);">
                 « ${s.paliChantKhmer || s.paliChant} »
               </div>
-              ${s.paliChantRoman ? `<div style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 4px;">(${s.paliChantRoman})</div>` : ''}
               <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 8px; border-top: 1px dashed rgba(184, 123, 34, 0.25); padding-top: 8px; line-height: 1.5;">
                 <strong style="color: var(--text-primary);">ប្រែសម្រាយខ្មែរ៖</strong> ${s.khmerTranslation}
               </div>
@@ -1363,15 +1360,15 @@ class SamadhiApp {
           </p>
           <div class="nimitta-timeline">
             <div class="nimitta-timeline-item">
-              <strong>១. បរិកម្មនិមិត្ត (Parikamma)</strong>
+              <strong>១. បរិកម្មនិមិត្ត</strong>
               <p>${method.nimittaGuide.parikamma}</p>
             </div>
             <div class="nimitta-timeline-item">
-              <strong>២. ឧគ្គហនិមិត្ត (Uggaha)</strong>
+              <strong>២. ឧគ្គហនិមិត្ត</strong>
               <p>${method.nimittaGuide.uggaha}</p>
             </div>
             <div class="nimitta-timeline-item">
-              <strong>៣. បដិភាគនិមិត្ត (Paṭibhāga)</strong>
+              <strong>៣. បដិភាគនិមិត្ត</strong>
               <p>${method.nimittaGuide.patibhaga}</p>
             </div>
           </div>
@@ -1561,7 +1558,7 @@ class SamadhiApp {
             ${citta89.summary}
           </p>
           <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 14px;">
-            <strong style="color: var(--text-primary); font-size: 0.95rem;">ដំណើរនៃកិច្ចរបស់ចិត្ត (Citta-kicca) ក្នុងមួយខ្សែជីវិត៖</strong>
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">ដំណើរនៃកិច្ចរបស់ចិត្តទាំង ១៤ ក្នុងមួយខ្សែជីវិត៖</strong>
             <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.6;">
               ${citta89.functions14.join(' → ')}
             </p>
