@@ -4,8 +4,8 @@
 // Pure SVG Iconography & Humane Meditative Design System
 // ==========================================================================
 
-import { audioEngine } from './audio.js';
-import { renderIcon } from './icons.js';
+import { audioEngine } from './audio.js?v=2.1.1';
+import { renderIcon } from './icons.js?v=2.1.1';
 import { 
   PALIBODHA_10, 
   CATURARAKKHA, 
@@ -18,7 +18,7 @@ import {
   DAILY_ROUTINE_CYCLE,
   ANAPANASATI_SIMILES,
   LOST_BREATH_REMEDY
-} from './data.js';
+} from './data.js?v=2.1.1';
 
 function getTripitakaUrl(refText) {
   if (!refText) return "https://www.tripitaka82.com/";
