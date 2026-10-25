@@ -1320,3 +1320,525 @@ h1, h2, h3, h4, .hero-title, .brand-title {
   0% { box-shadow: 0 0 0 6px var(--gold-primary); transform: scale(1.01); }
   100% { box-shadow: none; transform: scale(1); }
 }
+
+
+/* ==========================================================================
+   Practice View: All 8 Samādhi Methods Selector & Custom Visualizers
+   ========================================================================== */
+
+.practice-selector-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.practice-selector-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.practice-method-pills {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+}
+
+.practice-method-pill {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 8px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.practice-method-pill:hover {
+  border-color: var(--gold-primary);
+  color: var(--text-primary);
+}
+
+.practice-method-pill.active {
+  background: var(--gold-primary);
+  color: #FFFFFF;
+  border-color: var(--gold-primary);
+  box-shadow: 0 4px 14px rgba(184, 123, 34, 0.25);
+}
+
+.method-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.meta-pill {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.meta-pill.highlight {
+  background: var(--gold-subtle);
+  color: var(--gold-primary);
+  font-weight: 700;
+  border-color: rgba(184, 123, 34, 0.3);
+}
+
+/* Custom Visual Focal Points */
+.visual-focal-box {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  position: relative;
+}
+
+.focal-mantra-badge {
+  background: var(--gold-subtle);
+  border: 1px solid rgba(184, 123, 34, 0.25);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  margin-top: 14px;
+  text-align: center;
+}
+
+/* Pulsing Radiance for Mettā / Buddhānussati / Kasiṇa */
+.radiant-wheel {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(184, 123, 34, 0.25);
+  animation: pulseRadiance 4s ease-in-out infinite;
+  background: radial-gradient(circle, var(--gold-subtle) 0%, transparent 70%);
+}
+
+.earth-kasina-disk {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #D4A373 0%, #A26E3A 100%);
+  border: 4px solid #E6CCB2;
+  box-shadow: 0 0 24px rgba(162, 110, 58, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.element-pill-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.element-pill-card strong {
+  display: block;
+  color: var(--gold-primary);
+  font-size: 0.95rem;
+}
+
+@keyframes pulseRadiance {
+  0% { transform: scale(0.96); box-shadow: 0 0 16px rgba(184, 123, 34, 0.2); }
+  50% { transform: scale(1.04); box-shadow: 0 0 32px rgba(184, 123, 34, 0.4); }
+  100% { transform: scale(0.96); box-shadow: 0 0 16px rgba(184, 123, 34, 0.2); }
+}
+
+/* Practice Steps Section */
+.practice-steps-section {
+  margin-top: 24px;
+}
+
+.practice-step-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.practice-step-card:hover {
+  border-color: rgba(184, 123, 34, 0.4);
+}
+
+.practice-step-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.step-number-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--gold-subtle);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.88rem;
+  flex-shrink: 0;
+}
+
+.practice-step-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.practice-step-instruction {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Nimitta Guide Card */
+.nimitta-guide-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.nimitta-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.nimitta-timeline-item {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  border-left: 3px solid var(--gold-primary);
+}
+
+.nimitta-timeline-item strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  margin-bottom: 4px;
+}
+
+.nimitta-timeline-item p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Paññā Niddesa (Nāma & Rūpa View)
+   ========================================================================== */
+
+.panna-nav-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+}
+
+.panna-tab-btn {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 10px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.panna-tab-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--gold-primary);
+}
+
+.panna-tab-btn.active {
+  background: var(--gold-primary);
+  color: #FFFFFF;
+  border-color: var(--gold-primary);
+  box-shadow: 0 4px 14px rgba(184, 123, 34, 0.25);
+}
+
+.panna-section-header {
+  margin-bottom: 18px;
+}
+
+.panna-section-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.panna-section-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Mahābhūta 4 Grid */
+.mahabhuta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mahabhuta-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  border-top: 4px solid var(--gold-primary);
+  transition: transform 0.2s ease;
+}
+
+.mahabhuta-card:hover {
+  transform: translateY(-2px);
+}
+
+.mahabhuta-card h3 {
+  font-size: 1.18rem;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.mahabhuta-card .pali {
+  font-size: 0.85rem;
+  color: var(--gold-primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mahabhuta-card .trait-row {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.mahabhuta-card .anchor-box {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  margin-top: 10px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+/* Upādārūpa 24 Catalog */
+.upadarupa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.upadarupa-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+}
+
+.upadarupa-item .group-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-sage);
+  background: rgba(85, 107, 79, 0.1);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  margin-bottom: 6px;
+}
+
+.upadarupa-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.upadarupa-item p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Similes Cards */
+.simile-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--gold-primary);
+}
+
+.simile-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.simile-icon-bubble {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gold-subtle);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.simile-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.simile-pali {
+  font-size: 0.88rem;
+  color: var(--gold-primary);
+  font-weight: 600;
+}
+
+.simile-story {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.simile-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.simile-moral {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--gold-primary);
+  background: var(--gold-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+
+/* Vipassanā 5 Steps */
+.vipassana-step-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.vipassana-step-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  background: var(--gold-subtle);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  margin-bottom: 8px;
+}
+
+.vipassana-step-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.vipassana-step-pali {
+  font-size: 0.88rem;
+  color: var(--accent-sage);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.vipassana-step-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.vipassana-step-quote {
+  background: var(--bg-secondary);
+  border-left: 3px solid var(--gold-primary);
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}

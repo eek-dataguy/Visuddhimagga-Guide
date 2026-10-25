@@ -4,8 +4,8 @@
 // Pure SVG Iconography & Humane Meditative Design System
 // ==========================================================================
 
-import { audioEngine } from './audio.js?v=2.1.1';
-import { renderIcon } from './icons.js?v=2.1.1';
+import { audioEngine } from './audio.js?v=2.2.0';
+import { renderIcon } from './icons.js?v=2.2.0';
 import { 
   PALIBODHA_10, 
   CATURARAKKHA, 
@@ -18,8 +18,10 @@ import {
   STEPPING_STONE_STAGES,
   DAILY_ROUTINE_CYCLE,
   ANAPANASATI_SIMILES,
-  LOST_BREATH_REMEDY
-} from './data.js?v=2.1.1';
+  LOST_BREATH_REMEDY,
+  SAMADHI_PRACTICE_METHODS,
+  PANNA_NAMARUPA
+} from './data.js?v=2.2.0';
 
 function getTripitakaUrl(refText) {
   if (!refText) return "https://www.tripitaka82.com/";
@@ -67,6 +69,10 @@ class SamadhiApp {
     // Quiz State
     this.quizAnswers = {};
     
+    // Samādhi & Paññā Active State
+    this.currentSamadhiMethod = 'anapanasati';
+    this.currentPannaTab = 'rupa28';
+
     // Storage data
     this.userProfile = this.loadStorage('samadhi_user_profile', {
       streak: 1,
@@ -109,6 +115,9 @@ class SamadhiApp {
     this.renderSteppingStones();
     this.renderDailyRoutineCycle();
     this.renderAnapanasatiGuides();
+    this.renderSamadhiMethodSelector();
+    this.renderSelectedSamadhiMethod('anapanasati');
+    this.renderPannaModule();
     this.updateStatsDisplay();
     this.setupTheme();
   }
@@ -1085,6 +1094,501 @@ class SamadhiApp {
     container.querySelector('#btn-retake-quiz').addEventListener('click', () => {
       this.startCaritaQuiz();
     });
+  }
+
+  // ==========================================
+  // All 8 Samādhi Methods Practice Selector
+  // ==========================================
+  renderSamadhiMethodSelector() {
+    const container = document.getElementById('practice-method-pills');
+    if (!container || !SAMADHI_PRACTICE_METHODS) return;
+
+    const methodIcons = {
+      anapanasati: '💨',
+      buddhanussati: '☸️',
+      metta: '💖',
+      maranassati: '⌛',
+      kayagata: '🦴',
+      catudhatu: '🌍',
+      kasina: '🟡',
+      asubha: '🕊️'
+    };
+
+    container.innerHTML = SAMADHI_PRACTICE_METHODS.map(m => `
+      <button class="practice-method-pill ${m.id === this.currentSamadhiMethod ? 'active' : ''}" data-method-id="${m.id}">
+        <span>${methodIcons[m.id] || '☸'}</span>
+        <span>${m.name}</span>
+      </button>
+    `).join('');
+
+    container.querySelectorAll('[data-method-id]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const id = e.currentTarget.getAttribute('data-method-id');
+        this.selectSamadhiMethod(id);
+      });
+    });
+  }
+
+  selectSamadhiMethod(methodId) {
+    this.currentSamadhiMethod = methodId;
+    document.querySelectorAll('.practice-method-pill').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-method-id') === methodId);
+    });
+    this.renderSelectedSamadhiMethod(methodId);
+    audioEngine.playBreathCue(true);
+  }
+
+  renderSelectedSamadhiMethod(methodId) {
+    const method = (SAMADHI_PRACTICE_METHODS || []).find(m => m.id === methodId) || SAMADHI_PRACTICE_METHODS[0];
+    if (!method) return;
+
+    // 1. Render Hero Card
+    const heroCard = document.getElementById('practice-method-hero');
+    if (heroCard) {
+      heroCard.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <span class="hero-tag">${method.category} · ${method.tripitakaRef}</span>
+            <h2 style="font-size: 1.55rem; margin: 8px 0 4px; color: var(--text-primary);">${method.name} (${method.pali})</h2>
+            <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; max-width: 800px;">
+              ${method.description}
+            </div>
+          </div>
+          <a href="https://www.tripitaka82.com/read.html?book=${method.tripitakaVol}&page=${method.tripitakaPage}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.85rem; padding: 6px 12px;">
+            📖 អានក្នុងគម្ពីរដើម ↗
+          </a>
+        </div>
+
+        <div class="method-meta-strip">
+          <span class="meta-pill highlight">ឈានខ្ពស់បំផុត៖ ${method.maxJhana}</span>
+          <span class="meta-pill">សមស្របនឹង៖ ${method.caritaSuitability}</span>
+          <span class="meta-pill">ក្បាលគម្ពីរ៖ ${method.tripitakaVol.toUpperCase()} (p. ${method.tripitakaPage})</span>
+        </div>
+      `;
+    }
+
+    // 2. Render Visual Focal Center
+    const visualCenter = document.getElementById('practice-visual-center');
+    if (visualCenter) {
+      if (method.id === 'anapanasati') {
+        visualCenter.innerHTML = `
+          <!-- Touch-Point Selector -->
+          <div style="margin-bottom: 12px; width: 100%; text-align: center;">
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted); margin-bottom: 8px;">
+              ស្ថានទីដែលខ្យល់ប៉ះខ្ទប់ (ផុសនស្ថាន)
+            </div>
+            <div class="touch-selector" style="justify-content: center;">
+              <button class="touch-option ${this.touchPoint === 'nose' ? 'active' : ''}" data-touch-point="nose">
+                ${renderIcon('touchNose', 16)} ចុងច្រមុះ (នាសិកគ្គ)
+              </button>
+              <button class="touch-option ${this.touchPoint === 'lip' ? 'active' : ''}" data-touch-point="lip">
+                ${renderIcon('touchLip', 16)} បបូរមាត់លើ (ឧត្តរោដ្ឋ)
+              </button>
+            </div>
+            <div id="touch-point-desc" style="font-size: 0.84rem; color: var(--accent-sage); font-weight: 600; margin-top: 6px;">
+              ${this.touchPoint === 'nose' ? "តម្កល់សតិដឹងត្រង់ចុងច្រមុះ (នាសិកគ្គ) - សម្រាប់មនុស្សច្រមុះវែង" : "តម្កល់សតិដឹងត្រង់បបូរមាត់ខាងលើ (ឧត្តរោដ្ឋ) - សម្រាប់មនុស្សច្រមុះខ្លី"}
+            </div>
+          </div>
+
+          <!-- Breathing Orb with Wave Ripple -->
+          <div class="orb-container">
+            <div class="orb-ripple"></div>
+            <div class="breathing-orb" id="breathing-orb">
+              <div class="orb-count" id="orb-count">${this.breathCount}</div>
+              <div class="orb-phase" id="orb-phase-label">ត្រៀមខ្លួន</div>
+            </div>
+          </div>
+
+          <!-- Method count mode switcher -->
+          <div style="margin-top: 16px;">
+            <button class="btn-secondary" id="btn-toggle-count-mode" style="font-size: 0.88rem;">
+              ${this.countMode === 'slow' ? "វិធីរាប់យឺត (ដូចវាល់អង្ករ)" : "វិធីរាប់លឿន (ដូចគោបាល)"}
+            </button>
+            <p id="count-mode-hint" style="font-size: 0.84rem; color: var(--text-muted); margin-top: 6px;">
+              ${this.countMode === 'slow' ? "ដកដង្ហើមចូល-ចេញរួចទើបរាប់ ១, ដកដង្ហើមចូល-ចេញរួចរាប់ ២... (រាប់ចន្លោះ ៥ ដល់ ១០)" : "ដកចូល ១ ដកចេញ ១, ដកចូល ២ ដកចេញ ២... (រាប់ញាប់តាមចង្វាក់ខ្យល់ប៉ះ)"}
+            </p>
+          </div>
+        `;
+        this.bindAnapanasatiVisualEvents();
+      } else {
+        let focalHtml = '';
+        if (method.id === 'buddhanussati') {
+          focalHtml = `
+            <div class="visual-focal-box">
+              <div class="radiant-wheel">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="1.75" style="width:64px;height:64px;"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3v6.5M12 14.5V21M3 12h6.5M14.5 12H21M5.64 5.64l4.6 4.6M13.76 13.76l4.6 4.6M18.36 5.64l-4.6 4.6M10.24 13.76l-4.6 4.6"/></svg>
+              </div>
+              <div class="focal-mantra-badge">« ឥតិបិ សោ ភគវា អរហំ សម្មាសម្ពុទ្ធោ »</div>
+              <p style="font-size:0.86rem; color:var(--text-secondary); margin-top:8px;">ផ្ចង់ចិត្តរំពឹងដល់ព្រះបរិសុទ្ធិគុណ ព្រះមហាករុណាគុណ និងព្រះបញ្ញាគុណ</p>
+            </div>
+          `;
+        } else if (method.id === 'metta') {
+          focalHtml = `
+            <div class="visual-focal-box">
+              <div class="radiant-wheel" style="background: radial-gradient(circle, rgba(230, 57, 70, 0.15) 0%, transparent 70%); border-color: #E63946; box-shadow: 0 0 30px rgba(230, 57, 70, 0.3);">
+                <svg viewBox="0 0 24 24" fill="#E63946" style="width:58px;height:58px;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </div>
+              <div class="focal-mantra-badge" style="color: #E63946; background: rgba(230, 57, 70, 0.1); border-color: rgba(230, 57, 70, 0.3);">« សព្វេ សត្តា សុខិតា ហោន្តុ »</div>
+              <p style="font-size:0.86rem; color:var(--text-secondary); margin-top:8px;">ផ្សាយមេត្តាចិត្តទន់ភ្លន់ គ្មានព្រំដែន គ្មានពៀរ ទៅកាន់សត្វលោកទាំងពួងក្នុងទិសទាំង ១០</p>
+            </div>
+          `;
+        } else if (method.id === 'maranassati') {
+          focalHtml = `
+            <div class="visual-focal-box">
+              <div class="radiant-wheel" style="border-color: var(--accent-sage);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="width:58px;height:58px;color:var(--text-primary);"><path d="M5 22h14M5 2h14M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg>
+              </div>
+              <div class="focal-mantra-badge">« មរណំ មេ ភវិស្សតិ · ជីវិតំ មេ អនិយតំ »</div>
+              <p style="font-size:0.86rem; color:var(--text-secondary); margin-top:8px;">សេចក្តីស្លាប់នឹងមានដល់ខ្ញុំជាប្រាកដ, ជីវិតមិនទៀងទេ តែសេចក្តីស្លាប់ទៀងណាស់</p>
+            </div>
+          `;
+        } else if (method.id === 'kayagata') {
+          focalHtml = `
+            <div class="visual-focal-box">
+              <div class="radiant-wheel" style="border-color: #6C757D;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="width:58px;height:58px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div class="focal-mantra-badge">« កេសា លោមា នខា ធន្តា តចោ »</div>
+              <p style="font-size:0.86rem; color:var(--text-secondary); margin-top:8px;">សក់ រោម ក្រចក ធ្មេញ ស្បែក... ពិចារណាកោដ្ឋាស ៣២ ដូចស្រាយមាត់ថង់ធញ្ញជាតិ</p>
+            </div>
+          `;
+        } else if (method.id === 'catudhatu') {
+          focalHtml = `
+            <div class="visual-focal-box">
+              <div class="elements-grid">
+                <div class="element-pill-card"><strong>បឋវីធាតុ (ដី)</strong>លក្ខណៈរឹង & ទន់</div>
+                <div class="element-pill-card"><strong>អាបោធាតុ (ទឹក)</strong>លក្ខណៈហូរ & ស្អិត</div>
+                <div class="element-pill-card"><strong>តេជោធាតុ (ភ្លើង)</strong>លក្ខណៈក្តៅ & ត្រជាក់</div>
+                <div class="element-pill-card"><strong>វាយោធាតុ (ខ្យល់)</strong>លក្ខណៈតឹង & រុញច្រាន</div>
+              </div>
+              <div class="focal-mantra-badge">« ធាតុវវត្ថានំ · អត្ថិ ឥមស្មឹ កាយេ ធាតុយោ »</div>
+            </div>
+          `;
+        } else if (method.id === 'kasina') {
+          focalHtml = `
+            <div class="visual-focal-box">
+              <div class="earth-kasina-disk">
+                បឋវីកសិណ
+              </div>
+              <div class="focal-mantra-badge">« បឋវី បឋវី (ដី... ដី...) »</div>
+              <p style="font-size:0.86rem; color:var(--text-secondary); margin-top:8px;">កំណត់និមិត្តមណ្ឌលដីរលោងស្មើ រហូតកើតបដិភាគនិមិត្តថ្លាដូចកញ្ចក់</p>
+            </div>
+          `;
+        } else if (method.id === 'asubha') {
+          focalHtml = `
+            <div class="visual-focal-box">
+              <div class="radiant-wheel" style="border-color: #495057;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="width:58px;height:58px;"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+              </div>
+              <div class="focal-mantra-badge">« ឧទ្ធុមាតកំ អសុភំ »</div>
+              <p style="font-size:0.86rem; color:var(--text-secondary); margin-top:8px;">ពិចារណារូបសាកសពកាត់បន្ថយរាគៈ រហូតកើតចិត្តស្ងប់ស្ងៀមបរិសុទ្ធ</p>
+            </div>
+          `;
+        }
+        visualCenter.innerHTML = focalHtml;
+      }
+    }
+
+    // 3. Render Practice Steps Accordion
+    const stepsContainer = document.getElementById('practice-steps-container');
+    if (stepsContainer && method.practiceSteps) {
+      stepsContainer.innerHTML = `
+        <div style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary); margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+          <span>🧘</span> វិធីចម្រើនតាមលំដាប់ ៤ ជំហាន (Step-by-Step Guidance)៖
+        </div>
+        ${method.practiceSteps.map(s => `
+          <div class="practice-step-card">
+            <div class="practice-step-header">
+              <div class="step-number-circle">${s.stepNum}</div>
+              <div class="practice-step-title">${s.title}</div>
+            </div>
+            <div class="practice-step-instruction">${s.instruction}</div>
+            <div class="pali-chant-box">
+              <div class="pali-verse-text">« ${s.paliChant} »</div>
+              <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">${s.khmerTranslation}</div>
+            </div>
+          </div>
+        `).join('')}
+      `;
+    }
+
+    // 4. Render Nimitta Progress
+    const nimittaContainer = document.getElementById('practice-nimitta-container');
+    if (nimittaContainer && method.nimittaGuide) {
+      nimittaContainer.innerHTML = `
+        <div class="nimitta-guide-card">
+          <div style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+            ✨ ការវិវត្តនៃនិមិត្តទាំង ៣ (Nimitta Progression)៖
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 12px;">
+            ដំណើរចិត្តពីការចាប់ផ្តើមរហូតដល់សម្រេចឈានក្នុងកម្មដ្ឋាននេះ៖
+          </p>
+          <div class="nimitta-timeline">
+            <div class="nimitta-timeline-item">
+              <strong>១. បរិកម្មនិមិត្ត (Parikamma)</strong>
+              <p>${method.nimittaGuide.parikamma}</p>
+            </div>
+            <div class="nimitta-timeline-item">
+              <strong>២. ឧគ្គហនិមិត្ត (Uggaha)</strong>
+              <p>${method.nimittaGuide.uggaha}</p>
+            </div>
+            <div class="nimitta-timeline-item">
+              <strong>៣. បដិភាគនិមិត្ត (Paṭibhāga)</strong>
+              <p>${method.nimittaGuide.patibhaga}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // 5. Canonical Similes container
+    const similesContainer = document.getElementById('anapanasati-similes-container');
+    if (similesContainer) {
+      if (method.id === 'anapanasati') {
+        this.renderAnapanasatiGuides();
+      } else {
+        similesContainer.innerHTML = '';
+      }
+    }
+  }
+
+  bindAnapanasatiVisualEvents() {
+    document.querySelectorAll('[data-touch-point]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('[data-touch-point]').forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        this.touchPoint = e.currentTarget.getAttribute('data-touch-point');
+        const desc = document.getElementById('touch-point-desc');
+        if (desc) {
+          desc.textContent = this.touchPoint === 'nose' 
+            ? "តម្កល់សតិដឹងត្រង់ចុងច្រមុះ (នាសិកគ្គ) - សម្រាប់មនុស្សច្រមុះវែង" 
+            : "តម្កល់សតិដឹងត្រង់បបូរមាត់ខាងលើ (ឧត្តរោដ្ឋ) - សម្រាប់មនុស្សច្រមុះខ្លី";
+        }
+      });
+    });
+
+    const modeBtn = document.getElementById('btn-toggle-count-mode');
+    if (modeBtn) {
+      modeBtn.addEventListener('click', () => {
+        this.countMode = this.countMode === 'slow' ? 'fast' : 'slow';
+        this.inhaleSeconds = this.countMode === 'slow' ? 4 : 2;
+        this.exhaleSeconds = this.countMode === 'slow' ? 4 : 2;
+        modeBtn.textContent = this.countMode === 'slow' 
+          ? "វិធីរាប់យឺត (ដូចវាល់អង្ករ)" 
+          : "វិធីរាប់លឿន (ដូចគោបាល)";
+        const hint = document.getElementById('count-mode-hint');
+        if (hint) {
+          hint.textContent = this.countMode === 'slow'
+            ? "ដកដង្ហើមចូល-ចេញរួចទើបរាប់ ១, ដកដង្ហើមចូល-ចេញរួចរាប់ ២... (រាប់ចន្លោះ ៥ ដល់ ១០)"
+            : "ដកចូល ១ ដកចេញ ១, ដកចូល ២ ដកចេញ ២... (រាប់ញាប់តាមចង្វាក់ខ្យល់ប៉ះ)";
+        }
+        if (this.isTimerRunning) {
+          this.startBreathCycle();
+        }
+      });
+    }
+  }
+
+  // ==========================================
+  // Paññā Niddesa (Nāma & Rūpa) Module
+  // ==========================================
+  renderPannaModule() {
+    document.querySelectorAll('[data-panna-tab]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const tabKey = e.currentTarget.getAttribute('data-panna-tab');
+        this.currentPannaTab = tabKey;
+        document.querySelectorAll('[data-panna-tab]').forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        this.renderPannaTabContent(tabKey);
+      });
+    });
+
+    this.renderPannaTabContent(this.currentPannaTab);
+  }
+
+  renderPannaTabContent(tabKey) {
+    const container = document.getElementById('panna-tab-content');
+    if (!container || !PANNA_NAMARUPA) return;
+
+    if (tabKey === 'rupa28') {
+      const { mahabhuta4, upadarupa24, samutthana4 } = PANNA_NAMARUPA.rupa28;
+      container.innerHTML = `
+        <div class="panna-section-header">
+          <div class="panna-section-title">🧱 មហាភូតរូប ៤ (The 4 Great Elements)</div>
+          <div class="panna-section-desc">ធាតុដើមទាំង ៤ ជាគ្រឹះទ្រទ្រង់រូបកាយទាំងមូល គ្មានពណ៌ គ្មានរូបរាង តែមានលក្ខណៈជាក់ស្តែងប៉ះដឹងបានដោយកាយសម្ផ័ស្ស៖</div>
+        </div>
+
+        <div class="mahabhuta-grid">
+          ${mahabhuta4.map(m => `
+            <div class="mahabhuta-card">
+              <h3>${m.nameKh}</h3>
+              <div class="pali">${m.namePali} (${m.meaning})</div>
+              <div class="trait-row"><strong>លក្ខណៈ៖</strong> ${m.lakkhana}</div>
+              <div class="trait-row"><strong>កិច្ច (រស)៖</strong> ${m.kicca}</div>
+              <div class="trait-row"><strong>ការប្រាកដ៖</strong> ${m.paccupatthana}</div>
+              <div class="anchor-box">💡 <strong>ចំណុចពិចារណា៖</strong> ${m.dailyAnchor}</div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div class="panna-section-header" style="margin-top: 32px;">
+          <div class="panna-section-title">✨ ឧបាទាយរូប ២៤ (24 Derived Matter)</div>
+          <div class="panna-section-desc">រូបដែលកើតអាស្រ័យនឹងមហាភូតរូប ៤ ប្រៀបដូចមែកឈើកើតអាស្រ័យនឹងដើម៖</div>
+        </div>
+
+        <div class="upadarupa-grid">
+          ${upadarupa24.map(u => `
+            <div class="upadarupa-item">
+              <span class="group-badge">${u.groupKh}</span>
+              <h4>${u.id}. ${u.nameKh} (${u.namePali})</h4>
+              <p>${u.desc}</p>
+              <div style="font-size:0.8rem; color:var(--gold-primary); margin-top:6px;">💡 ${u.dailyAnchor}</div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div class="card" style="margin-top: 24px; border-left: 4px solid var(--gold-primary);">
+          <h3 style="font-size: 1.15rem; margin-bottom: 8px;">🌱 សមុដ្ឋាន ៤ នៃរូប (The 4 Origins of Physical Matter)</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">រូបធម៌ក្នុងកាយមិនមែនកើតឡើងឯកឯងទេ គឺកើតឡើងអំពីហេតុបច្ច័យ ៤ យ៉ាង៖</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+            ${samutthana4.map(s => `
+              <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 10px 12px;">
+                <strong style="color: var(--text-primary); font-size: 0.92rem;">${s.originKh}</strong>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">${s.desc}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    } else if (tabKey === 'namaSummary') {
+      const { aggregates4, cittaSummary, cetasika52 } = PANNA_NAMARUPA.namaSummary;
+      container.innerHTML = `
+        <div class="panna-section-header">
+          <div class="panna-section-title">🧠 អរូបក្ខន្ធ ៤ (The 4 Immaterial Mental Aggregates)</div>
+          <div class="panna-section-desc">នាមធម៌ គឺធម្មជាតិដែលបង្អោនទៅកាន់អារម្មណ៍ ដឹងអារម្មណ៍ សោយអារម្មណ៍ និងតាក់តែងចេតនា៖</div>
+        </div>
+
+        <div class="grid-2" style="margin-bottom: 24px;">
+          ${aggregates4.map(a => `
+            <div class="card" style="border-left: 4px solid var(--gold-primary);">
+              <h3 style="font-size: 1.15rem; margin-bottom: 4px;">${a.khandhaKh} (${a.pali})</h3>
+              <div style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 600; margin-bottom: 6px;">${a.function}</div>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 10px;">${a.desc}</p>
+              <div class="anchor-box" style="background: var(--bg-secondary); padding: 8px 12px; border-radius: var(--radius-sm); font-size: 0.84rem;">
+                💡 <strong>ចំណុចពិចារណា៖</strong> ${a.dailyReflection}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div class="card" style="margin-bottom: 24px;">
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">⚡ ធម្មជាតិនៃចិត្ត ៨៩/១២១ និងកិច្ច ១៤ យ៉ាង</h3>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
+            ${cittaSummary.coreNature}
+          </p>
+          <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 14px;">
+            <strong style="color: var(--text-primary); font-size: 0.95rem;">ដំណើរនៃកិច្ចរបស់ចិត្ត (Citta-kicca) ក្នុងមួយខ្សែជីវិត៖</strong>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.6;">
+              ចាប់ផ្តើមពី <strong>បដិសន្ធិចិត្ត</strong> (កើត) $\\rightarrow$ <strong>ភវង្គ</strong> (រក្សាលំហូរជីវិត) $\\rightarrow$ <strong>អាវជ្ជនៈ</strong> (បែរមករកអារម្មណ៍) $\\rightarrow$ <strong>ទស្សន/សវន/ឃាយន/សាយន/ផុសន</strong> (ឃើញ ឮ ធុំ ដឹងរស ប៉ះ) $\\rightarrow$ <strong>សម្បដិច្ឆន/សន្តីរណ/វោដ្ឋព្វន</strong> (ទទួល ពិចារណា កាត់សេចក្តី) $\\rightarrow$ <strong>ជវនៈ ៧ ខណៈ</strong> (បង្កើតកម្មកុសល ឬអកុសល) $\\rightarrow$ <strong>តទារម្មណ៍</strong> $\\rightarrow$ រហូតដល់ <strong>ចុតិចិត្ត</strong> (ស្លាប់)។
+            </p>
+          </div>
+        </div>
+
+        <div class="panna-section-header">
+          <div class="panna-section-title">💎 ចេតសិក ៥២ (The 52 Mental Factors)</div>
+          <div class="panna-section-desc">ចេតសិកជាគ្រឿងប្រកបចិត្ត កើតជាមួយចិត្ត រលត់ជាមួយចិត្ត មានអារម្មណ៍ដូចចិត្ត និងមានទីតាំងដូចចិត្ត៖</div>
+        </div>
+
+        <div class="grid-2">
+          ${cetasika52.map(g => `
+            <div class="card">
+              <h4 style="font-size: 1.1rem; color: var(--gold-primary); margin-bottom: 6px;">${g.groupKh} (${g.count} ដួង)</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 10px;">${g.desc}</p>
+              <div style="background: var(--bg-secondary); padding: 8px 12px; border-radius: var(--radius-sm); font-size: 0.84rem; color: var(--text-primary);">
+                <strong>ឧទាហរណ៍៖</strong> ${g.keyExamples.join(', ')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    } else if (tabKey === 'similes') {
+      const { similes } = PANNA_NAMARUPA;
+      container.innerHTML = `
+        <div class="panna-section-header">
+          <div class="panna-section-title">🎭 ឧបមាអមតៈទាំង ៣ ក្នុងវិសុទ្ធិមគ្គ (The 3 Master Similes)</div>
+          <div class="panna-section-desc">ព្រះពុទ្ធឃោសាចារ្យបានលើកឧបមាដ៏អស្ចារ្យ ៣ យ៉ាង ដើម្បីកម្ចាត់សក្កាយទិដ្ឋិ (ការប្រកាន់ថាខ្លួនយើង) ឱ្យឃើញច្បាស់នូវធម្មជាតិនៃនាមនិងរូប៖</div>
+        </div>
+
+        ${similes.map(s => `
+          <div class="simile-card">
+            <div class="simile-card-header">
+              <div class="simile-icon-bubble">☸</div>
+              <div>
+                <div class="simile-title">${s.titleKh}</div>
+                <div class="simile-pali">${s.paliName} · ${s.visuddhiChapter}</div>
+              </div>
+            </div>
+
+            <div class="simile-story">${s.storyKh}</div>
+
+            <div class="simile-breakdown">
+              <div>
+                <strong style="color: var(--accent-crimson);">🧱 រូបធម៌ (Rūpa) ក្នុងឧបមា៖</strong>
+                <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.rupaMeaning}</div>
+              </div>
+              <div>
+                <strong style="color: var(--gold-primary);">🧠 នាមធម៌ (Nāma) ក្នុងឧបមា៖</strong>
+                <div style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">${s.namaMeaning}</div>
+              </div>
+            </div>
+
+            <div class="simile-moral">
+              💡 <strong>សច្ចធម៌៖</strong> ${s.moral}
+            </div>
+
+            <div style="margin-top: 10px; display: flex; justify-content: flex-end;">
+              <a href="${s.tripitakaUrl}" target="_blank" rel="noopener" class="citation-badge" style="font-size: 0.82rem;">
+                📖 ${s.tripitakaRef} ↗
+              </a>
+            </div>
+          </div>
+        `).join('')}
+      `;
+    } else if (tabKey === 'vipassanaSteps') {
+      const { vipassanaSteps, dailySensoryPortals } = PANNA_NAMARUPA;
+      container.innerHTML = `
+        <div class="panna-section-header">
+          <div class="panna-section-title">🧘 វិធីបដិបត្តិពិចារណានាម-រូប ៥ ជំហាន (5-Step Vipassanā Method)</div>
+          <div class="panna-section-desc">វិធីចម្រើនវិបស្សនាជាក់ស្តែងក្នុងពេលអង្គុយសមាធិ តាមគន្លងវិសុទ្ធិមគ្គ ទិដ្ឋិវិសុទ្ធិ៖</div>
+        </div>
+
+        ${vipassanaSteps.map(st => `
+          <div class="vipassana-step-item">
+            <span class="vipassana-step-badge">ជំហានទី ${st.step}</span>
+            <div class="vipassana-step-title">${st.title}</div>
+            <div class="vipassana-step-pali">${st.paliConcept}</div>
+            <div class="vipassana-step-desc">${st.practiceMethod}</div>
+            <div class="vipassana-step-quote">« ${st.insightQuestion} »</div>
+          </div>
+        `).join('')}
+
+        <div class="card" style="margin-top: 28px; border-left: 4px solid var(--accent-sage);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">🚪 ទ្វារអនុវត្តន៍ពិចារណានាម-រូបក្នុងជីវិតរស់នៅប្រចាំថ្ងៃ</h3>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+            មិនចាំបាច់តែអង្គុយបិទភ្នែកទើបពិនិត្យនាមរូបបានឡើយ គ្រប់ខណៈនៃការរស់នៅសុទ្ធតែជាកន្លែងចម្រើនបញ្ញា៖
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
+            ${dailySensoryPortals.map(p => `
+              <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 14px;">
+                <strong style="color: var(--text-primary); font-size: 0.95rem;">${p.portal}</strong>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; line-height: 1.5;">${p.howToContemplate}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
   }
 }
 
