@@ -189,7 +189,8 @@ h1, h2, h3, h4, .hero-title, .brand-title {
   z-index: 120;
 }
 
-.nav-dropdown:hover .dropdown-menu {
+.nav-dropdown:hover .dropdown-menu,
+.dropdown-menu.show {
   display: block;
 }
 
