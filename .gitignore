@@ -6,3 +6,6 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+.chrome_test_profile/
+scripts/*.png

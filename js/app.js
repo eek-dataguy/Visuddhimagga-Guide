@@ -4,8 +4,8 @@
 // Pure SVG Iconography & Humane Meditative Design System
 // ==========================================================================
 
-import { audioEngine } from './audio.js?v=2.2.4';
-import { renderIcon } from './icons.js?v=2.2.4';
+import { audioEngine } from './audio.js?v=2.2.5';
+import { renderIcon } from './icons.js?v=2.2.5';
 import { 
   PALIBODHA_10, 
   CATURARAKKHA, 
@@ -21,7 +21,7 @@ import {
   LOST_BREATH_REMEDY,
   SAMADHI_PRACTICE_METHODS,
   PANNA_NAMARUPA
-} from './data.js?v=2.2.4';
+} from './data.js?v=2.2.5';
 
 function getTripitakaUrl(refText) {
   if (!refText) return "https://www.tripitaka82.com/";
@@ -1169,6 +1169,7 @@ class SamadhiApp {
             <span class="hero-tag">${method.category} · ${method.tripitakaRef}</span>
             <h2 style="font-size: 1.55rem; margin: 8px 0 4px; color: var(--text-primary);">
               ${method.name} <span style="color: var(--gold-primary); font-weight: 700; font-family: var(--font-pali);">« ${method.namePaliKhmer || method.name} »</span>
+            </h2>
             <div style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; max-width: 800px;">
               ${method.description}
             </div>
