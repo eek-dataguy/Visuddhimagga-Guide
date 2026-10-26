@@ -9,3 +9,4 @@ Thumbs.db
 
 .chrome_test_profile/
 scripts/*.png
+.chrome_live_test/
